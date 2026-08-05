@@ -64,7 +64,7 @@
       "config": {
         "id": "heroVisual-image",
         "tag": "image",
-        "src": "/drafts/thehairnarrative.com/assets/icons/24.svg",
+        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-24.svg",
         "alt": " ",
         "classes": "thnDoodle ank-width-128px ank-height-128px ank-width-md-180px ank-height-md-180px ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
         "width": 270,
@@ -146,7 +146,7 @@
       "config": {
         "id": "purposeVisual-image",
         "tag": "image",
-        "src": "/drafts/thehairnarrative.com/assets/icons/12.svg",
+        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-12.svg",
         "alt": " ",
         "classes": "thnDoodle ank-width-128px ank-height-128px  ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
         "width": 270,
@@ -393,7 +393,7 @@
       "config": {
         "id": "emptyVisual-image",
         "tag": "image",
-        "src": "/drafts/thehairnarrative.com/assets/icons/22.svg",
+        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-22.svg",
         "alt": " ",
         "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
         "width": 270,
@@ -511,7 +511,7 @@
       "config": {
         "id": "letterVisual-image",
         "tag": "image",
-        "src": "/drafts/thehairnarrative.com/assets/icons/39.svg",
+        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-39.svg",
         "alt": " ",
         "classes": "thnDoodle ank-width-128px ank-height-128px  ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
         "width": 270,
@@ -618,7 +618,7 @@
       "config": {
         "id": "closeVisual-image",
         "tag": "image",
-        "src": "/drafts/thehairnarrative.com/assets/icons/41.svg",
+        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-41.svg",
         "alt": " ",
         "classes": "thnDoodle ank-width-128px ank-height-128px  ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
         "width": 270,
