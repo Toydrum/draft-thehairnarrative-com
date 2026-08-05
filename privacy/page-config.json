@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "pageId": "privacy",
+  "domain": "thehairnarrative.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageMain",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "local_private_draft",
+    "source": "client brand book and approved Drive assets",
+    "versionTag": "v0.1.0"
+  },
+  "seo": {
+    "title": {
+      "en": "Privacy Notice | The Hair Narrative",
+      "es": "Aviso de privacidad | The Hair Narrative"
+    },
+    "description": {
+      "en": "Learn what information The Hair Narrative may handle and how the current website protects your privacy.",
+      "es": "Conoce qué información puede tratar The Hair Narrative y cómo protege tu privacidad el sitio actual."
+    },
+    "canonical": "https://thehairnarrative.com/privacy",
+    "openGraph": {
+      "type": "website",
+      "site_name": "The Hair Narrative",
+      "title": {
+        "en": "Privacy Notice | The Hair Narrative",
+        "es": "Aviso de privacidad | The Hair Narrative"
+      },
+      "description": {
+        "en": "Learn what information The Hair Narrative may handle and how the current website protects your privacy.",
+        "es": "Conoce qué información puede tratar The Hair Narrative y cómo protege tu privacidad el sitio actual."
+      },
+      "url": "https://thehairnarrative.com/privacy",
+      "locale": {
+        "en": "en_US",
+        "es": "es_MX"
+      }
+    },
+    "twitter": {
+      "card": "summary",
+      "title": {
+        "en": "Privacy Notice | The Hair Narrative",
+        "es": "Aviso de privacidad | The Hair Narrative"
+      },
+      "description": {
+        "en": "Learn what information The Hair Narrative may handle and how the current website protects your privacy.",
+        "es": "Conoce qué información puede tratar The Hair Narrative y cómo protege tu privacidad el sitio actual."
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Privacy Notice | The Hair Narrative",
+        "description": "Learn what information The Hair Narrative may handle and how the current website protects your privacy.",
+        "url": "https://thehairnarrative.com/privacy",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "The Hair Narrative",
+          "url": "https://thehairnarrative.com"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

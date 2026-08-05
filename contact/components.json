@@ -1,0 +1,583 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "contact",
+  "components": [
+    {
+      "id": "heroSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor ank-minHeight-calcSD100svh__MIN__138pxED ank-minHeight-md-calcSD100svh__MIN__140pxED ank-alignItems-center",
+        "components": [
+          "heroFrame"
+        ],
+        "id": "hero-section"
+      }
+    },
+    {
+      "id": "heroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "heroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "thnHeroTitleCompact"
+      }
+    },
+    {
+      "id": "heroBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "heroContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "heroEyebrow",
+          "heroTitle",
+          "heroBody"
+        ]
+      }
+    },
+    {
+      "id": "heroVisual",
+      "type": "media",
+      "config": {
+        "id": "heroVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/39.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-128px ank-height-128px ank-width-md-180px ank-height-md-180px ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "eager"
+      }
+    },
+    {
+      "id": "heroFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-md-42px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "heroContent",
+          "heroVisual"
+        ]
+      }
+    },
+    {
+      "id": "pathsSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "components": [
+          "pathsFrame"
+        ],
+        "id": "paths-section"
+      }
+    },
+    {
+      "id": "pathsEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "pathsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "pathsContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "pathsEyebrow",
+          "pathsTitle"
+        ]
+      }
+    },
+    {
+      "id": "pathsCard1Icon",
+      "type": "media",
+      "config": {
+        "id": "pathsCard1Icon-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/36.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-76px ank-height-76px ank-alignSelf-flexMINend",
+        "width": 76,
+        "height": 76,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "pathsCard1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.0.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "pathsCard1Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.0.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "pathsCard1CtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-textColor",
+        "components": []
+      }
+    },
+    {
+      "id": "pathsCard1Cta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.0.cta.label;set:config.href,i18n,page.sections.paths.items.0.cta.href",
+      "config": {
+        "id": "pathsCard1Cta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "pathsCard1CtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "pathsCard1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "pathsCard1Icon",
+          "pathsCard1Title",
+          "pathsCard1Body",
+          "pathsCard1Cta"
+        ]
+      }
+    },
+    {
+      "id": "pathsCard2Icon",
+      "type": "media",
+      "config": {
+        "id": "pathsCard2Icon-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/24.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-76px ank-height-76px ank-alignSelf-flexMINend",
+        "width": 76,
+        "height": 76,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "pathsCard2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.1.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "pathsCard2Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.1.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "pathsCard2CtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-textColor",
+        "components": []
+      }
+    },
+    {
+      "id": "pathsCard2Cta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.1.cta.label;set:config.href,i18n,page.sections.paths.items.1.cta.href",
+      "config": {
+        "id": "pathsCard2Cta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "pathsCard2CtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "pathsCard2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "pathsCard2Icon",
+          "pathsCard2Title",
+          "pathsCard2Body",
+          "pathsCard2Cta"
+        ]
+      }
+    },
+    {
+      "id": "pathsCard3Icon",
+      "type": "media",
+      "config": {
+        "id": "pathsCard3Icon-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/12.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-76px ank-height-76px ank-alignSelf-flexMINend",
+        "width": 76,
+        "height": 76,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "pathsCard3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.2.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "pathsCard3Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.2.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "pathsCard3CtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-textColor",
+        "components": []
+      }
+    },
+    {
+      "id": "pathsCard3Cta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.2.cta.label;set:config.href,i18n,page.sections.paths.items.2.cta.href",
+      "config": {
+        "id": "pathsCard3Cta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "pathsCard3CtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "pathsCard3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "pathsCard3Icon",
+          "pathsCard3Title",
+          "pathsCard3Body",
+          "pathsCard3Cta"
+        ]
+      }
+    },
+    {
+      "id": "pathsCard4Icon",
+      "type": "media",
+      "config": {
+        "id": "pathsCard4Icon-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/7.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-76px ank-height-76px ank-alignSelf-flexMINend",
+        "width": 76,
+        "height": 76,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "pathsCard4Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.3.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "pathsCard4Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.3.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "pathsCard4CtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-textColor",
+        "components": []
+      }
+    },
+    {
+      "id": "pathsCard4Cta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.3.cta.label;set:config.href,i18n,page.sections.paths.items.3.cta.href",
+      "config": {
+        "id": "pathsCard4Cta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "pathsCard4CtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "pathsCard4",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "pathsCard4Icon",
+          "pathsCard4Title",
+          "pathsCard4Body",
+          "pathsCard4Cta"
+        ]
+      }
+    },
+    {
+      "id": "pathsGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-38px ank-gap-xl-48px",
+        "components": [
+          "pathsCard1",
+          "pathsCard2",
+          "pathsCard3",
+          "pathsCard4"
+        ]
+      }
+    },
+    {
+      "id": "pathsFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "components": [
+          "pathsContent",
+          "pathsGrid"
+        ]
+      }
+    },
+    {
+      "id": "directSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-textColor ank-color-bgColor",
+        "components": [
+          "directFrame"
+        ],
+        "id": "direct-section"
+      }
+    },
+    {
+      "id": "directEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.direct.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "directTitle",
+      "type": "text",
+      "valueInstructions": "set:config.html,i18n,page.sections.direct.title",
+      "config": {
+        "tag": "h2",
+        "html": "",
+        "classes": "thnEmailTitle"
+      }
+    },
+    {
+      "id": "directBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.direct.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "directCtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-bgColor",
+        "components": []
+      }
+    },
+    {
+      "id": "directCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.direct.cta.label;set:config.href,i18n,page.sections.direct.cta.href",
+      "config": {
+        "id": "directCta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "directCtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "directContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "directEyebrow",
+          "directTitle",
+          "directBody",
+          "directCta"
+        ]
+      }
+    },
+    {
+      "id": "directVisual",
+      "type": "media",
+      "config": {
+        "id": "directVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/1.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "directVisualField",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-220px ank-height-220px ank-width-xl-300px ank-height-xl-300px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-justifySelf-center ank-justifySelf-md-end",
+        "components": [
+          "directVisual"
+        ]
+      }
+    },
+    {
+      "id": "directFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gap-42px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "directContent",
+          "directVisualField"
+        ]
+      }
+    },
+    {
+      "id": "pageMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "thnBodyFont ank-width-100per ank-overflow-hidden ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "heroSection",
+          "pathsSection",
+          "directSection"
+        ],
+        "id": "page-main"
+      }
+    }
+  ]
+}

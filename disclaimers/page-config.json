@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "pageId": "disclaimers",
+  "domain": "thehairnarrative.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageMain",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "local_private_draft",
+    "source": "client brand book and approved Drive assets",
+    "versionTag": "v0.1.0"
+  },
+  "seo": {
+    "title": {
+      "en": "Disclaimers | The Hair Narrative",
+      "es": "Avisos importantes | The Hair Narrative"
+    },
+    "description": {
+      "en": "Read the educational, results, bridal and creative-use notices for The Hair Narrative.",
+      "es": "Consulta los avisos educativos, de resultados, servicios para novias y uso creativo de The Hair Narrative."
+    },
+    "canonical": "https://thehairnarrative.com/disclaimers",
+    "openGraph": {
+      "type": "website",
+      "site_name": "The Hair Narrative",
+      "title": {
+        "en": "Disclaimers | The Hair Narrative",
+        "es": "Avisos importantes | The Hair Narrative"
+      },
+      "description": {
+        "en": "Read the educational, results, bridal and creative-use notices for The Hair Narrative.",
+        "es": "Consulta los avisos educativos, de resultados, servicios para novias y uso creativo de The Hair Narrative."
+      },
+      "url": "https://thehairnarrative.com/disclaimers",
+      "locale": {
+        "en": "en_US",
+        "es": "es_MX"
+      }
+    },
+    "twitter": {
+      "card": "summary",
+      "title": {
+        "en": "Disclaimers | The Hair Narrative",
+        "es": "Avisos importantes | The Hair Narrative"
+      },
+      "description": {
+        "en": "Read the educational, results, bridal and creative-use notices for The Hair Narrative.",
+        "es": "Consulta los avisos educativos, de resultados, servicios para novias y uso creativo de The Hair Narrative."
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Disclaimers | The Hair Narrative",
+        "description": "Read the educational, results, bridal and creative-use notices for The Hair Narrative.",
+        "url": "https://thehairnarrative.com/disclaimers",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "The Hair Narrative",
+          "url": "https://thehairnarrative.com"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

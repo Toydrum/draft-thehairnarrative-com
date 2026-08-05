@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-bridal-narrative",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "sections": {
+        "hero": {
+          "eyebrow": "THE BRIDAL NARRATIVE",
+          "title": "Feel completely yourself on your wedding day.",
+          "body": "A calm, authentic and deeply personal hairstyling experience for international brides planning a destination wedding in Mexico.",
+          "ctaLabel": "BOOK YOUR BRIDAL EXPERIENCE",
+          "helperText": "Opens an email inquiry. No booking or payment is completed online.",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A",
+          "cta": {
+            "label": "BOOK YOUR BRIDAL EXPERIENCE",
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A"
+          }
+        },
+        "personal-by-design": {
+          "eyebrow": "THE APPROACH",
+          "title": "A hairstyle that makes sense for you.",
+          "body": "The aim is not to reproduce a photograph. It is to create something coherent with the person who will wear it, the design and the intention.",
+          "items": [
+            {
+              "title": "Observe",
+              "body": "Hair type, texture, length, light, proportions and movement."
+            },
+            {
+              "title": "Understand",
+              "body": "Climate, event duration and your specific needs."
+            },
+            {
+              "title": "Create",
+              "body": "A form that feels authentic, intentional and personal."
+            }
+          ]
+        },
+        "statement": {
+          "quote": "I prefer to understand the hair rather than try to control it.",
+          "body": "The work looks for coherence between the person, the design and the intention—not perfection for its own sake.",
+          "title": "I prefer to understand the hair rather than try to control it.",
+          "eyebrow": "THE POINT OF VIEW"
+        },
+        "first-note": {
+          "eyebrow": "BEGIN THE CONVERSATION",
+          "title": "Start with the essential details.",
+          "body": "Your first email can include the details that help frame your wedding:",
+          "items": [
+            "Your name",
+            "Your country of origin",
+            "Your event date",
+            "Your event location"
+          ],
+          "ctaLabel": "SHARE YOUR WEDDING DETAILS",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A",
+          "cta": {
+            "label": "SHARE YOUR WEDDING DETAILS",
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A"
+          }
+        },
+        "closing": {
+          "title": "Every story begins with a conversation.",
+          "body": "Tell me where you are coming from, when and where you are getting married, and what you hope to feel on the day. I would love to hear from you.",
+          "ctaLabel": "BOOK YOUR BRIDAL EXPERIENCE",
+          "helperText": "Opens an email inquiry.",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A",
+          "eyebrow": "BEGIN THE CONVERSATION",
+          "cta": {
+            "label": "BOOK YOUR BRIDAL EXPERIENCE",
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A"
+          }
+        }
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Questions before you write.",
+        "items": [
+          {
+            "id": "faq-1",
+            "title": "Who is The Bridal Narrative for?",
+            "content": "International brides planning a destination wedding in Mexico who want a calm, authentic and deeply personal experience."
+          },
+          {
+            "id": "faq-2",
+            "title": "Is communication available in English?",
+            "content": "Yes. All Bridal Narrative communication is in English."
+          },
+          {
+            "id": "faq-3",
+            "title": "What should I include in my first email?",
+            "content": "Your name, country of origin, event date and event location."
+          },
+          {
+            "id": "faq-4",
+            "title": "How is the hairstyle considered?",
+            "content": "Through your hair type, texture, length, the climate, event duration and your specific needs."
+          },
+          {
+            "id": "faq-5",
+            "title": "Do you reproduce a hairstyle from a photograph?",
+            "content": "The aim is not to reproduce a photograph, but to create something that makes sense for the person who will wear it."
+          },
+          {
+            "id": "faq-6",
+            "title": "Can hairstyle duration be guaranteed?",
+            "content": "Professional products and techniques are used to offer the greatest possible duration, but humidity, wind, rain and event activities can influence the final result."
+          },
+          {
+            "id": "faq-7",
+            "title": "How are deposits, date changes, cancellations and travel handled?",
+            "content": "Deposits, advance payments, date changes, cancellations, travel, schedules and related expenses are defined in the service agreement for each wedding."
+          },
+          {
+            "id": "faq-8",
+            "title": "Does sending an email confirm my booking?",
+            "content": "No. The email begins the inquiry. No booking or payment is completed through this page."
+          }
+        ]
+      }
+    }
+  }
+}

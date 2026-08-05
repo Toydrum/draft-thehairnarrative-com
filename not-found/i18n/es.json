@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "not-found",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "sections": {
+        "not-found": {
+          "eyebrow": "404",
+          "title": "Esta página salió del encuadre.",
+          "body": "Vuelve al inicio o continúa con la filosofía y la historia detrás de The Hair Narrative.",
+          "ctaLabel": "VOLVER AL INICIO",
+          "ctaHref": "/",
+          "secondaryCtaLabel": "LEE THE NARRATIVE",
+          "secondaryCtaHref": "/the-narrative",
+          "cta": {
+            "label": "VOLVER AL INICIO",
+            "href": "/"
+          },
+          "secondaryCta": {
+            "label": "LEE THE NARRATIVE",
+            "href": "/the-narrative"
+          }
+        }
+      }
+    }
+  }
+}

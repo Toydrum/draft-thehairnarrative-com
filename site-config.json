@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "aliases": [],
+  "defaultPageId": "home",
+  "notFoundPageId": "not-found",
+  "routes": [
+    {
+      "path": "/",
+      "pageId": "home",
+      "label": "Home"
+    },
+    {
+      "path": "/the-narrative",
+      "pageId": "the-narrative",
+      "label": "The Narrative"
+    },
+    {
+      "path": "/the-practice",
+      "pageId": "the-practice",
+      "label": "The Practice"
+    },
+    {
+      "path": "/the-bridal-narrative",
+      "pageId": "the-bridal-narrative",
+      "label": "The Bridal Narrative"
+    },
+    {
+      "path": "/the-journal",
+      "pageId": "the-journal",
+      "label": "The Journal"
+    },
+    {
+      "path": "/contact",
+      "pageId": "contact",
+      "label": "Contact"
+    },
+    {
+      "path": "/privacy",
+      "pageId": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "path": "/terms",
+      "pageId": "terms",
+      "label": "Terms"
+    },
+    {
+      "path": "/cookie-policy",
+      "pageId": "cookie-policy",
+      "label": "Cookie Policy"
+    },
+    {
+      "path": "/disclaimers",
+      "pageId": "disclaimers",
+      "label": "Disclaimers"
+    },
+    {
+      "path": "/404",
+      "pageId": "not-found",
+      "label": "Page not found"
+    }
+  ],
+  "sitemap": {
+    "urls": [
+      "/",
+      "/the-narrative",
+      "/the-practice",
+      "/the-bridal-narrative",
+      "/the-journal",
+      "/contact",
+      "/privacy",
+      "/terms",
+      "/cookie-policy",
+      "/disclaimers"
+    ],
+    "excludePaths": [
+      "/404"
+    ]
+  },
+  "site": {
+    "theme": {
+      "defaultMode": "light",
+      "palettes": {
+        "light": {
+          "bgColor": "#FFFFFF",
+          "textColor": "#000000",
+          "titleColor": "#000000",
+          "linkColor": "#000000",
+          "accentColor": "#B8B4AE",
+          "secondaryBgColor": "#E9E7E4",
+          "secondaryTextColor": "#000000",
+          "secondaryTitleColor": "#000000",
+          "secondaryLinkColor": "#000000",
+          "secondaryAccentColor": "#B8B4AE",
+          "successColor": "#000000",
+          "onSuccessColor": "#FFFFFF",
+          "errorColor": "#000000",
+          "onErrorColor": "#FFFFFF",
+          "warningColor": "#B8B4AE",
+          "onWarningColor": "#000000",
+          "infoColor": "#B8B4AE",
+          "onInfoColor": "#000000"
+        },
+        "dark": {
+          "bgColor": "#000000",
+          "textColor": "#FFFFFF",
+          "titleColor": "#FFFFFF",
+          "linkColor": "#FFFFFF",
+          "accentColor": "#B8B4AE",
+          "secondaryBgColor": "#B8B4AE",
+          "secondaryTextColor": "#000000",
+          "secondaryTitleColor": "#000000",
+          "secondaryLinkColor": "#000000",
+          "secondaryAccentColor": "#B8B4AE",
+          "successColor": "#FFFFFF",
+          "onSuccessColor": "#000000",
+          "errorColor": "#FFFFFF",
+          "onErrorColor": "#000000",
+          "warningColor": "#B8B4AE",
+          "onWarningColor": "#000000",
+          "infoColor": "#B8B4AE",
+          "onInfoColor": "#000000"
+        }
+      }
+    },
+    "appIdentity": {
+      "identifier": "thehairnarrativecom",
+      "name": "The Hair Narrative",
+      "version": "0.1.0",
+      "description": "An editorial and educational space devoted to the art of hairstyling."
+    },
+    "seo": {
+      "siteName": "The Hair Narrative",
+      "title": "The Hair Narrative | Observe, understand and create",
+      "description": "An editorial and educational space devoted to observing, understanding and practising the art of hairstyling.",
+      "canonicalOrigin": "https://thehairnarrative.com",
+      "enforceCanonicalHost": false,
+      "forceHttps": true,
+      "robots": "index,follow,max-image-preview:large",
+      "keywords": {
+        "en": [
+          "The Hair Narrative",
+          "hairstyling education",
+          "destination bridal hairstyling Mexico",
+          "hairstyling practice"
+        ],
+        "es": [
+          "The Hair Narrative",
+          "educación de peinado",
+          "peinado para novias destino México",
+          "práctica del peinado"
+        ]
+      }
+    },
+    "i18n": {
+      "defaultLanguage": "en",
+      "supportedLanguages": [
+        {
+          "code": "en",
+          "label": "EN",
+          "dir": "ltr",
+          "ogLocale": "en_US"
+        },
+        {
+          "code": "es",
+          "label": "ES",
+          "dir": "ltr",
+          "ogLocale": "es_MX"
+        }
+      ]
+    }
+  },
+  "defaults": {
+    "brand": {
+      "displayName": "The Hair Narrative"
+    },
+    "ui": {
+      "loadingCurtain": {
+        "enabled": true,
+        "title": "The Hair Narrative",
+        "subtitle": "Observe. Understand. Create.",
+        "exitDurationMs": 220,
+        "minVisibleMs": 0,
+        "background": "#FFFFFF",
+        "foreground": "#000000",
+        "accent": "#B8B4AE"
+      }
+    }
+  },
+  "runtime": {
+    "localStorage": {
+      "theme": "thn-theme",
+      "language": "thn-language",
+      "userPreferences": "thn-preferences",
+      "id": "thn-id",
+      "sessionId": "thn-session-id",
+      "allowAnalytics": "thn-analytics-disabled",
+      "analyticsConsentSnooze": "thn-analytics-snooze",
+      "pageViewCount": "thn-page-view-count"
+    },
+    "features": {
+      "debugMode": false
+    },
+    "analytics": {
+      "enabled": false,
+      "consentUI": "none",
+      "track": []
+    }
+  }
+}

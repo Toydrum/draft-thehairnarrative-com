@@ -1,0 +1,788 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "terms",
+  "components": [
+    {
+      "id": "pageMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "thnBodyFont ank-width-100per ank-overflow-hidden ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "legalHeroSection",
+          "legalBodySection"
+        ],
+        "id": "page-main"
+      }
+    },
+    {
+      "id": "legalHeroSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000 ank-paddingBlock-xl-92px",
+        "components": [
+          "legalHeroFrame"
+        ]
+      }
+    },
+    {
+      "id": "legalEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "legalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "thnHeroTitle ank-fontSize-xl-5_2rem"
+      }
+    },
+    {
+      "id": "legalIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.intro",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalUpdated",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.updated",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnSmallCopy ank-textTransform-uppercase ank-letterSpacing-0_08em"
+      }
+    },
+    {
+      "id": "legalHeroFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-22px ank-maxWidth-900px",
+        "components": [
+          "legalEyebrow",
+          "legalTitle",
+          "legalIntro",
+          "legalUpdated"
+        ]
+      }
+    },
+    {
+      "id": "legalItem1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.0.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnLegalHeading"
+      }
+    },
+    {
+      "id": "legalItem1Paragraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.0.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem1",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "legalItem1Title",
+          "legalItem1Paragraph1"
+        ]
+      }
+    },
+    {
+      "id": "legalItem2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.1.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnLegalHeading"
+      }
+    },
+    {
+      "id": "legalItem2Paragraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.1.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem2Paragraph2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.1.paragraphs.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem2Paragraph3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.1.paragraphs.2",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem2Bullet1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.1.bullets.0",
+      "config": {
+        "tag": "li",
+        "text": "",
+        "classes": "thnBodyCopy ank-paddingBlock-4px"
+      }
+    },
+    {
+      "id": "legalItem2Bullet2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.1.bullets.1",
+      "config": {
+        "tag": "li",
+        "text": "",
+        "classes": "thnBodyCopy ank-paddingBlock-4px"
+      }
+    },
+    {
+      "id": "legalItem2Bullet3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.1.bullets.2",
+      "config": {
+        "tag": "li",
+        "text": "",
+        "classes": "thnBodyCopy ank-paddingBlock-4px"
+      }
+    },
+    {
+      "id": "legalItem2Bullet4",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.1.bullets.3",
+      "config": {
+        "tag": "li",
+        "text": "",
+        "classes": "thnBodyCopy ank-paddingBlock-4px"
+      }
+    },
+    {
+      "id": "legalItem2Bullet5",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.1.bullets.4",
+      "config": {
+        "tag": "li",
+        "text": "",
+        "classes": "thnBodyCopy ank-paddingBlock-4px"
+      }
+    },
+    {
+      "id": "legalItem2List",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "ank-m-0 ank-paddingInlineStart-22px ank-display-flex ank-flexDirection-column ank-gap-2px",
+        "components": [
+          "legalItem2Bullet1",
+          "legalItem2Bullet2",
+          "legalItem2Bullet3",
+          "legalItem2Bullet4",
+          "legalItem2Bullet5"
+        ]
+      }
+    },
+    {
+      "id": "legalItem2",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "legalItem2Title",
+          "legalItem2Paragraph1",
+          "legalItem2Paragraph2",
+          "legalItem2Paragraph3",
+          "legalItem2List"
+        ]
+      }
+    },
+    {
+      "id": "legalItem3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.2.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnLegalHeading"
+      }
+    },
+    {
+      "id": "legalItem3Paragraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.2.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem3Paragraph2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.2.paragraphs.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem3Paragraph3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.2.paragraphs.2",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem3",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "legalItem3Title",
+          "legalItem3Paragraph1",
+          "legalItem3Paragraph2",
+          "legalItem3Paragraph3"
+        ]
+      }
+    },
+    {
+      "id": "legalItem4Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.3.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnLegalHeading"
+      }
+    },
+    {
+      "id": "legalItem4Paragraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.3.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem4Paragraph2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.3.paragraphs.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem4Paragraph3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.3.paragraphs.2",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem4",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "legalItem4Title",
+          "legalItem4Paragraph1",
+          "legalItem4Paragraph2",
+          "legalItem4Paragraph3"
+        ]
+      }
+    },
+    {
+      "id": "legalItem5Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnLegalHeading"
+      }
+    },
+    {
+      "id": "legalItem5Paragraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem5Paragraph2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.paragraphs.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem5",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "legalItem5Title",
+          "legalItem5Paragraph1",
+          "legalItem5Paragraph2"
+        ]
+      }
+    },
+    {
+      "id": "legalItem6Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.5.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnLegalHeading"
+      }
+    },
+    {
+      "id": "legalItem6Paragraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.5.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem6Paragraph2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.5.paragraphs.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem6",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "legalItem6Title",
+          "legalItem6Paragraph1",
+          "legalItem6Paragraph2"
+        ]
+      }
+    },
+    {
+      "id": "legalItem7Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.6.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnLegalHeading"
+      }
+    },
+    {
+      "id": "legalItem7Paragraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.6.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem7Paragraph2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.6.paragraphs.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem7",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "legalItem7Title",
+          "legalItem7Paragraph1",
+          "legalItem7Paragraph2"
+        ]
+      }
+    },
+    {
+      "id": "legalItem8Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.7.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnLegalHeading"
+      }
+    },
+    {
+      "id": "legalItem8Paragraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.7.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem8",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "legalItem8Title",
+          "legalItem8Paragraph1"
+        ]
+      }
+    },
+    {
+      "id": "legalItem9Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.8.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnLegalHeading"
+      }
+    },
+    {
+      "id": "legalItem9Paragraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.8.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem9",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "legalItem9Title",
+          "legalItem9Paragraph1"
+        ]
+      }
+    },
+    {
+      "id": "legalItem10Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.9.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnLegalHeading"
+      }
+    },
+    {
+      "id": "legalItem10Paragraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.9.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem10Paragraph2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.9.paragraphs.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem10",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "legalItem10Title",
+          "legalItem10Paragraph1",
+          "legalItem10Paragraph2"
+        ]
+      }
+    },
+    {
+      "id": "legalItem11Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.10.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnLegalHeading"
+      }
+    },
+    {
+      "id": "legalItem11Paragraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.10.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem11Paragraph2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.10.paragraphs.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalItem11",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "legalItem11Title",
+          "legalItem11Paragraph1",
+          "legalItem11Paragraph2"
+        ]
+      }
+    },
+    {
+      "id": "legalItem12Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.11.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnLegalHeading"
+      }
+    },
+    {
+      "id": "legalItem12Paragraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.11.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "legalContactCtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-textColor",
+        "components": []
+      }
+    },
+    {
+      "id": "legalContactCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.legal.contactCta.label;set:config.href,i18n,page.legal.contactCta.href",
+      "config": {
+        "id": "legalContactCta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "legalContactCtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "legalItem12",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "components": [
+          "legalItem12Title",
+          "legalItem12Paragraph1",
+          "legalContactCta"
+        ]
+      }
+    },
+    {
+      "id": "legalReview",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.review",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnSmallCopy ank-paddingTop-20px"
+      }
+    },
+    {
+      "id": "legalNav",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-18px ank-paddingTop-8px",
+        "components": [
+          "legalPrivacy",
+          "legalTerms",
+          "legalCookies",
+          "legalDisclaimers"
+        ]
+      }
+    },
+    {
+      "id": "legalPrivacy",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.legal.nav.privacy",
+      "config": {
+        "id": "legalPrivacy",
+        "href": "/privacy",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_7rem ank-letterSpacing-0_1em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "legalTerms",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.legal.nav.terms",
+      "config": {
+        "id": "legalTerms",
+        "href": "/terms",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_7rem ank-letterSpacing-0_1em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "legalCookies",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.legal.nav.cookies",
+      "config": {
+        "id": "legalCookies",
+        "href": "/cookie-policy",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_7rem ank-letterSpacing-0_1em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "legalDisclaimers",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.legal.nav.disclaimers",
+      "config": {
+        "id": "legalDisclaimers",
+        "href": "/disclaimers",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_7rem ank-letterSpacing-0_1em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "legalBodySection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "legalBodyFrame"
+        ]
+      }
+    },
+    {
+      "id": "legalBodyFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-720px ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-md-62px",
+        "components": [
+          "legalItem1",
+          "legalItem2",
+          "legalItem3",
+          "legalItem4",
+          "legalItem5",
+          "legalItem6",
+          "legalItem7",
+          "legalItem8",
+          "legalItem9",
+          "legalItem10",
+          "legalItem11",
+          "legalItem12",
+          "legalReview",
+          "legalNav"
+        ]
+      }
+    }
+  ]
+}

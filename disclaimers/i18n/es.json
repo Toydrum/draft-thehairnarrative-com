@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "disclaimers",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "sections": {},
+      "legal": {
+        "eyebrow": "LEGAL",
+        "title": "Avisos importantes",
+        "updated": "Última actualización: 31 de julio de 2026",
+        "intro": "La claridad también implica reconocer lo que ningún sitio, aprendizaje o servicio creativo puede prometer. Estos avisos explican esos límites.",
+        "sections": [
+          {
+            "id": "educational-disclaimer",
+            "title": "Aviso educativo",
+            "paragraphs": [
+              "Todo el contenido compartido por The Hair Narrative tiene fines educativos e informativos.",
+              "Su intención es ayudar a observar y comprender el arte del peinado desde una perspectiva más profunda, pero cada proceso de aprendizaje es diferente. La práctica, la observación, el criterio y la experiencia siguen siendo partes fundamentales del desarrollo profesional.",
+              "El contenido general del sitio no sustituye una instrucción individual ni la información de seguridad proporcionada por los fabricantes de herramientas y productos."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "results-disclaimer",
+            "title": "Aviso sobre resultados",
+            "paragraphs": [
+              "Los resultados derivados del contenido educativo, futuros cursos, mentorías o recursos dependen del compromiso, la práctica, la experiencia previa y las circunstancias de cada persona.",
+              "The Hair Narrative no garantiza resultados profesionales, económicos, comerciales o creativos específicos."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "bridal-disclaimer",
+            "title": "Aviso para servicios de novias",
+            "paragraphs": [
+              "Cada peinado se realiza considerando a la persona y las condiciones del evento, incluyendo tipo, textura y largo del cabello, clima, duración y actividades previstas.",
+              "Pueden utilizarse productos y técnicas profesionales para favorecer la mejor duración posible, pero la humedad, el viento, la lluvia, el movimiento y otros factores externos pueden influir en la apariencia final y la duración del peinado.",
+              "Las imágenes de referencia comunican una dirección; no garantizan una reproducción idéntica. El alcance y las condiciones específicas del servicio se establecerán en el acuerdo escrito correspondiente."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "copyright",
+            "title": "Derechos de autor y uso creativo",
+            "paragraphs": [
+              "El conocimiento crece cuando se comparte con respeto. Puedes citar un fragmento breve de un artículo editorial siempre que menciones claramente a The Hair Narrative como fuente e incluyas un enlace a la página original.",
+              "No está permitido copiar, reproducir, redistribuir, vender, impartir, adaptar comercialmente ni explotar de otra manera los cursos, ilustraciones, metodología, ejercicios, workbooks, recursos descargables, fotografías, textos u otros contenidos originales de The Hair Narrative sin autorización expresa por escrito.",
+              "Cada página, imagen, ilustración y texto forma parte de una historia construida con tiempo, curiosidad y dedicación.",
+              "Gracias por respetar ese trabajo."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "permission-requests",
+            "title": "Solicitudes de autorización",
+            "paragraphs": [
+              "Para solicitar autorización o preguntar sobre estos avisos, escribe a: hello@thehairnarrative.com"
+            ],
+            "bullets": []
+          }
+        ],
+        "review": "Copy editorial preliminar. Se requiere revisión legal profesional antes de publicar.",
+        "contactCta": {
+          "label": "ESCRIBE A NINA",
+          "href": "mailto:hello@thehairnarrative.com?subject=Consulta%20sobre%20Avisos%20importantes"
+        },
+        "nav": {
+          "privacy": "Privacidad",
+          "terms": "Términos",
+          "cookies": "Cookies",
+          "disclaimers": "Avisos"
+        }
+      }
+    }
+  }
+}

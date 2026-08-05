@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "home",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "sections": {
+        "hero": {
+          "eyebrow": "THE HAIR NARRATIVE",
+          "title": "El peinado observado en profundidad.",
+          "body": "Un espacio editorial y educativo dedicado a la forma, el movimiento y las decisiones silenciosas detrás del oficio.",
+          "ctaLabel": "DESCUBRE THE NARRATIVE",
+          "ctaHref": "/the-narrative",
+          "cta": {
+            "label": "DESCUBRE THE NARRATIVE",
+            "href": "/the-narrative"
+          }
+        },
+        "manifesto": {
+          "eyebrow": "UNA FILOSOFÍA DE SIMPLICIDAD",
+          "title": "La simplicidad no es el resultado. Es el método.",
+          "body": "Observar antes de actuar. Comprender antes de ejecutar. Crear antes que copiar."
+        },
+        "paths": {
+          "eyebrow": "DOS CAMINOS",
+          "title": "Practica el oficio. Vívelo de manera personal.",
+          "body": "Dos expresiones de una misma forma atenta de trabajar.",
+          "items": [
+            {
+              "title": "The Practice",
+              "body": "Cursos, mentorías y workbooks para mujeres que desarrollan una mirada propia. En preparación.",
+              "ctaLabel": "EXPLORA THE PRACTICE",
+              "ctaHref": "/the-practice",
+              "icon": 24,
+              "cta": {
+                "label": "EXPLORA THE PRACTICE",
+                "href": "/the-practice"
+              }
+            },
+            {
+              "title": "The Bridal Narrative",
+              "body": "Una experiencia tranquila y auténtica para novias destino en México, comunicada totalmente en inglés.",
+              "ctaLabel": "DESCUBRE BRIDAL",
+              "ctaHref": "/the-bridal-narrative",
+              "icon": 36,
+              "cta": {
+                "label": "DESCUBRE BRIDAL",
+                "href": "/the-bridal-narrative"
+              }
+            }
+          ]
+        },
+        "narrative": {
+          "eyebrow": "THE NARRATIVE",
+          "title": "La belleza aparece al comprender lo esencial.",
+          "body": "La filosofía, la historia, el estudio y los valores detrás del trabajo.",
+          "ctaLabel": "LEE LA HISTORIA",
+          "ctaHref": "/the-narrative",
+          "cta": {
+            "label": "LEE LA HISTORIA",
+            "href": "/the-narrative"
+          }
+        },
+        "journal-letter": {
+          "eyebrow": "PALABRAS Y NOTAS",
+          "title": "Un lugar para pensar el oficio.",
+          "items": [
+            {
+              "title": "The Journal",
+              "body": "Notas sobre forma, movimiento y atención. El espacio editorial está listo; todavía no hay publicaciones.",
+              "ctaLabel": "EXPLORA THE JOURNAL",
+              "ctaHref": "/the-journal",
+              "icon": 24,
+              "cta": {
+                "label": "EXPLORA THE JOURNAL",
+                "href": "/the-journal"
+              }
+            },
+            {
+              "title": "The Letter",
+              "body": "Una futura correspondencia tranquila sobre observación, práctica y trabajo creativo. Aún no existe un newsletter automatizado.",
+              "ctaLabel": "ESCRIBE A NINA",
+              "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Letter",
+              "icon": 39,
+              "cta": {
+                "label": "ESCRIBE A NINA",
+                "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter"
+              }
+            }
+          ]
+        },
+        "close": {
+          "eyebrow": "COMIENZA AQUÍ",
+          "title": "Toda historia comienza con una conversación.",
+          "body": "Ya sea que prepares tu boda, quieras aprender o simplemente desees saludar, me encantará leerte.",
+          "ctaLabel": "INICIA UNA CONVERSACIÓN",
+          "ctaHref": "/contact",
+          "cta": {
+            "label": "INICIA UNA CONVERSACIÓN",
+            "href": "/contact"
+          }
+        }
+      }
+    }
+  }
+}

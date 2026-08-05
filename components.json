@@ -1,0 +1,520 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "allPages",
+  "components": [
+    {
+      "id": "skipToMainText",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,accessibility.skip",
+      "config": {
+        "tag": "span",
+        "text": "",
+        "classes": "ank-display-block"
+      }
+    },
+    {
+      "id": "skipToMainLink",
+      "type": "link",
+      "eventInstructions": "skipToMain:page-main",
+      "valueInstructions": "set:config.ariaLabel,i18n,accessibility.skip",
+      "config": {
+        "id": "skip-to-main",
+        "href": "#page-main",
+        "text": "",
+        "ariaLabel": "",
+        "components": [
+          "skipToMainText"
+        ],
+        "classes": "thnBodyFont ank-position-fixed ank-left-12px ank-top-0 ank-zIndex-2000 ank-transform-translateYSDMIN130perED ank-transformFocus-translateYSD12pxED ank-paddingInline-16px ank-paddingBlock-12px ank-bg-textColor ank-color-bgColor ank-textDecoration-none ank-minHeight-44px"
+      }
+    },
+    {
+      "id": "siteHeader",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "classes": "thnBodyFont ank-position-sticky ank-top-0 ank-zIndex-1200 ank-width-100per ank-display-flex ank-justifyContent-center ank-bg-bgColor ank-color-textColor ank-paddingInline-24px ank-paddingBlock-16px ank-boxSizing-borderMINbox",
+        "components": [
+          "headerFrame"
+        ]
+      }
+    },
+    {
+      "id": "headerFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-display-flex ank-flexDirection-column ank-gap-14px",
+        "components": [
+          "headerInner",
+          "headerMobileMenuMount"
+        ]
+      }
+    },
+    {
+      "id": "headerInner",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-flex ank-alignItems-center ank-justifyContent-spaceMINbetween ank-gap-10px ank-gap-xl-16px",
+        "components": [
+          "brandLink",
+          "headerDesktopCluster",
+          "headerMobileCluster"
+        ]
+      }
+    },
+    {
+      "id": "brandLink",
+      "type": "link",
+      "config": {
+        "id": "brand-link",
+        "href": "/",
+        "text": "THE HAIR NARRATIVE",
+        "rel": "noopener",
+        "classes": "thnDisplayFont ank-color-inherit ank-fontSize-0_9rem ank-fontSize-md-1_18rem ank-letterSpacing-0_08em ank-letterSpacing-md-0_1em ank-lineHeight-1 ank-whiteSpace-nowrap ank-textDecoration-none ank-minHeight-44px ank-display-flex ank-alignItems-center ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "headerDesktopCluster",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-none ank-display-md-flex ank-alignItems-center ank-gap-16px ank-gap-xl-30px ank-marginInlineStart-auto",
+        "components": [
+          "desktopNav",
+          "desktopLanguage"
+        ]
+      }
+    },
+    {
+      "id": "desktopNav",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-display-flex ank-alignItems-center ank-gap-10px ank-gap-xl-22px",
+        "components": [
+          "navNarrative",
+          "navPractice",
+          "navBridal",
+          "navJournal",
+          "navContact"
+        ]
+      }
+    },
+    {
+      "id": "navNarrative",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.narrative",
+      "config": {
+        "id": "navNarrative",
+        "href": "/the-narrative",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_69rem ank-letterSpacing-0_12em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "navPractice",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.practice",
+      "config": {
+        "id": "navPractice",
+        "href": "/the-practice",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_69rem ank-letterSpacing-0_12em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "navBridal",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.bridal",
+      "config": {
+        "id": "navBridal",
+        "href": "/the-bridal-narrative",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_69rem ank-letterSpacing-0_12em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "navJournal",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.journal",
+      "config": {
+        "id": "navJournal",
+        "href": "/the-journal",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_69rem ank-letterSpacing-0_12em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "navContact",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,nav.contact",
+      "config": {
+        "id": "navContact",
+        "href": "/contact",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_69rem ank-letterSpacing-0_12em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "desktopLanguageLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,header.languageLabel",
+      "config": {
+        "tag": "span",
+        "text": "EN / ES",
+        "classes": "ank-fontSize-0_68rem ank-letterSpacing-0_12em"
+      }
+    },
+    {
+      "id": "desktopLanguage",
+      "type": "dropdown",
+      "eventInstructions": "setLanguage:event.eventData.value",
+      "valueInstructions": "set:config.dropdownConfig.ariaLabel,i18n,header.language;set:config.dropdownConfig.selectedItemId,language",
+      "config": {
+        "items": [
+          {
+            "id": "en",
+            "label": "EN",
+            "value": "en"
+          },
+          {
+            "id": "es",
+            "label": "ES",
+            "value": "es"
+          }
+        ],
+        "dropdownConfig": {
+          "ariaLabel": "Choose language",
+          "classes": "ank-position-relative",
+          "buttonClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minWidth-64px ank-minHeight-44px ank-bg-transparent ank-border-none ank-color-inherit ank-fontSize-0_68rem ank-letterSpacing-0_12em ank-cursor-pointer",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-44px ank-paddingInline-18px ank-color-textColor ank-bg-bgColor ank-textDecoration-none ank-fontSize-0_7rem ank-letterSpacing-0_12em",
+          "selectedItemClasses": "ank-bg-secondaryBgColor",
+          "menuContainerClasses": "ank-bg-bgColor ank-borderWidth-1px ank-borderStyle-solid ank-borderColor-secondaryAccentColor ank-boxShadow-0__14px__36px__HASH000000OPA__0_12",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-6px ank-display-flex ank-flexDirection-column ank-gap-2px",
+          "menuRole": "listbox",
+          "itemRole": "option",
+          "renderMode": "overlay",
+          "overlayOrigin": "host",
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 6,
+          "closeOnSelect": true,
+          "selectedItemId": "en"
+        },
+        "components": [
+          "desktopLanguageLabel"
+        ]
+      }
+    },
+    {
+      "id": "headerMobileCluster",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-display-md-none ank-alignItems-center ank-gap-4px ank-marginInlineStart-auto",
+        "components": [
+          "mobileLanguage",
+          "headerMobileMenu"
+        ]
+      }
+    },
+    {
+      "id": "mobileLanguageLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,header.languageLabel",
+      "config": {
+        "tag": "span",
+        "text": "EN / ES",
+        "classes": "ank-fontSize-0_68rem ank-letterSpacing-0_12em"
+      }
+    },
+    {
+      "id": "mobileLanguage",
+      "type": "dropdown",
+      "eventInstructions": "setLanguage:event.eventData.value",
+      "valueInstructions": "set:config.dropdownConfig.ariaLabel,i18n,header.language;set:config.dropdownConfig.selectedItemId,language",
+      "config": {
+        "items": [
+          {
+            "id": "en",
+            "label": "EN",
+            "value": "en"
+          },
+          {
+            "id": "es",
+            "label": "ES",
+            "value": "es"
+          }
+        ],
+        "dropdownConfig": {
+          "ariaLabel": "Choose language",
+          "classes": "ank-position-relative ank-display-md-none",
+          "buttonClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minWidth-52px ank-minHeight-44px ank-bg-transparent ank-border-none ank-color-inherit ank-fontSize-0_68rem ank-letterSpacing-0_12em ank-cursor-pointer",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-minHeight-44px ank-paddingInline-18px ank-color-textColor ank-bg-bgColor ank-textDecoration-none ank-fontSize-0_7rem ank-letterSpacing-0_12em",
+          "selectedItemClasses": "ank-bg-secondaryBgColor",
+          "menuContainerClasses": "ank-bg-bgColor ank-borderWidth-1px ank-borderStyle-solid ank-borderColor-secondaryAccentColor ank-boxShadow-0__14px__36px__HASH000000OPA__0_12",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-6px ank-display-flex ank-flexDirection-column ank-gap-2px",
+          "menuRole": "listbox",
+          "itemRole": "option",
+          "renderMode": "overlay",
+          "overlayOrigin": "host",
+          "overlayMatchWidth": "origin",
+          "overlayOffsetY": 6,
+          "closeOnSelect": true,
+          "selectedItemId": "en"
+        },
+        "components": [
+          "mobileLanguageLabel"
+        ]
+      }
+    },
+    {
+      "id": "headerMobileMenuMount",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-md-none ank-width-100per",
+        "components": [],
+        "id": "thn-mobile-menu-anchor"
+      }
+    },
+    {
+      "id": "mobileMenuLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,header.mobileMenu",
+      "config": {
+        "tag": "span",
+        "text": "Menu",
+        "classes": "ank-display-none"
+      }
+    },
+    {
+      "id": "headerMobileMenu",
+      "type": "dropdown",
+      "eventInstructions": "navigateToUrl:event.eventData.href,event.eventData.target",
+      "valueInstructions": "set:config.dropdownConfig.ariaLabel,i18n,header.mobileMenu;set:config.items.0.label,i18n,nav.home;set:config.items.1.label,i18n,nav.narrative;set:config.items.2.label,i18n,nav.practice;set:config.items.3.label,i18n,nav.bridal;set:config.items.4.label,i18n,nav.journal;set:config.items.5.label,i18n,nav.contact",
+      "config": {
+        "items": [
+          {
+            "id": "home",
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "id": "narrative",
+            "label": "Narrative",
+            "href": "/the-narrative"
+          },
+          {
+            "id": "practice",
+            "label": "Practice",
+            "href": "/the-practice"
+          },
+          {
+            "id": "bridal",
+            "label": "Bridal",
+            "href": "/the-bridal-narrative"
+          },
+          {
+            "id": "journal",
+            "label": "Journal",
+            "href": "/the-journal"
+          },
+          {
+            "id": "contact",
+            "label": "Contact",
+            "href": "/contact"
+          }
+        ],
+        "dropdownConfig": {
+          "ariaLabel": "Main navigation",
+          "classes": "ank-display-md-none",
+          "buttonClasses": "ank-display-flex ank-alignItems-center ank-justifyContent-center ank-width-44px ank-height-44px ank-bg-transparent ank-border-none ank-color-inherit ank-cursor-pointer ank-p-0",
+          "itemLinkClasses": "ank-display-flex ank-alignItems-center ank-width-100per ank-minHeight-48px ank-paddingInline-8px ank-color-textColor ank-bg-bgColor ank-textDecoration-none ank-fontSize-0_76rem ank-letterSpacing-0_12em ank-textTransform-uppercase",
+          "menuContainerClasses": "ank-display-md-none ank-width-100per ank-paddingTop-12px ank-paddingBottom-8px ank-bg-bgColor",
+          "menuNavClasses": "ank-width-100per",
+          "menuListClasses": "ank-listStyle-none ank-m-0 ank-p-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-columnGap-24px",
+          "renderMode": "inline",
+          "menuContainerId": "thn-mobile-navigation",
+          "inlinePortalTargetSelector": "#thn-mobile-menu-anchor",
+          "closeOnSelect": true,
+          "selectedItemId": ""
+        },
+        "components": [
+          "mobileMenuIcon"
+        ]
+      }
+    },
+    {
+      "id": "mobileMenuIcon",
+      "type": "icon",
+      "config": {
+        "iconName": "menu",
+        "ariaHidden": true,
+        "classes": "ank-display-block ank-width-24px ank-height-24px ank-fontSize-1_65rem"
+      }
+    },
+    {
+      "id": "siteFooter",
+      "type": "container",
+      "config": {
+        "tag": "footer",
+        "classes": "thnBodyFont ank-width-100per ank-display-flex ank-justifyContent-center ank-bg-accentColor ank-color-textColor ank-paddingInline-24px ank-paddingBlock-64px ank-paddingBlock-xl-80px ank-boxSizing-borderMINbox",
+        "components": [
+          "footerFrame"
+        ]
+      }
+    },
+    {
+      "id": "footerFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-48px ank-gap-xl-72px",
+        "components": [
+          "footerIntro",
+          "footerLinks"
+        ]
+      }
+    },
+    {
+      "id": "footerIntro",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-16px",
+        "components": [
+          "footerStatement",
+          "footerNote",
+          "footerContact",
+          "footerCopyright"
+        ]
+      }
+    },
+    {
+      "id": "footerStatement",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,footer.statement",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnDisplayFont ank-m-0 ank-fontSize-2rem ank-fontSize-md-2_6rem ank-lineHeight-1_05"
+      }
+    },
+    {
+      "id": "footerNote",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,footer.note",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-maxWidth-48ch"
+      }
+    },
+    {
+      "id": "footerContactRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-textColor",
+        "components": []
+      }
+    },
+    {
+      "id": "footerContact",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,footer.contactCta.label;set:config.href,i18n,footer.contactCta.href",
+      "config": {
+        "id": "footerContact-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "footerContactRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "footerCopyright",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,footer.copyright",
+      "config": {
+        "tag": "small",
+        "text": "",
+        "classes": "thnSmallCopy ank-paddingTop-12px"
+      }
+    },
+    {
+      "id": "footerLinks",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-repeatSD2COM1frED ank-gap-12px ank-alignContent-flexMINstart",
+        "components": [
+          "footerPrivacy",
+          "footerTerms",
+          "footerCookies",
+          "footerDisclaimers"
+        ]
+      }
+    },
+    {
+      "id": "footerPrivacy",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,footer.privacy",
+      "config": {
+        "id": "footerPrivacy",
+        "href": "/privacy",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_72rem ank-letterSpacing-0_1em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "footerTerms",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,footer.terms",
+      "config": {
+        "id": "footerTerms",
+        "href": "/terms",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_72rem ank-letterSpacing-0_1em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "footerCookies",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,footer.cookies",
+      "config": {
+        "id": "footerCookies",
+        "href": "/cookie-policy",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_72rem ank-letterSpacing-0_1em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    },
+    {
+      "id": "footerDisclaimers",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,footer.disclaimers",
+      "config": {
+        "id": "footerDisclaimers",
+        "href": "/disclaimers",
+        "text": "",
+        "rel": "noopener",
+        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_72rem ank-letterSpacing-0_1em ank-textDecoration-none ank-textTransform-uppercase"
+      }
+    }
+  ]
+}

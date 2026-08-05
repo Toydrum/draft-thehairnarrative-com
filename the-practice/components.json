@@ -1,0 +1,1015 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-practice",
+  "components": [
+    {
+      "id": "heroSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor ank-minHeight-calcSD100svh__MIN__138pxED ank-minHeight-md-calcSD100svh__MIN__140pxED ank-alignItems-center",
+        "components": [
+          "heroFrame"
+        ],
+        "id": "hero-section"
+      }
+    },
+    {
+      "id": "heroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "heroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "thnHeroTitleCompact"
+      }
+    },
+    {
+      "id": "heroBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "heroStatus",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.status",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnSmallCopy ank-textTransform-uppercase ank-letterSpacing-0_1em"
+      }
+    },
+    {
+      "id": "heroCtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-textColor",
+        "components": []
+      }
+    },
+    {
+      "id": "heroCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.cta.label;set:config.href,i18n,page.sections.hero.cta.href",
+      "config": {
+        "id": "heroCta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "heroCtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "heroContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "heroEyebrow",
+          "heroTitle",
+          "heroBody",
+          "heroStatus",
+          "heroCta"
+        ]
+      }
+    },
+    {
+      "id": "heroVisual",
+      "type": "media",
+      "config": {
+        "id": "heroVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/13.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-100px ank-height-100px ank-width-md-180px ank-height-md-180px ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "eager"
+      }
+    },
+    {
+      "id": "heroFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-md-42px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "heroContent",
+          "heroVisual"
+        ]
+      }
+    },
+    {
+      "id": "manifestoSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-textColor ank-color-bgColor",
+        "components": [
+          "manifestoFrame"
+        ],
+        "id": "manifesto-section"
+      }
+    },
+    {
+      "id": "manifestoTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.manifesto.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "manifestoBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.manifesto.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "manifestoContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "manifestoTitle",
+          "manifestoBody"
+        ]
+      }
+    },
+    {
+      "id": "manifestoVisual",
+      "type": "media",
+      "config": {
+        "id": "manifestoVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/12.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "manifestoVisualField",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-220px ank-height-220px ank-width-xl-300px ank-height-xl-300px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-justifySelf-center ank-justifySelf-md-end",
+        "components": [
+          "manifestoVisual"
+        ]
+      }
+    },
+    {
+      "id": "manifestoFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-42px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "manifestoContent",
+          "manifestoVisualField"
+        ]
+      }
+    },
+    {
+      "id": "learning-pathSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "components": [
+          "learning-pathFrame"
+        ],
+        "id": "learning-path-section"
+      }
+    },
+    {
+      "id": "learning-pathEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "learning-pathTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "learning-pathContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "learning-pathEyebrow",
+          "learning-pathTitle"
+        ]
+      }
+    },
+    {
+      "id": "learning-pathCard1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.0.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "learning-pathCard1Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.0.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "learning-pathCard1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "learning-pathCard1Title",
+          "learning-pathCard1Body"
+        ]
+      }
+    },
+    {
+      "id": "learning-pathCard2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.1.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "learning-pathCard2Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.1.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "learning-pathCard2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "learning-pathCard2Title",
+          "learning-pathCard2Body"
+        ]
+      }
+    },
+    {
+      "id": "learning-pathCard3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.2.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "learning-pathCard3Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.2.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "learning-pathCard3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "learning-pathCard3Title",
+          "learning-pathCard3Body"
+        ]
+      }
+    },
+    {
+      "id": "learning-pathCard4Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.3.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "learning-pathCard4Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.3.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "learning-pathCard4",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "learning-pathCard4Title",
+          "learning-pathCard4Body"
+        ]
+      }
+    },
+    {
+      "id": "learning-pathGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-38px ank-gap-xl-48px",
+        "components": [
+          "learning-pathCard1",
+          "learning-pathCard2",
+          "learning-pathCard3",
+          "learning-pathCard4"
+        ]
+      }
+    },
+    {
+      "id": "learning-pathFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "components": [
+          "learning-pathContent",
+          "learning-pathGrid"
+        ]
+      }
+    },
+    {
+      "id": "learning-methodSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "learning-methodFrame"
+        ],
+        "id": "learning-method-section"
+      }
+    },
+    {
+      "id": "learning-methodEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "learning-methodTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "learning-methodContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "learning-methodEyebrow",
+          "learning-methodTitle"
+        ]
+      }
+    },
+    {
+      "id": "learning-methodCard1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.0.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "learning-methodCard1Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.0.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "learning-methodCard1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "learning-methodCard1Title",
+          "learning-methodCard1Body"
+        ]
+      }
+    },
+    {
+      "id": "learning-methodCard2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.1.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "learning-methodCard2Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.1.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "learning-methodCard2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "learning-methodCard2Title",
+          "learning-methodCard2Body"
+        ]
+      }
+    },
+    {
+      "id": "learning-methodCard3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.2.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "learning-methodCard3Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.2.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "learning-methodCard3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "learning-methodCard3Title",
+          "learning-methodCard3Body"
+        ]
+      }
+    },
+    {
+      "id": "learning-methodCard4Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.3.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "learning-methodCard4Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.3.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "learning-methodCard4",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "learning-methodCard4Title",
+          "learning-methodCard4Body"
+        ]
+      }
+    },
+    {
+      "id": "learning-methodGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-38px ank-gap-xl-48px",
+        "components": [
+          "learning-methodCard1",
+          "learning-methodCard2",
+          "learning-methodCard3",
+          "learning-methodCard4"
+        ]
+      }
+    },
+    {
+      "id": "learning-methodFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "components": [
+          "learning-methodContent",
+          "learning-methodGrid"
+        ]
+      }
+    },
+    {
+      "id": "future-formatsSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "components": [
+          "future-formatsFrame"
+        ],
+        "id": "future-formats-section"
+      }
+    },
+    {
+      "id": "future-formatsEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "future-formatsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "future-formatsContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "future-formatsEyebrow",
+          "future-formatsTitle"
+        ]
+      }
+    },
+    {
+      "id": "future-formatsCard1Status",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.0.status",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "future-formatsCard1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.0.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "future-formatsCard1Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.0.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "future-formatsCard1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "future-formatsCard1Status",
+          "future-formatsCard1Title",
+          "future-formatsCard1Body"
+        ]
+      }
+    },
+    {
+      "id": "future-formatsCard2Status",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.1.status",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "future-formatsCard2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.1.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "future-formatsCard2Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.1.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "future-formatsCard2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "future-formatsCard2Status",
+          "future-formatsCard2Title",
+          "future-formatsCard2Body"
+        ]
+      }
+    },
+    {
+      "id": "future-formatsCard3Status",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.2.status",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "future-formatsCard3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.2.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "future-formatsCard3Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.2.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "future-formatsCard3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "future-formatsCard3Status",
+          "future-formatsCard3Title",
+          "future-formatsCard3Body"
+        ]
+      }
+    },
+    {
+      "id": "future-formatsGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD3COM1frED ank-gap-38px ank-gap-xl-48px",
+        "components": [
+          "future-formatsCard1",
+          "future-formatsCard2",
+          "future-formatsCard3"
+        ]
+      }
+    },
+    {
+      "id": "future-formatsFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "components": [
+          "future-formatsContent",
+          "future-formatsGrid"
+        ]
+      }
+    },
+    {
+      "id": "closingSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-textColor ank-color-bgColor",
+        "components": [
+          "closingFrame"
+        ],
+        "id": "closing-section"
+      }
+    },
+    {
+      "id": "closingEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "closingTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "closingBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "closingCtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-bgColor",
+        "components": []
+      }
+    },
+    {
+      "id": "closingCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.cta.label;set:config.href,i18n,page.sections.closing.cta.href",
+      "config": {
+        "id": "closingCta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "closingCtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "closingContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "closingEyebrow",
+          "closingTitle",
+          "closingBody",
+          "closingCta"
+        ]
+      }
+    },
+    {
+      "id": "closingVisual",
+      "type": "media",
+      "config": {
+        "id": "closingVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/7.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "closingVisualField",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-220px ank-height-220px ank-width-xl-300px ank-height-xl-300px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-justifySelf-center ank-justifySelf-md-end",
+        "components": [
+          "closingVisual"
+        ]
+      }
+    },
+    {
+      "id": "closingFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gap-42px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "closingContent",
+          "closingVisualField"
+        ]
+      }
+    },
+    {
+      "id": "faqSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "faqFrame"
+        ],
+        "id": "faq-section"
+      }
+    },
+    {
+      "id": "faqEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faq.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "faqTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faq.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "faqAccordion",
+      "type": "accordion",
+      "config": {
+        "mode": "multiple",
+        "allowToggle": true,
+        "itemsSource": {
+          "source": "i18n",
+          "path": "page.faq.items"
+        },
+        "scrollBehavior": "none",
+        "containerClasses": "thnAccordion",
+        "defaultItemContainerClasses": "thnAccordionItem",
+        "defaultItemButtonConfig": {
+          "type": "button",
+          "classes": "thnAccordionButton",
+          "icon": "+"
+        },
+        "defaultItemPanelClasses": "thnAccordionPanel",
+        "toggleIconName": "+"
+      }
+    },
+    {
+      "id": "faqIntro",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-22px",
+        "components": [
+          "faqEyebrow",
+          "faqTitle"
+        ]
+      }
+    },
+    {
+      "id": "faqFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM4frED__minmaxSD0COM8frED ank-gap-48px ank-gap-xl-76px ank-alignItems-start",
+        "components": [
+          "faqIntro",
+          "faqAccordion"
+        ]
+      }
+    },
+    {
+      "id": "pageMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "thnBodyFont ank-width-100per ank-overflow-hidden ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "heroSection",
+          "manifestoSection",
+          "learning-pathSection",
+          "learning-methodSection",
+          "future-formatsSection",
+          "faqSection",
+          "closingSection"
+        ],
+        "id": "page-main"
+      }
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+name: Deploy test draft
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - test
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  validate:
+    name: Validate test draft
+    runs-on: ubuntu-latest
+    outputs:
+      artifact_id: ${{ steps.upload_plan.outputs.artifact-id }}
+      artifact_name: ${{ steps.prepare_plan.outputs.artifact_name }}
+      deploy_required: ${{ steps.provenance.outputs.deploy_required }}
+      draft_domain: ${{ steps.draft.outputs.domain }}
+      manifest_sha256: ${{ steps.prepare_plan.outputs.manifest_sha256 }}
+      version_id: ${{ steps.prepare_plan.outputs.version_id }}
+    steps:
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: '22'
+
+      - name: Verify protected target branch
+        shell: bash
+        env:
+          CURRENT_REF: ${{ github.ref }}
+          TARGET_REF: refs/heads/test
+        run: |
+          set -euo pipefail
+          if [[ "$CURRENT_REF" != "$TARGET_REF" ]]; then
+            echo "Test deploys must run from $TARGET_REF."
+            exit 1
+          fi
+
+      - name: Verify exact dev-to-test merged PR
+        id: provenance
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node tools/verify-promotion-commit.mjs --source=dev --target=test
+
+      - name: Read draft domain
+        id: draft
+        shell: bash
+        run: |
+          set -euo pipefail
+          draft_domain="$(node -e "process.stdout.write(JSON.parse(require('node:fs').readFileSync('draft-repo.config.json', 'utf8')).domain)")"
+          printf 'domain=%s\n' "$draft_domain" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare deterministic deployment plan
+        if: steps.provenance.outputs.deploy_required == 'true'
+        id: prepare_plan
+        shell: bash
+        env:
+          ARTIFACT_NAME: draft-plan-test-${{ github.run_id }}-${{ github.run_attempt }}-${{ github.sha }}
+          DRAFT_DOMAIN: ${{ steps.draft.outputs.domain }}
+        run: |
+          set -euo pipefail
+          artifact_dir="$GITHUB_WORKSPACE/.draft-deploy"
+          if [[ -L "$artifact_dir" ]]; then
+            rm -f -- "$artifact_dir"
+          elif [[ -e "$artifact_dir" ]]; then
+            test -d "$artifact_dir"
+            rm -rf -- "$artifact_dir"
+          fi
+          mkdir -- "$artifact_dir"
+          test -d "$artifact_dir" && test ! -L "$artifact_dir"
+          node tools/deploy-draft.mjs \
+            --domain="$DRAFT_DOMAIN" \
+            --draft-root=. \
+            --environment=test \
+            --plan-output=.draft-deploy/deployment-plan.json
+          (
+            cd "$artifact_dir"
+            sha256sum deployment-plan.json > deployment-plan.sha256
+          )
+          manifest_sha256="$(sha256sum "$artifact_dir/deployment-plan.sha256" | awk '{print $1}')"
+          version_id="test-${GITHUB_SHA}-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          {
+            printf 'artifact_name=%s\n' "$ARTIFACT_NAME"
+            printf 'manifest_sha256=%s\n' "$manifest_sha256"
+            printf 'version_id=%s\n' "$version_id"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Upload validated deployment plan
+        if: steps.provenance.outputs.deploy_required == 'true'
+        id: upload_plan
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: ${{ steps.prepare_plan.outputs.artifact_name }}
+          path: ${{ github.workspace }}/.draft-deploy
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
+          # The explicit artifact root is hidden; it was recreated above and contains only
+          # the closed plan plus its manifest. The deploy job rechecks the exact two-file set.
+          include-hidden-files: true
+
+  deploy:
+    name: Deploy validated test draft
+    needs: validate
+    if: needs.validate.outputs.deploy_required == 'true'
+    runs-on: ubuntu-latest
+    environment: test
+    concurrency:
+      group: draft-test-${{ github.repository }}
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      AWS_REGION: ${{ vars.AWS_REGION || 'us-east-1' }}
+      EXPECTED_ARTIFACT_ID: ${{ needs.validate.outputs.artifact_id }}
+      EXPECTED_ARTIFACT_NAME: ${{ needs.validate.outputs.artifact_name }}
+      EXPECTED_DOMAIN: ${{ vars.DRAFT_DOMAIN }}
+      EXPECTED_ENVIRONMENT: test
+      EXPECTED_MANIFEST_SHA256: ${{ needs.validate.outputs.manifest_sha256 }}
+      EXPECTED_ROLE_ARN: ${{ vars.AWS_ROLE_ARN }}
+      EXPECTED_VERSION_ID: ${{ needs.validate.outputs.version_id }}
+      TARGET_BRANCH: test
+    steps:
+      - name: Validate immutable artifact coordinates
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$EXPECTED_ARTIFACT_ID" =~ ^[1-9][0-9]{0,19}$ ]] || { echo "Invalid artifact coordinates."; exit 1; }
+          [[ "$EXPECTED_MANIFEST_SHA256" =~ ^[a-f0-9]{64}$ ]] || { echo "Invalid artifact coordinates."; exit 1; }
+          if [[ "$EXPECTED_ARTIFACT_NAME" =~ ^draft-plan-test-([1-9][0-9]{0,19})-([1-9][0-9]{0,9})-([a-f0-9]{40})$ ]]; then
+            artifact_run_id="${BASH_REMATCH[1]}"
+            artifact_run_attempt="${BASH_REMATCH[2]}"
+            artifact_sha="${BASH_REMATCH[3]}"
+          else
+            echo "Invalid artifact coordinates."
+            exit 1
+          fi
+          if [[ "$EXPECTED_VERSION_ID" =~ ^test-([a-f0-9]{40})-([1-9][0-9]{0,19})-([1-9][0-9]{0,9})$ ]]; then
+            version_sha="${BASH_REMATCH[1]}"
+            version_run_id="${BASH_REMATCH[2]}"
+            version_run_attempt="${BASH_REMATCH[3]}"
+          else
+            echo "Invalid artifact coordinates."
+            exit 1
+          fi
+          test "$artifact_run_id" = "$GITHUB_RUN_ID"
+          test "$artifact_sha" = "$GITHUB_SHA"
+          test "$version_sha" = "$GITHUB_SHA"
+          test "$version_run_id" = "$artifact_run_id"
+          test "$version_run_attempt" = "$artifact_run_attempt"
+
+      - name: Download validated deployment plan
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          artifact-ids: ${{ needs.validate.outputs.artifact_id }}
+          path: ${{ runner.temp }}/draft-deployment-artifact
+          merge-multiple: true
+
+      - name: Validate artifact manifest and closed deployment plan
+        shell: bash
+        env:
+          AUTHORING_ENDPOINT: ${{ vars.AUTHORING_ENDPOINT }}
+          PLAN_PATH: ${{ runner.temp }}/draft-deployment-artifact/deployment-plan.json
+        run: |
+          set -euo pipefail
+          artifact_dir="$(dirname "$PLAN_PATH")"
+          test -f "$PLAN_PATH" && test ! -L "$PLAN_PATH"
+          test -f "$artifact_dir/deployment-plan.sha256" && test ! -L "$artifact_dir/deployment-plan.sha256"
+          test "$(find "$artifact_dir" -mindepth 1 -printf '.' | wc -c)" -eq 2
+          actual_manifest_sha256="$(sha256sum "$artifact_dir/deployment-plan.sha256" | awk '{print $1}')"
+          test "$actual_manifest_sha256" = "$EXPECTED_MANIFEST_SHA256"
+          test "$(wc -l < "$artifact_dir/deployment-plan.sha256")" -eq 1
+          IFS= read -r manifest_line < "$artifact_dir/deployment-plan.sha256"
+          manifest_pattern='^[a-f0-9]{64}  deployment-plan\.json$'
+          [[ "$manifest_line" =~ $manifest_pattern ]]
+          (
+            cd "$artifact_dir"
+            sha256sum --check --strict deployment-plan.sha256 >/dev/null 2>&1
+          )
+          test -n "$EXPECTED_DOMAIN"
+          test "${#EXPECTED_DOMAIN}" -le 253
+          [[ "$EXPECTED_DOMAIN" =~ ^[a-z0-9]([a-z0-9.-]*[a-z0-9])?$ ]]
+          [[ ! "$EXPECTED_DOMAIN" =~ \.\. ]]
+          [[ "$AWS_REGION" =~ ^[a-z]{2}(-[a-z0-9]+)+-[0-9]+$ ]]
+          [[ "$EXPECTED_ROLE_ARN" =~ ^arn:[a-z0-9-]+:iam::[0-9]{12}:role/[A-Za-z0-9+=,.@_/-]+$ ]]
+          [[ "$EXPECTED_VERSION_ID" =~ ^[A-Za-z0-9._-]{1,128}$ ]]
+          case "$AUTHORING_ENDPOINT" in
+            https://*) ;;
+            *) echo "Invalid authoring endpoint."; exit 1 ;;
+          esac
+          if [[ "$AUTHORING_ENDPOINT" == *'?'* || "$AUTHORING_ENDPOINT" == *'#'* || "$AUTHORING_ENDPOINT" == *'@'* || "$AUTHORING_ENDPOINT" =~ [[:space:]] ]]; then
+            echo "Invalid authoring endpoint."
+            exit 1
+          fi
+          endpoint_remainder="${AUTHORING_ENDPOINT#https://}"
+          endpoint_authority="${endpoint_remainder%%/*}"
+          [[ "$endpoint_authority" =~ ^[A-Za-z0-9.-]+(:[0-9]{1,5})?$ ]] || {
+            echo "Invalid authoring endpoint."
+            exit 1
+          }
+          jq -e \
+            --arg domain "$EXPECTED_DOMAIN" \
+            --arg environment "$EXPECTED_ENVIRONMENT" \
+            --arg sha "$GITHUB_SHA" \
+            --arg version "$EXPECTED_VERSION_ID" '
+              def local_only_page:
+                ascii_downcase as $name
+                | [
+                    ".git", ".github", "_repos", "ai_notes", "findings", "errors-reports",
+                    "cvs_n_photos", "node_modules", "output", "reports", "logs", "devonly",
+                    ".superpowers", ".agent-coordination", ".draft-deploy", "tools"
+                  ]
+                | index($name) != null;
+              def expected_kind($domain):
+                split("/") as $parts
+                | if ($parts | length) == 2 and $parts[0] == $domain then
+                    if $parts[1] == "site-config.json" then "site-config"
+                    elif $parts[1] == "components.json" then "shared-components"
+                    elif $parts[1] == "variables.json" then "shared-variables"
+                    elif $parts[1] == "angora-combos.json" then "shared-angora-combos"
+                    else null end
+                  elif ($parts | length) == 3 and $parts[0] == $domain and $parts[1] == "i18n" and $parts[2] != ".json" and ($parts[2] | endswith(".json")) then "shared-i18n"
+                  elif ($parts | length) == 3 and $parts[0] == $domain and $parts[1] == "server" then
+                    if $parts[2] == "auth-profile-registry.json" then "server-auth-profile-registry"
+                    elif $parts[2] == "integrations.json" then "server-integrations"
+                    elif $parts[2] == "data-spaces.json" then "server-data-spaces"
+                    elif $parts[2] == "commerce.json" then "server-commerce"
+                    elif $parts[2] == "integration-bindings.json" then "server-integration-bindings"
+                    elif $parts[2] == "notification-policies.json" then "server-notification-policies"
+                    else null end
+                  elif ($parts | length) == 3 and $parts[0] == $domain and ($parts[1] | ascii_downcase) != "server" and ($parts[1] | local_only_page | not) then
+                    if $parts[2] == "page-config.json" then "page-config"
+                    elif $parts[2] == "components.json" then "page-components"
+                    elif $parts[2] == "variables.json" then "variables"
+                    elif $parts[2] == "angora-combos.json" then "angora-combos"
+                    else null end
+                  elif ($parts | length) == 4 and $parts[0] == $domain and $parts[1] != "i18n" and ($parts[1] | ascii_downcase) != "server" and ($parts[1] | local_only_page | not) and $parts[2] == "i18n" and $parts[3] != ".json" and ($parts[3] | endswith(".json")) then "i18n"
+                  else null end;
+              def expected_page_id($domain):
+                split("/") as $parts
+                | if ($parts | length) == 3 and $parts[0] == $domain and $parts[1] != "i18n" and ($parts[1] | ascii_downcase) != "server" and ($parts[1] | local_only_page | not) then $parts[1]
+                  elif ($parts | length) == 4 and $parts[0] == $domain and $parts[1] != "i18n" and ($parts[1] | ascii_downcase) != "server" and ($parts[1] | local_only_page | not) and $parts[2] == "i18n" then $parts[1]
+                  else null end;
+              def expected_lang($domain):
+                split("/") as $parts
+                | if ($parts | length) == 3 and $parts[0] == $domain and $parts[1] == "i18n" then ($parts[2] | rtrimstr(".json"))
+                  elif ($parts | length) == 4 and $parts[0] == $domain and $parts[1] != "i18n" and ($parts[1] | ascii_downcase) != "server" and ($parts[1] | local_only_page | not) and $parts[2] == "i18n" then ($parts[3] | rtrimstr(".json"))
+                  else null end;
+              def safe_path($domain):
+                . as $path
+                | ($path | split("/")) as $parts
+                | ($path | expected_kind($domain)) != null
+                  and all($parts[];
+                    length > 0
+                    and . != "."
+                    and . != ".."
+                    and (contains("%") | not)
+                    and (contains("\\") | not)
+                    and (test("[\u0000-\u001f\u007f]") | not));
+              type == "object"
+              and (keys_unsorted | sort) == (["actions", "domain", "environment", "files", "schemaVersion", "targetSha", "versionId"] | sort)
+              and .schemaVersion == 1
+              and .targetSha == $sha
+              and .domain == $domain
+              and .environment == $environment
+              and .versionId == $version
+              and .actions == ["upsertDraft", "publishDraft"]
+              and (.files | type == "array" and length > 0)
+              and ([.files[].path] as $paths | ($paths | length) == ($paths | unique | length))
+              and all(.files[];
+                if type != "object" then false
+                elif (.path | type) != "string" then false
+                else
+                  (.path | expected_page_id($domain)) as $page_id
+                  | (.path | expected_lang($domain)) as $lang
+                  | (keys_unsorted | sort) == ((["content", "kind", "path"] + (if $page_id == null then [] else ["pageId"] end) + (if $lang == null then [] else ["lang"] end)) | sort)
+                    and (.content | type == "object")
+                    and (.kind | type == "string")
+                    and (.path | safe_path($domain))
+                    and .kind == (.path | expected_kind($domain))
+                    and (.pageId // null) == $page_id
+                    and (.lang // null) == $lang
+                end)
+            ' "$PLAN_PATH" >/dev/null 2>&1
+
+      - name: Recheck current target tip
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          response_file="$(mktemp)"
+          trap 'rm -f "$response_file"' EXIT
+          if ! http_code="$(curl --silent \
+            --output "$response_file" \
+            --write-out '%{http_code}' \
+            --header 'Accept: application/vnd.github+json' \
+            --header "Authorization: Bearer $GITHUB_TOKEN" \
+            --header 'X-GitHub-Api-Version: 2026-03-10' \
+            "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/branches/$TARGET_BRANCH")"; then
+            echo "Target tip verification failed."
+            exit 1
+          fi
+          [[ "$http_code" == 2?? ]] || { echo "Target tip verification failed."; exit 1; }
+          target_sha="$(jq -er '.commit.sha | select(test("^[a-f0-9]{40}$"))' "$response_file" 2>/dev/null)" || {
+            echo "Target tip verification failed."
+            exit 1
+          }
+          test "$target_sha" = "$GITHUB_SHA"
+
+      - uses: aws-actions/configure-aws-credentials@d979d5b3a71173a29b74b5b88418bfda9437d885 # v6.1.1
+        with:
+          role-to-assume: ${{ env.EXPECTED_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Publish validated deployment plan
+        shell: bash
+        env:
+          AUTHORING_ENDPOINT: ${{ vars.AUTHORING_ENDPOINT }}
+          PLAN_PATH: ${{ runner.temp }}/draft-deployment-artifact/deployment-plan.json
+          UPDATED_BY: github-actions:${{ github.repository }}:${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          temp_dir="$(mktemp -d)"
+          trap 'rm -rf "$temp_dir"' EXIT
+          upsert_file="$temp_dir/upsert.json"
+          publish_file="$temp_dir/publish.json"
+          response_file="$temp_dir/response.json"
+          jq -c --arg updatedBy "$UPDATED_BY" '{
+            action: .actions[0],
+            domain,
+            environment,
+            versionId,
+            updatedBy: $updatedBy,
+            files
+          }' "$PLAN_PATH" > "$upsert_file"
+          jq -c --arg updatedBy "$UPDATED_BY" '{
+            action: .actions[1],
+            domain,
+            environment,
+            versionId,
+            updatedBy: $updatedBy
+          }' "$PLAN_PATH" > "$publish_file"
+          case "$AUTHORING_ENDPOINT" in
+            https://*.lambda-url.*.on.aws|https://*.lambda-url.*.on.aws/*) signing_service=lambda ;;
+            *) signing_service=execute-api ;;
+          esac
+          post_action() {
+            local payload_file="$1"
+            local http_code
+            local session_token_header
+            session_token_header="$(printf '%s: %s' 'x-amz-security-token' "$AWS_SESSION_TOKEN")"
+            if ! http_code="$(curl --silent \
+              --output "$response_file" \
+              --write-out '%{http_code}' \
+              --aws-sigv4 "aws:amz:${AWS_REGION}:${signing_service}" \
+              --user "${AWS_ACCESS_KEY_ID}:${AWS_SECRET_ACCESS_KEY}" \
+              --header 'content-type: application/json' \
+              --header "$session_token_header" \
+              --data-binary "@$payload_file" \
+              "$AUTHORING_ENDPOINT")"; then
+              echo "Draft authoring request failed."
+              return 1
+            fi
+            [[ "$http_code" == 2?? ]] || { echo "Draft authoring request failed."; return 1; }
+            jq -e 'type == "object" and .ok == true' "$response_file" >/dev/null 2>&1 || {
+              echo "Draft authoring request failed."
+              return 1
+            }
+          }
+          post_action "$upsert_file"
+          post_action "$publish_file"

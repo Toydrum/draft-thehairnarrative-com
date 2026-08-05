@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-narrative",
+  "lang": "en",
+  "dictionary": {
+    "page": {
+      "sections": {
+        "hero": {
+          "eyebrow": "THE NARRATIVE",
+          "title": "The beauty appears when we understand what is essential.",
+          "body": "This is the philosophy, story and way of looking that gives the work its form."
+        },
+        "essence": {
+          "eyebrow": "THE ESSENCE",
+          "title": "It is not only about hairstyling.",
+          "body": "The Hair Narrative is about the way we learn, observe and create. Every decision begins with the same conviction: beauty appears when we understand what is essential."
+        },
+        "philosophy": {
+          "eyebrow": "A PHILOSOPHY OF SIMPLICITY",
+          "title": "Simplicity is not doing less. It is understanding better.",
+          "body": "Observe before acting. Understand before executing. Create before copying. Creativity grows when we learn to look with attention, curiosity and intention."
+        },
+        "purpose": {
+          "eyebrow": "WHY IT EXISTS",
+          "title": "A digital ecosystem devoted to the art of hairstyling.",
+          "body": "It was not created to teach hairstyles, but to teach observation, understanding and creation through education, writing, research and practice. The purpose is not to form people who memorize techniques, but to accompany them as they develop a point of view of their own."
+        },
+        "story": {
+          "eyebrow": "MY STORY",
+          "title": "There are moments when the world becomes quiet.",
+          "paragraphs": [
+            "For me, they happen when my hands begin to work with hair. I do not think about the phone, unfinished tasks or time. I only observe: the direction of a strand, texture, light, proportions and movement.",
+            "While styling, I stop trying to control the result and begin a dialogue with the hair. Each decision responds to the one before it. The form appears slowly, almost silently, as if it had always been there waiting to be discovered.",
+            "I have never felt that I simply make hairstyles. I design forms and work with line, balance, texture, weight and movement. After more than ten years in this craft, I understand that what moves me most is not finishing a hairstyle. It is observing long enough to find the right form. That search gave rise to The Hair Narrative."
+          ]
+        },
+        "studio": {
+          "eyebrow": "THE STUDIO",
+          "title": "A way of working and thinking.",
+          "items": [
+            {
+              "title": "How I work",
+              "body": "I prefer to understand the hair rather than try to control it. I look for coherence between the person, the design and the intention."
+            },
+            {
+              "title": "What I read",
+              "body": "Design, architecture, art, nature and the psychology of perception help me understand why something feels balanced, light or harmonious."
+            },
+            {
+              "title": "What I choose",
+              "body": "I prefer a few products, a few tools and conscious decisions. Simplicity is also a form of respect for the craft."
+            },
+            {
+              "title": "How I think",
+              "body": "Designing a hairstyle means resolving small decisions with sensitivity. Creativity appears when curiosity, observation and experience work together."
+            }
+          ]
+        },
+        "values": {
+          "eyebrow": "THE VALUES",
+          "title": "Five ways of paying attention.",
+          "items": [
+            {
+              "title": "Curiosity",
+              "body": "I ask questions."
+            },
+            {
+              "title": "Observation",
+              "body": "I learn to look."
+            },
+            {
+              "title": "Presence",
+              "body": "I enter the process completely."
+            },
+            {
+              "title": "Intention",
+              "body": "I make conscious decisions."
+            },
+            {
+              "title": "Simplicity",
+              "body": "The result reflects only what is essential."
+            }
+          ]
+        },
+        "close": {
+          "eyebrow": "CONTINUE",
+          "title": "Every story begins with a conversation.",
+          "body": "If this way of observing resonates with you, I would love to hear from you.",
+          "ctaLabel": "WRITE TO NINA",
+          "ctaHref": "/contact",
+          "cta": {
+            "label": "WRITE TO NINA",
+            "href": "/contact"
+          }
+        }
+      }
+    }
+  }
+}

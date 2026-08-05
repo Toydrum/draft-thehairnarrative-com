@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "disclaimers",
+  "lang": "en",
+  "dictionary": {
+    "page": {
+      "sections": {},
+      "legal": {
+        "eyebrow": "LEGAL",
+        "title": "Disclaimers",
+        "updated": "Last updated: July 31, 2026",
+        "intro": "Clarity also means recognizing what no website, lesson or creative service can promise. These notices describe those limits.",
+        "sections": [
+          {
+            "id": "educational-disclaimer",
+            "title": "Educational disclaimer",
+            "paragraphs": [
+              "All content shared by The Hair Narrative is educational and informational.",
+              "Its purpose is to help people observe and understand the art of hairstyling from a deeper perspective, but every learning process is different. Practice, observation, judgment and experience remain essential parts of professional development.",
+              "General website content is not a substitute for individualized instruction or for the safety information supplied by the manufacturers of tools and products."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "results-disclaimer",
+            "title": "Results disclaimer",
+            "paragraphs": [
+              "Results from educational content, future courses, mentoring or resources depend on each person’s commitment, practice, prior experience and circumstances.",
+              "The Hair Narrative does not guarantee a particular professional, financial, commercial or creative result."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "bridal-disclaimer",
+            "title": "Bridal disclaimer",
+            "paragraphs": [
+              "Every hairstyle is created in response to the individual person and the conditions of the event, including hair type, texture, length, climate, duration and planned activities.",
+              "Professional products and techniques may be used to support the best possible wear, but humidity, wind, rain, movement and other external factors can influence the final appearance and duration of a hairstyle.",
+              "Reference images communicate a direction; they do not guarantee an identical reproduction. The specific scope and conditions of a bridal service will be established in the corresponding written agreement."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "copyright",
+            "title": "Copyright and creative use",
+            "paragraphs": [
+              "Knowledge grows when it is shared with respect. You may quote a short passage from an editorial article when you clearly name The Hair Narrative as the source and link to the original page.",
+              "You may not copy, reproduce, redistribute, sell, teach, adapt commercially or otherwise exploit The Hair Narrative’s courses, illustrations, methodology, exercises, workbooks, downloadable resources, photographs, texts or other original content without express written authorization.",
+              "Each page, image, illustration and text is part of a story built with time, curiosity and care.",
+              "Thank you for respecting that work."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "permission-requests",
+            "title": "Permission requests",
+            "paragraphs": [
+              "To request permission or ask about these notices, write to: hello@thehairnarrative.com"
+            ],
+            "bullets": []
+          }
+        ],
+        "review": "Preliminary editorial copy. Professional legal review is required before publication.",
+        "contactCta": {
+          "label": "EMAIL NINA",
+          "href": "mailto:hello@thehairnarrative.com?subject=Disclaimers%20question"
+        },
+        "nav": {
+          "privacy": "Privacy",
+          "terms": "Terms",
+          "cookies": "Cookies",
+          "disclaimers": "Disclaimers"
+        }
+      }
+    }
+  }
+}

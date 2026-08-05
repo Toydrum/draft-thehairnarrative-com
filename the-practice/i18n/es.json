@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-practice",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "sections": {
+        "hero": {
+          "eyebrow": "THE PRACTICE",
+          "title": "Aprende a observar, comprender y crear con confianza.",
+          "body": "Un espacio educativo para mujeres que desean convertir el peinado en su oficio, dejar de depender de técnicas copiadas y desarrollar una mirada propia.",
+          "status": "Los cursos, las mentorías y los workbooks están en preparación.",
+          "ctaLabel": "ESCRIBE SOBRE THE PRACTICE",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=Consulta%20sobre%20The%20Practice",
+          "cta": {
+            "label": "ESCRIBE SOBRE THE PRACTICE",
+            "href": "mailto:hello@thehairnarrative.com?subject=Consulta%20sobre%20The%20Practice"
+          }
+        },
+        "manifesto": {
+          "quote": "La simplicidad no es el resultado. Es el método.",
+          "body": "El objetivo no es memorizar peinados, sino comprender los principios que permiten crear con libertad.",
+          "title": "La simplicidad no es el resultado. Es el método."
+        },
+        "learning-path": {
+          "heading": "¿En qué momento de tu práctica estás?",
+          "items": [
+            {
+              "title": "The Beginner",
+              "body": "“No sé peinar.” — Aprende a hacer."
+            },
+            {
+              "title": "The Designer",
+              "body": "“Ya sé hacer peinados, pero sigo copiando.” — Aprende a observar y pensar."
+            },
+            {
+              "title": "The Professional",
+              "body": "“Ya sé diseñar peinados; ahora quiero vivir de esto.” — Aprende a ejercer."
+            },
+            {
+              "title": "The Signature Artist",
+              "body": "“Quiero encontrar una voz propia.” — Aprende a dejar huella."
+            }
+          ],
+          "title": "¿En qué momento de tu práctica estás?",
+          "eyebrow": "EL RECORRIDO"
+        },
+        "learning-method": {
+          "heading": "Otra forma de aprender.",
+          "items": [
+            {
+              "title": "Observa",
+              "body": "Presta atención a la forma, la textura, la luz, las proporciones y el movimiento."
+            },
+            {
+              "title": "Comprende",
+              "body": "Piensa antes de ejecutar. Desarrolla criterio en lugar de memorizar técnicas."
+            },
+            {
+              "title": "Crea",
+              "body": "Toma decisiones con intención y reduce tu dependencia de tutoriales."
+            },
+            {
+              "title": "Practica",
+              "body": "El desarrollo depende del compromiso, la práctica y el proceso individual de cada persona."
+            }
+          ],
+          "title": "Otra forma de aprender.",
+          "eyebrow": "EL MÉTODO"
+        },
+        "future-formats": {
+          "heading": "The Practice reunirá",
+          "statusLabel": "EN PREPARACIÓN",
+          "items": [
+            {
+              "title": "Cursos",
+              "body": "Experiencias de aprendizaje enfocadas en comprender principios, no en memorizar técnicas.",
+              "status": "EN PREPARACIÓN"
+            },
+            {
+              "title": "Mentorías",
+              "body": "Sesiones individuales mediante reserva previa cuando estén disponibles.",
+              "status": "EN PREPARACIÓN"
+            },
+            {
+              "title": "Workbooks",
+              "body": "Recursos descargables para continuar aprendiendo y practicando.",
+              "status": "EN PREPARACIÓN"
+            }
+          ],
+          "title": "The Practice reunirá",
+          "eyebrow": "FORMATOS FUTUROS"
+        },
+        "closing": {
+          "title": "Toda historia comienza con una conversación.",
+          "body": "Si quieres preguntar por futuros cursos, mentorías o workbooks, escribe directamente a Nina.",
+          "ctaLabel": "ESCRIBE SOBRE THE PRACTICE",
+          "eyebrow": "INICIA UNA CONVERSACIÓN",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=Consulta%20sobre%20The%20Practice",
+          "cta": {
+            "label": "ESCRIBE SOBRE THE PRACTICE",
+            "href": "mailto:hello@thehairnarrative.com?subject=Consulta%20sobre%20The%20Practice"
+          }
+        }
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Preguntas sobre The Practice.",
+        "items": [
+          {
+            "id": "faq-1",
+            "title": "¿Los programas ya están disponibles?",
+            "content": "Todavía no. Los cursos, las mentorías y los workbooks están en preparación. Este sitio aún no incluye inscripciones, reservas ni pagos."
+          },
+          {
+            "id": "faq-2",
+            "title": "¿Para quién es The Practice?",
+            "content": "Para mujeres que desean convertir el peinado en su oficio, dejar de depender de técnicas copiadas y desarrollar una mirada propia."
+          },
+          {
+            "id": "faq-3",
+            "title": "¿Necesito experiencia previa?",
+            "content": "El recorrido contempla cuatro etapas: principiante, diseñadora, profesional y artista con una voz propia."
+          },
+          {
+            "id": "faq-4",
+            "title": "¿Cuál es el enfoque de aprendizaje?",
+            "content": "Observar, comprender y crear con confianza; desarrollar criterio; comprender antes de ejecutar; y reducir la dependencia de tutoriales."
+          },
+          {
+            "id": "faq-5",
+            "title": "¿Cómo funcionará el acceso a los cursos?",
+            "content": "Cuando los cursos estén disponibles, el acceso será personal. La duración, las actualizaciones y las condiciones de reembolso se explicarán en cada página."
+          },
+          {
+            "id": "faq-6",
+            "title": "¿Cómo funcionarán las mentorías?",
+            "content": "Cuando se ofrezcan, las sesiones requerirán reserva previa. Las políticas de reprogramación, cancelación y tiempos de respuesta se comunicarán antes de confirmar."
+          },
+          {
+            "id": "faq-7",
+            "title": "¿Se garantizan resultados específicos?",
+            "content": "No. Los resultados dependen del compromiso, la práctica y el proceso individual de cada persona. No se garantizan resultados profesionales, económicos ni comerciales."
+          }
+        ]
+      }
+    }
+  }
+}

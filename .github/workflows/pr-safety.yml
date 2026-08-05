@@ -1,0 +1,13 @@
+name: PR safety
+
+on:
+  pull_request:
+    branches:
+      - dev
+
+permissions:
+  contents: read
+
+jobs:
+  pr-safety:
+    uses: LynxPardelle/zoolandingpage/.github/workflows/reusable-pr-safety.yml@c8b04670b5cca800ccf0f723815813897e596600

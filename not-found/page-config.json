@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "pageId": "not-found",
+  "domain": "thehairnarrative.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageMain",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "local_private_draft",
+    "source": "client brand book and approved Drive assets",
+    "versionTag": "v0.1.0"
+  },
+  "seo": {
+    "title": {
+      "en": "Page not found | The Hair Narrative",
+      "es": "Página no encontrada | The Hair Narrative"
+    },
+    "description": {
+      "en": "The page you were looking for could not be found.",
+      "es": "No fue posible encontrar la página que buscabas."
+    },
+    "canonical": "https://thehairnarrative.com/404",
+    "openGraph": {
+      "type": "website",
+      "site_name": "The Hair Narrative",
+      "title": {
+        "en": "Page not found | The Hair Narrative",
+        "es": "Página no encontrada | The Hair Narrative"
+      },
+      "description": {
+        "en": "The page you were looking for could not be found.",
+        "es": "No fue posible encontrar la página que buscabas."
+      },
+      "url": "https://thehairnarrative.com/404",
+      "locale": {
+        "en": "en_US",
+        "es": "es_MX"
+      }
+    },
+    "twitter": {
+      "card": "summary",
+      "title": {
+        "en": "Page not found | The Hair Narrative",
+        "es": "Página no encontrada | The Hair Narrative"
+      },
+      "description": {
+        "en": "The page you were looking for could not be found.",
+        "es": "No fue posible encontrar la página que buscabas."
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Page not found | The Hair Narrative",
+        "description": "The page you were looking for could not be found.",
+        "url": "https://thehairnarrative.com/404",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "The Hair Narrative",
+          "url": "https://thehairnarrative.com"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

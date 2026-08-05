@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "allPages",
+  "combos": {
+    "thnBodyFont": [
+      "ank-fontFamily-ArialCOM__HelveticaCOM__sansMINserif"
+    ],
+    "thnDisplayFont": [
+      "ank-fontFamily-GeorgiaCOM__CDBTimes__New__RomanCDBCOM__serif ank-fontWeight-400"
+    ],
+    "thnEyebrow": [
+      "ank-m-0 ank-fontFamily-ArialCOM__HelveticaCOM__sansMINserif ank-fontSize-0_7rem ank-fontWeight-400 ank-letterSpacing-0_18em ank-lineHeight-1_35 ank-textTransform-uppercase"
+    ],
+    "thnHeroTitle": [
+      "ank-m-0 ank-fontFamily-GeorgiaCOM__CDBTimes__New__RomanCDBCOM__serif ank-fontSize-3rem ank-fontSize-md-4_75rem ank-fontSize-xl-6_4rem ank-fontWeight-400 ank-lineHeight-0_98 ank-letterSpacing-MIN0_035em ank-maxWidth-11ch ank-overflowWrap-anywhere"
+    ],
+    "thnHeroTitleCompact": [
+      "ank-m-0 ank-fontFamily-GeorgiaCOM__CDBTimes__New__RomanCDBCOM__serif ank-fontSize-2_8rem ank-fontSize-md-4_25rem ank-fontSize-xl-5_2rem ank-fontWeight-400 ank-lineHeight-1 ank-letterSpacing-MIN0_03em ank-maxWidth-14ch ank-overflowWrap-anywhere"
+    ],
+    "thnEmailTitle": [
+      "ank-m-0 ank-fontFamily-GeorgiaCOM__CDBTimes__New__RomanCDBCOM__serif ank-fontSize-2_05rem ank-fontSize-md-3_2rem ank-fontSize-xl-3_8rem ank-fontWeight-400 ank-lineHeight-1_05 ank-letterSpacing-MIN0_025em ank-maxWidth-20ch"
+    ],
+    "thnSectionTitle": [
+      "ank-m-0 ank-fontFamily-GeorgiaCOM__CDBTimes__New__RomanCDBCOM__serif ank-fontSize-2_45rem ank-fontSize-md-3_75rem ank-fontSize-xl-4_65rem ank-fontWeight-400 ank-lineHeight-1_02 ank-letterSpacing-MIN0_025em ank-maxWidth-15ch ank-overflowWrap-anywhere"
+    ],
+    "thnCardTitle": [
+      "ank-m-0 ank-fontFamily-GeorgiaCOM__CDBTimes__New__RomanCDBCOM__serif ank-fontSize-1_9rem ank-fontSize-md-2_2rem ank-fontWeight-400 ank-lineHeight-1_08 ank-overflowWrap-anywhere"
+    ],
+    "thnBodyCopy": [
+      "ank-m-0 ank-fontFamily-ArialCOM__HelveticaCOM__sansMINserif ank-fontSize-0_96rem ank-fontSize-md-1_02rem ank-fontWeight-400 ank-lineHeight-1_72 ank-maxWidth-62ch ank-overflowWrap-anywhere"
+    ],
+    "thnSmallCopy": [
+      "ank-m-0 ank-fontFamily-ArialCOM__HelveticaCOM__sansMINserif ank-fontSize-0_78rem ank-fontWeight-400 ank-lineHeight-1_55 ank-letterSpacing-0_02em ank-overflowWrap-anywhere"
+    ],
+    "thnCtaLink": [
+      "ank-display-inlineMINflex ank-flexDirection-column ank-alignItems-flexMINstart ank-justifyContent-center ank-gap-7px ank-minHeight-44px ank-width-fitMINcontent ank-color-inherit ank-fontFamily-ArialCOM__HelveticaCOM__sansMINserif ank-fontSize-0_69rem ank-fontWeight-400 ank-letterSpacing-0_14em ank-lineHeight-1_3 ank-textDecoration-none ank-textTransform-uppercase ank-cursor-pointer"
+    ],
+    "thnCtaRule": [
+      "ank-display-block ank-width-52px ank-height-1px ank-flexShrink-0"
+    ],
+    "thnDoodle": [
+      "ank-display-block ank-objectFit-contain"
+    ],
+    "thnCard": [
+      "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-18px ank-paddingBlock-12px"
+    ],
+    "thnAccordion": [
+      "ank-width-100per ank-display-flex ank-flexDirection-column"
+    ],
+    "thnAccordionItem": [
+      "ank-width-100per ank-borderBottomWidth-1px ank-borderBottomStyle-solid ank-borderColor-secondaryAccentColor"
+    ],
+    "thnAccordionButton": [
+      "ank-width-100per ank-minHeight-64px ank-display-flex ank-alignItems-center ank-justifyContent-spaceMINbetween ank-gap-18px ank-paddingBlock-18px ank-paddingInline-0 ank-bg-transparent ank-border-none ank-color-inherit ank-fontFamily-GeorgiaCOM__CDBTimes__New__RomanCDBCOM__serif ank-fontSize-1_3rem ank-fontWeight-400 ank-lineHeight-1_25 ank-textAlign-left ank-cursor-pointer"
+    ],
+    "thnAccordionPanel": [
+      "ank-paddingBottom-22px ank-paddingInlineEnd-48px ank-fontFamily-ArialCOM__HelveticaCOM__sansMINserif ank-fontSize-0_94rem ank-lineHeight-1_7 ank-color-inherit"
+    ],
+    "thnLegalHeading": [
+      "ank-m-0 ank-fontFamily-GeorgiaCOM__CDBTimes__New__RomanCDBCOM__serif ank-fontSize-1_75rem ank-fontSize-md-2_1rem ank-fontWeight-400 ank-lineHeight-1_16"
+    ]
+  }
+}

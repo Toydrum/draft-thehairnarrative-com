@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "allPages",
+  "lang": "es",
+  "dictionary": {
+    "accessibility": {
+      "skip": "Saltar al contenido principal"
+    },
+    "header": {
+      "mobileMenu": "Navegación principal",
+      "language": "Elegir idioma",
+      "languageLabel": "EN / ES"
+    },
+    "nav": {
+      "home": "Inicio",
+      "narrative": "Narrative",
+      "practice": "Practice",
+      "bridal": "Bridal",
+      "journal": "Journal",
+      "contact": "Contacto"
+    },
+    "footer": {
+      "statement": "Observa. Comprende. Crea.",
+      "note": "Un espacio editorial y educativo dedicado al arte del peinado.",
+      "contact": "ESCRIBE A NINA",
+      "copyright": "© 2026 The Hair Narrative",
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "cookies": "Cookies",
+      "disclaimers": "Avisos",
+      "contactCta": {
+        "label": "ESCRIBE A NINA",
+        "href": "mailto:hello@thehairnarrative.com?subject=Hola%20The%20Hair%20Narrative"
+      }
+    }
+  }
+}

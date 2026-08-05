@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "privacy",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "sections": {},
+      "legal": {
+        "eyebrow": "LEGAL",
+        "title": "Aviso de privacidad",
+        "updated": "Última actualización: 31 de julio de 2026",
+        "intro": "La confianza nace de la claridad. Este aviso explica qué información puede tratar este sitio y qué puedes esperar de The Hair Narrative.",
+        "sections": [
+          {
+            "id": "before-we-begin",
+            "title": "Una nota antes de comenzar",
+            "paragraphs": [
+              "Creo que las relaciones sanas empiezan cuando ambas partes conocen las reglas del camino. Si tienes alguna duda sobre este aviso o sobre la manera en que se trata tu información, estaré encantada de responderla.",
+              "Gracias por estar aquí.",
+              "— Nina\nFundadora de The Hair Narrative"
+            ],
+            "bullets": []
+          },
+          {
+            "id": "website-today",
+            "title": "El sitio en este momento",
+            "paragraphs": [
+              "The Hair Narrative es actualmente un sitio editorial estático. No crea cuentas de usuario, acepta pagos, confirma reservas, procesa suscripciones a newsletters ni recopila información mediante formularios web.",
+              "Los enlaces de contacto abren tu propia aplicación de correo. Si decides escribir, tu mensaje se envía mediante los servicios de correo utilizados por ti y por The Hair Narrative; no se almacena en una base de datos administrada por el sitio."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "information-you-share",
+            "title": "Información que puedes decidir compartir",
+            "paragraphs": [
+              "Cuando contactas a The Hair Narrative por correo, puedes decidir proporcionar:",
+              "No envíes información personal sensible salvo que sea verdaderamente necesaria para atender tu solicitud."
+            ],
+            "bullets": [
+              "Tu nombre y dirección de correo electrónico.",
+              "La información que incluyas en tu mensaje.",
+              "Para una consulta de novias, datos como tu país, fecha y lugar del evento.",
+              "Para una consulta educativa, información sobre lo que te gustaría aprender o conversar."
+            ]
+          },
+          {
+            "id": "essential-technical-information",
+            "title": "Información técnica esencial",
+            "paragraphs": [
+              "Los servicios de alojamiento y seguridad necesarios para entregar este sitio pueden tratar automáticamente información técnica limitada, como la dirección IP, el tipo de navegador o dispositivo, la hora de la solicitud y las páginas solicitadas.",
+              "Esta información se utiliza únicamente para entregar, mantener y proteger el sitio. La versión actual no utiliza herramientas de analítica, publicidad ni seguimiento del comportamiento."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "how-information-is-used",
+            "title": "Cómo se utiliza la información",
+            "paragraphs": [
+              "La información que envías se utiliza únicamente para:",
+              "Escribir para preguntar por The Letter expresa tu interés, pero no completa una suscripción automatizada. Este sitio todavía no opera una lista de correo automática."
+            ],
+            "bullets": [
+              "Leer y responder tu mensaje.",
+              "Comprender y dar seguimiento a tu consulta.",
+              "Compartir la información que solicitaste sobre servicios para novias o propuestas educativas.",
+              "Operar y proteger el sitio.",
+              "Cumplir obligaciones legales o administrativas aplicables."
+            ]
+          },
+          {
+            "id": "sharing-information",
+            "title": "Con quién se comparte",
+            "paragraphs": [
+              "The Hair Narrative no vende ni renta información personal.",
+              "La información puede ser tratada únicamente por proveedores necesarios para el alojamiento, la seguridad o las comunicaciones por correo, o cuando una norma aplicable exija su entrega. Estos proveedores tratan la información conforme a sus propios servicios y políticas de privacidad."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "retention",
+            "title": "Conservación",
+            "paragraphs": [
+              "Las conversaciones por correo se conservan solo durante el tiempo razonablemente necesario para responder, mantener una relación activa, documentar una consulta de servicios o cumplir obligaciones aplicables.",
+              "Los registros técnicos esenciales que puedan generar los proveedores de alojamiento o seguridad se conservan conforme a sus periodos operativos."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "rights",
+            "title": "Tus decisiones y derechos",
+            "paragraphs": [
+              "De acuerdo con la legislación aplicable, puedes solicitar el acceso, la corrección, la actualización o la eliminación de la información personal compartida con The Hair Narrative, u oponerte a que continúe siendo utilizada.",
+              "Escribe a hello@thehairnarrative.com e indica qué necesitas. Antes de atender una solicitud, puede requerirse una verificación razonable de identidad."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "security",
+            "title": "Seguridad",
+            "paragraphs": [
+              "La información se trata con un cuidado razonable. Sin embargo, ningún correo electrónico ni transmisión por internet puede garantizarse como completamente seguro. Tenlo en cuenta antes de incluir información confidencial en un mensaje."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "changes",
+            "title": "Cambios a este aviso",
+            "paragraphs": [
+              "Este aviso se actualizará si el sitio incorpora formularios, suscripciones, pagos, analítica u otras herramientas que modifiquen el tratamiento de información personal. La versión vigente y su fecha de actualización permanecerán disponibles en esta página."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "contact",
+            "title": "Contacto",
+            "paragraphs": [
+              "Las preguntas relacionadas con privacidad pueden enviarse a: hello@thehairnarrative.com"
+            ],
+            "bullets": []
+          }
+        ],
+        "review": "Copy editorial preliminar. Se requiere revisión legal profesional antes de publicar.",
+        "contactCta": {
+          "label": "ESCRIBE A NINA",
+          "href": "mailto:hello@thehairnarrative.com?subject=Consulta%20sobre%20Aviso%20de%20privacidad"
+        },
+        "nav": {
+          "privacy": "Privacidad",
+          "terms": "Términos",
+          "cookies": "Cookies",
+          "disclaimers": "Avisos"
+        }
+      }
+    }
+  }
+}

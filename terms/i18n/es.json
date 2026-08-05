@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "terms",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "sections": {},
+      "legal": {
+        "eyebrow": "LEGAL",
+        "title": "Términos y condiciones",
+        "updated": "Última actualización: 31 de julio de 2026",
+        "intro": "Estos términos explican cómo puede utilizarse el sitio actual y qué representa —y qué no representa— su contenido.",
+        "sections": [
+          {
+            "id": "welcome",
+            "title": "Bienvenida",
+            "paragraphs": [
+              "Al navegar por este sitio aceptas estos términos de uso. La intención es mantener un espacio respetuoso, claro y seguro para todas las personas que conocen The Hair Narrative. Si no estás de acuerdo, deja de utilizar el sitio."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "about-this-website",
+            "title": "Sobre este sitio",
+            "paragraphs": [
+              "The Hair Narrative es un espacio editorial dedicado a observar, comprender y practicar el arte del peinado.",
+              "La versión actual ofrece contenido introductorio, educativo e informativo. Por ahora, el sitio no:",
+              "Estas funciones podrán incorporarse posteriormente bajo sus propias condiciones específicas."
+            ],
+            "bullets": [
+              "Vende cursos, mentorías ni recursos descargables.",
+              "Acepta o procesa pagos.",
+              "Crea cuentas de alumnas o clientes.",
+              "Confirma citas o reservas de servicios para novias.",
+              "Completa suscripciones a newsletters."
+            ]
+          },
+          {
+            "id": "email-inquiries",
+            "title": "Consultas por correo y servicios",
+            "paragraphs": [
+              "Los enlaces de contacto abren un mensaje de correo electrónico. Enviar un correo no crea por sí mismo una reserva, inscripción, relación profesional ni contrato de servicios.",
+              "La disponibilidad, el alcance, el precio, las condiciones de pago, las fechas y los demás términos relevantes deberán confirmarse por separado y por escrito antes de comenzar cualquier servicio.",
+              "Los servicios para novias estarán sujetos a un acuerdo escrito individual. Los anticipos, cambios de fecha, cancelaciones, traslados, horarios, viáticos y demás condiciones específicas se indicarán en ese acuerdo."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "intellectual-property",
+            "title": "Propiedad intelectual",
+            "paragraphs": [
+              "Los textos, artículos, ilustraciones, identidad visual, logotipo, elementos de marca y demás materiales originales presentados en este sitio pertenecen a The Hair Narrative o se utilizan con la autorización correspondiente.",
+              "Esta protección también se aplicará a fotografías, videos, cursos, workbooks, metodologías, ejercicios y recursos descargables cuando estén disponibles.",
+              "Salvo autorización previa por escrito, el contenido no puede copiarse, reproducirse, modificarse, distribuirse, venderse, impartirse ni utilizarse con fines comerciales."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "permitted-use",
+            "title": "Uso permitido",
+            "paragraphs": [
+              "Puedes navegar y utilizar el sitio para fines personales y no comerciales. Se pueden citar fragmentos breves de artículos editoriales siempre que se mencione claramente a The Hair Narrative y se incluya un enlace a la página original.",
+              "Puedes solicitar autorización para otros usos en hello@thehairnarrative.com."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "educational-content",
+            "title": "Contenido educativo y resultados",
+            "paragraphs": [
+              "El contenido del sitio se ofrece con fines educativos e informativos. El aprendizaje y el desarrollo profesional son procesos individuales que dependen de la práctica, la observación, la experiencia y las circunstancias de cada persona.",
+              "The Hair Narrative no garantiza resultados profesionales, económicos, comerciales o creativos específicos derivados de su contenido ni de futuros cursos, mentorías o recursos."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "bridal-content",
+            "title": "Contenido y servicios para novias",
+            "paragraphs": [
+              "La información sobre servicios para novias es introductoria y no constituye una reserva ni garantiza un resultado específico.",
+              "Cada peinado depende de características individuales y condiciones externas. Los términos finales del servicio se acordarán directamente con cada cliente y se documentarán en el acuerdo correspondiente."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "external-services",
+            "title": "Servicios y enlaces externos",
+            "paragraphs": [
+              "Si el sitio enlaza a correo electrónico, redes sociales u otro servicio externo, ese servicio opera bajo sus propios términos y prácticas de privacidad. The Hair Narrative no es responsable de la operación ni del contenido de plataformas de terceros."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "availability",
+            "title": "Disponibilidad y exactitud",
+            "paragraphs": [
+              "Se procura mantener el sitio claro y actualizado, pero su contenido puede corregirse, ampliarse o modificarse conforme evoluciona The Hair Narrative. No se garantiza una disponibilidad continua ni libre de errores."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "responsibility",
+            "title": "Responsabilidad",
+            "paragraphs": [
+              "En la medida permitida por la legislación aplicable, The Hair Narrative no es responsable de decisiones tomadas únicamente con base en el contenido general del sitio ni de interrupciones o acontecimientos fuera de su control razonable.",
+              "Nada de lo establecido en estos términos excluye derechos o responsabilidades que legalmente no puedan excluirse."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "changes-and-law",
+            "title": "Cambios y legislación aplicable",
+            "paragraphs": [
+              "Estos términos pueden actualizarse conforme evolucionen el sitio y sus servicios. La versión publicada en esta página será aplicable desde la fecha indicada.",
+              "Cualquier asunto relacionado con estos términos se interpretará conforme a la legislación aplicable, sin limitar derechos obligatorios de consumidores o de privacidad."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "contact",
+            "title": "Contacto",
+            "paragraphs": [
+              "Las preguntas sobre estos términos pueden enviarse a: hello@thehairnarrative.com"
+            ],
+            "bullets": []
+          }
+        ],
+        "review": "Copy editorial preliminar. Se requiere revisión legal profesional antes de publicar.",
+        "contactCta": {
+          "label": "ESCRIBE A NINA",
+          "href": "mailto:hello@thehairnarrative.com?subject=Consulta%20sobre%20T%C3%A9rminos%20y%20condiciones"
+        },
+        "nav": {
+          "privacy": "Privacidad",
+          "terms": "Términos",
+          "cookies": "Cookies",
+          "disclaimers": "Avisos"
+        }
+      }
+    }
+  }
+}

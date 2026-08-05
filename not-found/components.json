@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "not-found",
+  "components": [
+    {
+      "id": "not-foundSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor ank-minHeight-calcSD100svh__MIN__138pxED ank-minHeight-md-calcSD100svh__MIN__140pxED ank-alignItems-center",
+        "components": [
+          "not-foundFrame"
+        ],
+        "id": "not-found-section"
+      }
+    },
+    {
+      "id": "not-foundEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.not-found.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "not-foundTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.not-found.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "thnHeroTitle"
+      }
+    },
+    {
+      "id": "not-foundBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.not-found.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "not-foundCtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-textColor",
+        "components": []
+      }
+    },
+    {
+      "id": "not-foundCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.not-found.cta.label;set:config.href,i18n,page.sections.not-found.cta.href",
+      "config": {
+        "id": "not-foundCta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "not-foundCtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "not-foundSecondaryCtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-textColor",
+        "components": []
+      }
+    },
+    {
+      "id": "not-foundSecondaryCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.not-found.secondaryCta.label;set:config.href,i18n,page.sections.not-found.secondaryCta.href",
+      "config": {
+        "id": "not-foundSecondaryCta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "not-foundSecondaryCtaRule"
+        ],
+        "classes": "thnCtaLink ank-opacity-0_72"
+      }
+    },
+    {
+      "id": "not-foundContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "not-foundEyebrow",
+          "not-foundTitle",
+          "not-foundBody",
+          "not-foundCta",
+          "not-foundSecondaryCta"
+        ]
+      }
+    },
+    {
+      "id": "not-foundVisual",
+      "type": "media",
+      "config": {
+        "id": "not-foundVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/18.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-128px ank-height-128px ank-width-md-180px ank-height-md-180px ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "eager"
+      }
+    },
+    {
+      "id": "not-foundFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-md-42px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "not-foundContent",
+          "not-foundVisual"
+        ]
+      }
+    },
+    {
+      "id": "pageMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "thnBodyFont ank-width-100per ank-overflow-hidden ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "not-foundSection"
+        ],
+        "id": "page-main"
+      }
+    }
+  ]
+}

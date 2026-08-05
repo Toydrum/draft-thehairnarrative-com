@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "cookie-policy",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "sections": {},
+      "legal": {
+        "eyebrow": "LEGAL",
+        "title": "Política de cookies",
+        "updated": "Última actualización: 31 de julio de 2026",
+        "intro": "Esta política explica las tecnologías limitadas que se utilizan actualmente para entregar y proteger el sitio.",
+        "sections": [
+          {
+            "id": "what-cookies-are",
+            "title": "Qué son las cookies",
+            "paragraphs": [
+              "Las cookies son pequeños archivos que un sitio puede guardar en un dispositivo. Otras tecnologías similares, como el almacenamiento local, también pueden recordar una preferencia limitada en el navegador."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "current-use",
+            "title": "Qué utiliza actualmente este sitio",
+            "paragraphs": [
+              "La versión actual de The Hair Narrative utiliza únicamente tecnologías estrictamente necesarias para:",
+              "Algunas de estas funciones pueden ser proporcionadas por la infraestructura de alojamiento o seguridad del sitio."
+            ],
+            "bullets": [
+              "Entregar las páginas y los recursos del sitio.",
+              "Mantener la seguridad básica y la estabilidad técnica.",
+              "Recordar una preferencia de idioma, cuando esa función esté habilitada."
+            ]
+          },
+          {
+            "id": "not-used",
+            "title": "Qué no utiliza este sitio",
+            "paragraphs": [
+              "El sitio actual no instala intencionalmente:",
+              "Como no existen cookies opcionales habilitadas, el sitio no ofrece actualmente un panel independiente de preferencias de cookies."
+            ],
+            "bullets": [
+              "Cookies de analítica.",
+              "Cookies publicitarias o de marketing.",
+              "Cookies de seguimiento del comportamiento.",
+              "Píxeles de seguimiento de redes sociales.",
+              "Cookies destinadas a crear perfiles publicitarios."
+            ]
+          },
+          {
+            "id": "technical-logs",
+            "title": "Registros técnicos",
+            "paragraphs": [
+              "Los servicios de alojamiento o seguridad pueden generar registros esenciales de solicitudes. Estos registros no son cookies publicitarias y se utilizan únicamente para entregar, diagnosticar y proteger el sitio."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "browser-controls",
+            "title": "Controles del navegador",
+            "paragraphs": [
+              "Puedes revisar, eliminar o bloquear cookies y almacenamiento local desde la configuración de tu navegador. Bloquear tecnologías estrictamente necesarias podría afectar la preferencia de idioma o el funcionamiento básico del sitio."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "future-changes",
+            "title": "Cambios futuros",
+            "paragraphs": [
+              "Si posteriormente se incorporan herramientas de analítica, contenido incrustado, publicidad, pagos u otras tecnologías opcionales, esta política y los controles de consentimiento correspondientes se actualizarán antes de utilizarlas cuando el consentimiento sea obligatorio."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "contact",
+            "title": "Contacto",
+            "paragraphs": [
+              "Las preguntas sobre esta política pueden enviarse a: hello@thehairnarrative.com"
+            ],
+            "bullets": []
+          }
+        ],
+        "review": "Copy editorial preliminar. Se requiere revisión legal profesional antes de publicar.",
+        "contactCta": {
+          "label": "ESCRIBE A NINA",
+          "href": "mailto:hello@thehairnarrative.com?subject=Consulta%20sobre%20Pol%C3%ADtica%20de%20cookies"
+        },
+        "nav": {
+          "privacy": "Privacidad",
+          "terms": "Términos",
+          "cookies": "Cookies",
+          "disclaimers": "Avisos"
+        }
+      }
+    }
+  }
+}

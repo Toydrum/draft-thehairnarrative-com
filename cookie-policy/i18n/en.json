@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "cookie-policy",
+  "lang": "en",
+  "dictionary": {
+    "page": {
+      "sections": {},
+      "legal": {
+        "eyebrow": "LEGAL",
+        "title": "Cookie Policy",
+        "updated": "Last updated: July 31, 2026",
+        "intro": "This policy explains the limited technologies currently used to deliver and protect the website.",
+        "sections": [
+          {
+            "id": "what-cookies-are",
+            "title": "What cookies are",
+            "paragraphs": [
+              "Cookies are small files that a website may place on a device. Similar technologies, such as local storage, may also remember a limited preference in a browser."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "current-use",
+            "title": "What this website currently uses",
+            "paragraphs": [
+              "The current version of The Hair Narrative uses only technologies that are strictly necessary to:",
+              "Some of these functions may be provided by the website’s hosting or security infrastructure."
+            ],
+            "bullets": [
+              "Deliver pages and site resources.",
+              "Maintain basic security and technical stability.",
+              "Remember a language preference, where that preference is enabled."
+            ]
+          },
+          {
+            "id": "not-used",
+            "title": "What this website does not use",
+            "paragraphs": [
+              "The current site does not intentionally set:",
+              "Because no optional cookies are currently enabled, the site does not presently offer a separate cookie-preference panel."
+            ],
+            "bullets": [
+              "Analytics cookies.",
+              "Advertising or marketing cookies.",
+              "Behavioral-tracking cookies.",
+              "Social-media tracking pixels.",
+              "Cookies used to build advertising profiles."
+            ]
+          },
+          {
+            "id": "technical-logs",
+            "title": "Technical logs",
+            "paragraphs": [
+              "Hosting or security services may generate essential request logs. These logs are not advertising cookies and are used only to deliver, troubleshoot and protect the website."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "browser-controls",
+            "title": "Browser controls",
+            "paragraphs": [
+              "You can inspect, delete or block cookies and local storage through your browser settings. Blocking technologies that are strictly necessary may affect language preferences or basic site operation."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "future-changes",
+            "title": "Future changes",
+            "paragraphs": [
+              "If analytics, embedded media, advertising, payments or other optional technologies are added, this policy and the appropriate consent controls will be updated before those technologies are used where consent is required."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "contact",
+            "title": "Contact",
+            "paragraphs": [
+              "Questions about this policy may be sent to: hello@thehairnarrative.com"
+            ],
+            "bullets": []
+          }
+        ],
+        "review": "Preliminary editorial copy. Professional legal review is required before publication.",
+        "contactCta": {
+          "label": "EMAIL NINA",
+          "href": "mailto:hello@thehairnarrative.com?subject=Cookie%20Policy%20question"
+        },
+        "nav": {
+          "privacy": "Privacy",
+          "terms": "Terms",
+          "cookies": "Cookies",
+          "disclaimers": "Disclaimers"
+        }
+      }
+    }
+  }
+}

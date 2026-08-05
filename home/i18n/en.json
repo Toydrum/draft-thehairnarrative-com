@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "home",
+  "lang": "en",
+  "dictionary": {
+    "page": {
+      "sections": {
+        "hero": {
+          "eyebrow": "THE HAIR NARRATIVE",
+          "title": "Hairstyling, observed more deeply.",
+          "body": "An editorial and educational space devoted to form, movement and the quiet decisions behind the work.",
+          "ctaLabel": "DISCOVER THE NARRATIVE",
+          "ctaHref": "/the-narrative",
+          "cta": {
+            "label": "DISCOVER THE NARRATIVE",
+            "href": "/the-narrative"
+          }
+        },
+        "manifesto": {
+          "eyebrow": "A PHILOSOPHY OF SIMPLICITY",
+          "title": "Simplicity is not the result. It is the method.",
+          "body": "Observe before acting. Understand before executing. Create before copying."
+        },
+        "paths": {
+          "eyebrow": "TWO WAYS IN",
+          "title": "Practice the craft. Experience it personally.",
+          "body": "Two expressions of the same attentive way of working.",
+          "items": [
+            {
+              "title": "The Practice",
+              "body": "Courses, mentoring and workbooks for women developing a point of view of their own. In preparation.",
+              "ctaLabel": "EXPLORE THE PRACTICE",
+              "ctaHref": "/the-practice",
+              "icon": 24,
+              "cta": {
+                "label": "EXPLORE THE PRACTICE",
+                "href": "/the-practice"
+              }
+            },
+            {
+              "title": "The Bridal Narrative",
+              "body": "A calm, authentic destination bridal experience in Mexico, communicated entirely in English.",
+              "ctaLabel": "DISCOVER BRIDAL",
+              "ctaHref": "/the-bridal-narrative",
+              "icon": 36,
+              "cta": {
+                "label": "DISCOVER BRIDAL",
+                "href": "/the-bridal-narrative"
+              }
+            }
+          ]
+        },
+        "narrative": {
+          "eyebrow": "THE NARRATIVE",
+          "title": "The beauty appears when we understand what is essential.",
+          "body": "The philosophy, story, studio and values behind the work.",
+          "ctaLabel": "READ THE STORY",
+          "ctaHref": "/the-narrative",
+          "cta": {
+            "label": "READ THE STORY",
+            "href": "/the-narrative"
+          }
+        },
+        "journal-letter": {
+          "eyebrow": "WORDS AND NOTES",
+          "title": "A place to think through the work.",
+          "items": [
+            {
+              "title": "The Journal",
+              "body": "Notes on form, movement and attention. The editorial space is ready; there are no published entries yet.",
+              "ctaLabel": "EXPLORE THE JOURNAL",
+              "ctaHref": "/the-journal",
+              "icon": 24,
+              "cta": {
+                "label": "EXPLORE THE JOURNAL",
+                "href": "/the-journal"
+              }
+            },
+            {
+              "title": "The Letter",
+              "body": "A quiet future correspondence about observation, practice and creative work. No automated newsletter is active yet.",
+              "ctaLabel": "EMAIL NINA",
+              "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Letter",
+              "icon": 39,
+              "cta": {
+                "label": "EMAIL NINA",
+                "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter"
+              }
+            }
+          ]
+        },
+        "close": {
+          "eyebrow": "BEGIN HERE",
+          "title": "Every story begins with a conversation.",
+          "body": "Whether you are preparing for your wedding, looking to learn or simply want to say hello, I would love to hear from you.",
+          "ctaLabel": "START A CONVERSATION",
+          "ctaHref": "/contact",
+          "cta": {
+            "label": "START A CONVERSATION",
+            "href": "/contact"
+          }
+        }
+      }
+    }
+  }
+}

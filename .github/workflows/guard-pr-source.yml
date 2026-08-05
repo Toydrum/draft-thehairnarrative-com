@@ -1,0 +1,52 @@
+name: Guard PR source branch
+
+on:
+  pull_request:
+    branches:
+      - test
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Enforce promotion graph
+        shell: bash
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          HEAD_REF: ${{ github.head_ref }}
+          BASE_REPOSITORY: ${{ github.repository }}
+          HEAD_REPOSITORY: ${{ github.event.pull_request.head.repo.full_name }}
+        run: |
+          set -euo pipefail
+          base="$BASE_REF"
+          head="$HEAD_REF"
+          if [[ "$HEAD_REPOSITORY" != "$BASE_REPOSITORY" ]]; then
+            echo "Protected promotions must originate in the same repository."
+            exit 1
+          fi
+          if [[ "$base" == "test" && "$head" != "dev" ]]; then
+            echo "PRs into test must come from dev. Got: $head"
+            exit 1
+          fi
+          if [[ "$base" == "main" && "$head" != "test" ]]; then
+            echo "PRs into main must come from test. Got: $head"
+            exit 1
+          fi
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Validate protected draft
+        shell: bash
+        run: |
+          draft_domain="$(node -e "process.stdout.write(JSON.parse(require('node:fs').readFileSync('draft-repo.config.json', 'utf8')).domain)")"
+          node tools/deploy-draft.mjs --domain="$draft_domain" --draft-root=. --environment="$DRAFT_ENVIRONMENT" --validate-only=true
+        env:
+          DRAFT_ENVIRONMENT: ${{ github.base_ref == 'main' && 'production' || 'test' }}

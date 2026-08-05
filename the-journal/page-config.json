@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "pageId": "the-journal",
+  "domain": "thehairnarrative.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageMain",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "local_private_draft",
+    "source": "client brand book and approved Drive assets",
+    "versionTag": "v0.1.0"
+  },
+  "seo": {
+    "title": {
+      "en": "The Journal | The Hair Narrative",
+      "es": "The Journal | The Hair Narrative"
+    },
+    "description": {
+      "en": "An editorial space for notes on form, movement, observation and the practice of hairstyling.",
+      "es": "Un espacio editorial para notas sobre forma, movimiento, observación y la práctica del peinado."
+    },
+    "canonical": "https://thehairnarrative.com/the-journal",
+    "openGraph": {
+      "type": "website",
+      "site_name": "The Hair Narrative",
+      "title": {
+        "en": "The Journal | The Hair Narrative",
+        "es": "The Journal | The Hair Narrative"
+      },
+      "description": {
+        "en": "An editorial space for notes on form, movement, observation and the practice of hairstyling.",
+        "es": "Un espacio editorial para notas sobre forma, movimiento, observación y la práctica del peinado."
+      },
+      "url": "https://thehairnarrative.com/the-journal",
+      "locale": {
+        "en": "en_US",
+        "es": "es_MX"
+      }
+    },
+    "twitter": {
+      "card": "summary",
+      "title": {
+        "en": "The Journal | The Hair Narrative",
+        "es": "The Journal | The Hair Narrative"
+      },
+      "description": {
+        "en": "An editorial space for notes on form, movement, observation and the practice of hairstyling.",
+        "es": "Un espacio editorial para notas sobre forma, movimiento, observación y la práctica del peinado."
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "The Journal | The Hair Narrative",
+        "description": "An editorial space for notes on form, movement, observation and the practice of hairstyling.",
+        "url": "https://thehairnarrative.com/the-journal",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "The Hair Narrative",
+          "url": "https://thehairnarrative.com"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

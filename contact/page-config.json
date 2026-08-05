@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "pageId": "contact",
+  "domain": "thehairnarrative.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageMain",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "local_private_draft",
+    "source": "client brand book and approved Drive assets",
+    "versionTag": "v0.1.0"
+  },
+  "seo": {
+    "title": {
+      "en": "Contact | The Hair Narrative",
+      "es": "Contacto | The Hair Narrative"
+    },
+    "description": {
+      "en": "Write directly to Nina about bridal work, The Practice, The Letter or a general conversation.",
+      "es": "Escribe directamente a Nina sobre novias, The Practice, The Letter o una conversación general."
+    },
+    "canonical": "https://thehairnarrative.com/contact",
+    "openGraph": {
+      "type": "website",
+      "site_name": "The Hair Narrative",
+      "title": {
+        "en": "Contact | The Hair Narrative",
+        "es": "Contacto | The Hair Narrative"
+      },
+      "description": {
+        "en": "Write directly to Nina about bridal work, The Practice, The Letter or a general conversation.",
+        "es": "Escribe directamente a Nina sobre novias, The Practice, The Letter o una conversación general."
+      },
+      "url": "https://thehairnarrative.com/contact",
+      "locale": {
+        "en": "en_US",
+        "es": "es_MX"
+      }
+    },
+    "twitter": {
+      "card": "summary",
+      "title": {
+        "en": "Contact | The Hair Narrative",
+        "es": "Contacto | The Hair Narrative"
+      },
+      "description": {
+        "en": "Write directly to Nina about bridal work, The Practice, The Letter or a general conversation.",
+        "es": "Escribe directamente a Nina sobre novias, The Practice, The Letter o una conversación general."
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Contact | The Hair Narrative",
+        "description": "Write directly to Nina about bridal work, The Practice, The Letter or a general conversation.",
+        "url": "https://thehairnarrative.com/contact",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "The Hair Narrative",
+          "url": "https://thehairnarrative.com"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

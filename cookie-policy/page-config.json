@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "pageId": "cookie-policy",
+  "domain": "thehairnarrative.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageMain",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "local_private_draft",
+    "source": "client brand book and approved Drive assets",
+    "versionTag": "v0.1.0"
+  },
+  "seo": {
+    "title": {
+      "en": "Cookie Policy | The Hair Narrative",
+      "es": "Política de cookies | The Hair Narrative"
+    },
+    "description": {
+      "en": "Learn about the limited, strictly necessary technologies currently used by The Hair Narrative.",
+      "es": "Conoce las tecnologías limitadas y estrictamente necesarias que utiliza actualmente The Hair Narrative."
+    },
+    "canonical": "https://thehairnarrative.com/cookie-policy",
+    "openGraph": {
+      "type": "website",
+      "site_name": "The Hair Narrative",
+      "title": {
+        "en": "Cookie Policy | The Hair Narrative",
+        "es": "Política de cookies | The Hair Narrative"
+      },
+      "description": {
+        "en": "Learn about the limited, strictly necessary technologies currently used by The Hair Narrative.",
+        "es": "Conoce las tecnologías limitadas y estrictamente necesarias que utiliza actualmente The Hair Narrative."
+      },
+      "url": "https://thehairnarrative.com/cookie-policy",
+      "locale": {
+        "en": "en_US",
+        "es": "es_MX"
+      }
+    },
+    "twitter": {
+      "card": "summary",
+      "title": {
+        "en": "Cookie Policy | The Hair Narrative",
+        "es": "Política de cookies | The Hair Narrative"
+      },
+      "description": {
+        "en": "Learn about the limited, strictly necessary technologies currently used by The Hair Narrative.",
+        "es": "Conoce las tecnologías limitadas y estrictamente necesarias que utiliza actualmente The Hair Narrative."
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Cookie Policy | The Hair Narrative",
+        "description": "Learn about the limited, strictly necessary technologies currently used by The Hair Narrative.",
+        "url": "https://thehairnarrative.com/cookie-policy",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "The Hair Narrative",
+          "url": "https://thehairnarrative.com"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

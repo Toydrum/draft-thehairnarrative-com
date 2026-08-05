@@ -1,0 +1,769 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-bridal-narrative",
+  "components": [
+    {
+      "id": "heroSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor ank-minHeight-calcSD100svh__MIN__138pxED ank-minHeight-md-calcSD100svh__MIN__140pxED ank-alignItems-center",
+        "components": [
+          "heroFrame"
+        ],
+        "id": "hero-section"
+      }
+    },
+    {
+      "id": "heroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "heroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "thnHeroTitle"
+      }
+    },
+    {
+      "id": "heroBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "heroHelper",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.helperText",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnSmallCopy ank-opacity-0_72"
+      }
+    },
+    {
+      "id": "heroCtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-textColor",
+        "components": []
+      }
+    },
+    {
+      "id": "heroCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.cta.label;set:config.href,i18n,page.sections.hero.cta.href",
+      "config": {
+        "id": "heroCta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "heroCtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "heroContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "heroEyebrow",
+          "heroTitle",
+          "heroBody",
+          "heroHelper",
+          "heroCta"
+        ]
+      }
+    },
+    {
+      "id": "heroVisual",
+      "type": "media",
+      "config": {
+        "id": "heroVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/36.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-128px ank-height-128px ank-width-md-180px ank-height-md-180px ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "eager"
+      }
+    },
+    {
+      "id": "heroFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-md-42px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "heroContent",
+          "heroVisual"
+        ]
+      }
+    },
+    {
+      "id": "personal-by-designSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "components": [
+          "personal-by-designFrame"
+        ],
+        "id": "personal-by-design-section"
+      }
+    },
+    {
+      "id": "personal-by-designEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.personal-by-design.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "personal-by-designTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.personal-by-design.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "personal-by-designBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.personal-by-design.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "personal-by-designContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "personal-by-designEyebrow",
+          "personal-by-designTitle",
+          "personal-by-designBody"
+        ]
+      }
+    },
+    {
+      "id": "personal-by-designCard1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.personal-by-design.items.0.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "personal-by-designCard1Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.personal-by-design.items.0.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "personal-by-designCard1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "personal-by-designCard1Title",
+          "personal-by-designCard1Body"
+        ]
+      }
+    },
+    {
+      "id": "personal-by-designCard2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.personal-by-design.items.1.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "personal-by-designCard2Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.personal-by-design.items.1.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "personal-by-designCard2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "personal-by-designCard2Title",
+          "personal-by-designCard2Body"
+        ]
+      }
+    },
+    {
+      "id": "personal-by-designCard3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.personal-by-design.items.2.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "personal-by-designCard3Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.personal-by-design.items.2.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "personal-by-designCard3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "personal-by-designCard3Title",
+          "personal-by-designCard3Body"
+        ]
+      }
+    },
+    {
+      "id": "personal-by-designGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD3COM1frED ank-gap-38px ank-gap-xl-48px",
+        "components": [
+          "personal-by-designCard1",
+          "personal-by-designCard2",
+          "personal-by-designCard3"
+        ]
+      }
+    },
+    {
+      "id": "personal-by-designFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "components": [
+          "personal-by-designContent",
+          "personal-by-designGrid"
+        ]
+      }
+    },
+    {
+      "id": "statementSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-textColor ank-color-bgColor",
+        "components": [
+          "statementFrame"
+        ],
+        "id": "statement-section"
+      }
+    },
+    {
+      "id": "statementEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.statement.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "statementTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.statement.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "statementBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.statement.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "statementContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "statementEyebrow",
+          "statementTitle",
+          "statementBody"
+        ]
+      }
+    },
+    {
+      "id": "statementVisual",
+      "type": "media",
+      "config": {
+        "id": "statementVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/34.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "statementVisualField",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-220px ank-height-220px ank-width-xl-300px ank-height-xl-300px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-justifySelf-center ank-justifySelf-md-end",
+        "components": [
+          "statementVisual"
+        ]
+      }
+    },
+    {
+      "id": "statementFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-42px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "statementContent",
+          "statementVisualField"
+        ]
+      }
+    },
+    {
+      "id": "first-noteSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "first-noteFrame"
+        ],
+        "id": "first-note-section"
+      }
+    },
+    {
+      "id": "first-noteEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.first-note.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "first-noteTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.first-note.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "first-noteBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.first-note.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "first-noteCtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-textColor",
+        "components": []
+      }
+    },
+    {
+      "id": "first-noteCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.first-note.cta.label;set:config.href,i18n,page.sections.first-note.cta.href",
+      "config": {
+        "id": "first-noteCta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "first-noteCtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "first-noteContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "first-noteEyebrow",
+          "first-noteTitle",
+          "first-noteBody",
+          "first-noteList",
+          "first-noteCta"
+        ]
+      }
+    },
+    {
+      "id": "first-noteListItem1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.first-note.items.0",
+      "config": {
+        "tag": "li",
+        "text": "",
+        "classes": "thnBodyCopy ank-paddingBlock-5px"
+      }
+    },
+    {
+      "id": "first-noteListItem2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.first-note.items.1",
+      "config": {
+        "tag": "li",
+        "text": "",
+        "classes": "thnBodyCopy ank-paddingBlock-5px"
+      }
+    },
+    {
+      "id": "first-noteListItem3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.first-note.items.2",
+      "config": {
+        "tag": "li",
+        "text": "",
+        "classes": "thnBodyCopy ank-paddingBlock-5px"
+      }
+    },
+    {
+      "id": "first-noteListItem4",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.first-note.items.3",
+      "config": {
+        "tag": "li",
+        "text": "",
+        "classes": "thnBodyCopy ank-paddingBlock-5px"
+      }
+    },
+    {
+      "id": "first-noteList",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "classes": "ank-m-0 ank-paddingInlineStart-20px ank-display-flex ank-flexDirection-column ank-gap-2px",
+        "components": [
+          "first-noteListItem1",
+          "first-noteListItem2",
+          "first-noteListItem3",
+          "first-noteListItem4"
+        ]
+      }
+    },
+    {
+      "id": "first-noteVisual",
+      "type": "media",
+      "config": {
+        "id": "first-noteVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/37.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-128px ank-height-128px  ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "first-noteFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "first-noteContent",
+          "first-noteVisual"
+        ]
+      }
+    },
+    {
+      "id": "closingSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "components": [
+          "closingFrame"
+        ],
+        "id": "closing-section"
+      }
+    },
+    {
+      "id": "closingEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "closingTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "closingBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "closingHelper",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.helperText",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnSmallCopy ank-opacity-0_72"
+      }
+    },
+    {
+      "id": "closingCtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-textColor",
+        "components": []
+      }
+    },
+    {
+      "id": "closingCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.cta.label;set:config.href,i18n,page.sections.closing.cta.href",
+      "config": {
+        "id": "closingCta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "closingCtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "closingContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "closingEyebrow",
+          "closingTitle",
+          "closingBody",
+          "closingHelper",
+          "closingCta"
+        ]
+      }
+    },
+    {
+      "id": "closingVisual",
+      "type": "media",
+      "config": {
+        "id": "closingVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/39.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-128px ank-height-128px  ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "closingFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "closingContent",
+          "closingVisual"
+        ]
+      }
+    },
+    {
+      "id": "faqSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "faqFrame"
+        ],
+        "id": "faq-section"
+      }
+    },
+    {
+      "id": "faqEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faq.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "faqTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.faq.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "faqAccordion",
+      "type": "accordion",
+      "config": {
+        "mode": "multiple",
+        "allowToggle": true,
+        "itemsSource": {
+          "source": "i18n",
+          "path": "page.faq.items"
+        },
+        "scrollBehavior": "none",
+        "containerClasses": "thnAccordion",
+        "defaultItemContainerClasses": "thnAccordionItem",
+        "defaultItemButtonConfig": {
+          "type": "button",
+          "classes": "thnAccordionButton",
+          "icon": "+"
+        },
+        "defaultItemPanelClasses": "thnAccordionPanel",
+        "toggleIconName": "+"
+      }
+    },
+    {
+      "id": "faqIntro",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-22px",
+        "components": [
+          "faqEyebrow",
+          "faqTitle"
+        ]
+      }
+    },
+    {
+      "id": "faqFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM4frED__minmaxSD0COM8frED ank-gap-48px ank-gap-xl-76px ank-alignItems-start",
+        "components": [
+          "faqIntro",
+          "faqAccordion"
+        ]
+      }
+    },
+    {
+      "id": "pageMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "thnBodyFont ank-width-100per ank-overflow-hidden ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "heroSection",
+          "personal-by-designSection",
+          "statementSection",
+          "first-noteSection",
+          "faqSection",
+          "closingSection"
+        ],
+        "id": "page-main"
+      }
+    }
+  ]
+}

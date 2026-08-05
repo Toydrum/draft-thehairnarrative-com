@@ -1,0 +1,1027 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-narrative",
+  "components": [
+    {
+      "id": "heroSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor ank-minHeight-calcSD100svh__MIN__138pxED ank-minHeight-md-calcSD100svh__MIN__140pxED ank-alignItems-center",
+        "components": [
+          "heroFrame"
+        ],
+        "id": "hero-section"
+      }
+    },
+    {
+      "id": "heroEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "heroTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.title",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "thnHeroTitle"
+      }
+    },
+    {
+      "id": "heroBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "heroContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "heroEyebrow",
+          "heroTitle",
+          "heroBody"
+        ]
+      }
+    },
+    {
+      "id": "heroVisual",
+      "type": "media",
+      "config": {
+        "id": "heroVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/40.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-128px ank-height-128px ank-width-md-180px ank-height-md-180px ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "eager"
+      }
+    },
+    {
+      "id": "heroFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-md-42px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "heroContent",
+          "heroVisual"
+        ]
+      }
+    },
+    {
+      "id": "essenceSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "components": [
+          "essenceFrame"
+        ],
+        "id": "essence-section"
+      }
+    },
+    {
+      "id": "essenceEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.essence.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "essenceTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.essence.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "essenceBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.essence.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "essenceContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "essenceEyebrow",
+          "essenceTitle",
+          "essenceBody"
+        ]
+      }
+    },
+    {
+      "id": "essenceVisual",
+      "type": "media",
+      "config": {
+        "id": "essenceVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/41.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-128px ank-height-128px  ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "essenceFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "essenceContent",
+          "essenceVisual"
+        ]
+      }
+    },
+    {
+      "id": "philosophySection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-textColor ank-color-bgColor",
+        "components": [
+          "philosophyFrame"
+        ],
+        "id": "philosophy-section"
+      }
+    },
+    {
+      "id": "philosophyEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.philosophy.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "philosophyTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.philosophy.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "philosophyBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.philosophy.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "philosophyContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "philosophyEyebrow",
+          "philosophyTitle",
+          "philosophyBody"
+        ]
+      }
+    },
+    {
+      "id": "philosophyVisual",
+      "type": "media",
+      "config": {
+        "id": "philosophyVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/12.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "philosophyVisualField",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-220px ank-height-220px ank-width-xl-300px ank-height-xl-300px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-justifySelf-center ank-justifySelf-md-end",
+        "components": [
+          "philosophyVisual"
+        ]
+      }
+    },
+    {
+      "id": "philosophyFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gap-42px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "philosophyContent",
+          "philosophyVisualField"
+        ]
+      }
+    },
+    {
+      "id": "purposeSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "purposeFrame"
+        ],
+        "id": "purpose-section"
+      }
+    },
+    {
+      "id": "purposeEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.purpose.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "purposeTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.purpose.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "purposeBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.purpose.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "purposeContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "purposeEyebrow",
+          "purposeTitle",
+          "purposeBody"
+        ]
+      }
+    },
+    {
+      "id": "purposeVisual",
+      "type": "media",
+      "config": {
+        "id": "purposeVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/27.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-128px ank-height-128px  ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "purposeFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "purposeContent",
+          "purposeVisual"
+        ]
+      }
+    },
+    {
+      "id": "storySection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "components": [
+          "storyFrame"
+        ],
+        "id": "story-section"
+      }
+    },
+    {
+      "id": "storyEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.story.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "storyTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.story.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "storyContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "storyEyebrow",
+          "storyTitle"
+        ]
+      }
+    },
+    {
+      "id": "storyParagraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.story.paragraphs.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "storyParagraph2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.story.paragraphs.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "storyParagraph3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.story.paragraphs.2",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "storyProse",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-gap-20px ank-maxWidth-720px",
+        "components": [
+          "storyParagraph1",
+          "storyParagraph2",
+          "storyParagraph3"
+        ]
+      }
+    },
+    {
+      "id": "storyVisual",
+      "type": "media",
+      "config": {
+        "id": "storyVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/1.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-120px ank-height-120px ank-justifySelf-flexMINend",
+        "width": 120,
+        "height": 120,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "storyFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM5frED__minmaxSD0COM7frED ank-gap-42px ank-gap-xl-72px ank-alignItems-start",
+        "components": [
+          "storyContent",
+          "storyProse",
+          "storyVisual"
+        ]
+      }
+    },
+    {
+      "id": "studioSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "studioFrame"
+        ],
+        "id": "studio-section"
+      }
+    },
+    {
+      "id": "studioEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.studio.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "studioTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.studio.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "studioContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "studioEyebrow",
+          "studioTitle"
+        ]
+      }
+    },
+    {
+      "id": "studioCard1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.studio.items.0.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "studioCard1Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.studio.items.0.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "studioCard1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "studioCard1Title",
+          "studioCard1Body"
+        ]
+      }
+    },
+    {
+      "id": "studioCard2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.studio.items.1.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "studioCard2Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.studio.items.1.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "studioCard2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "studioCard2Title",
+          "studioCard2Body"
+        ]
+      }
+    },
+    {
+      "id": "studioCard3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.studio.items.2.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "studioCard3Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.studio.items.2.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "studioCard3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "studioCard3Title",
+          "studioCard3Body"
+        ]
+      }
+    },
+    {
+      "id": "studioCard4Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.studio.items.3.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "studioCard4Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.studio.items.3.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "studioCard4",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "studioCard4Title",
+          "studioCard4Body"
+        ]
+      }
+    },
+    {
+      "id": "studioGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-38px ank-gap-xl-48px",
+        "components": [
+          "studioCard1",
+          "studioCard2",
+          "studioCard3",
+          "studioCard4"
+        ]
+      }
+    },
+    {
+      "id": "studioFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "components": [
+          "studioContent",
+          "studioGrid"
+        ]
+      }
+    },
+    {
+      "id": "valuesSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "components": [
+          "valuesFrame"
+        ],
+        "id": "values-section"
+      }
+    },
+    {
+      "id": "valuesEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.values.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "valuesTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.values.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "valuesContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "valuesEyebrow",
+          "valuesTitle"
+        ]
+      }
+    },
+    {
+      "id": "valuesCard1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.values.items.0.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "valuesCard1Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.values.items.0.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "valuesCard1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "valuesCard1Title",
+          "valuesCard1Body"
+        ]
+      }
+    },
+    {
+      "id": "valuesCard2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.values.items.1.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "valuesCard2Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.values.items.1.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "valuesCard2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "valuesCard2Title",
+          "valuesCard2Body"
+        ]
+      }
+    },
+    {
+      "id": "valuesCard3Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.values.items.2.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "valuesCard3Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.values.items.2.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "valuesCard3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "valuesCard3Title",
+          "valuesCard3Body"
+        ]
+      }
+    },
+    {
+      "id": "valuesCard4Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.values.items.3.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "valuesCard4Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.values.items.3.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "valuesCard4",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "valuesCard4Title",
+          "valuesCard4Body"
+        ]
+      }
+    },
+    {
+      "id": "valuesCard5Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.values.items.4.title",
+      "config": {
+        "tag": "h3",
+        "text": "",
+        "classes": "thnCardTitle"
+      }
+    },
+    {
+      "id": "valuesCard5Body",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.values.items.4.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+      }
+    },
+    {
+      "id": "valuesCard5",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "thnCard",
+        "components": [
+          "valuesCard5Title",
+          "valuesCard5Body"
+        ]
+      }
+    },
+    {
+      "id": "valuesGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-repeatSD5COM1frED ank-gap-38px ank-gap-xl-48px",
+        "components": [
+          "valuesCard1",
+          "valuesCard2",
+          "valuesCard3",
+          "valuesCard4",
+          "valuesCard5"
+        ]
+      }
+    },
+    {
+      "id": "valuesFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "components": [
+          "valuesContent",
+          "valuesGrid"
+        ]
+      }
+    },
+    {
+      "id": "closeSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-textColor ank-color-bgColor",
+        "components": [
+          "closeFrame"
+        ],
+        "id": "close-section"
+      }
+    },
+    {
+      "id": "closeEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.close.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnEyebrow"
+      }
+    },
+    {
+      "id": "closeTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.close.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnSectionTitle"
+      }
+    },
+    {
+      "id": "closeBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.close.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBodyCopy"
+      }
+    },
+    {
+      "id": "closeCtaRule",
+      "type": "container",
+      "config": {
+        "tag": "span",
+        "classes": "thnCtaRule ank-bg-bgColor",
+        "components": []
+      }
+    },
+    {
+      "id": "closeCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.close.cta.label;set:config.href,i18n,page.sections.close.cta.href",
+      "config": {
+        "id": "closeCta-link",
+        "href": "/",
+        "text": "",
+        "rel": "noopener",
+        "components": [
+          "closeCtaRule"
+        ],
+        "classes": "thnCtaLink"
+      }
+    },
+    {
+      "id": "closeContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "components": [
+          "closeEyebrow",
+          "closeTitle",
+          "closeBody",
+          "closeCta"
+        ]
+      }
+    },
+    {
+      "id": "closeVisual",
+      "type": "media",
+      "config": {
+        "id": "closeVisual-image",
+        "tag": "image",
+        "src": "/drafts/thehairnarrative.com/assets/icons/7.svg",
+        "alt": " ",
+        "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
+        "width": 270,
+        "height": 270,
+        "decoding": "async",
+        "loading": "lazy"
+      }
+    },
+    {
+      "id": "closeVisualField",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-220px ank-height-220px ank-width-xl-300px ank-height-xl-300px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-justifySelf-center ank-justifySelf-md-end",
+        "components": [
+          "closeVisual"
+        ]
+      }
+    },
+    {
+      "id": "closeFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gap-42px ank-gap-xl-58px ank-alignItems-center",
+        "components": [
+          "closeContent",
+          "closeVisualField"
+        ]
+      }
+    },
+    {
+      "id": "pageMain",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "classes": "thnBodyFont ank-width-100per ank-overflow-hidden ank-bg-bgColor ank-color-textColor",
+        "components": [
+          "heroSection",
+          "essenceSection",
+          "philosophySection",
+          "purposeSection",
+          "storySection",
+          "studioSection",
+          "valuesSection",
+          "closeSection"
+        ],
+        "id": "page-main"
+      }
+    }
+  ]
+}

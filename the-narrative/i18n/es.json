@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-narrative",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "sections": {
+        "hero": {
+          "eyebrow": "THE NARRATIVE",
+          "title": "La belleza aparece cuando comprendemos lo esencial.",
+          "body": "Esta es la filosofía, la historia y la forma de mirar que le da sentido al trabajo."
+        },
+        "essence": {
+          "eyebrow": "LA ESENCIA",
+          "title": "No gira únicamente alrededor del peinado.",
+          "body": "The Hair Narrative gira alrededor de la manera en que aprendemos, observamos y creamos. Cada decisión nace de la misma convicción: la belleza aparece cuando comprendemos lo esencial."
+        },
+        "philosophy": {
+          "eyebrow": "UNA FILOSOFÍA DE SIMPLICIDAD",
+          "title": "La simplicidad no consiste en hacer menos, sino en comprender mejor.",
+          "body": "Observar antes de actuar. Comprender antes de ejecutar. Crear antes que copiar. La creatividad crece cuando aprendemos a mirar con atención, curiosidad e intención."
+        },
+        "purpose": {
+          "eyebrow": "POR QUÉ EXISTE",
+          "title": "Un ecosistema digital dedicado al arte del peinado.",
+          "body": "No nace para enseñar peinados, sino para enseñar a observar, comprender y crear desde la educación, la escritura, la investigación y la práctica. El propósito no es formar personas que memoricen técnicas, sino acompañarlas a desarrollar una mirada propia."
+        },
+        "story": {
+          "eyebrow": "MI HISTORIA",
+          "title": "Hay momentos en los que el mundo deja de hacer ruido.",
+          "paragraphs": [
+            "Para mí, suceden cuando mis manos empiezan a trabajar sobre el cabello. No pienso en el teléfono, en pendientes ni en el tiempo. Solo observo: la dirección de un mechón, la textura, la luz, las proporciones y el movimiento.",
+            "Mientras peino, dejo de intentar controlar el resultado y empiezo a dialogar con el cabello. Cada decisión responde a la anterior. La forma aparece poco a poco, casi en silencio, como si siempre hubiera estado ahí esperando ser descubierta.",
+            "Nunca he sentido que simplemente hago peinados. Diseño formas y trabajo con líneas, equilibrio, textura, peso y movimiento. Después de más de diez años en este oficio, comprendo que lo que más me apasiona no es terminar un peinado, sino observar lo suficiente para encontrar la forma correcta. Esa búsqueda dio origen a The Hair Narrative."
+          ]
+        },
+        "studio": {
+          "eyebrow": "EL ESTUDIO",
+          "title": "Una forma de trabajar y pensar.",
+          "items": [
+            {
+              "title": "Cómo trabajo",
+              "body": "Prefiero comprender el cabello que intentar dominarlo. Busco coherencia entre la persona, el diseño y la intención."
+            },
+            {
+              "title": "Qué leo",
+              "body": "El diseño, la arquitectura, el arte, la naturaleza y la psicología de la percepción me ayudan a comprender por qué algo se siente equilibrado, ligero o armonioso."
+            },
+            {
+              "title": "Qué elijo",
+              "body": "Prefiero pocos productos, pocas herramientas y decisiones conscientes. La simplicidad también es una forma de respeto hacia el oficio."
+            },
+            {
+              "title": "Cómo pienso",
+              "body": "Diseñar un peinado es resolver pequeñas decisiones con sensibilidad. La creatividad aparece cuando la curiosidad, la observación y la experiencia trabajan juntas."
+            }
+          ]
+        },
+        "values": {
+          "eyebrow": "LOS VALORES",
+          "title": "Cinco formas de prestar atención.",
+          "items": [
+            {
+              "title": "Curiosidad",
+              "body": "Me hago preguntas."
+            },
+            {
+              "title": "Observación",
+              "body": "Aprendo a mirar."
+            },
+            {
+              "title": "Presencia",
+              "body": "Me sumerjo por completo en el proceso."
+            },
+            {
+              "title": "Intención",
+              "body": "Tomo decisiones conscientes."
+            },
+            {
+              "title": "Simplicidad",
+              "body": "El resultado refleja solo lo esencial."
+            }
+          ]
+        },
+        "close": {
+          "eyebrow": "CONTINÚA",
+          "title": "Toda historia comienza con una conversación.",
+          "body": "Si esta forma de observar resuena contigo, me encantará leerte.",
+          "ctaLabel": "ESCRIBE A NINA",
+          "ctaHref": "/contact",
+          "cta": {
+            "label": "ESCRIBE A NINA",
+            "href": "/contact"
+          }
+        }
+      }
+    }
+  }
+}

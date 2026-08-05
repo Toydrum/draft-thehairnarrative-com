@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "terms",
+  "lang": "en",
+  "dictionary": {
+    "page": {
+      "sections": {},
+      "legal": {
+        "eyebrow": "LEGAL",
+        "title": "Terms & Conditions",
+        "updated": "Last updated: July 31, 2026",
+        "intro": "These terms describe how the current website may be used and what its content does—and does not—represent.",
+        "sections": [
+          {
+            "id": "welcome",
+            "title": "Welcome",
+            "paragraphs": [
+              "By browsing this website, you agree to these terms of use. The intention is to maintain a respectful, clear and safe space for everyone who encounters The Hair Narrative. If you do not agree with these terms, please stop using the site."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "about-this-website",
+            "title": "About this website",
+            "paragraphs": [
+              "The Hair Narrative is an editorial space dedicated to observing, understanding and practising the art of hairstyling.",
+              "The current website provides introductory, educational and informational content. It does not currently:",
+              "These functions may be introduced later under their own specific conditions."
+            ],
+            "bullets": [
+              "Sell courses, mentoring or downloadable resources.",
+              "Accept or process payments.",
+              "Create student or client accounts.",
+              "Confirm appointments or bridal reservations.",
+              "Complete newsletter subscriptions."
+            ]
+          },
+          {
+            "id": "email-inquiries",
+            "title": "Email inquiries and services",
+            "paragraphs": [
+              "The contact links on this website open an email message. Sending an email does not by itself create a reservation, enrolment, professional relationship or service contract.",
+              "Availability, scope, price, payment conditions, scheduling and other relevant terms must be confirmed separately in writing before any service begins.",
+              "Bridal services are subject to an individual written agreement. Deposits, date changes, cancellations, travel, schedules, expenses and other service-specific conditions will be stated in that agreement."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "intellectual-property",
+            "title": "Intellectual property",
+            "paragraphs": [
+              "The texts, articles, illustrations, visual identity, logo, brand elements and other original materials presented on this website belong to The Hair Narrative or are used with the corresponding authorization.",
+              "This protection also applies to photographs, videos, courses, workbooks, methods, exercises and downloadable resources if they are made available in the future.",
+              "Unless written permission has been granted, this content may not be copied, reproduced, modified, distributed, sold, taught or used commercially."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "permitted-use",
+            "title": "Permitted use",
+            "paragraphs": [
+              "You may browse and use the website for personal and non-commercial purposes. Short excerpts from editorial articles may be quoted when The Hair Narrative is clearly credited and a link to the original page is included.",
+              "Authorization to use other materials may be requested at hello@thehairnarrative.com."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "educational-content",
+            "title": "Educational content and results",
+            "paragraphs": [
+              "Website content is provided for educational and informational purposes. Learning and professional development are individual processes that depend on practice, observation, experience and personal circumstances.",
+              "The Hair Narrative does not guarantee specific professional, financial, commercial or creative results from using its content or from any future course, mentoring session or resource."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "bridal-content",
+            "title": "Bridal content and services",
+            "paragraphs": [
+              "Information about bridal work is introductory and does not constitute a booking or a guarantee of a specific result.",
+              "Each hairstyle depends on individual characteristics and external conditions. Final service terms will be agreed directly with each client and recorded in the corresponding written agreement."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "external-services",
+            "title": "External services and links",
+            "paragraphs": [
+              "If the site links to email, social networks or another external service, that service operates under its own terms and privacy practices. The Hair Narrative is not responsible for the operation or content of third-party platforms."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "availability",
+            "title": "Availability and accuracy",
+            "paragraphs": [
+              "Reasonable care is taken to keep the website clear and current, but its content may be corrected, expanded or changed as The Hair Narrative develops. Continuous or error-free availability cannot be guaranteed."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "responsibility",
+            "title": "Responsibility",
+            "paragraphs": [
+              "To the extent permitted by applicable law, The Hair Narrative is not responsible for decisions made solely on the basis of general website content, or for interruptions and events outside its reasonable control.",
+              "Nothing in these terms excludes rights or responsibilities that cannot legally be excluded."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "changes-and-law",
+            "title": "Changes and applicable law",
+            "paragraphs": [
+              "These terms may be updated as the website and its services evolve. The version published on this page applies from the date shown above.",
+              "Any matter related to these terms will be interpreted in accordance with applicable law, without limiting any mandatory consumer or privacy rights."
+            ],
+            "bullets": []
+          },
+          {
+            "id": "contact",
+            "title": "Contact",
+            "paragraphs": [
+              "Questions about these terms may be sent to: hello@thehairnarrative.com"
+            ],
+            "bullets": []
+          }
+        ],
+        "review": "Preliminary editorial copy. Professional legal review is required before publication.",
+        "contactCta": {
+          "label": "EMAIL NINA",
+          "href": "mailto:hello@thehairnarrative.com?subject=Terms%20%26%20Conditions%20question"
+        },
+        "nav": {
+          "privacy": "Privacy",
+          "terms": "Terms",
+          "cookies": "Cookies",
+          "disclaimers": "Disclaimers"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "pageId": "the-practice",
+  "domain": "thehairnarrative.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageMain",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "local_private_draft",
+    "source": "client brand book and approved Drive assets",
+    "versionTag": "v0.1.0"
+  },
+  "seo": {
+    "title": {
+      "en": "The Practice | The Hair Narrative",
+      "es": "The Practice | The Hair Narrative"
+    },
+    "description": {
+      "en": "An educational space for learning to observe, understand and create hairstyling with confidence.",
+      "es": "Un espacio educativo para aprender a observar, comprender y crear peinados con confianza."
+    },
+    "canonical": "https://thehairnarrative.com/the-practice",
+    "openGraph": {
+      "type": "website",
+      "site_name": "The Hair Narrative",
+      "title": {
+        "en": "The Practice | The Hair Narrative",
+        "es": "The Practice | The Hair Narrative"
+      },
+      "description": {
+        "en": "An educational space for learning to observe, understand and create hairstyling with confidence.",
+        "es": "Un espacio educativo para aprender a observar, comprender y crear peinados con confianza."
+      },
+      "url": "https://thehairnarrative.com/the-practice",
+      "locale": {
+        "en": "en_US",
+        "es": "es_MX"
+      }
+    },
+    "twitter": {
+      "card": "summary",
+      "title": {
+        "en": "The Practice | The Hair Narrative",
+        "es": "The Practice | The Hair Narrative"
+      },
+      "description": {
+        "en": "An educational space for learning to observe, understand and create hairstyling with confidence.",
+        "es": "Un espacio educativo para aprender a observar, comprender y crear peinados con confianza."
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "The Practice | The Hair Narrative",
+        "description": "An educational space for learning to observe, understand and create hairstyling with confidence.",
+        "url": "https://thehairnarrative.com/the-practice",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "The Hair Narrative",
+          "url": "https://thehairnarrative.com"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

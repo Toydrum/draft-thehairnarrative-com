@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "pageId": "the-narrative",
+  "domain": "thehairnarrative.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageMain",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "local_private_draft",
+    "source": "client brand book and approved Drive assets",
+    "versionTag": "v0.1.0"
+  },
+  "seo": {
+    "title": {
+      "en": "The Narrative | The Hair Narrative",
+      "es": "The Narrative | The Hair Narrative"
+    },
+    "description": {
+      "en": "The philosophy, purpose, story, studio and values behind The Hair Narrative.",
+      "es": "La filosofía, el propósito, la historia, el estudio y los valores detrás de The Hair Narrative."
+    },
+    "canonical": "https://thehairnarrative.com/the-narrative",
+    "openGraph": {
+      "type": "website",
+      "site_name": "The Hair Narrative",
+      "title": {
+        "en": "The Narrative | The Hair Narrative",
+        "es": "The Narrative | The Hair Narrative"
+      },
+      "description": {
+        "en": "The philosophy, purpose, story, studio and values behind The Hair Narrative.",
+        "es": "La filosofía, el propósito, la historia, el estudio y los valores detrás de The Hair Narrative."
+      },
+      "url": "https://thehairnarrative.com/the-narrative",
+      "locale": {
+        "en": "en_US",
+        "es": "es_MX"
+      }
+    },
+    "twitter": {
+      "card": "summary",
+      "title": {
+        "en": "The Narrative | The Hair Narrative",
+        "es": "The Narrative | The Hair Narrative"
+      },
+      "description": {
+        "en": "The philosophy, purpose, story, studio and values behind The Hair Narrative.",
+        "es": "La filosofía, el propósito, la historia, el estudio y los valores detrás de The Hair Narrative."
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "The Narrative | The Hair Narrative",
+        "description": "The philosophy, purpose, story, studio and values behind The Hair Narrative.",
+        "url": "https://thehairnarrative.com/the-narrative",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "The Hair Narrative",
+          "url": "https://thehairnarrative.com"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

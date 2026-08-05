@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-practice",
+  "lang": "en",
+  "dictionary": {
+    "page": {
+      "sections": {
+        "hero": {
+          "eyebrow": "THE PRACTICE",
+          "title": "Learn to observe, understand and create with confidence.",
+          "body": "An educational space for women who want to make hairstyling their profession, move beyond copied techniques and develop a point of view of their own.",
+          "status": "Courses, mentoring and workbooks are in preparation.",
+          "ctaLabel": "ASK ABOUT THE PRACTICE",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry",
+          "cta": {
+            "label": "ASK ABOUT THE PRACTICE",
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry"
+          }
+        },
+        "manifesto": {
+          "quote": "Simplicity is not the result. It is the method.",
+          "body": "The aim is not to memorize hairstyles, but to understand the principles that make it possible to create freely.",
+          "title": "Simplicity is not the result. It is the method."
+        },
+        "learning-path": {
+          "heading": "Where are you in your practice?",
+          "items": [
+            {
+              "title": "The Beginner",
+              "body": "“I don’t know how to style hair.” — Learn by doing."
+            },
+            {
+              "title": "The Designer",
+              "body": "“I know how to create hairstyles, but I still copy.” — Learn to observe and think."
+            },
+            {
+              "title": "The Professional",
+              "body": "“I know how to design hairstyles; now I want to make this my profession.” — Learn to practice professionally."
+            },
+            {
+              "title": "The Signature Artist",
+              "body": "“I want to find a voice of my own.” — Learn to leave a mark."
+            }
+          ],
+          "title": "Where are you in your practice?",
+          "eyebrow": "THE LEARNING PATH"
+        },
+        "learning-method": {
+          "heading": "A different way of learning.",
+          "items": [
+            {
+              "title": "Observe",
+              "body": "Pay attention to form, texture, light, proportions and movement."
+            },
+            {
+              "title": "Understand",
+              "body": "Think before executing. Develop judgment instead of memorizing techniques."
+            },
+            {
+              "title": "Create",
+              "body": "Make intentional decisions and reduce your dependence on tutorials."
+            },
+            {
+              "title": "Practice",
+              "body": "Growth depends on commitment, practice and each person’s individual process."
+            }
+          ],
+          "title": "A different way of learning.",
+          "eyebrow": "THE METHOD"
+        },
+        "future-formats": {
+          "heading": "The Practice will bring together",
+          "statusLabel": "IN PREPARATION",
+          "items": [
+            {
+              "title": "Courses",
+              "body": "Learning experiences focused on understanding principles rather than memorizing techniques.",
+              "status": "IN PREPARATION"
+            },
+            {
+              "title": "Mentoring",
+              "body": "Individual sessions offered by prior reservation when available.",
+              "status": "IN PREPARATION"
+            },
+            {
+              "title": "Workbooks",
+              "body": "Downloadable resources for continued learning and practice.",
+              "status": "IN PREPARATION"
+            }
+          ],
+          "title": "The Practice will bring together",
+          "eyebrow": "FUTURE FORMATS"
+        },
+        "closing": {
+          "title": "Every story begins with a conversation.",
+          "body": "If you want to ask about future courses, mentoring or workbooks, write to Nina directly.",
+          "ctaLabel": "EMAIL ABOUT THE PRACTICE",
+          "eyebrow": "BEGIN A CONVERSATION",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry",
+          "cta": {
+            "label": "EMAIL ABOUT THE PRACTICE",
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry"
+          }
+        }
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "title": "Questions about The Practice.",
+        "items": [
+          {
+            "id": "faq-1",
+            "title": "Are programs available now?",
+            "content": "Not yet. Courses, mentoring and workbooks are in preparation. This site does not currently include enrollment, reservations or payment."
+          },
+          {
+            "id": "faq-2",
+            "title": "Who is The Practice for?",
+            "content": "For women who want to make hairstyling their profession, stop depending on copied techniques and develop a point of view of their own."
+          },
+          {
+            "id": "faq-3",
+            "title": "Do I need previous experience?",
+            "content": "The path considers four stages: beginner, designer, professional and signature artist."
+          },
+          {
+            "id": "faq-4",
+            "title": "What is the learning focus?",
+            "content": "Observing, understanding and creating with confidence; developing judgment; understanding before executing; and reducing dependence on tutorials."
+          },
+          {
+            "id": "faq-5",
+            "title": "How will course access work?",
+            "content": "When courses become available, access will be personal. Duration, updates and refund terms will be explained on each course page."
+          },
+          {
+            "id": "faq-6",
+            "title": "How will mentoring work?",
+            "content": "When offered, sessions will require prior reservation. Rescheduling, cancellation and response-time policies will be shared before confirmation."
+          },
+          {
+            "id": "faq-7",
+            "title": "Are specific results guaranteed?",
+            "content": "No. Results depend on each person’s commitment, practice and individual process. Professional, economic or commercial results cannot be guaranteed."
+          }
+        ]
+      }
+    }
+  }
+}

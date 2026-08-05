@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "pageId": "terms",
+  "domain": "thehairnarrative.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageMain",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "local_private_draft",
+    "source": "client brand book and approved Drive assets",
+    "versionTag": "v0.1.0"
+  },
+  "seo": {
+    "title": {
+      "en": "Terms & Conditions | The Hair Narrative",
+      "es": "Términos y condiciones | The Hair Narrative"
+    },
+    "description": {
+      "en": "Read the terms that govern use of The Hair Narrative's current editorial website and its content.",
+      "es": "Consulta los términos que rigen el uso del sitio editorial actual de The Hair Narrative y su contenido."
+    },
+    "canonical": "https://thehairnarrative.com/terms",
+    "openGraph": {
+      "type": "website",
+      "site_name": "The Hair Narrative",
+      "title": {
+        "en": "Terms & Conditions | The Hair Narrative",
+        "es": "Términos y condiciones | The Hair Narrative"
+      },
+      "description": {
+        "en": "Read the terms that govern use of The Hair Narrative's current editorial website and its content.",
+        "es": "Consulta los términos que rigen el uso del sitio editorial actual de The Hair Narrative y su contenido."
+      },
+      "url": "https://thehairnarrative.com/terms",
+      "locale": {
+        "en": "en_US",
+        "es": "es_MX"
+      }
+    },
+    "twitter": {
+      "card": "summary",
+      "title": {
+        "en": "Terms & Conditions | The Hair Narrative",
+        "es": "Términos y condiciones | The Hair Narrative"
+      },
+      "description": {
+        "en": "Read the terms that govern use of The Hair Narrative's current editorial website and its content.",
+        "es": "Consulta los términos que rigen el uso del sitio editorial actual de The Hair Narrative y su contenido."
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Terms & Conditions | The Hair Narrative",
+        "description": "Read the terms that govern use of The Hair Narrative's current editorial website and its content.",
+        "url": "https://thehairnarrative.com/terms",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "The Hair Narrative",
+          "url": "https://thehairnarrative.com"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

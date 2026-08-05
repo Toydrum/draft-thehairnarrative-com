@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "allPages",
+  "lang": "en",
+  "dictionary": {
+    "accessibility": {
+      "skip": "Skip to main content"
+    },
+    "header": {
+      "mobileMenu": "Main navigation",
+      "language": "Choose language",
+      "languageLabel": "EN / ES"
+    },
+    "nav": {
+      "home": "Home",
+      "narrative": "Narrative",
+      "practice": "Practice",
+      "bridal": "Bridal",
+      "journal": "Journal",
+      "contact": "Contact"
+    },
+    "footer": {
+      "statement": "Observe. Understand. Create.",
+      "note": "An editorial and educational space devoted to the art of hairstyling.",
+      "contact": "WRITE TO NINA",
+      "copyright": "© 2026 The Hair Narrative",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "cookies": "Cookies",
+      "disclaimers": "Disclaimers",
+      "contactCta": {
+        "label": "WRITE TO NINA",
+        "href": "mailto:hello@thehairnarrative.com?subject=Hello%20The%20Hair%20Narrative"
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "contact",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "sections": {
+        "hero": {
+          "eyebrow": "CONTACTO",
+          "title": "Toda historia comienza con una conversación.",
+          "body": "Elige el camino que mejor describe por qué escribes. Cada enlace abre un mensaje preparado en tu aplicación de correo."
+        },
+        "paths": {
+          "eyebrow": "ESCRIBE DIRECTAMENTE",
+          "title": "Cuatro formas de comenzar.",
+          "items": [
+            {
+              "title": "The Bridal Narrative",
+              "body": "Para consultas sobre bodas destino en México. La comunicación y el mensaje preparado de Bridal siempre están en inglés.",
+              "ctaLabel": "BEGIN A BRIDAL INQUIRY",
+              "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A",
+              "icon": 36,
+              "cta": {
+                "label": "BEGIN A BRIDAL INQUIRY",
+                "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A"
+              }
+            },
+            {
+              "title": "The Practice",
+              "body": "Para futuros cursos, mentorías o workbooks. Estos formatos siguen en preparación.",
+              "ctaLabel": "PREGUNTA POR THE PRACTICE",
+              "ctaHref": "mailto:hello@thehairnarrative.com?subject=Consulta%20sobre%20The%20Practice",
+              "icon": 24,
+              "cta": {
+                "label": "PREGUNTA POR THE PRACTICE",
+                "href": "mailto:hello@thehairnarrative.com?subject=Consulta%20sobre%20The%20Practice"
+              }
+            },
+            {
+              "title": "The Letter",
+              "body": "Para expresar interés en la futura correspondencia. Esto no crea una suscripción automatizada.",
+              "ctaLabel": "PREGUNTA POR THE LETTER",
+              "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Letter",
+              "icon": 12,
+              "cta": {
+                "label": "PREGUNTA POR THE LETTER",
+                "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter"
+              }
+            },
+            {
+              "title": "Una conversación general",
+              "body": "Para saludar con calma, proponer una colaboración o conversar sobre algo que no cabe en los caminos anteriores.",
+              "ctaLabel": "DI HOLA",
+              "ctaHref": "mailto:hello@thehairnarrative.com?subject=Hola%20The%20Hair%20Narrative",
+              "icon": 7,
+              "cta": {
+                "label": "DI HOLA",
+                "href": "mailto:hello@thehairnarrative.com?subject=Hola%20The%20Hair%20Narrative"
+              }
+            }
+          ]
+        },
+        "direct": {
+          "eyebrow": "CORREO DIRECTO",
+          "title": "hello@<wbr>thehair<wbr>narrative.com",
+          "body": "Este draft no incluye formularios, cuentas, reservas ni pagos. Tu mensaje se envía desde tu propio servicio de correo.",
+          "ctaLabel": "ABRE UN CORREO NUEVO",
+          "ctaHref": "mailto:hello@thehairnarrative.com",
+          "cta": {
+            "label": "ABRE UN CORREO NUEVO",
+            "href": "mailto:hello@thehairnarrative.com"
+          }
+        }
+      }
+    }
+  }
+}

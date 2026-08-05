@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "pageId": "the-bridal-narrative",
+  "domain": "thehairnarrative.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageMain",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "local_private_draft",
+    "source": "client brand book and approved Drive assets",
+    "versionTag": "v0.1.0"
+  },
+  "seo": {
+    "title": {
+      "en": "The Bridal Narrative | The Hair Narrative",
+      "es": "The Bridal Narrative | The Hair Narrative"
+    },
+    "description": {
+      "en": "A calm, authentic and deeply personal hairstyling experience for destination brides getting married in Mexico.",
+      "es": "A calm, authentic and deeply personal hairstyling experience for destination brides getting married in Mexico."
+    },
+    "canonical": "https://thehairnarrative.com/the-bridal-narrative",
+    "openGraph": {
+      "type": "website",
+      "site_name": "The Hair Narrative",
+      "title": {
+        "en": "The Bridal Narrative | The Hair Narrative",
+        "es": "The Bridal Narrative | The Hair Narrative"
+      },
+      "description": {
+        "en": "A calm, authentic and deeply personal hairstyling experience for destination brides getting married in Mexico.",
+        "es": "A calm, authentic and deeply personal hairstyling experience for destination brides getting married in Mexico."
+      },
+      "url": "https://thehairnarrative.com/the-bridal-narrative",
+      "locale": {
+        "en": "en_US",
+        "es": "es_MX"
+      }
+    },
+    "twitter": {
+      "card": "summary",
+      "title": {
+        "en": "The Bridal Narrative | The Hair Narrative",
+        "es": "The Bridal Narrative | The Hair Narrative"
+      },
+      "description": {
+        "en": "A calm, authentic and deeply personal hairstyling experience for destination brides getting married in Mexico.",
+        "es": "A calm, authentic and deeply personal hairstyling experience for destination brides getting married in Mexico."
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "The Bridal Narrative | The Hair Narrative",
+        "description": "A calm, authentic and deeply personal hairstyling experience for destination brides getting married in Mexico.",
+        "url": "https://thehairnarrative.com/the-bridal-narrative",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "The Hair Narrative",
+          "url": "https://thehairnarrative.com"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

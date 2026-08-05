@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-journal",
+  "lang": "es",
+  "dictionary": {
+    "page": {
+      "sections": {
+        "hero": {
+          "eyebrow": "THE JOURNAL",
+          "title": "Notas sobre forma, movimiento y atención.",
+          "body": "Un lugar para escribir las preguntas que aparecen al observar, aprender y crear."
+        },
+        "purpose": {
+          "eyebrow": "EL PROPÓSITO",
+          "title": "Escribir es otra forma de aprender a mirar.",
+          "body": "The Journal explorará el oficio sin apresurarse hacia conclusiones: lenguaje claro, procesos honestos e ideas que dejen espacio para observar."
+        },
+        "threads": {
+          "eyebrow": "LÍNEAS EDITORIALES",
+          "title": "Tres líneas de investigación.",
+          "items": [
+            {
+              "title": "Forma y movimiento",
+              "body": "Cómo la línea, el peso, la textura y la proporción dan forma a lo que vemos."
+            },
+            {
+              "title": "Observación y proceso",
+              "body": "Preguntas, estudios y decisiones que suceden antes de que aparezca una forma terminada."
+            },
+            {
+              "title": "Práctica y profesión",
+              "body": "Notas sobre aprendizaje, criterio, confianza creativa y el peinado entendido como oficio."
+            }
+          ]
+        },
+        "empty": {
+          "eyebrow": "EL PRIMER DRAFT",
+          "title": "Las páginas están listas. Las publicaciones aún están por venir.",
+          "body": "No existen artículos publicados en este primer draft. The Journal se presenta ahora para dejar claro su propósito antes de comenzar a publicar."
+        },
+        "letter": {
+          "eyebrow": "THE LETTER",
+          "title": "Una futura correspondencia tranquila.",
+          "body": "The Letter reunirá notas sobre observación, práctica y trabajo creativo. Aún no hay un newsletter automatizado; puedes escribir a Nina para expresar tu interés.",
+          "ctaLabel": "PREGUNTA POR THE LETTER",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Letter",
+          "cta": {
+            "label": "PREGUNTA POR THE LETTER",
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter"
+          }
+        },
+        "close": {
+          "eyebrow": "LA HISTORIA DETRÁS DE LAS PALABRAS",
+          "title": "Comienza por la forma de mirar.",
+          "body": "Lee la filosofía, la historia y los valores que guiarán cada futura publicación.",
+          "ctaLabel": "LEE THE NARRATIVE",
+          "ctaHref": "/the-narrative",
+          "cta": {
+            "label": "LEE THE NARRATIVE",
+            "href": "/the-narrative"
+          }
+        }
+      }
+    }
+  }
+}

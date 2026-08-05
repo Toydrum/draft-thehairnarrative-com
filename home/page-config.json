@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "pageId": "home",
+  "domain": "thehairnarrative.com",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageMain",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "metadata": {
+    "status": "local_private_draft",
+    "source": "client brand book and approved Drive assets",
+    "versionTag": "v0.1.0"
+  },
+  "seo": {
+    "title": {
+      "en": "The Hair Narrative | Observe, understand and create",
+      "es": "The Hair Narrative | Observar, comprender y crear"
+    },
+    "description": {
+      "en": "An editorial space devoted to observing, understanding and practising the art of hairstyling.",
+      "es": "Un espacio editorial dedicado a observar, comprender y practicar el arte del peinado."
+    },
+    "canonical": "https://thehairnarrative.com",
+    "openGraph": {
+      "type": "website",
+      "site_name": "The Hair Narrative",
+      "title": {
+        "en": "The Hair Narrative | Observe, understand and create",
+        "es": "The Hair Narrative | Observar, comprender y crear"
+      },
+      "description": {
+        "en": "An editorial space devoted to observing, understanding and practising the art of hairstyling.",
+        "es": "Un espacio editorial dedicado a observar, comprender y practicar el arte del peinado."
+      },
+      "url": "https://thehairnarrative.com",
+      "locale": {
+        "en": "en_US",
+        "es": "es_MX"
+      }
+    },
+    "twitter": {
+      "card": "summary",
+      "title": {
+        "en": "The Hair Narrative | Observe, understand and create",
+        "es": "The Hair Narrative | Observar, comprender y crear"
+      },
+      "description": {
+        "en": "An editorial space devoted to observing, understanding and practising the art of hairstyling.",
+        "es": "Un espacio editorial dedicado a observar, comprender y practicar el arte del peinado."
+      }
+    }
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "The Hair Narrative | Observe, understand and create",
+        "description": "An editorial space devoted to observing, understanding and practising the art of hairstyling.",
+        "url": "https://thehairnarrative.com",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "The Hair Narrative",
+          "url": "https://thehairnarrative.com"
+        }
+      }
+    ]
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}
