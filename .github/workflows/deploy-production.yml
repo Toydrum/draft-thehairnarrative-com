@@ -30,6 +30,22 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Verify production deployment is enabled
+        shell: bash
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const { readFileSync } = require('node:fs');
+          const config = JSON.parse(readFileSync('draft-repo.config.json', 'utf8'));
+          if (
+            config?.branches?.main?.deploys !== true
+            || config?.branches?.main?.environment !== 'production'
+          ) {
+            console.error('Production deployment is disabled for this draft.');
+            process.exit(1);
+          }
+          NODE
+
       - name: Verify protected target branch
         shell: bash
         env:
