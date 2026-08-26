@@ -11,19 +11,11 @@
       "environment": "test"
     },
     "main": {
-      "deploys": true,
-      "environment": "production"
+      "deploys": false
     }
   },
   "githubVariables": {
     "test": [
-      "AWS_ROLE_ARN",
-      "AWS_REGION",
-      "DRAFT_DOMAIN",
-      "DRAFT_ROOT",
-      "AUTHORING_ENDPOINT"
-    ],
-    "production": [
       "AWS_ROLE_ARN",
       "AWS_REGION",
       "DRAFT_DOMAIN",
