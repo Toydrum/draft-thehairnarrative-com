@@ -14,25 +14,30 @@
     },
     "nav": {
       "home": "Home",
-      "narrative": "Narrative",
-      "practice": "Practice",
-      "bridal": "Bridal",
-      "journal": "Journal",
-      "contact": "Contact"
+      "narrative": "narrative",
+      "practice": "practice",
+      "bridal": "bridal narrative",
+      "journal": "journal",
+      "contact": "Contact",
+      "letter": "letter"
     },
     "footer": {
       "statement": "Observe. Understand. Create.",
-      "note": "An editorial and educational space devoted to the art of hairstyling.",
+      "note": "An editorial and educational space devoted to the art of hairstyling, observation and intentional creation.",
       "contact": "WRITE TO NINA",
       "copyright": "© 2026 The Hair Narrative",
-      "privacy": "Privacy",
-      "terms": "Terms",
-      "cookies": "Cookies",
-      "disclaimers": "Disclaimers",
+      "privacy": "privacy notice",
+      "terms": "terms & conditions",
+      "cookies": "cookie policy",
+      "disclaimers": "disclaimers",
       "contactCta": {
         "label": "WRITE TO NINA",
         "href": "mailto:hello@thehairnarrative.com?subject=Hello%20The%20Hair%20Narrative"
-      }
+      },
+      "signoff": "© 2026 the hair narrative · a philosophy of simplicity."
+    },
+    "brand": {
+      "name": "the hair narrative"
     }
   }
 }

@@ -8,44 +8,53 @@
       "sections": {
         "hero": {
           "eyebrow": "THE BRIDAL NARRATIVE",
-          "title": "Feel completely yourself on your wedding day.",
+          "title": "feel completely yourself on your wedding day.",
           "body": "A calm, authentic and deeply personal hairstyling experience for international brides planning a destination wedding in Mexico.",
-          "ctaLabel": "BOOK YOUR BRIDAL EXPERIENCE",
+          "ctaLabel": "BEGIN A BRIDAL INQUIRY",
           "helperText": "Opens an email inquiry. No booking or payment is completed online.",
-          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0AWhat%20I%20hope%20to%20feel%20on%20the%20day%20is%3A%0D%0A%0D%0A",
           "cta": {
-            "label": "BOOK YOUR BRIDAL EXPERIENCE",
-            "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A"
-          }
+            "label": "BEGIN A BRIDAL INQUIRY",
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0AWhat%20I%20hope%20to%20feel%20on%20the%20day%20is%3A%0D%0A%0D%0A"
+          },
+          "imageAlt": "A calm bridal hairstyling moment"
         },
         "personal-by-design": {
           "eyebrow": "THE APPROACH",
-          "title": "A hairstyle that makes sense for you.",
+          "title": "a hairstyle that makes sense for you.",
           "body": "The aim is not to reproduce a photograph. It is to create something coherent with the person who will wear it, the design and the intention.",
           "items": [
             {
-              "title": "Observe",
-              "body": "Hair type, texture, length, light, proportions and movement."
+              "title": "read the hair before shaping it.",
+              "body": "Hair type, texture, length, light, proportions and movement.",
+              "meta": "01 · observe",
+              "imageAlt": "A hairstyle design sketch"
             },
             {
-              "title": "Understand",
-              "body": "Climate, event duration and your specific needs."
+              "title": "consider the whole experience.",
+              "body": "Climate, event duration and your specific needs.",
+              "meta": "02 · understand",
+              "imageAlt": "Hairstyling references and preparation"
             },
             {
-              "title": "Create",
-              "body": "A form that feels authentic, intentional and personal."
+              "title": "make the form feel like you.",
+              "body": "A form that feels authentic, intentional and personal.",
+              "meta": "03 · create",
+              "imageAlt": "Hands shaping a hairstyle"
             }
-          ]
+          ],
+          "cardFooter": "the bridal narrative",
+          "cardStatus": "personal by design"
         },
         "statement": {
           "quote": "I prefer to understand the hair rather than try to control it.",
           "body": "The work looks for coherence between the person, the design and the intention—not perfection for its own sake.",
-          "title": "I prefer to understand the hair rather than try to control it.",
+          "title": "“I prefer to understand the hair rather than try to control it.”",
           "eyebrow": "THE POINT OF VIEW"
         },
         "first-note": {
           "eyebrow": "BEGIN THE CONVERSATION",
-          "title": "Start with the essential details.",
+          "title": "start with the essential details.",
           "body": "Your first email can include the details that help frame your wedding:",
           "items": [
             "Your name",
@@ -54,28 +63,29 @@
             "Your event location"
           ],
           "ctaLabel": "SHARE YOUR WEDDING DETAILS",
-          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0AWhat%20I%20hope%20to%20feel%20on%20the%20day%20is%3A%0D%0A%0D%0A",
           "cta": {
             "label": "SHARE YOUR WEDDING DETAILS",
-            "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A"
-          }
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0AWhat%20I%20hope%20to%20feel%20on%20the%20day%20is%3A%0D%0A%0D%0A"
+          },
+          "imageAlt": "Nina in her hairstyling studio"
         },
         "closing": {
-          "title": "Every story begins with a conversation.",
+          "title": "every story begins with a conversation.",
           "body": "Tell me where you are coming from, when and where you are getting married, and what you hope to feel on the day. I would love to hear from you.",
-          "ctaLabel": "BOOK YOUR BRIDAL EXPERIENCE",
+          "ctaLabel": "BEGIN A BRIDAL INQUIRY",
           "helperText": "Opens an email inquiry.",
-          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0AWhat%20I%20hope%20to%20feel%20on%20the%20day%20is%3A%0D%0A%0D%0A",
           "eyebrow": "BEGIN THE CONVERSATION",
           "cta": {
-            "label": "BOOK YOUR BRIDAL EXPERIENCE",
-            "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A"
+            "label": "BEGIN A BRIDAL INQUIRY",
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0AWhat%20I%20hope%20to%20feel%20on%20the%20day%20is%3A%0D%0A%0D%0A"
           }
         }
       },
       "faq": {
         "eyebrow": "FAQ",
-        "title": "Questions before you write.",
+        "title": "questions before you write.",
         "items": [
           {
             "id": "faq-1",

@@ -4,866 +4,1395 @@
   "pageId": "home",
   "components": [
     {
-      "id": "heroSection",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor ank-minHeight-calcSD100svh__MIN__138pxED ank-minHeight-md-calcSD100svh__MIN__140pxED ank-alignItems-center",
-        "components": [
-          "heroFrame"
-        ],
-        "id": "hero-section"
-      }
-    },
-    {
-      "id": "heroEyebrow",
+      "id": "homeHeroEyebrow",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.hero.eyebrow",
+      "valueInstructions": "set:config.text,i18n,page.home.hero.eyebrow",
       "config": {
+        "id": "homeHeroEyebrow",
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-linkColor"
       }
     },
     {
-      "id": "heroTitle",
+      "id": "homeHeroTitle",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.hero.title",
+      "valueInstructions": "set:config.text,i18n,page.home.hero.title",
       "config": {
+        "id": "homeHeroTitle",
         "tag": "h1",
         "text": "",
-        "classes": "thnHeroTitle"
+        "classes": "thnBooksawHeroTitle"
       }
     },
     {
-      "id": "heroBody",
+      "id": "homeHeroBody",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.hero.body",
+      "valueInstructions": "set:config.text,i18n,page.home.hero.body",
       "config": {
+        "id": "homeHeroBody",
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "heroCtaRule",
-      "type": "container",
+      "id": "homeHeroCtaArrow",
+      "type": "icon",
       "config": {
-        "tag": "span",
-        "classes": "thnCtaRule ank-bg-textColor",
-        "components": []
+        "id": "homeHeroCta-arrow",
+        "iconName": "→",
+        "ariaHidden": true,
+        "classes": "thnBooksawBodyFont ank-fontSize-24px ank-lineHeight-1 ank-flexShrink-0"
       }
     },
     {
-      "id": "heroCta",
+      "id": "homeHeroCta",
       "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.sections.hero.cta.label;set:config.href,i18n,page.sections.hero.cta.href",
+      "valueInstructions": "set:config.text,i18n,page.home.hero.cta.label;set:config.href,i18n,page.home.hero.cta.href",
       "config": {
-        "id": "heroCta-link",
+        "id": "homeHeroCta",
         "href": "/",
         "text": "",
-        "rel": "noopener",
+        "classes": "thnBooksawCtaLink ank-color-linkColor",
         "components": [
-          "heroCtaRule"
-        ],
-        "classes": "thnCtaLink"
-      }
-    },
-    {
-      "id": "heroContent",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
-        "components": [
-          "heroEyebrow",
-          "heroTitle",
-          "heroBody",
-          "heroCta"
+          "homeHeroCtaArrow"
         ]
       }
     },
     {
-      "id": "heroVisual",
+      "id": "homeHeroCopy",
+      "type": "container",
+      "config": {
+        "id": "homeHeroCopy",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-24px ank-alignItems-center ank-textAlign-center ank-paddingInline-24px ank-paddingTop-44px ank-paddingBottom-64px ank-padding-lg-0 ank-alignItems-lg-flexMINstart ank-textAlign-lg-left",
+        "components": [
+          "homeHeroEyebrow",
+          "homeHeroTitle",
+          "homeHeroBody",
+          "homeHeroCta"
+        ]
+      }
+    },
+    {
+      "id": "homeHeroPhoto",
       "type": "media",
       "config": {
-        "id": "heroVisual-image",
+        "id": "homeHeroPhoto",
         "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-40.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-128px ank-height-128px ank-width-md-180px ank-height-md-180px ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
-        "width": 270,
-        "height": 270,
-        "decoding": "async",
-        "loading": "eager"
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/narrative-hero.webp",
+        "alt": "An intentional bridal hairstyle taking shape.",
+        "width": 1672,
+        "height": 941,
+        "classes": "thnBooksawPhoto ank-minHeight-360px ank-maxHeight-360px ank-minHeight-lg-500px ank-maxHeight-lg-500px",
+        "loading": "eager",
+        "fetchPriority": "high",
+        "decoding": "async"
       }
     },
     {
-      "id": "heroFrame",
+      "id": "homeHeroFrame",
       "type": "container",
       "config": {
+        "id": "homeHeroFrame",
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-md-42px ank-gap-xl-58px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-minmaxSD0COM1frED ank-gridTemplateColumns-lg-minmaxSD0COM0_78frED__minmaxSD0COM1_22frED ank-gap-lg-70px ank-alignItems-center",
         "components": [
-          "heroContent",
-          "heroVisual"
+          "homeHeroCopy",
+          "homeHeroPhotoLayout"
         ]
       }
     },
     {
-      "id": "manifestoSection",
+      "id": "homeNarrativeSection",
       "type": "container",
       "config": {
+        "id": "narrative",
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-textColor ank-color-bgColor",
+        "classes": "ank-bg-bgColor ank-paddingInline-lg-24px ank-paddingBlock-lg-72px",
         "components": [
-          "manifestoFrame"
-        ],
-        "id": "manifesto-section"
+          "homeHeroFrame"
+        ]
       }
     },
     {
-      "id": "manifestoEyebrow",
+      "id": "homeManifesto",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.manifesto.eyebrow",
+      "valueInstructions": "set:config.text,i18n,page.home.manifesto",
       "config": {
+        "id": "homeManifesto",
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawDisplayFont ank-m-0 ank-fontSize-29px ank-fontSize-lg-47px ank-lineHeight-1_28 ank-textAlign-center ank-maxWidth-900px ank-marginInline-auto"
       }
     },
     {
-      "id": "manifestoTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.manifesto.title",
+      "id": "homeManifestoSectionFrame",
+      "type": "container",
       "config": {
+        "id": "homeManifestoSectionFrame",
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ",
+        "components": [
+          "homeManifesto"
+        ]
+      }
+    },
+    {
+      "id": "homeManifestoSection",
+      "type": "container",
+      "config": {
+        "id": "homeManifestoSection",
+        "tag": "section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-lg-104px ank-boxSizing-borderMINbox ank-bg-secondaryBgColor",
+        "components": [
+          "homeManifestoSectionFrame"
+        ]
+      }
+    },
+    {
+      "id": "homeStudioParagraph0",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.studio.0",
+      "config": {
+        "id": "homeStudioParagraph0",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "homeStudioParagraph1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.studio.1",
+      "config": {
+        "id": "homeStudioParagraph1",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "homeStudioParagraph2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.studio.2",
+      "config": {
+        "id": "homeStudioParagraph2",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "homeStudioParagraph3",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.studio.3",
+      "config": {
+        "id": "homeStudioParagraph3",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "homeNinaSignature",
+      "type": "media",
+      "config": {
+        "id": "home-nina-signature",
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-1.svg",
+        "alt": "Nina",
+        "width": 1500,
+        "height": 1500,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "ank-display-block ank-width-46px ank-width-md-62px ank-height-auto ank-marginTop-24px ank-marginLeft-62per"
+      }
+    },
+    {
+      "id": "homeStudioPortrait",
+      "type": "media",
+      "config": {
+        "id": "homeStudioPortrait",
+        "tag": "image",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/nina-studio-portrait.webp",
+        "alt": "Nina in her studio.",
+        "width": 234,
+        "height": 234,
+        "classes": "thnBooksawPhoto ank-maxWidth-400px ank-aspectRatio-1",
+        "loading": "lazy",
+        "decoding": "async"
+      }
+    },
+    {
+      "id": "homeStudioProse",
+      "type": "container",
+      "config": {
+        "id": "homeStudioProse",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0",
+        "components": [
+          "homeStudioParagraph0",
+          "homeStudioParagraph1",
+          "homeStudioParagraph2",
+          "homeStudioParagraph3",
+          "homeNinaSignature"
+        ]
+      }
+    },
+    {
+      "id": "homeStudioSectionFrame",
+      "type": "container",
+      "config": {
+        "id": "homeStudioSectionFrame",
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-minmaxSD0COM1frED ank-gridTemplateColumns-lg-repeatSD2COMminmaxSD0COM1frEDED ank-gap-36px ank-gap-lg-72px ank-alignItems-center ank-gridTemplateColumns-lg-minmaxSD0COM400pxED__minmaxSD0COM1frED ank-gap-lg-92px",
+        "components": [
+          "homeStudioPortraitLayout",
+          "homeStudioProse"
+        ]
+      }
+    },
+    {
+      "id": "homeStudioSection",
+      "type": "container",
+      "config": {
+        "id": "homeStudioSection",
+        "tag": "section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-lg-104px ank-boxSizing-borderMINbox ank-bg-bgColor",
+        "components": [
+          "homeStudioSectionFrame"
+        ]
+      }
+    },
+    {
+      "id": "homeJournalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.journal.title",
+      "config": {
+        "id": "homeJournalTitle",
         "tag": "h2",
         "text": "",
-        "classes": "thnSectionTitle"
+        "classes": "thnBooksawSectionTitle"
       }
     },
     {
-      "id": "manifestoBody",
+      "id": "homeJournalIntro",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.manifesto.body",
+      "valueInstructions": "set:config.text,i18n,page.home.journal.intro",
       "config": {
+        "id": "homeJournalIntro",
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor ank-maxWidth-640px ank-marginInline-auto"
       }
     },
     {
-      "id": "manifestoContent",
+      "id": "homeJournalHeading",
       "type": "container",
       "config": {
+        "id": "homeJournalHeading",
         "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px ank-textAlign-center ank-marginBottom-46px",
         "components": [
-          "manifestoEyebrow",
-          "manifestoTitle",
-          "manifestoBody"
+          "homeJournalTitle",
+          "homeJournalIntro"
         ]
       }
     },
     {
-      "id": "manifestoVisual",
+      "id": "homeJournalCard0Photo",
       "type": "media",
       "config": {
-        "id": "manifestoVisual-image",
+        "id": "homeJournalCard0Photo",
         "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-12.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
-        "width": 270,
-        "height": 270,
-        "decoding": "async",
-        "loading": "lazy"
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/journal-form-movement.webp",
+        "alt": "",
+        "width": 1448,
+        "height": 1086,
+        "classes": "thnBooksawPhoto ank-minHeight-245px ank-maxHeight-245px ank-minHeight-md-260px ank-maxHeight-md-260px",
+        "loading": "lazy",
+        "decoding": "async"
       }
     },
     {
-      "id": "manifestoVisualField",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-220px ank-height-220px ank-width-xl-300px ank-height-xl-300px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-justifySelf-center ank-justifySelf-md-end",
-        "components": [
-          "manifestoVisual"
-        ]
-      }
-    },
-    {
-      "id": "manifestoFrame",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-42px ank-gap-xl-58px ank-alignItems-center",
-        "components": [
-          "manifestoContent",
-          "manifestoVisualField"
-        ]
-      }
-    },
-    {
-      "id": "pathsSection",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
-        "components": [
-          "pathsFrame"
-        ],
-        "id": "paths-section"
-      }
-    },
-    {
-      "id": "pathsEyebrow",
+      "id": "homeJournalCard0Meta",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.paths.eyebrow",
+      "valueInstructions": "set:config.text,i18n,page.home.journal.cards.0.meta",
       "config": {
+        "id": "homeJournalCard0Meta",
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-linkColor ank-fontSize-10px"
       }
     },
     {
-      "id": "pathsTitle",
+      "id": "homeJournalCard0Title",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.paths.title",
+      "valueInstructions": "set:config.text,i18n,page.home.journal.cards.0.title",
       "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "thnSectionTitle"
-      }
-    },
-    {
-      "id": "pathsBody",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.paths.body",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBodyCopy"
-      }
-    },
-    {
-      "id": "pathsContent",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
-        "components": [
-          "pathsEyebrow",
-          "pathsTitle",
-          "pathsBody"
-        ]
-      }
-    },
-    {
-      "id": "pathsCard1Icon",
-      "type": "media",
-      "config": {
-        "id": "pathsCard1Icon-image",
-        "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-24.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-76px ank-height-76px ank-alignSelf-flexMINend",
-        "width": 76,
-        "height": 76,
-        "decoding": "async",
-        "loading": "lazy"
-      }
-    },
-    {
-      "id": "pathsCard1Title",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.0.title",
-      "config": {
+        "id": "homeJournalCard0Title",
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "pathsCard1Body",
+      "id": "homeJournalCard0Series",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.0.body",
+      "valueInstructions": "set:config.text,i18n,page.home.journal.title",
       "config": {
+        "id": "homeJournalCard0Series",
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawSmallCopy ank-textTransform-lowercase"
       }
     },
     {
-      "id": "pathsCard1CtaRule",
-      "type": "container",
+      "id": "homeJournalCard0Status",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.inPreparation",
       "config": {
-        "tag": "span",
-        "classes": "thnCtaRule ank-bg-textColor",
-        "components": []
-      }
-    },
-    {
-      "id": "pathsCard1Cta",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.0.cta.label;set:config.href,i18n,page.sections.paths.items.0.cta.href",
-      "config": {
-        "id": "pathsCard1Cta-link",
-        "href": "/",
+        "id": "homeJournalCard0Status",
+        "tag": "p",
         "text": "",
-        "rel": "noopener",
-        "components": [
-          "pathsCard1CtaRule"
-        ],
-        "classes": "thnCtaLink"
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "pathsCard1",
+      "id": "homeJournalCard0Footer",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "id": "homeJournalCard0Footer",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-justifyContent-spaceMINbetween ank-gap-8px ank-paddingTop-14px ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-HASHd4d0c7 ank-marginTop-auto",
         "components": [
-          "pathsCard1Icon",
-          "pathsCard1Title",
-          "pathsCard1Body",
-          "pathsCard1Cta"
+          "homeJournalCard0Series",
+          "homeJournalCard0Status"
         ]
       }
     },
     {
-      "id": "pathsCard2Icon",
-      "type": "media",
+      "id": "homeJournalCard0",
+      "type": "container",
       "config": {
-        "id": "pathsCard2Icon-image",
-        "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-36.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-76px ank-height-76px ank-alignSelf-flexMINend",
-        "width": 76,
-        "height": 76,
-        "decoding": "async",
-        "loading": "lazy"
+        "id": "homeJournalCard0",
+        "tag": "article",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
+        "components": [
+          "homeJournalCard0Photo",
+          "homeJournalCard0Meta",
+          "homeJournalCard0Title",
+          "homeJournalCard0Footer"
+        ]
       }
     },
     {
-      "id": "pathsCard2Title",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.1.title",
+      "id": "homeJournalCard1Photo",
+      "type": "media",
       "config": {
+        "id": "homeJournalCard1Photo",
+        "tag": "image",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/journal-observation-process.webp",
+        "alt": "",
+        "width": 1448,
+        "height": 1086,
+        "classes": "thnBooksawPhoto ank-minHeight-245px ank-maxHeight-245px ank-minHeight-md-260px ank-maxHeight-md-260px",
+        "loading": "lazy",
+        "decoding": "async"
+      }
+    },
+    {
+      "id": "homeJournalCard1Meta",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.journal.cards.1.meta",
+      "config": {
+        "id": "homeJournalCard1Meta",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow ank-color-linkColor ank-fontSize-10px"
+      }
+    },
+    {
+      "id": "homeJournalCard1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.journal.cards.1.title",
+      "config": {
+        "id": "homeJournalCard1Title",
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "pathsCard2Body",
+      "id": "homeJournalCard1Series",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.1.body",
+      "valueInstructions": "set:config.text,i18n,page.home.journal.title",
       "config": {
+        "id": "homeJournalCard1Series",
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawSmallCopy ank-textTransform-lowercase"
       }
     },
     {
-      "id": "pathsCard2CtaRule",
-      "type": "container",
+      "id": "homeJournalCard1Status",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.inPreparation",
       "config": {
-        "tag": "span",
-        "classes": "thnCtaRule ank-bg-textColor",
-        "components": []
-      }
-    },
-    {
-      "id": "pathsCard2Cta",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.sections.paths.items.1.cta.label;set:config.href,i18n,page.sections.paths.items.1.cta.href",
-      "config": {
-        "id": "pathsCard2Cta-link",
-        "href": "/",
+        "id": "homeJournalCard1Status",
+        "tag": "p",
         "text": "",
-        "rel": "noopener",
-        "components": [
-          "pathsCard2CtaRule"
-        ],
-        "classes": "thnCtaLink"
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "pathsCard2",
+      "id": "homeJournalCard1Footer",
       "type": "container",
       "config": {
+        "id": "homeJournalCard1Footer",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-justifyContent-spaceMINbetween ank-gap-8px ank-paddingTop-14px ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-HASHd4d0c7 ank-marginTop-auto",
+        "components": [
+          "homeJournalCard1Series",
+          "homeJournalCard1Status"
+        ]
+      }
+    },
+    {
+      "id": "homeJournalCard1",
+      "type": "container",
+      "config": {
+        "id": "homeJournalCard1",
         "tag": "article",
-        "classes": "thnCard",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
-          "pathsCard2Icon",
-          "pathsCard2Title",
-          "pathsCard2Body",
-          "pathsCard2Cta"
+          "homeJournalCard1Photo",
+          "homeJournalCard1Meta",
+          "homeJournalCard1Title",
+          "homeJournalCard1Footer"
         ]
       }
     },
     {
-      "id": "pathsGrid",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-38px ank-gap-xl-48px",
-        "components": [
-          "pathsCard1",
-          "pathsCard2"
-        ]
-      }
-    },
-    {
-      "id": "pathsFrame",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
-        "components": [
-          "pathsContent",
-          "pathsGrid"
-        ]
-      }
-    },
-    {
-      "id": "narrativeSection",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
-        "components": [
-          "narrativeFrame"
-        ],
-        "id": "narrative-section"
-      }
-    },
-    {
-      "id": "narrativeEyebrow",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.narrative.eyebrow",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnEyebrow"
-      }
-    },
-    {
-      "id": "narrativeTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.narrative.title",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "thnSectionTitle"
-      }
-    },
-    {
-      "id": "narrativeBody",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.narrative.body",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBodyCopy"
-      }
-    },
-    {
-      "id": "narrativeCtaRule",
-      "type": "container",
-      "config": {
-        "tag": "span",
-        "classes": "thnCtaRule ank-bg-textColor",
-        "components": []
-      }
-    },
-    {
-      "id": "narrativeCta",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.sections.narrative.cta.label;set:config.href,i18n,page.sections.narrative.cta.href",
-      "config": {
-        "id": "narrativeCta-link",
-        "href": "/",
-        "text": "",
-        "rel": "noopener",
-        "components": [
-          "narrativeCtaRule"
-        ],
-        "classes": "thnCtaLink"
-      }
-    },
-    {
-      "id": "narrativeContent",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
-        "components": [
-          "narrativeEyebrow",
-          "narrativeTitle",
-          "narrativeBody",
-          "narrativeCta"
-        ]
-      }
-    },
-    {
-      "id": "narrativeVisual",
+      "id": "homeJournalCard2Photo",
       "type": "media",
       "config": {
-        "id": "narrativeVisual-image",
+        "id": "homeJournalCard2Photo",
         "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-41.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-128px ank-height-128px  ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
-        "width": 270,
-        "height": 270,
-        "decoding": "async",
-        "loading": "lazy"
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/journal-bridal-forms.webp",
+        "alt": "",
+        "width": 1448,
+        "height": 1086,
+        "classes": "thnBooksawPhoto ank-minHeight-245px ank-maxHeight-245px ank-minHeight-md-260px ank-maxHeight-md-260px",
+        "loading": "lazy",
+        "decoding": "async"
       }
     },
     {
-      "id": "narrativeFrame",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-xl-58px ank-alignItems-center",
-        "components": [
-          "narrativeContent",
-          "narrativeVisual"
-        ]
-      }
-    },
-    {
-      "id": "journal-letterSection",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
-        "components": [
-          "journal-letterFrame"
-        ],
-        "id": "journal-letter-section"
-      }
-    },
-    {
-      "id": "journal-letterEyebrow",
+      "id": "homeJournalCard2Meta",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.journal-letter.eyebrow",
+      "valueInstructions": "set:config.text,i18n,page.home.journal.cards.2.meta",
       "config": {
+        "id": "homeJournalCard2Meta",
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-linkColor ank-fontSize-10px"
       }
     },
     {
-      "id": "journal-letterTitle",
+      "id": "homeJournalCard2Title",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.journal-letter.title",
+      "valueInstructions": "set:config.text,i18n,page.home.journal.cards.2.title",
       "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "thnSectionTitle"
-      }
-    },
-    {
-      "id": "journal-letterContent",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
-        "components": [
-          "journal-letterEyebrow",
-          "journal-letterTitle"
-        ]
-      }
-    },
-    {
-      "id": "journal-letterCard1Icon",
-      "type": "media",
-      "config": {
-        "id": "journal-letterCard1Icon-image",
-        "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-24.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-76px ank-height-76px ank-alignSelf-flexMINend",
-        "width": 76,
-        "height": 76,
-        "decoding": "async",
-        "loading": "lazy"
-      }
-    },
-    {
-      "id": "journal-letterCard1Title",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.journal-letter.items.0.title",
-      "config": {
+        "id": "homeJournalCard2Title",
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "journal-letterCard1Body",
+      "id": "homeJournalCard2Series",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.journal-letter.items.0.body",
+      "valueInstructions": "set:config.text,i18n,page.home.journal.title",
       "config": {
+        "id": "homeJournalCard2Series",
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawSmallCopy ank-textTransform-lowercase"
       }
     },
     {
-      "id": "journal-letterCard1CtaRule",
-      "type": "container",
-      "config": {
-        "tag": "span",
-        "classes": "thnCtaRule ank-bg-textColor",
-        "components": []
-      }
-    },
-    {
-      "id": "journal-letterCard1Cta",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.sections.journal-letter.items.0.cta.label;set:config.href,i18n,page.sections.journal-letter.items.0.cta.href",
-      "config": {
-        "id": "journal-letterCard1Cta-link",
-        "href": "/",
-        "text": "",
-        "rel": "noopener",
-        "components": [
-          "journal-letterCard1CtaRule"
-        ],
-        "classes": "thnCtaLink"
-      }
-    },
-    {
-      "id": "journal-letterCard1",
-      "type": "container",
-      "config": {
-        "tag": "article",
-        "classes": "thnCard",
-        "components": [
-          "journal-letterCard1Icon",
-          "journal-letterCard1Title",
-          "journal-letterCard1Body",
-          "journal-letterCard1Cta"
-        ]
-      }
-    },
-    {
-      "id": "journal-letterCard2Icon",
-      "type": "media",
-      "config": {
-        "id": "journal-letterCard2Icon-image",
-        "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-39.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-76px ank-height-76px ank-alignSelf-flexMINend",
-        "width": 76,
-        "height": 76,
-        "decoding": "async",
-        "loading": "lazy"
-      }
-    },
-    {
-      "id": "journal-letterCard2Title",
+      "id": "homeJournalCard2Status",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.journal-letter.items.1.title",
+      "valueInstructions": "set:config.text,i18n,page.home.inPreparation",
       "config": {
-        "tag": "h3",
-        "text": "",
-        "classes": "thnCardTitle"
-      }
-    },
-    {
-      "id": "journal-letterCard2Body",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.journal-letter.items.1.body",
-      "config": {
+        "id": "homeJournalCard2Status",
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "journal-letterCard2CtaRule",
+      "id": "homeJournalCard2Footer",
       "type": "container",
       "config": {
-        "tag": "span",
-        "classes": "thnCtaRule ank-bg-textColor",
-        "components": []
+        "id": "homeJournalCard2Footer",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-justifyContent-spaceMINbetween ank-gap-8px ank-paddingTop-14px ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-HASHd4d0c7 ank-marginTop-auto",
+        "components": [
+          "homeJournalCard2Series",
+          "homeJournalCard2Status"
+        ]
       }
     },
     {
-      "id": "journal-letterCard2Cta",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.sections.journal-letter.items.1.cta.label;set:config.href,i18n,page.sections.journal-letter.items.1.cta.href",
+      "id": "homeJournalCard2",
+      "type": "container",
       "config": {
-        "id": "journal-letterCard2Cta-link",
+        "id": "homeJournalCard2",
+        "tag": "article",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
+        "components": [
+          "homeJournalCard2Photo",
+          "homeJournalCard2Meta",
+          "homeJournalCard2Title",
+          "homeJournalCard2Footer"
+        ]
+      }
+    },
+    {
+      "id": "homeJournalGrid",
+      "type": "container",
+      "config": {
+        "id": "homeJournalGrid",
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-minmaxSD0COM1frED ank-gridTemplateColumns-md-repeatSD3COMminmaxSD0COM1frEDED ank-gap-46px ank-gap-md-32px",
+        "components": [
+          "homeJournalCard0",
+          "homeJournalCard1",
+          "homeJournalCard2"
+        ]
+      }
+    },
+    {
+      "id": "homeJournalCtaArrow",
+      "type": "icon",
+      "config": {
+        "id": "homeJournalCta-arrow",
+        "iconName": "→",
+        "ariaHidden": true,
+        "classes": "thnBooksawBodyFont ank-fontSize-24px ank-lineHeight-1 ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "homeJournalCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.home.journal.cta.label;set:config.href,i18n,page.home.journal.cta.href",
+      "config": {
+        "id": "homeJournalCta",
         "href": "/",
         "text": "",
-        "rel": "noopener",
+        "classes": "thnBooksawCtaLink ank-color-linkColor",
         "components": [
-          "journal-letterCard2CtaRule"
-        ],
-        "classes": "thnCtaLink"
-      }
-    },
-    {
-      "id": "journal-letterCard2",
-      "type": "container",
-      "config": {
-        "tag": "article",
-        "classes": "thnCard",
-        "components": [
-          "journal-letterCard2Icon",
-          "journal-letterCard2Title",
-          "journal-letterCard2Body",
-          "journal-letterCard2Cta"
+          "homeJournalCtaArrow"
         ]
       }
     },
     {
-      "id": "journal-letterGrid",
+      "id": "homeJournalAction",
       "type": "container",
       "config": {
+        "id": "homeJournalAction",
         "tag": "div",
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-38px ank-gap-xl-48px",
+        "classes": "ank-display-flex ank-justifyContent-center ank-marginTop-36px",
         "components": [
-          "journal-letterCard1",
-          "journal-letterCard2"
+          "homeJournalCta"
         ]
       }
     },
     {
-      "id": "journal-letterFrame",
+      "id": "homeJournalSectionFrame",
       "type": "container",
       "config": {
+        "id": "homeJournalSectionFrame",
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ",
         "components": [
-          "journal-letterContent",
-          "journal-letterGrid"
+          "homeJournalHeading",
+          "homeJournalGrid",
+          "homeJournalAction"
         ]
       }
     },
     {
-      "id": "closeSection",
+      "id": "homeJournalSection",
       "type": "container",
       "config": {
+        "id": "the-journal",
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-textColor ank-color-bgColor",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-lg-104px ank-boxSizing-borderMINbox ank-bg-HASHffffff ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-HASHd4d0c7",
         "components": [
-          "closeFrame"
-        ],
-        "id": "close-section"
+          "homeJournalSectionFrame"
+        ]
       }
     },
     {
-      "id": "closeEyebrow",
+      "id": "homeLetterEyebrow",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.close.eyebrow",
+      "valueInstructions": "set:config.text,i18n,page.home.letter.eyebrow",
       "config": {
+        "id": "homeLetterEyebrow",
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-linkColor"
       }
     },
     {
-      "id": "closeTitle",
+      "id": "homeLetterTitle",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.close.title",
+      "valueInstructions": "set:config.text,i18n,page.home.letter.title",
       "config": {
+        "id": "homeLetterTitle",
         "tag": "h2",
         "text": "",
-        "classes": "thnSectionTitle"
+        "classes": "thnBooksawSectionTitle"
       }
     },
     {
-      "id": "closeBody",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.close.body",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBodyCopy"
-      }
-    },
-    {
-      "id": "closeCtaRule",
+      "id": "homeLetterRule",
       "type": "container",
       "config": {
+        "id": "homeLetterRule",
         "tag": "span",
-        "classes": "thnCtaRule ank-bg-bgColor",
+        "classes": "ank-width-50px ank-height-3px ank-bg-accentColor ank-marginBlock-8px",
         "components": []
       }
     },
     {
-      "id": "closeCta",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.sections.close.cta.label;set:config.href,i18n,page.sections.close.cta.href",
+      "id": "homeLetterBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.letter.body",
       "config": {
-        "id": "closeCta-link",
+        "id": "homeLetterBody",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawDisplayFont ank-m-0 ank-fontSize-23px ank-fontSize-md-27px ank-lineHeight-1_46"
+      }
+    },
+    {
+      "id": "homeLetterCtaArrow",
+      "type": "icon",
+      "config": {
+        "id": "homeLetterCta-arrow",
+        "iconName": "→",
+        "ariaHidden": true,
+        "classes": "thnBooksawBodyFont ank-fontSize-24px ank-lineHeight-1 ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "homeLetterCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.home.letter.cta.label;set:config.href,i18n,page.home.letter.cta.href",
+      "config": {
+        "id": "homeLetterCta",
         "href": "/",
         "text": "",
-        "rel": "noopener",
+        "classes": "thnBooksawCtaLink ank-color-linkColor",
         "components": [
-          "closeCtaRule"
-        ],
-        "classes": "thnCtaLink"
-      }
-    },
-    {
-      "id": "closeContent",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
-        "components": [
-          "closeEyebrow",
-          "closeTitle",
-          "closeBody",
-          "closeCta"
+          "homeLetterCtaArrow"
         ]
       }
     },
     {
-      "id": "closeVisual",
+      "id": "homeLetterStatus",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.letter.status",
+      "config": {
+        "id": "homeLetterStatus",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "homeLetterSectionFrame",
+      "type": "container",
+      "config": {
+        "id": "homeLetterSectionFrame",
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-maxWidth-640px ank-alignItems-center ank-textAlign-center ank-gap-24px",
+        "components": [
+          "homeLetterEyebrow",
+          "homeLetterTitle",
+          "homeLetterRule",
+          "homeLetterBody",
+          "homeLetterCta",
+          "homeLetterStatus"
+        ]
+      }
+    },
+    {
+      "id": "homeLetterSection",
+      "type": "container",
+      "config": {
+        "id": "the-letter",
+        "tag": "section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-lg-104px ank-boxSizing-borderMINbox ank-bg-secondaryBgColor ank-scrollMarginTop-88px",
+        "components": [
+          "homeLetterSectionFrame"
+        ]
+      }
+    },
+    {
+      "id": "homePracticeTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.title",
+      "config": {
+        "id": "homePracticeTitle",
+        "tag": "h2",
+        "text": "",
+        "classes": "thnBooksawSectionTitle"
+      }
+    },
+    {
+      "id": "homePracticeIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.intro",
+      "config": {
+        "id": "homePracticeIntro",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor ank-maxWidth-640px ank-marginInline-auto"
+      }
+    },
+    {
+      "id": "homePracticeHeading",
+      "type": "container",
+      "config": {
+        "id": "homePracticeHeading",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px ank-textAlign-center ank-marginBottom-46px",
+        "components": [
+          "homePracticeTitle",
+          "homePracticeIntro"
+        ]
+      }
+    },
+    {
+      "id": "homePracticeCard0Photo",
       "type": "media",
       "config": {
-        "id": "closeVisual-image",
+        "id": "homePracticeCard0Photo",
         "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-7.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
-        "width": 270,
-        "height": 270,
-        "decoding": "async",
-        "loading": "lazy"
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/practice-design-sketch.webp",
+        "alt": "",
+        "width": 189,
+        "height": 189,
+        "classes": "thnBooksawPhoto ank-minHeight-245px ank-maxHeight-245px ank-minHeight-md-260px ank-maxHeight-md-260px",
+        "loading": "lazy",
+        "decoding": "async"
       }
     },
     {
-      "id": "closeVisualField",
+      "id": "homePracticeCard0Meta",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.cards.0.meta",
+      "config": {
+        "id": "homePracticeCard0Meta",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow ank-color-linkColor ank-fontSize-10px"
+      }
+    },
+    {
+      "id": "homePracticeCard0Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.cards.0.title",
+      "config": {
+        "id": "homePracticeCard0Title",
+        "tag": "h3",
+        "text": "",
+        "classes": "thnBooksawCardTitle"
+      }
+    },
+    {
+      "id": "homePracticeCard0Series",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.title",
+      "config": {
+        "id": "homePracticeCard0Series",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawSmallCopy ank-textTransform-lowercase"
+      }
+    },
+    {
+      "id": "homePracticeCard0Status",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.inPreparation",
+      "config": {
+        "id": "homePracticeCard0Status",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "homePracticeCard0Footer",
       "type": "container",
       "config": {
+        "id": "homePracticeCard0Footer",
         "tag": "div",
-        "classes": "ank-width-220px ank-height-220px ank-width-xl-300px ank-height-xl-300px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-justifySelf-center ank-justifySelf-md-end",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-justifyContent-spaceMINbetween ank-gap-8px ank-paddingTop-14px ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-HASHd4d0c7 ank-marginTop-auto",
         "components": [
-          "closeVisual"
+          "homePracticeCard0Series",
+          "homePracticeCard0Status"
         ]
       }
     },
     {
-      "id": "closeFrame",
+      "id": "homePracticeCard0",
       "type": "container",
       "config": {
-        "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gap-42px ank-gap-xl-58px ank-alignItems-center",
+        "id": "homePracticeCard0",
+        "tag": "article",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
-          "closeContent",
-          "closeVisualField"
+          "homePracticeCard0Photo",
+          "homePracticeCard0Meta",
+          "homePracticeCard0Title",
+          "homePracticeCard0Footer"
+        ]
+      }
+    },
+    {
+      "id": "homePracticeCard1Photo",
+      "type": "media",
+      "config": {
+        "id": "homePracticeCard1Photo",
+        "tag": "image",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/practice-references.webp",
+        "alt": "",
+        "width": 190,
+        "height": 189,
+        "classes": "thnBooksawPhoto ank-minHeight-245px ank-maxHeight-245px ank-minHeight-md-260px ank-maxHeight-md-260px",
+        "loading": "lazy",
+        "decoding": "async"
+      }
+    },
+    {
+      "id": "homePracticeCard1Meta",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.cards.1.meta",
+      "config": {
+        "id": "homePracticeCard1Meta",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow ank-color-linkColor ank-fontSize-10px"
+      }
+    },
+    {
+      "id": "homePracticeCard1Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.cards.1.title",
+      "config": {
+        "id": "homePracticeCard1Title",
+        "tag": "h3",
+        "text": "",
+        "classes": "thnBooksawCardTitle"
+      }
+    },
+    {
+      "id": "homePracticeCard1Series",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.title",
+      "config": {
+        "id": "homePracticeCard1Series",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawSmallCopy ank-textTransform-lowercase"
+      }
+    },
+    {
+      "id": "homePracticeCard1Status",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.inPreparation",
+      "config": {
+        "id": "homePracticeCard1Status",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "homePracticeCard1Footer",
+      "type": "container",
+      "config": {
+        "id": "homePracticeCard1Footer",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-justifyContent-spaceMINbetween ank-gap-8px ank-paddingTop-14px ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-HASHd4d0c7 ank-marginTop-auto",
+        "components": [
+          "homePracticeCard1Series",
+          "homePracticeCard1Status"
+        ]
+      }
+    },
+    {
+      "id": "homePracticeCard1",
+      "type": "container",
+      "config": {
+        "id": "homePracticeCard1",
+        "tag": "article",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
+        "components": [
+          "homePracticeCard1Photo",
+          "homePracticeCard1Meta",
+          "homePracticeCard1Title",
+          "homePracticeCard1Footer"
+        ]
+      }
+    },
+    {
+      "id": "homePracticeCard2Photo",
+      "type": "media",
+      "config": {
+        "id": "homePracticeCard2Photo",
+        "tag": "image",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/practice-hands.webp",
+        "alt": "",
+        "width": 189,
+        "height": 189,
+        "classes": "thnBooksawPhoto ank-minHeight-245px ank-maxHeight-245px ank-minHeight-md-260px ank-maxHeight-md-260px",
+        "loading": "lazy",
+        "decoding": "async"
+      }
+    },
+    {
+      "id": "homePracticeCard2Meta",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.cards.2.meta",
+      "config": {
+        "id": "homePracticeCard2Meta",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow ank-color-linkColor ank-fontSize-10px"
+      }
+    },
+    {
+      "id": "homePracticeCard2Title",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.cards.2.title",
+      "config": {
+        "id": "homePracticeCard2Title",
+        "tag": "h3",
+        "text": "",
+        "classes": "thnBooksawCardTitle"
+      }
+    },
+    {
+      "id": "homePracticeCard2Series",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.title",
+      "config": {
+        "id": "homePracticeCard2Series",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawSmallCopy ank-textTransform-lowercase"
+      }
+    },
+    {
+      "id": "homePracticeCard2Status",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.inPreparation",
+      "config": {
+        "id": "homePracticeCard2Status",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "homePracticeCard2Footer",
+      "type": "container",
+      "config": {
+        "id": "homePracticeCard2Footer",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-justifyContent-spaceMINbetween ank-gap-8px ank-paddingTop-14px ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-HASHd4d0c7 ank-marginTop-auto",
+        "components": [
+          "homePracticeCard2Series",
+          "homePracticeCard2Status"
+        ]
+      }
+    },
+    {
+      "id": "homePracticeCard2",
+      "type": "container",
+      "config": {
+        "id": "homePracticeCard2",
+        "tag": "article",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
+        "components": [
+          "homePracticeCard2Photo",
+          "homePracticeCard2Meta",
+          "homePracticeCard2Title",
+          "homePracticeCard2Footer"
+        ]
+      }
+    },
+    {
+      "id": "homePracticeGrid",
+      "type": "container",
+      "config": {
+        "id": "homePracticeGrid",
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-minmaxSD0COM1frED ank-gridTemplateColumns-md-repeatSD3COMminmaxSD0COM1frEDED ank-gap-46px ank-gap-md-32px",
+        "components": [
+          "homePracticeCard0",
+          "homePracticeCard1",
+          "homePracticeCard2"
+        ]
+      }
+    },
+    {
+      "id": "homePracticeClose",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.close",
+      "config": {
+        "id": "homePracticeClose",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawDisplayFont ank-m-0 ank-fontSize-27px ank-fontSize-lg-35px ank-lineHeight-1_35 ank-textAlign-center ank-maxWidth-780px ank-marginInline-auto ank-marginTop-54px"
+      }
+    },
+    {
+      "id": "homePracticeCtaArrow",
+      "type": "icon",
+      "config": {
+        "id": "homePracticeCta-arrow",
+        "iconName": "→",
+        "ariaHidden": true,
+        "classes": "thnBooksawBodyFont ank-fontSize-24px ank-lineHeight-1 ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "homePracticeCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.home.practice.cta.label;set:config.href,i18n,page.home.practice.cta.href",
+      "config": {
+        "id": "homePracticeCta",
+        "href": "/",
+        "text": "",
+        "classes": "thnBooksawCtaLink ank-color-linkColor",
+        "components": [
+          "homePracticeCtaArrow"
+        ]
+      }
+    },
+    {
+      "id": "homePracticeAction",
+      "type": "container",
+      "config": {
+        "id": "homePracticeAction",
+        "tag": "div",
+        "classes": "ank-display-flex ank-justifyContent-center ank-marginTop-36px",
+        "components": [
+          "homePracticeCta"
+        ]
+      }
+    },
+    {
+      "id": "homePracticeSectionFrame",
+      "type": "container",
+      "config": {
+        "id": "homePracticeSectionFrame",
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ",
+        "components": [
+          "homePracticeHeading",
+          "homePracticeGrid",
+          "homePracticeClose",
+          "homePracticeAction"
+        ]
+      }
+    },
+    {
+      "id": "homePracticeSection",
+      "type": "container",
+      "config": {
+        "id": "the-practice",
+        "tag": "section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-lg-104px ank-boxSizing-borderMINbox ank-bg-HASHffffff ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-HASHd4d0c7",
+        "components": [
+          "homePracticeSectionFrame"
+        ]
+      }
+    },
+    {
+      "id": "homeTestimonialQuote0",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.testimonials.items.0.quote",
+      "config": {
+        "id": "homeTestimonialQuote0",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawDisplayFont ank-m-0 ank-fontSize-21px ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "homeTestimonialAuthor0",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.testimonials.items.0.author",
+      "config": {
+        "id": "homeTestimonialAuthor0",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow ank-color-linkColor ank-marginTop-auto"
+      }
+    },
+    {
+      "id": "homeTestimonial0",
+      "type": "container",
+      "config": {
+        "id": "homeTestimonial0",
+        "tag": "article",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-24px ank-paddingBlock-28px ank-paddingInline-24px ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-secondaryAccentColor ank-bg-bgColor ank-textAlign-center",
+        "components": [
+          "homeTestimonialQuote0",
+          "homeTestimonialAuthor0"
+        ]
+      }
+    },
+    {
+      "id": "homeTestimonialQuote1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.testimonials.items.1.quote",
+      "config": {
+        "id": "homeTestimonialQuote1",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawDisplayFont ank-m-0 ank-fontSize-21px ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "homeTestimonialAuthor1",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.testimonials.items.1.author",
+      "config": {
+        "id": "homeTestimonialAuthor1",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow ank-color-linkColor ank-marginTop-auto"
+      }
+    },
+    {
+      "id": "homeTestimonial1",
+      "type": "container",
+      "config": {
+        "id": "homeTestimonial1",
+        "tag": "article",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-24px ank-paddingBlock-28px ank-paddingInline-24px ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-secondaryAccentColor ank-bg-bgColor ank-textAlign-center",
+        "components": [
+          "homeTestimonialQuote1",
+          "homeTestimonialAuthor1"
+        ]
+      }
+    },
+    {
+      "id": "homeTestimonialQuote2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.testimonials.items.2.quote",
+      "config": {
+        "id": "homeTestimonialQuote2",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawDisplayFont ank-m-0 ank-fontSize-21px ank-lineHeight-1_45"
+      }
+    },
+    {
+      "id": "homeTestimonialAuthor2",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.testimonials.items.2.author",
+      "config": {
+        "id": "homeTestimonialAuthor2",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow ank-color-linkColor ank-marginTop-auto"
+      }
+    },
+    {
+      "id": "homeTestimonial2",
+      "type": "container",
+      "config": {
+        "id": "homeTestimonial2",
+        "tag": "article",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-24px ank-paddingBlock-28px ank-paddingInline-24px ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-secondaryAccentColor ank-bg-bgColor ank-textAlign-center",
+        "components": [
+          "homeTestimonialQuote2",
+          "homeTestimonialAuthor2"
+        ]
+      }
+    },
+    {
+      "id": "homeTestimonialsTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.testimonials.title",
+      "config": {
+        "id": "homeTestimonialsTitle",
+        "tag": "h2",
+        "text": "",
+        "classes": "thnBooksawSectionTitle ank-textAlign-center"
+      }
+    },
+    {
+      "id": "homeTestimonialsGrid",
+      "type": "container",
+      "config": {
+        "id": "homeTestimonialsGrid",
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-minmaxSD0COM1frED ank-gridTemplateColumns-md-repeatSD3COMminmaxSD0COM1frEDED ank-gap-46px ank-gap-md-32px ank-marginTop-44px",
+        "components": [
+          "homeTestimonial0",
+          "homeTestimonial1",
+          "homeTestimonial2"
+        ]
+      }
+    },
+    {
+      "id": "homeTestimonialsSectionFrame",
+      "type": "container",
+      "config": {
+        "id": "homeTestimonialsSectionFrame",
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ",
+        "components": [
+          "homeTestimonialsTitle",
+          "homeTestimonialsGrid"
+        ]
+      }
+    },
+    {
+      "id": "homeTestimonialsSection",
+      "type": "container",
+      "config": {
+        "id": "homeTestimonialsSection",
+        "tag": "section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-lg-104px ank-boxSizing-borderMINbox ank-bg-secondaryBgColor",
+        "components": [
+          "homeTestimonialsSectionFrame"
+        ]
+      }
+    },
+    {
+      "id": "homeBridalPhoto",
+      "type": "media",
+      "config": {
+        "id": "homeBridalPhoto",
+        "tag": "image",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/narrative-hero.webp",
+        "alt": "The final shape of a personal bridal hairstyle.",
+        "width": 1672,
+        "height": 941,
+        "classes": "thnBooksawPhoto ank-minHeight-300px ank-maxHeight-300px ank-minHeight-lg-410px ank-maxHeight-lg-410px",
+        "loading": "lazy",
+        "decoding": "async"
+      }
+    },
+    {
+      "id": "homeBridalEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.bridal.eyebrow",
+      "config": {
+        "id": "homeBridalEyebrow",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow ank-color-linkColor"
+      }
+    },
+    {
+      "id": "homeBridalTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.bridal.title",
+      "config": {
+        "id": "homeBridalTitle",
+        "tag": "h2",
+        "text": "",
+        "classes": "thnBooksawSectionTitle"
+      }
+    },
+    {
+      "id": "homeBridalBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.home.bridal.body",
+      "config": {
+        "id": "homeBridalBody",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "homeBridalCtaArrow",
+      "type": "icon",
+      "config": {
+        "id": "homeBridalCta-arrow",
+        "iconName": "→",
+        "ariaHidden": true,
+        "classes": "thnBooksawBodyFont ank-fontSize-24px ank-lineHeight-1 ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "homeBridalCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.home.bridal.cta.label;set:config.href,i18n,page.home.bridal.cta.href",
+      "config": {
+        "id": "homeBridalCta",
+        "href": "/",
+        "text": "",
+        "classes": "thnBooksawCtaLink ank-color-linkColor",
+        "components": [
+          "homeBridalCtaArrow"
+        ]
+      }
+    },
+    {
+      "id": "homeBridalCopy",
+      "type": "container",
+      "config": {
+        "id": "homeBridalCopy",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-24px ank-alignItems-flexMINstart",
+        "components": [
+          "homeBridalEyebrow",
+          "homeBridalTitle",
+          "homeBridalBody",
+          "homeBridalCta"
+        ]
+      }
+    },
+    {
+      "id": "homeBridalSectionFrame",
+      "type": "container",
+      "config": {
+        "id": "homeBridalSectionFrame",
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-minmaxSD0COM1frED ank-gridTemplateColumns-lg-repeatSD2COMminmaxSD0COM1frEDED ank-gap-36px ank-gap-lg-72px ank-alignItems-center",
+        "components": [
+          "homeBridalPhoto",
+          "homeBridalCopy"
+        ]
+      }
+    },
+    {
+      "id": "homeBridalSection",
+      "type": "container",
+      "config": {
+        "id": "bridal-narrative",
+        "tag": "section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-lg-104px ank-boxSizing-borderMINbox ank-bg-bgColor",
+        "components": [
+          "homeBridalSectionFrame"
         ]
       }
     },
@@ -871,17 +1400,44 @@
       "id": "pageMain",
       "type": "container",
       "config": {
+        "id": "page-main",
         "tag": "main",
-        "classes": "thnBodyFont ank-width-100per ank-overflow-hidden ank-bg-bgColor ank-color-textColor",
+        "tabindex": -1,
+        "classes": "thnBooksawBodyFont ank-width-100per ank-bg-bgColor ank-color-textColor",
         "components": [
-          "heroSection",
-          "manifestoSection",
-          "pathsSection",
-          "narrativeSection",
-          "journal-letterSection",
-          "closeSection"
-        ],
-        "id": "page-main"
+          "homeNarrativeSection",
+          "homeManifestoSection",
+          "homeStudioSection",
+          "homeJournalSection",
+          "homeLetterSection",
+          "homePracticeSection",
+          "homeTestimonialsSection",
+          "homeBridalSection"
+        ]
+      }
+    },
+    {
+      "id": "homeHeroPhotoLayout",
+      "type": "container",
+      "config": {
+        "id": "homeHeroPhotoLayout",
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-order-MIN1 ank-order-lg-2 ank-width-100per",
+        "components": [
+          "homeHeroPhoto"
+        ]
+      }
+    },
+    {
+      "id": "homeStudioPortraitLayout",
+      "type": "container",
+      "config": {
+        "id": "homeStudioPortraitLayout",
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-justifySelf-center ank-justifySelf-lg-start ank-width-100per ank-maxWidth-400px",
+        "components": [
+          "homeStudioPortrait"
+        ]
       }
     }
   ]

@@ -5,100 +5,103 @@
   "lang": "en",
   "dictionary": {
     "page": {
-      "sections": {
+      "home": {
         "hero": {
-          "eyebrow": "THE HAIR NARRATIVE",
-          "title": "Hairstyling, observed more deeply.",
-          "body": "An editorial and educational space devoted to form, movement and the quiet decisions behind the work.",
-          "ctaLabel": "DISCOVER THE NARRATIVE",
-          "ctaHref": "/the-narrative",
+          "eyebrow": "the narrative",
+          "title": "every hairstyle holds a story.",
+          "body": "Learn to read it, interpret it and build it from the beginning.",
           "cta": {
-            "label": "DISCOVER THE NARRATIVE",
-            "href": "/the-narrative"
+            "label": "read the next letter",
+            "href": "/#the-letter"
           }
         },
-        "manifesto": {
-          "eyebrow": "A PHILOSOPHY OF SIMPLICITY",
-          "title": "Simplicity is not the result. It is the method.",
-          "body": "Observe before acting. Understand before executing. Create before copying."
-        },
-        "paths": {
-          "eyebrow": "TWO WAYS IN",
-          "title": "Practice the craft. Experience it personally.",
-          "body": "Two expressions of the same attentive way of working.",
-          "items": [
+        "manifesto": "I walk alongside women who want to make hairstyling part of their path and begin building their own way of creating and working.",
+        "studio": [
+          "I prefer to understand hair rather than try to dominate it. I do not pursue perfection; I seek coherence between the person, the design and the intention.",
+          "I am interested in design, architecture, art, nature and the psychology of perception. Inspiration rarely comes from another hairstyle. It usually comes from learning to see the world.",
+          "I do not want to have more. I want to deeply understand what I use. I prefer few products, few tools and conscious decisions. Simplicity is also a way of respecting the craft.",
+          "Designing a hairstyle means resolving a series of small decisions with sensitivity. Creativity appears when curiosity, observation and experience work together."
+        ],
+        "inPreparation": "in preparation",
+        "journal": {
+          "title": "the journal",
+          "intro": "Three editorial lines for the observations, methods and questions that will shape this journal.",
+          "cards": [
             {
-              "title": "The Practice",
-              "body": "Courses, mentoring and workbooks for women developing a point of view of their own. In preparation.",
-              "ctaLabel": "EXPLORE THE PRACTICE",
-              "ctaHref": "/the-practice",
-              "icon": 24,
-              "cta": {
-                "label": "EXPLORE THE PRACTICE",
-                "href": "/the-practice"
-              }
+              "title": "Form & Movement",
+              "meta": "Editorial series · In preparation"
             },
             {
-              "title": "The Bridal Narrative",
-              "body": "A calm, authentic destination bridal experience in Mexico, communicated entirely in English.",
-              "ctaLabel": "DISCOVER BRIDAL",
-              "ctaHref": "/the-bridal-narrative",
-              "icon": 36,
-              "cta": {
-                "label": "DISCOVER BRIDAL",
-                "href": "/the-bridal-narrative"
-              }
+              "title": "Observation & Process",
+              "meta": "Editorial series · In preparation"
+            },
+            {
+              "title": "Bridal Forms",
+              "meta": "Editorial series · In preparation"
+            }
+          ],
+          "cta": {
+            "label": "explore the journal",
+            "href": "/the-journal"
+          }
+        },
+        "letter": {
+          "eyebrow": "the letter",
+          "title": "a quieter way to stay in conversation.",
+          "body": "A note on craft, work and the questions that continue shaping the practice.",
+          "cta": {
+            "label": "join the letter",
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter%20%E2%80%94%20subscription%20interest&body=Hello%20Nina%2C%0D%0A%0D%0AI%20would%20like%20to%20hear%20when%20The%20Letter%20is%20ready.%0D%0AMy%20name%20is%3A%0D%0A"
+          },
+          "status": "For now, write to express your interest. This does not create an automated subscription."
+        },
+        "practice": {
+          "title": "the practice",
+          "intro": "Three foundations for learning to observe, understand and create with intention.",
+          "cards": [
+            {
+              "title": "Attention before execution.",
+              "meta": "observe · foundation"
+            },
+            {
+              "title": "Form, structure and intention.",
+              "meta": "understand · method"
+            },
+            {
+              "title": "A point of view of your own.",
+              "meta": "create · practice"
+            }
+          ],
+          "close": "I teach you to observe, understand and design with intention, so you can stop copying and begin creating from your own point of view.",
+          "cta": {
+            "label": "explore the practice",
+            "href": "/the-practice"
+          }
+        },
+        "testimonials": {
+          "title": "kind words from past students",
+          "items": [
+            {
+              "quote": "“Her classes have been very helpful. She patiently guides us and helps us improve every day.”",
+              "author": "Ana"
+            },
+            {
+              "quote": "“Her patience and dedication make me feel satisfied and confident in my work.”",
+              "author": "Nancy"
+            },
+            {
+              "quote": "“She shares her knowledge with patience and a true passion for hairstyling.”",
+              "author": "Malena"
             }
           ]
         },
-        "narrative": {
-          "eyebrow": "THE NARRATIVE",
-          "title": "The beauty appears when we understand what is essential.",
-          "body": "The philosophy, story, studio and values behind the work.",
-          "ctaLabel": "READ THE STORY",
-          "ctaHref": "/the-narrative",
+        "bridal": {
+          "eyebrow": "the bridal narrative",
+          "title": "presence before perfection.",
+          "body": "A calm and intentional bridal experience in Mexico, built around the person, the place and the story.",
           "cta": {
-            "label": "READ THE STORY",
-            "href": "/the-narrative"
-          }
-        },
-        "journal-letter": {
-          "eyebrow": "WORDS AND NOTES",
-          "title": "A place to think through the work.",
-          "items": [
-            {
-              "title": "The Journal",
-              "body": "Notes on form, movement and attention. The editorial space is ready; there are no published entries yet.",
-              "ctaLabel": "EXPLORE THE JOURNAL",
-              "ctaHref": "/the-journal",
-              "icon": 24,
-              "cta": {
-                "label": "EXPLORE THE JOURNAL",
-                "href": "/the-journal"
-              }
-            },
-            {
-              "title": "The Letter",
-              "body": "A quiet future correspondence about observation, practice and creative work. No automated newsletter is active yet.",
-              "ctaLabel": "EMAIL NINA",
-              "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Letter",
-              "icon": 39,
-              "cta": {
-                "label": "EMAIL NINA",
-                "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter"
-              }
-            }
-          ]
-        },
-        "close": {
-          "eyebrow": "BEGIN HERE",
-          "title": "Every story begins with a conversation.",
-          "body": "Whether you are preparing for your wedding, looking to learn or simply want to say hello, I would love to hear from you.",
-          "ctaLabel": "START A CONVERSATION",
-          "ctaHref": "/contact",
-          "cta": {
-            "label": "START A CONVERSATION",
-            "href": "/contact"
+            "label": "discover bridal",
+            "href": "/the-bridal-narrative"
           }
         }
       }

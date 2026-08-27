@@ -5,100 +5,103 @@
   "lang": "es",
   "dictionary": {
     "page": {
-      "sections": {
+      "home": {
         "hero": {
-          "eyebrow": "THE HAIR NARRATIVE",
-          "title": "El peinado observado en profundidad.",
-          "body": "Un espacio editorial y educativo dedicado a la forma, el movimiento y las decisiones silenciosas detrás del oficio.",
-          "ctaLabel": "DESCUBRE THE NARRATIVE",
-          "ctaHref": "/the-narrative",
+          "eyebrow": "la narrativa",
+          "title": "cada peinado tiene una historia.",
+          "body": "Aprende a leerla, interpretarla y construirla desde cero.",
           "cta": {
-            "label": "DESCUBRE THE NARRATIVE",
-            "href": "/the-narrative"
+            "label": "lee la próxima carta",
+            "href": "/#the-letter"
           }
         },
-        "manifesto": {
-          "eyebrow": "UNA FILOSOFÍA DE SIMPLICIDAD",
-          "title": "La simplicidad no es el resultado. Es el método.",
-          "body": "Observar antes de actuar. Comprender antes de ejecutar. Crear antes que copiar."
-        },
-        "paths": {
-          "eyebrow": "DOS CAMINOS",
-          "title": "Practica el oficio. Vívelo de manera personal.",
-          "body": "Dos expresiones de una misma forma atenta de trabajar.",
-          "items": [
+        "manifesto": "Acompaño a mujeres que quieren hacer del peinado una parte de su camino y comenzar a construir una forma propia de crear y trabajar.",
+        "studio": [
+          "Prefiero comprender el cabello que intentar dominarlo. No persigo la perfección; busco coherencia entre la persona, el diseño y la intención.",
+          "Me interesa el diseño, la arquitectura, el arte, la naturaleza y la psicología de la percepción. La inspiración rara vez viene de otro peinado. Generalmente viene de aprender a mirar el mundo.",
+          "No quiero tener más. Quiero conocer profundamente lo que uso. Prefiero pocos productos, pocas herramientas y decisiones conscientes. La simplicidad también es una forma de respeto hacia el oficio.",
+          "Diseñar un peinado es resolver una serie de pequeñas decisiones con sensibilidad. La creatividad aparece cuando la curiosidad, la observación y la experiencia trabajan juntas."
+        ],
+        "inPreparation": "en preparación",
+        "journal": {
+          "title": "the journal",
+          "intro": "Tres líneas editoriales para las observaciones, métodos y preguntas que darán forma a este journal.",
+          "cards": [
             {
-              "title": "The Practice",
-              "body": "Cursos, mentorías y workbooks para mujeres que desarrollan una mirada propia. En preparación.",
-              "ctaLabel": "EXPLORA THE PRACTICE",
-              "ctaHref": "/the-practice",
-              "icon": 24,
-              "cta": {
-                "label": "EXPLORA THE PRACTICE",
-                "href": "/the-practice"
-              }
+              "title": "Forma y movimiento",
+              "meta": "Serie editorial · En preparación"
             },
             {
-              "title": "The Bridal Narrative",
-              "body": "Una experiencia tranquila y auténtica para novias destino en México, comunicada totalmente en inglés.",
-              "ctaLabel": "DESCUBRE BRIDAL",
-              "ctaHref": "/the-bridal-narrative",
-              "icon": 36,
-              "cta": {
-                "label": "DESCUBRE BRIDAL",
-                "href": "/the-bridal-narrative"
-              }
+              "title": "Observación y proceso",
+              "meta": "Serie editorial · En preparación"
+            },
+            {
+              "title": "Formas nupciales",
+              "meta": "Serie editorial · En preparación"
+            }
+          ],
+          "cta": {
+            "label": "explora the journal",
+            "href": "/the-journal"
+          }
+        },
+        "letter": {
+          "eyebrow": "the letter",
+          "title": "una manera más pausada de seguir conversando.",
+          "body": "Una carta sobre el oficio, el trabajo y las preguntas que siguen dando forma a la práctica.",
+          "cta": {
+            "label": "recibe the letter",
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter%20%E2%80%94%20inter%C3%A9s%20en%20suscribirme&body=Hola%20Nina%2C%0D%0A%0D%0AMe%20gustar%C3%ADa%20saber%20cu%C3%A1ndo%20est%C3%A9%20lista%20The%20Letter.%0D%0AMi%20nombre%20es%3A%0D%0A"
+          },
+          "status": "Por ahora, escribe para expresar tu interés. Esto no crea una suscripción automatizada."
+        },
+        "practice": {
+          "title": "the practice",
+          "intro": "Tres fundamentos para aprender a observar, comprender y crear con intención.",
+          "cards": [
+            {
+              "title": "Atención antes de ejecutar.",
+              "meta": "observar · fundamento"
+            },
+            {
+              "title": "Forma, estructura e intención.",
+              "meta": "comprender · método"
+            },
+            {
+              "title": "Una mirada propia.",
+              "meta": "crear · práctica"
+            }
+          ],
+          "close": "Te enseño a observar, comprender y diseñar con intención para que dejes de copiar y comiences a crear desde tu propia mirada.",
+          "cta": {
+            "label": "explora the practice",
+            "href": "/the-practice"
+          }
+        },
+        "testimonials": {
+          "title": "palabras de alumnas anteriores",
+          "items": [
+            {
+              "quote": "“Sus clases han sido de mucha ayuda; nos lleva de la mano con paciencia para mejorar cada día.”",
+              "author": "Ana"
+            },
+            {
+              "quote": "“Su paciencia y dedicación me hacen sentir satisfecha y segura en mis trabajos.”",
+              "author": "Nancy"
+            },
+            {
+              "quote": "“Comparte sus conocimientos con mucha paciencia y pasión por el peinado.”",
+              "author": "Malena"
             }
           ]
         },
-        "narrative": {
-          "eyebrow": "THE NARRATIVE",
-          "title": "La belleza aparece al comprender lo esencial.",
-          "body": "La filosofía, la historia, el estudio y los valores detrás del trabajo.",
-          "ctaLabel": "LEE LA HISTORIA",
-          "ctaHref": "/the-narrative",
+        "bridal": {
+          "eyebrow": "the bridal narrative",
+          "title": "presencia antes que perfección.",
+          "body": "Una experiencia nupcial serena e intencional en México, construida alrededor de la persona, el lugar y la historia.",
           "cta": {
-            "label": "LEE LA HISTORIA",
-            "href": "/the-narrative"
-          }
-        },
-        "journal-letter": {
-          "eyebrow": "PALABRAS Y NOTAS",
-          "title": "Un lugar para pensar el oficio.",
-          "items": [
-            {
-              "title": "The Journal",
-              "body": "Notas sobre forma, movimiento y atención. El espacio editorial está listo; todavía no hay publicaciones.",
-              "ctaLabel": "EXPLORA THE JOURNAL",
-              "ctaHref": "/the-journal",
-              "icon": 24,
-              "cta": {
-                "label": "EXPLORA THE JOURNAL",
-                "href": "/the-journal"
-              }
-            },
-            {
-              "title": "The Letter",
-              "body": "Una futura correspondencia tranquila sobre observación, práctica y trabajo creativo. Aún no existe un newsletter automatizado.",
-              "ctaLabel": "ESCRIBE A NINA",
-              "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Letter",
-              "icon": 39,
-              "cta": {
-                "label": "ESCRIBE A NINA",
-                "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter"
-              }
-            }
-          ]
-        },
-        "close": {
-          "eyebrow": "COMIENZA AQUÍ",
-          "title": "Toda historia comienza con una conversación.",
-          "body": "Ya sea que prepares tu boda, quieras aprender o simplemente desees saludar, me encantará leerte.",
-          "ctaLabel": "INICIA UNA CONVERSACIÓN",
-          "ctaHref": "/contact",
-          "cta": {
-            "label": "INICIA UNA CONVERSACIÓN",
-            "href": "/contact"
+            "label": "descubre bridal",
+            "href": "/the-bridal-narrative"
           }
         }
       }

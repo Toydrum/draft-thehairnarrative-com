@@ -12,11 +12,12 @@
           "body": "An educational space for women who want to make hairstyling their profession, move beyond copied techniques and develop a point of view of their own.",
           "status": "Courses, mentoring and workbooks are in preparation.",
           "ctaLabel": "ASK ABOUT THE PRACTICE",
-          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20hairstyling%20experience%20is%3A%0D%0AWhat%20I%20would%20like%20to%20learn%20is%3A%0D%0A",
           "cta": {
             "label": "ASK ABOUT THE PRACTICE",
-            "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry"
-          }
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20hairstyling%20experience%20is%3A%0D%0AWhat%20I%20would%20like%20to%20learn%20is%3A%0D%0A"
+          },
+          "imageAlt": "Hands constructing a textured low bun"
         },
         "manifesto": {
           "quote": "Simplicity is not the result. It is the method.",
@@ -70,37 +71,41 @@
           "eyebrow": "THE METHOD"
         },
         "future-formats": {
-          "heading": "The Practice will bring together",
+          "heading": "Courses, mentoring and workbooks.",
           "statusLabel": "IN PREPARATION",
           "items": [
             {
               "title": "Courses",
               "body": "Learning experiences focused on understanding principles rather than memorizing techniques.",
-              "status": "IN PREPARATION"
+              "status": "IN PREPARATION",
+              "imageAlt": "Loose hair moving through soft natural light"
             },
             {
               "title": "Mentoring",
               "body": "Individual sessions offered by prior reservation when available.",
-              "status": "IN PREPARATION"
+              "status": "IN PREPARATION",
+              "imageAlt": "Hands constructing a textured low bun"
             },
             {
               "title": "Workbooks",
               "body": "Downloadable resources for continued learning and practice.",
-              "status": "IN PREPARATION"
+              "status": "IN PREPARATION",
+              "imageAlt": "Minimal bridal chignon photographed from behind"
             }
           ],
-          "title": "The Practice will bring together",
-          "eyebrow": "FUTURE FORMATS"
+          "title": "Courses, mentoring and workbooks.",
+          "eyebrow": "FUTURE FORMATS",
+          "meta": "Future learning format"
         },
         "closing": {
           "title": "Every story begins with a conversation.",
           "body": "If you want to ask about future courses, mentoring or workbooks, write to Nina directly.",
           "ctaLabel": "EMAIL ABOUT THE PRACTICE",
           "eyebrow": "BEGIN A CONVERSATION",
-          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry",
+          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20hairstyling%20experience%20is%3A%0D%0AWhat%20I%20would%20like%20to%20learn%20is%3A%0D%0A",
           "cta": {
             "label": "EMAIL ABOUT THE PRACTICE",
-            "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry"
+            "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20hairstyling%20experience%20is%3A%0D%0AWhat%20I%20would%20like%20to%20learn%20is%3A%0D%0A"
           }
         }
       },
@@ -121,7 +126,7 @@
           {
             "id": "faq-3",
             "title": "Do I need previous experience?",
-            "content": "The path considers four stages: beginner, designer, professional and signature artist."
+            "content": "No. The path welcomes beginners and also guides designers, professionals and signature artists at different stages of practice."
           },
           {
             "id": "faq-4",

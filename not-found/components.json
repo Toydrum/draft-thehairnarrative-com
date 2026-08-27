@@ -8,7 +8,7 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor ank-minHeight-calcSD100svh__MIN__138pxED ank-minHeight-md-calcSD100svh__MIN__140pxED ank-alignItems-center",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-96px ank-paddingBlock-lg-128px ank-boxSizing-borderMINbox ank-color-textColor ank-bg-bgColor",
         "components": [
           "not-foundFrame"
         ],
@@ -22,7 +22,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-linkColor"
       }
     },
     {
@@ -32,7 +32,7 @@
       "config": {
         "tag": "h1",
         "text": "",
-        "classes": "thnHeroTitle"
+        "classes": "thnBooksawHeroTitleCompact"
       }
     },
     {
@@ -42,16 +42,16 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor ank-maxWidth-600px"
       }
     },
     {
       "id": "not-foundCtaRule",
-      "type": "container",
+      "type": "icon",
       "config": {
-        "tag": "span",
-        "classes": "thnCtaRule ank-bg-textColor",
-        "components": []
+        "iconName": "→",
+        "ariaHidden": true,
+        "classes": "thnBooksawBodyFont ank-fontSize-24px ank-lineHeight-1 ank-flexShrink-0"
       }
     },
     {
@@ -66,16 +66,16 @@
         "components": [
           "not-foundCtaRule"
         ],
-        "classes": "thnCtaLink"
+        "classes": "thnBooksawCtaLink ank-color-linkColor"
       }
     },
     {
       "id": "not-foundSecondaryCtaRule",
-      "type": "container",
+      "type": "icon",
       "config": {
-        "tag": "span",
-        "classes": "thnCtaRule ank-bg-textColor",
-        "components": []
+        "iconName": "→",
+        "ariaHidden": true,
+        "classes": "thnBooksawBodyFont ank-fontSize-24px ank-lineHeight-1 ank-flexShrink-0"
       }
     },
     {
@@ -90,7 +90,7 @@
         "components": [
           "not-foundSecondaryCtaRule"
         ],
-        "classes": "thnCtaLink ank-opacity-0_72"
+        "classes": "thnBooksawCtaLink ank-color-linkColor"
       }
     },
     {
@@ -98,29 +98,13 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-textAlign-center ank-gap-24px",
         "components": [
           "not-foundEyebrow",
           "not-foundTitle",
           "not-foundBody",
-          "not-foundCta",
-          "not-foundSecondaryCta"
+          "not-foundActions"
         ]
-      }
-    },
-    {
-      "id": "not-foundVisual",
-      "type": "media",
-      "config": {
-        "id": "not-foundVisual-image",
-        "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-18.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-128px ank-height-128px ank-width-md-180px ank-height-md-180px ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
-        "width": 270,
-        "height": 270,
-        "decoding": "async",
-        "loading": "eager"
       }
     },
     {
@@ -128,10 +112,9 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-md-42px ank-gap-xl-58px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-760px ank-marginInline-auto ank-minWidth-0",
         "components": [
-          "not-foundContent",
-          "not-foundVisual"
+          "not-foundContent"
         ]
       }
     },
@@ -140,11 +123,24 @@
       "type": "container",
       "config": {
         "tag": "main",
-        "classes": "thnBodyFont ank-width-100per ank-overflow-hidden ank-bg-bgColor ank-color-textColor",
+        "tabindex": -1,
+        "classes": "thnBooksawBodyFont ank-width-100per ank-minWidth-0 ank-bg-bgColor ank-color-textColor",
         "components": [
           "not-foundSection"
         ],
         "id": "page-main"
+      }
+    },
+    {
+      "id": "not-foundActions",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-flexDirection-sm-row ank-flexWrap-wrap ank-justifyContent-center ank-alignItems-center ank-gap-16px ank-marginTop-8px",
+        "components": [
+          "not-foundCta",
+          "not-foundSecondaryCta"
+        ]
       }
     }
   ]

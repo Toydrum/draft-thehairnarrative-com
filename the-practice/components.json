@@ -4,25 +4,13 @@
   "pageId": "the-practice",
   "components": [
     {
-      "id": "heroSection",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor ank-minHeight-calcSD100svh__MIN__138pxED ank-minHeight-md-calcSD100svh__MIN__140pxED ank-alignItems-center",
-        "components": [
-          "heroFrame"
-        ],
-        "id": "hero-section"
-      }
-    },
-    {
       "id": "heroEyebrow",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.hero.eyebrow",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow"
       }
     },
     {
@@ -32,7 +20,7 @@
       "config": {
         "tag": "h1",
         "text": "",
-        "classes": "thnHeroTitleCompact"
+        "classes": "thnBooksawHeroTitle"
       }
     },
     {
@@ -42,7 +30,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawBodyCopy ank-maxWidth-460px"
       }
     },
     {
@@ -52,31 +40,30 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnSmallCopy ank-textTransform-uppercase ank-letterSpacing-0_1em"
+        "classes": "thnBooksawSmallCopy ank-color-accentColor ank-letterSpacing-0_04em"
       }
     },
     {
-      "id": "heroCtaRule",
-      "type": "container",
+      "id": "heroCtaArrow",
+      "type": "icon",
       "config": {
-        "tag": "span",
-        "classes": "thnCtaRule ank-bg-textColor",
-        "components": []
+        "iconName": "→",
+        "ariaHidden": true,
+        "classes": "thnBooksawBodyFont ank-fontSize-24px ank-lineHeight-1 ank-flexShrink-0"
       }
     },
     {
       "id": "heroCta",
       "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.sections.hero.cta.label;set:config.href,i18n,page.sections.hero.cta.href",
+      "valueInstructions": "set:config.text,i18n,page.sections.hero.ctaLabel;set:config.href,i18n,page.sections.hero.ctaHref",
       "config": {
         "id": "heroCta-link",
-        "href": "/",
+        "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20hairstyling%20experience%20is%3A%0D%0AWhat%20I%20would%20like%20to%20learn%20is%3A%0D%0A",
         "text": "",
-        "rel": "noopener",
+        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-flexMINstart ank-marginTop-8px",
         "components": [
-          "heroCtaRule"
-        ],
-        "classes": "thnCtaLink"
+          "heroCtaArrow"
+        ]
       }
     },
     {
@@ -84,7 +71,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-20px",
         "components": [
           "heroEyebrow",
           "heroTitle",
@@ -97,16 +84,17 @@
     {
       "id": "heroVisual",
       "type": "media",
+      "valueInstructions": "set:config.alt,i18n,page.sections.hero.imageAlt",
       "config": {
         "id": "heroVisual-image",
         "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-13.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-100px ank-height-100px ank-width-md-180px ank-height-md-180px ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
-        "width": 270,
-        "height": 270,
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/practice-journal-observation-process.webp",
+        "alt": "",
+        "width": 960,
+        "height": 720,
+        "loading": "eager",
         "decoding": "async",
-        "loading": "eager"
+        "classes": "thnBooksawPhoto ank-minHeight-260px ank-maxHeight-260px ank-minHeight-md-360px ank-maxHeight-md-360px ank-minHeight-xl-420px ank-maxHeight-xl-420px ank-objectPosition-center"
       }
     },
     {
@@ -114,7 +102,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-md-42px ank-gap-xl-58px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-minmaxSD0COM1frED__minmaxSD0COM1_05frED ank-gap-38px ank-gap-xl-64px ank-alignItems-center",
         "components": [
           "heroContent",
           "heroVisual"
@@ -122,15 +110,15 @@
       }
     },
     {
-      "id": "manifestoSection",
+      "id": "heroSection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-textColor ank-color-bgColor",
+        "id": "hero-section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-boxSizing-borderMINbox ank-bg-bgColor",
         "components": [
-          "manifestoFrame"
-        ],
-        "id": "manifesto-section"
+          "heroFrame"
+        ]
       }
     },
     {
@@ -140,7 +128,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnSectionTitle"
+        "classes": "thnBooksawSectionTitle ank-maxWidth-820px ank-fontWeight-400"
       }
     },
     {
@@ -150,45 +138,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
-      }
-    },
-    {
-      "id": "manifestoContent",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
-        "components": [
-          "manifestoTitle",
-          "manifestoBody"
-        ]
-      }
-    },
-    {
-      "id": "manifestoVisual",
-      "type": "media",
-      "config": {
-        "id": "manifestoVisual-image",
-        "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-12.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
-        "width": 270,
-        "height": 270,
-        "decoding": "async",
-        "loading": "lazy"
-      }
-    },
-    {
-      "id": "manifestoVisualField",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-220px ank-height-220px ank-width-xl-300px ank-height-xl-300px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-justifySelf-center ank-justifySelf-md-end",
-        "components": [
-          "manifestoVisual"
-        ]
+        "classes": "thnBooksawBodyCopy ank-maxWidth-690px"
       }
     },
     {
@@ -196,196 +146,280 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-42px ank-gap-xl-58px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-textAlign-center ank-gap-24px",
         "components": [
-          "manifestoContent",
-          "manifestoVisualField"
+          "manifestoTitle",
+          "manifestoBody"
         ]
       }
     },
     {
-      "id": "learning-pathSection",
+      "id": "manifestoSection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "id": "manifesto-section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-boxSizing-borderMINbox ank-bg-secondaryBgColor",
         "components": [
-          "learning-pathFrame"
-        ],
-        "id": "learning-path-section"
-      }
-    },
-    {
-      "id": "learning-pathEyebrow",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.eyebrow",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnEyebrow"
-      }
-    },
-    {
-      "id": "learning-pathTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.title",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "thnSectionTitle"
-      }
-    },
-    {
-      "id": "learning-pathContent",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
-        "components": [
-          "learning-pathEyebrow",
-          "learning-pathTitle"
+          "manifestoFrame"
         ]
       }
     },
     {
-      "id": "learning-pathCard1Title",
+      "id": "learningPathCard1Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "01",
+        "classes": "thnBooksawDisplayFont ank-fontSize-18px ank-color-accentColor ank-lineHeight-1_4"
+      }
+    },
+    {
+      "id": "learningPathCard1Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.0.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "learning-pathCard1Body",
+      "id": "learningPathCard1Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.0.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy"
       }
     },
     {
-      "id": "learning-pathCard1",
+      "id": "learningPathCard1Content",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-12px",
         "components": [
-          "learning-pathCard1Title",
-          "learning-pathCard1Body"
+          "learningPathCard1Title",
+          "learningPathCard1Body"
         ]
       }
     },
     {
-      "id": "learning-pathCard2Title",
+      "id": "learningPathCard1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-40px__minmaxSD0COM1frED ank-gap-16px ank-paddingBlock-28px ank-borderColor-HASHd4d0c7 ank-borderBottomStyle-solid ank-borderBottomWidth-1px",
+        "components": [
+          "learningPathCard1Number",
+          "learningPathCard1Content"
+        ]
+      }
+    },
+    {
+      "id": "learningPathCard2Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "02",
+        "classes": "thnBooksawDisplayFont ank-fontSize-18px ank-color-accentColor ank-lineHeight-1_4"
+      }
+    },
+    {
+      "id": "learningPathCard2Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.1.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "learning-pathCard2Body",
+      "id": "learningPathCard2Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.1.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy"
       }
     },
     {
-      "id": "learning-pathCard2",
+      "id": "learningPathCard2Content",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-12px",
         "components": [
-          "learning-pathCard2Title",
-          "learning-pathCard2Body"
+          "learningPathCard2Title",
+          "learningPathCard2Body"
         ]
       }
     },
     {
-      "id": "learning-pathCard3Title",
+      "id": "learningPathCard2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-40px__minmaxSD0COM1frED ank-gap-16px ank-paddingBlock-28px ank-borderColor-HASHd4d0c7 ank-borderBottomStyle-solid ank-borderBottomWidth-1px",
+        "components": [
+          "learningPathCard2Number",
+          "learningPathCard2Content"
+        ]
+      }
+    },
+    {
+      "id": "learningPathCard3Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "03",
+        "classes": "thnBooksawDisplayFont ank-fontSize-18px ank-color-accentColor ank-lineHeight-1_4"
+      }
+    },
+    {
+      "id": "learningPathCard3Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.2.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "learning-pathCard3Body",
+      "id": "learningPathCard3Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.2.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy"
       }
     },
     {
-      "id": "learning-pathCard3",
+      "id": "learningPathCard3Content",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-12px",
         "components": [
-          "learning-pathCard3Title",
-          "learning-pathCard3Body"
+          "learningPathCard3Title",
+          "learningPathCard3Body"
         ]
       }
     },
     {
-      "id": "learning-pathCard4Title",
+      "id": "learningPathCard3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-40px__minmaxSD0COM1frED ank-gap-16px ank-paddingBlock-28px ank-borderColor-HASHd4d0c7 ank-borderBottomStyle-solid ank-borderBottomWidth-1px",
+        "components": [
+          "learningPathCard3Number",
+          "learningPathCard3Content"
+        ]
+      }
+    },
+    {
+      "id": "learningPathCard4Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "04",
+        "classes": "thnBooksawDisplayFont ank-fontSize-18px ank-color-accentColor ank-lineHeight-1_4"
+      }
+    },
+    {
+      "id": "learningPathCard4Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.3.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "learning-pathCard4Body",
+      "id": "learningPathCard4Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-path.items.3.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy"
       }
     },
     {
-      "id": "learning-pathCard4",
+      "id": "learningPathCard4Content",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-12px",
         "components": [
-          "learning-pathCard4Title",
-          "learning-pathCard4Body"
+          "learningPathCard4Title",
+          "learningPathCard4Body"
         ]
       }
     },
     {
-      "id": "learning-pathGrid",
+      "id": "learningPathCard4",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-40px__minmaxSD0COM1frED ank-gap-16px ank-paddingBlock-28px ank-borderColor-HASHd4d0c7 ank-borderBottomStyle-solid ank-borderBottomWidth-1px",
+        "components": [
+          "learningPathCard4Number",
+          "learningPathCard4Content"
+        ]
+      }
+    },
+    {
+      "id": "learningPathGrid",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-38px ank-gap-xl-48px",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM1frED__minmaxSD0COM1frED ank-columnGap-42px ank-borderColor-HASHd4d0c7 ank-borderTopStyle-solid ank-borderTopWidth-1px",
         "components": [
-          "learning-pathCard1",
-          "learning-pathCard2",
-          "learning-pathCard3",
-          "learning-pathCard4"
+          "learningPathCard1",
+          "learningPathCard2",
+          "learningPathCard3",
+          "learningPathCard4"
+        ]
+      }
+    },
+    {
+      "id": "learningPathEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow"
+      }
+    },
+    {
+      "id": "learningPathTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-path.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnBooksawSectionTitle"
+      }
+    },
+    {
+      "id": "learningPathHeading",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-textAlign-center ank-gap-16px ank-maxWidth-760px ank-marginInline-auto",
+        "components": [
+          "learningPathEyebrow",
+          "learningPathTitle"
         ]
       }
     },
@@ -394,196 +428,196 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-42px",
         "components": [
-          "learning-pathContent",
-          "learning-pathGrid"
+          "learningPathHeading",
+          "learningPathGrid"
         ]
       }
     },
     {
-      "id": "learning-methodSection",
+      "id": "learning-pathSection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
+        "id": "learning-path-section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-boxSizing-borderMINbox ank-bg-HASHffffff",
         "components": [
-          "learning-methodFrame"
-        ],
-        "id": "learning-method-section"
-      }
-    },
-    {
-      "id": "learning-methodEyebrow",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.eyebrow",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnEyebrow"
-      }
-    },
-    {
-      "id": "learning-methodTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.title",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "thnSectionTitle"
-      }
-    },
-    {
-      "id": "learning-methodContent",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
-        "components": [
-          "learning-methodEyebrow",
-          "learning-methodTitle"
+          "learning-pathFrame"
         ]
       }
     },
     {
-      "id": "learning-methodCard1Title",
+      "id": "learningMethodCard1Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.0.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "learning-methodCard1Body",
+      "id": "learningMethodCard1Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.0.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy"
       }
     },
     {
-      "id": "learning-methodCard1",
+      "id": "learningMethodCard1",
       "type": "container",
       "config": {
         "tag": "article",
-        "classes": "thnCard",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-textAlign-center ank-gap-14px ank-paddingInline-20px ank-paddingBlock-28px ank-bg-bgColor ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderTopColor-secondaryAccentColor",
         "components": [
-          "learning-methodCard1Title",
-          "learning-methodCard1Body"
+          "learningMethodCard1Title",
+          "learningMethodCard1Body"
         ]
       }
     },
     {
-      "id": "learning-methodCard2Title",
+      "id": "learningMethodCard2Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.1.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "learning-methodCard2Body",
+      "id": "learningMethodCard2Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.1.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy"
       }
     },
     {
-      "id": "learning-methodCard2",
+      "id": "learningMethodCard2",
       "type": "container",
       "config": {
         "tag": "article",
-        "classes": "thnCard",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-textAlign-center ank-gap-14px ank-paddingInline-20px ank-paddingBlock-28px ank-bg-bgColor ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderTopColor-secondaryAccentColor",
         "components": [
-          "learning-methodCard2Title",
-          "learning-methodCard2Body"
+          "learningMethodCard2Title",
+          "learningMethodCard2Body"
         ]
       }
     },
     {
-      "id": "learning-methodCard3Title",
+      "id": "learningMethodCard3Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.2.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "learning-methodCard3Body",
+      "id": "learningMethodCard3Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.2.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy"
       }
     },
     {
-      "id": "learning-methodCard3",
+      "id": "learningMethodCard3",
       "type": "container",
       "config": {
         "tag": "article",
-        "classes": "thnCard",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-textAlign-center ank-gap-14px ank-paddingInline-20px ank-paddingBlock-28px ank-bg-bgColor ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderTopColor-secondaryAccentColor",
         "components": [
-          "learning-methodCard3Title",
-          "learning-methodCard3Body"
+          "learningMethodCard3Title",
+          "learningMethodCard3Body"
         ]
       }
     },
     {
-      "id": "learning-methodCard4Title",
+      "id": "learningMethodCard4Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.3.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "learning-methodCard4Body",
+      "id": "learningMethodCard4Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.learning-method.items.3.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy"
       }
     },
     {
-      "id": "learning-methodCard4",
+      "id": "learningMethodCard4",
       "type": "container",
       "config": {
         "tag": "article",
-        "classes": "thnCard",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-textAlign-center ank-gap-14px ank-paddingInline-20px ank-paddingBlock-28px ank-bg-bgColor ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderTopColor-secondaryAccentColor",
         "components": [
-          "learning-methodCard4Title",
-          "learning-methodCard4Body"
+          "learningMethodCard4Title",
+          "learningMethodCard4Body"
         ]
       }
     },
     {
-      "id": "learning-methodGrid",
+      "id": "learningMethodGrid",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-38px ank-gap-xl-48px",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gridTemplateColumns-xl-repeatSD4COM1frED ank-gap-24px",
         "components": [
-          "learning-methodCard1",
-          "learning-methodCard2",
-          "learning-methodCard3",
-          "learning-methodCard4"
+          "learningMethodCard1",
+          "learningMethodCard2",
+          "learningMethodCard3",
+          "learningMethodCard4"
+        ]
+      }
+    },
+    {
+      "id": "learningMethodEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow"
+      }
+    },
+    {
+      "id": "learningMethodTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.learning-method.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnBooksawSectionTitle"
+      }
+    },
+    {
+      "id": "learningMethodHeading",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-textAlign-center ank-gap-16px ank-maxWidth-760px ank-marginInline-auto",
+        "components": [
+          "learningMethodEyebrow",
+          "learningMethodTitle"
         ]
       }
     },
@@ -592,196 +626,302 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-42px",
         "components": [
-          "learning-methodContent",
-          "learning-methodGrid"
+          "learningMethodHeading",
+          "learningMethodGrid"
         ]
       }
     },
     {
-      "id": "future-formatsSection",
+      "id": "learning-methodSection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "id": "learning-method-section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-boxSizing-borderMINbox ank-bg-secondaryBgColor",
         "components": [
-          "future-formatsFrame"
-        ],
-        "id": "future-formats-section"
+          "learning-methodFrame"
+        ]
       }
     },
     {
-      "id": "future-formatsEyebrow",
+      "id": "futureFormatsEyebrow",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.future-formats.eyebrow",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow"
       }
     },
     {
-      "id": "future-formatsTitle",
+      "id": "futureFormatsTitle",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.future-formats.title",
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnSectionTitle"
+        "classes": "thnBooksawSectionTitle"
       }
     },
     {
-      "id": "future-formatsContent",
+      "id": "futureFormatsHeading",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-16px ank-maxWidth-760px ",
         "components": [
-          "future-formatsEyebrow",
-          "future-formatsTitle"
+          "futureFormatsEyebrow",
+          "futureFormatsTitle"
         ]
       }
     },
     {
-      "id": "future-formatsCard1Status",
+      "id": "futureFormatsStatus",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.0.status",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.statusLabel",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawSmallCopy ank-letterSpacing-0_08em ank-textTransform-uppercase ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "future-formatsCard1Title",
+      "id": "futureFormatsHeader",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-flexDirection-lg-row ank-alignItems-lg-flexMINend ank-justifyContent-spaceMINbetween ank-gap-24px ank-paddingBottom-24px ank-borderColor-HASHd4d0c7 ank-borderBottomStyle-solid ank-borderBottomWidth-1px",
+        "components": [
+          "futureFormatsHeading",
+          "futureFormatsStatus"
+        ]
+      }
+    },
+    {
+      "id": "futureFormatsCard1Photo",
+      "type": "media",
+      "valueInstructions": "set:config.alt,i18n,page.sections.future-formats.items.0.imageAlt",
+      "config": {
+        "id": "futureFormatsCard1Photo-image",
+        "tag": "image",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/practice-journal-form-movement.webp",
+        "alt": "",
+        "width": 960,
+        "height": 720,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "thnBooksawPhoto ank-height-auto"
+      }
+    },
+    {
+      "id": "futureFormatsCard1Meta",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.meta",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow"
+      }
+    },
+    {
+      "id": "futureFormatsCard1Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.0.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "future-formatsCard1Body",
+      "id": "futureFormatsCard1Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.0.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy"
       }
     },
     {
-      "id": "future-formatsCard1",
+      "id": "futureFormatsCard1Content",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-12px",
         "components": [
-          "future-formatsCard1Status",
-          "future-formatsCard1Title",
-          "future-formatsCard1Body"
+          "futureFormatsCard1Meta",
+          "futureFormatsCard1Title",
+          "futureFormatsCard1Body"
         ]
       }
     },
     {
-      "id": "future-formatsCard2Status",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.1.status",
+      "id": "futureFormatsCard1",
+      "type": "container",
       "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnEyebrow"
+        "tag": "article",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-26px",
+        "components": [
+          "futureFormatsCard1Photo",
+          "futureFormatsCard1Content"
+        ]
       }
     },
     {
-      "id": "future-formatsCard2Title",
+      "id": "futureFormatsCard2Photo",
+      "type": "media",
+      "valueInstructions": "set:config.alt,i18n,page.sections.future-formats.items.1.imageAlt",
+      "config": {
+        "id": "futureFormatsCard2Photo-image",
+        "tag": "image",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/practice-journal-observation-process.webp",
+        "alt": "",
+        "width": 960,
+        "height": 720,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "thnBooksawPhoto ank-height-auto"
+      }
+    },
+    {
+      "id": "futureFormatsCard2Meta",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.meta",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow"
+      }
+    },
+    {
+      "id": "futureFormatsCard2Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.1.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "future-formatsCard2Body",
+      "id": "futureFormatsCard2Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.1.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy"
       }
     },
     {
-      "id": "future-formatsCard2",
+      "id": "futureFormatsCard2Content",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-12px",
         "components": [
-          "future-formatsCard2Status",
-          "future-formatsCard2Title",
-          "future-formatsCard2Body"
+          "futureFormatsCard2Meta",
+          "futureFormatsCard2Title",
+          "futureFormatsCard2Body"
         ]
       }
     },
     {
-      "id": "future-formatsCard3Status",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.2.status",
+      "id": "futureFormatsCard2",
+      "type": "container",
       "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnEyebrow"
+        "tag": "article",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-26px",
+        "components": [
+          "futureFormatsCard2Photo",
+          "futureFormatsCard2Content"
+        ]
       }
     },
     {
-      "id": "future-formatsCard3Title",
+      "id": "futureFormatsCard3Photo",
+      "type": "media",
+      "valueInstructions": "set:config.alt,i18n,page.sections.future-formats.items.2.imageAlt",
+      "config": {
+        "id": "futureFormatsCard3Photo-image",
+        "tag": "image",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/practice-journal-bridal-forms.webp",
+        "alt": "",
+        "width": 960,
+        "height": 720,
+        "loading": "lazy",
+        "decoding": "async",
+        "classes": "thnBooksawPhoto ank-height-auto"
+      }
+    },
+    {
+      "id": "futureFormatsCard3Meta",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.future-formats.meta",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow"
+      }
+    },
+    {
+      "id": "futureFormatsCard3Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.2.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "future-formatsCard3Body",
+      "id": "futureFormatsCard3Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.future-formats.items.2.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy"
       }
     },
     {
-      "id": "future-formatsCard3",
+      "id": "futureFormatsCard3Content",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-12px",
         "components": [
-          "future-formatsCard3Status",
-          "future-formatsCard3Title",
-          "future-formatsCard3Body"
+          "futureFormatsCard3Meta",
+          "futureFormatsCard3Title",
+          "futureFormatsCard3Body"
         ]
       }
     },
     {
-      "id": "future-formatsGrid",
+      "id": "futureFormatsCard3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-26px",
+        "components": [
+          "futureFormatsCard3Photo",
+          "futureFormatsCard3Content"
+        ]
+      }
+    },
+    {
+      "id": "futureFormatsGrid",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD3COM1frED ank-gap-38px ank-gap-xl-48px",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD3COM1frED ank-gap-36px ank-gap-xl-32px",
         "components": [
-          "future-formatsCard1",
-          "future-formatsCard2",
-          "future-formatsCard3"
+          "futureFormatsCard1",
+          "futureFormatsCard2",
+          "futureFormatsCard3"
         ]
       }
     },
@@ -790,141 +930,23 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-42px",
         "components": [
-          "future-formatsContent",
-          "future-formatsGrid"
+          "futureFormatsHeader",
+          "futureFormatsGrid"
         ]
       }
     },
     {
-      "id": "closingSection",
+      "id": "future-formatsSection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-textColor ank-color-bgColor",
+        "id": "future-formats-section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-boxSizing-borderMINbox ank-bg-HASHffffff",
         "components": [
-          "closingFrame"
-        ],
-        "id": "closing-section"
-      }
-    },
-    {
-      "id": "closingEyebrow",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.closing.eyebrow",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnEyebrow"
-      }
-    },
-    {
-      "id": "closingTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.closing.title",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "thnSectionTitle"
-      }
-    },
-    {
-      "id": "closingBody",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.closing.body",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBodyCopy"
-      }
-    },
-    {
-      "id": "closingCtaRule",
-      "type": "container",
-      "config": {
-        "tag": "span",
-        "classes": "thnCtaRule ank-bg-bgColor",
-        "components": []
-      }
-    },
-    {
-      "id": "closingCta",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.sections.closing.cta.label;set:config.href,i18n,page.sections.closing.cta.href",
-      "config": {
-        "id": "closingCta-link",
-        "href": "/",
-        "text": "",
-        "rel": "noopener",
-        "components": [
-          "closingCtaRule"
-        ],
-        "classes": "thnCtaLink"
-      }
-    },
-    {
-      "id": "closingContent",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
-        "components": [
-          "closingEyebrow",
-          "closingTitle",
-          "closingBody",
-          "closingCta"
+          "future-formatsFrame"
         ]
-      }
-    },
-    {
-      "id": "closingVisual",
-      "type": "media",
-      "config": {
-        "id": "closingVisual-image",
-        "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-7.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
-        "width": 270,
-        "height": 270,
-        "decoding": "async",
-        "loading": "lazy"
-      }
-    },
-    {
-      "id": "closingVisualField",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-220px ank-height-220px ank-width-xl-300px ank-height-xl-300px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-justifySelf-center ank-justifySelf-md-end",
-        "components": [
-          "closingVisual"
-        ]
-      }
-    },
-    {
-      "id": "closingFrame",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gap-42px ank-gap-xl-58px ank-alignItems-center",
-        "components": [
-          "closingContent",
-          "closingVisualField"
-        ]
-      }
-    },
-    {
-      "id": "faqSection",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
-        "components": [
-          "faqFrame"
-        ],
-        "id": "faq-section"
       }
     },
     {
@@ -934,7 +956,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow"
       }
     },
     {
@@ -944,7 +966,19 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnSectionTitle"
+        "classes": "thnBooksawSectionTitle"
+      }
+    },
+    {
+      "id": "faqHeading",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-16px ank-maxWidth-760px ",
+        "components": [
+          "faqEyebrow",
+          "faqTitle"
+        ]
       }
     },
     {
@@ -958,27 +992,15 @@
           "path": "page.faq.items"
         },
         "scrollBehavior": "none",
-        "containerClasses": "thnAccordion",
-        "defaultItemContainerClasses": "thnAccordionItem",
+        "containerClasses": "thnBooksawAccordion",
+        "defaultItemContainerClasses": "thnBooksawAccordionItem",
         "defaultItemButtonConfig": {
           "type": "button",
-          "classes": "thnAccordionButton",
+          "classes": "thnBooksawAccordionButton",
           "icon": "+"
         },
-        "defaultItemPanelClasses": "thnAccordionPanel",
+        "defaultItemPanelClasses": "thnBooksawAccordionPanel",
         "toggleIconName": "+"
-      }
-    },
-    {
-      "id": "faqIntro",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-22px",
-        "components": [
-          "faqEyebrow",
-          "faqTitle"
-        ]
       }
     },
     {
@@ -986,10 +1008,112 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM4frED__minmaxSD0COM8frED ank-gap-48px ank-gap-xl-76px ank-alignItems-start",
+        "classes": "ank-width-100per ank-marginInline-auto ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-maxWidth-860px ank-gap-38px ank-gap-xl-46px",
         "components": [
-          "faqIntro",
+          "faqHeading",
           "faqAccordion"
+        ]
+      }
+    },
+    {
+      "id": "faqSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "id": "faq-section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-boxSizing-borderMINbox ank-bg-HASHffffff ank-borderColor-HASHd4d0c7 ank-borderTopStyle-solid ank-borderTopWidth-1px",
+        "components": [
+          "faqFrame"
+        ]
+      }
+    },
+    {
+      "id": "closingEyebrow",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.eyebrow",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow"
+      }
+    },
+    {
+      "id": "closingTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.title",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnBooksawSectionTitle"
+      }
+    },
+    {
+      "id": "closingBody",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.body",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-maxWidth-620px"
+      }
+    },
+    {
+      "id": "closingHeading",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-16px ank-maxWidth-760px ",
+        "components": [
+          "closingEyebrow",
+          "closingTitle",
+          "closingBody"
+        ]
+      }
+    },
+    {
+      "id": "closingCtaArrow",
+      "type": "icon",
+      "config": {
+        "iconName": "→",
+        "ariaHidden": true,
+        "classes": "thnBooksawBodyFont ank-fontSize-24px ank-lineHeight-1 ank-flexShrink-0"
+      }
+    },
+    {
+      "id": "closingCta",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,page.sections.closing.ctaLabel;set:config.href,i18n,page.sections.closing.ctaHref",
+      "config": {
+        "id": "closingCta-link",
+        "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20hairstyling%20experience%20is%3A%0D%0AWhat%20I%20would%20like%20to%20learn%20is%3A%0D%0A",
+        "text": "",
+        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-flexMINstart",
+        "components": [
+          "closingCtaArrow"
+        ]
+      }
+    },
+    {
+      "id": "closingFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-28px",
+        "components": [
+          "closingHeading",
+          "closingCta"
+        ]
+      }
+    },
+    {
+      "id": "closingSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "id": "closing-section",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-boxSizing-borderMINbox ank-bg-bgColor",
+        "components": [
+          "closingFrame"
         ]
       }
     },
@@ -998,7 +1122,9 @@
       "type": "container",
       "config": {
         "tag": "main",
-        "classes": "thnBodyFont ank-width-100per ank-overflow-hidden ank-bg-bgColor ank-color-textColor",
+        "tabindex": -1,
+        "id": "page-main",
+        "classes": "thnBooksawBodyFont ank-width-100per ank-bg-bgColor ank-color-textColor",
         "components": [
           "heroSection",
           "manifestoSection",
@@ -1007,8 +1133,7 @@
           "future-formatsSection",
           "faqSection",
           "closingSection"
-        ],
-        "id": "page-main"
+        ]
       }
     }
   ]
