@@ -7,59 +7,49 @@
     "page": {
       "sections": {
         "hero": {
-          "eyebrow": "THE JOURNAL",
+          "eyebrow": "EL DIARIO",
           "title": "Notas sobre forma, movimiento y atención.",
-          "body": "Un lugar para escribir las preguntas que aparecen al observar, aprender y crear."
-        },
-        "purpose": {
-          "eyebrow": "EL PROPÓSITO",
-          "title": "Escribir es otra forma de aprender a mirar.",
-          "body": "The Journal explorará el oficio sin apresurarse hacia conclusiones: lenguaje claro, procesos honestos e ideas que dejen espacio para observar."
+          "body": "Un lugar para escribir a través de las preguntas que aparecen al observar, aprender y crear."
         },
         "threads": {
-          "eyebrow": "LÍNEAS EDITORIALES",
-          "title": "Tres líneas de investigación.",
+          "eyebrow": "LA PRIMERA SERIE",
+          "title": "Vistazos editoriales",
+          "status": "Primeras entradas en preparación",
+          "meta": "Serie editorial · En preparación",
           "items": [
             {
               "title": "Forma y movimiento",
-              "body": "Cómo la línea, el peso, la textura y la proporción dan forma a lo que vemos."
+              "body": "Cómo la línea, el peso, la textura y la proporción dan forma a lo que vemos.",
+              "alt": "Cabello suelto moviéndose bajo una suave luz natural"
             },
             {
               "title": "Observación y proceso",
-              "body": "Preguntas, estudios y decisiones que suceden antes de que aparezca una forma terminada."
+              "body": "Los estudios y decisiones que suceden antes de que aparezca una forma terminada.",
+              "alt": "Manos formando un moño bajo con textura"
             },
             {
-              "title": "Práctica y profesión",
-              "body": "Notas sobre aprendizaje, criterio, confianza creativa y el peinado entendido como oficio."
+              "title": "Formas nupciales",
+              "body": "Diseño sereno y personal construido alrededor del equilibrio, la presencia y cada novia.",
+              "alt": "Moño nupcial minimalista fotografiado desde atrás"
             }
           ]
         },
+        "purpose": {
+          "eyebrow": "EL PROPÓSITO",
+          "title": "Escribir es otra manera de aprender a mirar.",
+          "body": "The Journal explorará el oficio sin apresurarse hacia conclusiones: lenguaje claro, procesos honestos e ideas que dejan espacio para observar."
+        },
         "empty": {
-          "eyebrow": "EL PRIMER DRAFT",
-          "title": "Las páginas están listas. Las publicaciones aún están por venir.",
-          "body": "No existen artículos publicados en este primer draft. The Journal se presenta ahora para dejar claro su propósito antes de comenzar a publicar."
+          "eyebrow": "EL PRIMER BORRADOR",
+          "title": "Las páginas están listas. Las entradas están por venir.",
+          "body": "Todavía no hay artículos publicados en este primer borrador. The Journal se presenta ahora para dejar claro su propósito antes de comenzar a publicar."
         },
         "letter": {
           "eyebrow": "THE LETTER",
-          "title": "Una futura correspondencia tranquila.",
-          "body": "The Letter reunirá notas sobre observación, práctica y trabajo creativo. Aún no hay un newsletter automatizado; puedes escribir a Nina para expresar tu interés.",
-          "ctaLabel": "PREGUNTA POR THE LETTER",
-          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Letter",
-          "cta": {
-            "label": "PREGUNTA POR THE LETTER",
-            "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter"
-          }
-        },
-        "close": {
-          "eyebrow": "LA HISTORIA DETRÁS DE LAS PALABRAS",
-          "title": "Comienza por la forma de mirar.",
-          "body": "Lee la filosofía, la historia y los valores que guiarán cada futura publicación.",
-          "ctaLabel": "LEE THE NARRATIVE",
-          "ctaHref": "/the-narrative",
-          "cta": {
-            "label": "LEE THE NARRATIVE",
-            "href": "/the-narrative"
-          }
+          "title": "Mantente cerca de las preguntas.",
+          "body": "The Letter es el lugar sereno para saber cuándo lleguen las primeras entradas. La suscripción vive en Home.",
+          "ctaLabel": "VISITA THE LETTER",
+          "ctaHref": "/#the-letter"
         }
       }
     }

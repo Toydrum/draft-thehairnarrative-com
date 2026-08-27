@@ -4,25 +4,13 @@
   "pageId": "the-narrative",
   "components": [
     {
-      "id": "heroSection",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor ank-minHeight-calcSD100svh__MIN__138pxED ank-minHeight-md-calcSD100svh__MIN__140pxED ank-alignItems-center",
-        "components": [
-          "heroFrame"
-        ],
-        "id": "hero-section"
-      }
-    },
-    {
       "id": "heroEyebrow",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.hero.eyebrow",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
       }
     },
     {
@@ -32,7 +20,7 @@
       "config": {
         "tag": "h1",
         "text": "",
-        "classes": "thnHeroTitle"
+        "classes": "thnBooksawHeroTitle ank-maxWidth-520px"
       }
     },
     {
@@ -42,7 +30,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawBodyCopy ank-maxWidth-410px ank-color-secondaryTextColor"
       }
     },
     {
@@ -50,7 +38,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-alignItems-md-flexMINstart ank-textAlign-center ank-textAlign-md-left ank-order-2 ank-order-md-1 ank-paddingInline-24px ank-paddingBlock-54px ank-padding-md-0 ank-gap-20px",
         "components": [
           "heroEyebrow",
           "heroTitle",
@@ -61,16 +49,18 @@
     {
       "id": "heroVisual",
       "type": "media",
+      "valueInstructions": "set:config.alt,i18n,page.media.heroAlt",
       "config": {
         "id": "heroVisual-image",
         "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-40.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-128px ank-height-128px ank-width-md-180px ank-height-md-180px ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
-        "width": 270,
-        "height": 270,
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/narrative-hero.webp",
+        "alt": "",
+        "width": 1672,
+        "height": 941,
         "decoding": "async",
-        "loading": "eager"
+        "loading": "eager",
+        "fetchPriority": "high",
+        "classes": "thnBooksawPhoto ank-minHeight-360px ank-maxHeight-360px ank-minHeight-md-350px ank-maxHeight-md-350px ank-minHeight-xl-470px ank-maxHeight-xl-470px ank-objectPosition-54per__48per"
       }
     },
     {
@@ -78,23 +68,23 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-md-42px ank-gap-xl-58px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM0_92frED__minmaxSD0COM1_08frED ank-gridTemplateColumns-xl-minmaxSD0COM0_82frED__minmaxSD0COM1_18frED ank-gap-0 ank-gap-md-34px ank-gap-xl-70px ank-alignItems-center",
         "components": [
           "heroContent",
-          "heroVisual"
+          "heroVisualLayout"
         ]
       }
     },
     {
-      "id": "essenceSection",
+      "id": "heroSection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-bg-bgColor ank-display-flex ank-justifyContent-center ank-paddingInline-md-24px ank-paddingBlock-md-76px ank-paddingBlock-xl-104px",
         "components": [
-          "essenceFrame"
+          "heroFrame"
         ],
-        "id": "essence-section"
+        "id": "hero-section"
       }
     },
     {
@@ -104,7 +94,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
       }
     },
     {
@@ -114,7 +104,19 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnSectionTitle"
+        "classes": "thnBooksawSectionTitle"
+      }
+    },
+    {
+      "id": "essenceHeading",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-16px ank-alignItems-center",
+        "components": [
+          "essenceEyebrow",
+          "essenceTitle"
+        ]
       }
     },
     {
@@ -124,35 +126,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
-      }
-    },
-    {
-      "id": "essenceContent",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
-        "components": [
-          "essenceEyebrow",
-          "essenceTitle",
-          "essenceBody"
-        ]
-      }
-    },
-    {
-      "id": "essenceVisual",
-      "type": "media",
-      "config": {
-        "id": "essenceVisual-image",
-        "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-41.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-128px ank-height-128px  ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
-        "width": 270,
-        "height": 270,
-        "decoding": "async",
-        "loading": "lazy"
+        "classes": "thnBooksawBodyCopy ank-maxWidth-690px ank-color-secondaryTextColor"
       }
     },
     {
@@ -160,23 +134,23 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-xl-58px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-28px ank-textAlign-center",
         "components": [
-          "essenceContent",
-          "essenceVisual"
+          "essenceHeading",
+          "essenceBody"
         ]
       }
     },
     {
-      "id": "philosophySection",
+      "id": "essenceSection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-textColor ank-color-bgColor",
+        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-display-flex ank-justifyContent-center ank-bg-secondaryBgColor",
         "components": [
-          "philosophyFrame"
+          "essenceFrame"
         ],
-        "id": "philosophy-section"
+        "id": "essence-section"
       }
     },
     {
@@ -186,7 +160,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-secondaryAccentColor"
       }
     },
     {
@@ -196,7 +170,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnSectionTitle"
+        "classes": "thnBooksawDisplayFont ank-fontSize-39px ank-fontSize-md-48px ank-fontSize-xl-64px ank-lineHeight-1_04 ank-letterSpacing-MIN0_03em ank-maxWidth-730px ank-margin-0 ank-fontWeight-500"
       }
     },
     {
@@ -206,15 +180,15 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawBodyCopy ank-maxWidth-650px ank-color-secondaryBgColor"
       }
     },
     {
-      "id": "philosophyContent",
+      "id": "philosophyFrame",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-28px ank-alignItems-flexMINstart",
         "components": [
           "philosophyEyebrow",
           "philosophyTitle",
@@ -223,53 +197,15 @@
       }
     },
     {
-      "id": "philosophyVisual",
-      "type": "media",
-      "config": {
-        "id": "philosophyVisual-image",
-        "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-12.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
-        "width": 270,
-        "height": 270,
-        "decoding": "async",
-        "loading": "lazy"
-      }
-    },
-    {
-      "id": "philosophyVisualField",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-220px ank-height-220px ank-width-xl-300px ank-height-xl-300px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-justifySelf-center ank-justifySelf-md-end",
-        "components": [
-          "philosophyVisual"
-        ]
-      }
-    },
-    {
-      "id": "philosophyFrame",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gap-42px ank-gap-xl-58px ank-alignItems-center",
-        "components": [
-          "philosophyContent",
-          "philosophyVisualField"
-        ]
-      }
-    },
-    {
-      "id": "purposeSection",
+      "id": "philosophySection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingTop-76px ank-paddingBottom-60px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
+        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-display-flex ank-justifyContent-center ank-bg-textColor ank-color-bgColor",
         "components": [
-          "purposeFrame"
+          "philosophyFrame"
         ],
-        "id": "purpose-section"
+        "id": "philosophy-section"
       }
     },
     {
@@ -279,7 +215,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
       }
     },
     {
@@ -289,7 +225,19 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnSectionTitle"
+        "classes": "thnBooksawSectionTitle"
+      }
+    },
+    {
+      "id": "purposeHeading",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-16px",
+        "components": [
+          "purposeEyebrow",
+          "purposeTitle"
+        ]
       }
     },
     {
@@ -299,35 +247,28 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "purposeContent",
+      "id": "purposeRule",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
-        "components": [
-          "purposeEyebrow",
-          "purposeTitle",
-          "purposeBody"
-        ]
+        "classes": "ank-width-54px ank-height-1px ank-bg-secondaryAccentColor",
+        "components": []
       }
     },
     {
-      "id": "purposeVisual",
-      "type": "media",
+      "id": "purposeCopy",
+      "type": "container",
       "config": {
-        "id": "purposeVisual-image",
-        "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-27.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-128px ank-height-128px  ank-width-xl-270px ank-height-xl-270px ank-justifySelf-flexMINend",
-        "width": 270,
-        "height": 270,
-        "decoding": "async",
-        "loading": "lazy"
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-34px",
+        "components": [
+          "purposeBody",
+          "purposeRule"
+        ]
       }
     },
     {
@@ -335,23 +276,39 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM7frED__minmaxSD0COM5frED ank-gap-28px ank-gap-xl-58px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COMminmaxSD0COM1frEDED ank-gap-28px ank-gap-md-48px ank-gap-xl-80px ank-alignItems-center",
         "components": [
-          "purposeContent",
-          "purposeVisual"
+          "purposeHeading",
+          "purposeCopy"
         ]
       }
     },
     {
-      "id": "storySection",
+      "id": "purposeSection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-display-flex ank-justifyContent-center ank-bg-HASHffffff",
         "components": [
-          "storyFrame"
+          "purposeFrame"
         ],
-        "id": "story-section"
+        "id": "purpose-section"
+      }
+    },
+    {
+      "id": "storyVisual",
+      "type": "media",
+      "valueInstructions": "set:config.alt,i18n,page.media.storyAlt",
+      "config": {
+        "id": "storyVisual-image",
+        "tag": "image",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/images/nina-studio-portrait.webp",
+        "alt": "",
+        "width": 234,
+        "height": 234,
+        "decoding": "async",
+        "loading": "lazy",
+        "classes": "thnBooksawPhoto ank-height-auto ank-maxWidth-400px"
       }
     },
     {
@@ -361,7 +318,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
       }
     },
     {
@@ -371,15 +328,15 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnSectionTitle"
+        "classes": "thnBooksawSectionTitle"
       }
     },
     {
-      "id": "storyContent",
+      "id": "storyHeading",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-16px",
         "components": [
           "storyEyebrow",
           "storyTitle"
@@ -393,7 +350,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawBodyCopy thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -403,7 +360,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawBodyCopy thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -413,15 +370,15 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawBodyCopy thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "storyProse",
+      "id": "storyParagraphs",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-20px ank-maxWidth-720px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-0",
         "components": [
           "storyParagraph1",
           "storyParagraph2",
@@ -430,18 +387,32 @@
       }
     },
     {
-      "id": "storyVisual",
+      "id": "storySignature",
       "type": "media",
+      "valueInstructions": "set:config.alt,i18n,page.media.signatureAlt",
       "config": {
-        "id": "storyVisual-image",
+        "id": "nina-signature",
         "tag": "image",
         "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-1.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-120px ank-height-120px ank-justifySelf-flexMINend",
-        "width": 120,
-        "height": 120,
+        "alt": "",
+        "width": 62,
+        "height": 62,
         "decoding": "async",
-        "loading": "lazy"
+        "loading": "lazy",
+        "classes": "ank-display-block ank-width-46px ank-width-md-62px ank-height-auto ank-marginLeft-62per"
+      }
+    },
+    {
+      "id": "storyContent",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-28px",
+        "components": [
+          "storyHeading",
+          "storyParagraphs",
+          "storySignature"
+        ]
       }
     },
     {
@@ -449,24 +420,23 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-minmaxSD0COM5frED__minmaxSD0COM7frED ank-gap-42px ank-gap-xl-72px ank-alignItems-start",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-270px__minmaxSD0COM1frED ank-gridTemplateColumns-xl-400px__minmaxSD0COM1frED ank-gap-34px ank-columnGap-md-54px ank-columnGap-xl-100px ank-alignItems-start",
         "components": [
-          "storyContent",
-          "storyProse",
-          "storyVisual"
+          "storyVisualLayout",
+          "storyContent"
         ]
       }
     },
     {
-      "id": "studioSection",
+      "id": "storySection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
+        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-display-flex ank-justifyContent-center ank-bg-bgColor ank-borderTop-1px__solid__HASHd4d0c7",
         "components": [
-          "studioFrame"
+          "storyFrame"
         ],
-        "id": "studio-section"
+        "id": "story-section"
       }
     },
     {
@@ -476,7 +446,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
       }
     },
     {
@@ -486,15 +456,15 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnSectionTitle"
+        "classes": "thnBooksawSectionTitle"
       }
     },
     {
-      "id": "studioContent",
+      "id": "studioHeading",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-16px ank-alignItems-center ank-textAlign-center",
         "components": [
           "studioEyebrow",
           "studioTitle"
@@ -502,130 +472,236 @@
       }
     },
     {
-      "id": "studioCard1Title",
+      "id": "studioIntro",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.studio.intro",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor ank-textAlign-center ank-maxWidth-570px"
+      }
+    },
+    {
+      "id": "studioIntroFrame",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-gap-18px",
+        "components": [
+          "studioHeading",
+          "studioIntro"
+        ]
+      }
+    },
+    {
+      "id": "studioItem1Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "01",
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
+      }
+    },
+    {
+      "id": "studioItem1Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.studio.items.0.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "studioCard1Body",
+      "id": "studioItem1Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.studio.items.0.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "studioCard1",
+      "id": "studioItem1Copy",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-15px",
         "components": [
-          "studioCard1Title",
-          "studioCard1Body"
+          "studioItem1Title",
+          "studioItem1Body"
         ]
       }
     },
     {
-      "id": "studioCard2Title",
+      "id": "studioItem1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-display-grid ank-gridTemplateColumns-38px__minmaxSD0COM1frED ank-gap-16px ank-paddingBlock-30px ank-borderBottom-1px__solid__HASHd4d0c7 ank-minWidth-0",
+        "components": [
+          "studioItem1Number",
+          "studioItem1Copy"
+        ]
+      }
+    },
+    {
+      "id": "studioItem2Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "02",
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
+      }
+    },
+    {
+      "id": "studioItem2Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.studio.items.1.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "studioCard2Body",
+      "id": "studioItem2Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.studio.items.1.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "studioCard2",
+      "id": "studioItem2Copy",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-15px",
         "components": [
-          "studioCard2Title",
-          "studioCard2Body"
+          "studioItem2Title",
+          "studioItem2Body"
         ]
       }
     },
     {
-      "id": "studioCard3Title",
+      "id": "studioItem2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-display-grid ank-gridTemplateColumns-38px__minmaxSD0COM1frED ank-gap-16px ank-paddingBlock-30px ank-borderBottom-1px__solid__HASHd4d0c7 ank-minWidth-0",
+        "components": [
+          "studioItem2Number",
+          "studioItem2Copy"
+        ]
+      }
+    },
+    {
+      "id": "studioItem3Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "03",
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
+      }
+    },
+    {
+      "id": "studioItem3Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.studio.items.2.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "studioCard3Body",
+      "id": "studioItem3Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.studio.items.2.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "studioCard3",
+      "id": "studioItem3Copy",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-15px",
         "components": [
-          "studioCard3Title",
-          "studioCard3Body"
+          "studioItem3Title",
+          "studioItem3Body"
         ]
       }
     },
     {
-      "id": "studioCard4Title",
+      "id": "studioItem3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-display-grid ank-gridTemplateColumns-38px__minmaxSD0COM1frED ank-gap-16px ank-paddingBlock-30px ank-borderBottom-1px__solid__HASHd4d0c7 ank-minWidth-0",
+        "components": [
+          "studioItem3Number",
+          "studioItem3Copy"
+        ]
+      }
+    },
+    {
+      "id": "studioItem4Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "04",
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
+      }
+    },
+    {
+      "id": "studioItem4Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.studio.items.3.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "studioCard4Body",
+      "id": "studioItem4Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.studio.items.3.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "studioCard4",
+      "id": "studioItem4Copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-15px",
+        "components": [
+          "studioItem4Title",
+          "studioItem4Body"
+        ]
+      }
+    },
+    {
+      "id": "studioItem4",
       "type": "container",
       "config": {
         "tag": "article",
-        "classes": "thnCard",
+        "classes": "ank-display-grid ank-gridTemplateColumns-38px__minmaxSD0COM1frED ank-gap-16px ank-paddingBlock-30px ank-borderBottom-1px__solid__HASHd4d0c7 ank-minWidth-0",
         "components": [
-          "studioCard4Title",
-          "studioCard4Body"
+          "studioItem4Number",
+          "studioItem4Copy"
         ]
       }
     },
@@ -634,12 +710,12 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COM1frED ank-gap-38px ank-gap-xl-48px",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COMminmaxSD0COM1frEDED ank-columnGap-md-38px ank-columnGap-xl-56px ank-borderTop-1px__solid__HASHd4d0c7",
         "components": [
-          "studioCard1",
-          "studioCard2",
-          "studioCard3",
-          "studioCard4"
+          "studioItem1",
+          "studioItem2",
+          "studioItem3",
+          "studioItem4"
         ]
       }
     },
@@ -648,23 +724,23 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-44px",
         "components": [
-          "studioContent",
+          "studioIntroFrame",
           "studioGrid"
         ]
       }
     },
     {
-      "id": "valuesSection",
+      "id": "studioSection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000",
+        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-display-flex ank-justifyContent-center ank-bg-HASHffffff",
         "components": [
-          "valuesFrame"
+          "studioFrame"
         ],
-        "id": "values-section"
+        "id": "studio-section"
       }
     },
     {
@@ -674,7 +750,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
       }
     },
     {
@@ -684,15 +760,15 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnSectionTitle"
+        "classes": "thnBooksawSectionTitle"
       }
     },
     {
-      "id": "valuesContent",
+      "id": "valuesHeading",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-16px ank-alignItems-center ank-textAlign-center",
         "components": [
           "valuesEyebrow",
           "valuesTitle"
@@ -700,162 +776,267 @@
       }
     },
     {
-      "id": "valuesCard1Title",
+      "id": "valueItem1Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "01",
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
+      }
+    },
+    {
+      "id": "valueItem1Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.values.items.0.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "valuesCard1Body",
+      "id": "valueItem1Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.values.items.0.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "valuesCard1",
+      "id": "valueItem1Copy",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-14px",
         "components": [
-          "valuesCard1Title",
-          "valuesCard1Body"
+          "valueItem1Title",
+          "valueItem1Body"
         ]
       }
     },
     {
-      "id": "valuesCard2Title",
+      "id": "valueItem1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-display-grid ank-gridTemplateColumns-38px__minmaxSD0COM1frED ank-gridTemplateColumns-md-1fr ank-gap-16px ank-paddingBlock-28px ank-paddingInline-md-20px ank-minWidth-0 ank-textAlign-left ank-textAlign-md-center ank-borderBottom-1px__solid__HASHd4d0c7 ank-borderBottomWidth-xl-0 ank-borderRight-xl-1px__solid__HASHd4d0c7",
+        "components": [
+          "valueItem1Number",
+          "valueItem1Copy"
+        ]
+      }
+    },
+    {
+      "id": "valueItem2Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "02",
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
+      }
+    },
+    {
+      "id": "valueItem2Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.values.items.1.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "valuesCard2Body",
+      "id": "valueItem2Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.values.items.1.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "valuesCard2",
+      "id": "valueItem2Copy",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-14px",
         "components": [
-          "valuesCard2Title",
-          "valuesCard2Body"
+          "valueItem2Title",
+          "valueItem2Body"
         ]
       }
     },
     {
-      "id": "valuesCard3Title",
+      "id": "valueItem2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-display-grid ank-gridTemplateColumns-38px__minmaxSD0COM1frED ank-gridTemplateColumns-md-1fr ank-gap-16px ank-paddingBlock-28px ank-paddingInline-md-20px ank-minWidth-0 ank-textAlign-left ank-textAlign-md-center ank-borderBottom-1px__solid__HASHd4d0c7 ank-borderBottomWidth-xl-0 ank-borderRight-xl-1px__solid__HASHd4d0c7",
+        "components": [
+          "valueItem2Number",
+          "valueItem2Copy"
+        ]
+      }
+    },
+    {
+      "id": "valueItem3Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "03",
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
+      }
+    },
+    {
+      "id": "valueItem3Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.values.items.2.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "valuesCard3Body",
+      "id": "valueItem3Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.values.items.2.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "valuesCard3",
+      "id": "valueItem3Copy",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-14px",
         "components": [
-          "valuesCard3Title",
-          "valuesCard3Body"
+          "valueItem3Title",
+          "valueItem3Body"
         ]
       }
     },
     {
-      "id": "valuesCard4Title",
+      "id": "valueItem3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-display-grid ank-gridTemplateColumns-38px__minmaxSD0COM1frED ank-gridTemplateColumns-md-1fr ank-gap-16px ank-paddingBlock-28px ank-paddingInline-md-20px ank-minWidth-0 ank-textAlign-left ank-textAlign-md-center ank-borderBottom-1px__solid__HASHd4d0c7 ank-borderBottomWidth-xl-0 ank-borderRight-xl-1px__solid__HASHd4d0c7",
+        "components": [
+          "valueItem3Number",
+          "valueItem3Copy"
+        ]
+      }
+    },
+    {
+      "id": "valueItem4Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "04",
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
+      }
+    },
+    {
+      "id": "valueItem4Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.values.items.3.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "valuesCard4Body",
+      "id": "valueItem4Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.values.items.3.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "valuesCard4",
+      "id": "valueItem4Copy",
       "type": "container",
       "config": {
-        "tag": "article",
-        "classes": "thnCard",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-14px",
         "components": [
-          "valuesCard4Title",
-          "valuesCard4Body"
+          "valueItem4Title",
+          "valueItem4Body"
         ]
       }
     },
     {
-      "id": "valuesCard5Title",
+      "id": "valueItem4",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "classes": "ank-display-grid ank-gridTemplateColumns-38px__minmaxSD0COM1frED ank-gridTemplateColumns-md-1fr ank-gap-16px ank-paddingBlock-28px ank-paddingInline-md-20px ank-minWidth-0 ank-textAlign-left ank-textAlign-md-center ank-borderBottom-1px__solid__HASHd4d0c7 ank-borderBottomWidth-xl-0 ank-borderRight-xl-1px__solid__HASHd4d0c7",
+        "components": [
+          "valueItem4Number",
+          "valueItem4Copy"
+        ]
+      }
+    },
+    {
+      "id": "valueItem5Number",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "05",
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
+      }
+    },
+    {
+      "id": "valueItem5Title",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.values.items.4.title",
       "config": {
         "tag": "h3",
         "text": "",
-        "classes": "thnCardTitle"
+        "classes": "thnBooksawCardTitle"
       }
     },
     {
-      "id": "valuesCard5Body",
+      "id": "valueItem5Body",
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.values.items.4.body",
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy ank-fontSize-0_92rem"
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "valuesCard5",
+      "id": "valueItem5Copy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-14px",
+        "components": [
+          "valueItem5Title",
+          "valueItem5Body"
+        ]
+      }
+    },
+    {
+      "id": "valueItem5",
       "type": "container",
       "config": {
         "tag": "article",
-        "classes": "thnCard",
+        "classes": "ank-display-grid ank-gridTemplateColumns-38px__minmaxSD0COM1frED ank-gridTemplateColumns-md-1fr ank-gap-16px ank-paddingBlock-28px ank-paddingInline-md-20px ank-minWidth-0 ank-textAlign-left ank-textAlign-md-center ank-borderBottom-1px__solid__HASHd4d0c7 ank-borderBottomWidth-xl-0 ank-gridColumn-md-span__2 ank-gridColumn-xl-auto",
         "components": [
-          "valuesCard5Title",
-          "valuesCard5Body"
+          "valueItem5Number",
+          "valueItem5Copy"
         ]
       }
     },
@@ -864,13 +1045,13 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-xl-repeatSD5COM1frED ank-gap-38px ank-gap-xl-48px",
+        "classes": "ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-repeatSD2COMminmaxSD0COM1frEDED ank-gridTemplateColumns-xl-repeatSD5COMminmaxSD0COM1frEDED ank-borderTop-1px__solid__HASHd4d0c7 ank-borderBottom-xl-1px__solid__HASHd4d0c7",
         "components": [
-          "valuesCard1",
-          "valuesCard2",
-          "valuesCard3",
-          "valuesCard4",
-          "valuesCard5"
+          "valueItem1",
+          "valueItem2",
+          "valueItem3",
+          "valueItem4",
+          "valueItem5"
         ]
       }
     },
@@ -879,23 +1060,23 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-xl-68px",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-44px",
         "components": [
-          "valuesContent",
+          "valuesHeading",
           "valuesGrid"
         ]
       }
     },
     {
-      "id": "closeSection",
+      "id": "valuesSection",
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-textColor ank-color-bgColor",
+        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-display-flex ank-justifyContent-center ank-bg-secondaryBgColor",
         "components": [
-          "closeFrame"
+          "valuesFrame"
         ],
-        "id": "close-section"
+        "id": "values-section"
       }
     },
     {
@@ -905,7 +1086,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
       }
     },
     {
@@ -915,7 +1096,19 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnSectionTitle"
+        "classes": "thnBooksawSectionTitle"
+      }
+    },
+    {
+      "id": "closeHeading",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-16px ank-alignItems-center",
+        "components": [
+          "closeEyebrow",
+          "closeTitle"
+        ]
       }
     },
     {
@@ -925,70 +1118,38 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawBodyCopy ank-maxWidth-560px ank-color-secondaryTextColor"
       }
     },
     {
-      "id": "closeCtaRule",
-      "type": "container",
+      "id": "closeCtaLabel",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.sections.close.ctaLabel",
       "config": {
         "tag": "span",
-        "classes": "thnCtaRule ank-bg-bgColor",
-        "components": []
+        "text": "",
+        "classes": "ank-color-inherit ank-font-inherit ank-letterSpacing-inherit ank-textTransform-inherit"
+      }
+    },
+    {
+      "id": "closeCtaArrow",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "→",
+        "classes": "ank-fontSize-22px ank-lineHeight-1 ank-color-inherit"
       }
     },
     {
       "id": "closeCta",
       "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.sections.close.cta.label;set:config.href,i18n,page.sections.close.cta.href",
+      "valueInstructions": "set:config.href,i18n,page.sections.close.ctaHref",
       "config": {
-        "id": "closeCta-link",
-        "href": "/",
-        "text": "",
-        "rel": "noopener",
+        "href": "/contact",
+        "classes": "thnBooksawCtaLink ank-color-linkColor",
         "components": [
-          "closeCtaRule"
-        ],
-        "classes": "thnCtaLink"
-      }
-    },
-    {
-      "id": "closeContent",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-22px ank-gap-md-26px",
-        "components": [
-          "closeEyebrow",
-          "closeTitle",
-          "closeBody",
-          "closeCta"
-        ]
-      }
-    },
-    {
-      "id": "closeVisual",
-      "type": "media",
-      "config": {
-        "id": "closeVisual-image",
-        "tag": "image",
-        "src": "https://assets.zoolandingpage.com.mx/thehairnarrative.com/shared/draft-assets/doodle-7.svg",
-        "alt": " ",
-        "classes": "thnDoodle ank-width-130px ank-height-130px ank-width-xl-210px ank-height-xl-210px ank-filter-invertSD1ED",
-        "width": 270,
-        "height": 270,
-        "decoding": "async",
-        "loading": "lazy"
-      }
-    },
-    {
-      "id": "closeVisualField",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-220px ank-height-220px ank-width-xl-300px ank-height-xl-300px ank-display-flex ank-alignItems-center ank-justifyContent-center ank-justifySelf-center ank-justifySelf-md-end",
-        "components": [
-          "closeVisual"
+          "closeCtaLabel",
+          "closeCtaArrow"
         ]
       }
     },
@@ -997,11 +1158,24 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM8frED__minmaxSD0COM4frED ank-gap-42px ank-gap-xl-58px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-760px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-center ank-textAlign-center ank-gap-28px",
         "components": [
-          "closeContent",
-          "closeVisualField"
+          "closeHeading",
+          "closeBody",
+          "closeCta"
         ]
+      }
+    },
+    {
+      "id": "closeSection",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-display-flex ank-justifyContent-center ank-bg-bgColor",
+        "components": [
+          "closeFrame"
+        ],
+        "id": "close-section"
       }
     },
     {
@@ -1009,7 +1183,8 @@
       "type": "container",
       "config": {
         "tag": "main",
-        "classes": "thnBodyFont ank-width-100per ank-overflow-hidden ank-bg-bgColor ank-color-textColor",
+        "tabindex": -1,
+        "classes": "thnBooksawBodyFont ank-width-100per ank-minWidth-0 ank-bg-bgColor ank-color-textColor",
         "components": [
           "heroSection",
           "essenceSection",
@@ -1021,6 +1196,30 @@
           "closeSection"
         ],
         "id": "page-main"
+      }
+    },
+    {
+      "id": "heroVisualLayout",
+      "type": "container",
+      "config": {
+        "id": "heroVisualLayout",
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-order-1 ank-order-md-2 ank-width-100per",
+        "components": [
+          "heroVisual"
+        ]
+      }
+    },
+    {
+      "id": "storyVisualLayout",
+      "type": "container",
+      "config": {
+        "id": "storyVisualLayout",
+        "tag": "div",
+        "classes": "ank-minWidth-0 ank-justifySelf-center ank-justifySelf-md-start ank-width-100per ank-maxWidth-400px",
+        "components": [
+          "storyVisual"
+        ]
       }
     }
   ]

@@ -11,28 +11,33 @@
           "title": "Notes on form, movement and attention.",
           "body": "A place to write through the questions that appear while observing, learning and creating."
         },
+        "threads": {
+          "eyebrow": "THE FIRST SERIES",
+          "title": "Editorial previews",
+          "status": "First entries in preparation",
+          "meta": "Editorial series · In preparation",
+          "items": [
+            {
+              "title": "Form & Movement",
+              "body": "How line, weight, texture and proportion shape what we see.",
+              "alt": "Loose hair moving through soft natural light"
+            },
+            {
+              "title": "Observation & Process",
+              "body": "The studies and decisions that happen before a finished form appears.",
+              "alt": "Hands constructing a textured low bun"
+            },
+            {
+              "title": "Bridal Forms",
+              "body": "Quiet, personal design built around balance, presence and the individual bride.",
+              "alt": "Minimal bridal chignon photographed from behind"
+            }
+          ]
+        },
         "purpose": {
           "eyebrow": "THE PURPOSE",
           "title": "Writing is another way of learning to look.",
           "body": "The Journal will explore the craft without rushing toward conclusions: clear language, honest process and ideas that leave room for observation."
-        },
-        "threads": {
-          "eyebrow": "EDITORIAL THREADS",
-          "title": "Three lines of inquiry.",
-          "items": [
-            {
-              "title": "Form & movement",
-              "body": "How line, weight, texture and proportion shape what we see."
-            },
-            {
-              "title": "Observation & process",
-              "body": "Questions, studies and decisions that happen before a finished form appears."
-            },
-            {
-              "title": "Practice & profession",
-              "body": "Notes on learning, judgment, creative confidence and making hairstyling a craft."
-            }
-          ]
         },
         "empty": {
           "eyebrow": "THE FIRST DRAFT",
@@ -41,25 +46,10 @@
         },
         "letter": {
           "eyebrow": "THE LETTER",
-          "title": "A quiet future correspondence.",
-          "body": "The Letter will gather notes about observation, practice and creative work. No automated newsletter is active yet; you can email Nina to express interest.",
-          "ctaLabel": "ASK ABOUT THE LETTER",
-          "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Letter",
-          "cta": {
-            "label": "ASK ABOUT THE LETTER",
-            "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter"
-          }
-        },
-        "close": {
-          "eyebrow": "THE STORY BEHIND THE WORDS",
-          "title": "Begin with the way of looking.",
-          "body": "Read the philosophy, story and values that will guide every future entry.",
-          "ctaLabel": "READ THE NARRATIVE",
-          "ctaHref": "/the-narrative",
-          "cta": {
-            "label": "READ THE NARRATIVE",
-            "href": "/the-narrative"
-          }
+          "title": "Stay close to the questions.",
+          "body": "The Letter is the quiet place to hear when the first entries arrive. Subscription lives on Home.",
+          "ctaLabel": "VISIT THE LETTER",
+          "ctaHref": "/#the-letter"
         }
       }
     }

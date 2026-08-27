@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "retrievedOn": "2026-08-27",
+  "timeZone": "America/Mexico_City",
+  "purpose": "Self-host the approved Booksaw-adapted typography without runtime requests to Google Fonts.",
+  "totalFontBytes": 155252,
+  "allStyles": "normal",
+  "subset": "latin",
+  "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+  "preparation": "Official provider bytes downloaded unchanged. No local subsetting, conversion, generation, or font alteration.",
+  "comparison": {
+    "twoWeightVariableFontsBytes": 180320,
+    "selectedFourFixedWeightFacesBytes": 155252,
+    "savedBytes": 25068,
+    "newsreaderOpticalSizePreserved": true
+  },
+  "fonts": [
+    {
+      "file": "newsreader-latin-400-normal.woff2",
+      "family": "Newsreader",
+      "weight": 400,
+      "style": "normal",
+      "format": "woff2",
+      "bytes": 57268,
+      "sha256": "725d78a558da7c48dd6753e4aa21bc40b4a5dc721c457e2b7d3ef782e8a9904b",
+      "runtimeSrc": "/drafts/thehairnarrative.com/assets/fonts/newsreader-latin-400-normal.woff2",
+      "source": "https://fonts.gstatic.com/s/newsreader/v26/cY9VfjOCX1hbuyalUrK49dLafXjalZCsZBsgBgbNJYQ.woff2",
+      "providerCssSource": "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400&display=swap",
+      "license": "Newsreader-OFL.txt",
+      "axes": [{ "tag": "opsz", "min": 6, "default": 18, "max": 72 }],
+      "opticalSizing": "auto"
+    },
+    {
+      "file": "newsreader-latin-500-normal.woff2",
+      "family": "Newsreader",
+      "weight": 500,
+      "style": "normal",
+      "format": "woff2",
+      "bytes": 60724,
+      "sha256": "d411a65041e3042e040c79ab7d128b0707002718a72c3cdb72f4b5461376ab07",
+      "runtimeSrc": "/drafts/thehairnarrative.com/assets/fonts/newsreader-latin-500-normal.woff2",
+      "source": "https://fonts.gstatic.com/s/newsreader/v26/cY9VfjOCX1hbuyalUrK49dLafXjalZCsZBsSBgbNJYQ.woff2",
+      "providerCssSource": "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&display=swap",
+      "license": "Newsreader-OFL.txt",
+      "axes": [{ "tag": "opsz", "min": 6, "default": 18, "max": 72 }],
+      "opticalSizing": "auto"
+    },
+    {
+      "file": "open-sans-latin-400-normal.woff2",
+      "family": "Open Sans",
+      "weight": 400,
+      "style": "normal",
+      "format": "woff2",
+      "bytes": 18640,
+      "sha256": "0e44026ad31376af1b56593cd4acb4f353f8e8789c51759e18f64578e4ef296a",
+      "runtimeSrc": "/drafts/thehairnarrative.com/assets/fonts/open-sans-latin-400-normal.woff2",
+      "source": "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2",
+      "providerCssSource": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap",
+      "license": "OpenSans-OFL.txt",
+      "axes": []
+    },
+    {
+      "file": "open-sans-latin-600-normal.woff2",
+      "family": "Open Sans",
+      "weight": 600,
+      "style": "normal",
+      "format": "woff2",
+      "bytes": 18620,
+      "sha256": "a97a6ed7ef9f75c495e9224f5c59b2271d826e4a4345b738b390b0c76cc9f412",
+      "runtimeSrc": "/drafts/thehairnarrative.com/assets/fonts/open-sans-latin-600-normal.woff2",
+      "source": "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVI.woff2",
+      "providerCssSource": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap",
+      "license": "OpenSans-OFL.txt",
+      "axes": []
+    }
+  ],
+  "licenses": [
+    {
+      "file": "Newsreader-OFL.txt",
+      "license": "SIL Open Font License 1.1",
+      "copyright": "Copyright 2020 The Newsreader Project Authors (http://github.com/productiontype/Newsreader)",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/OFL.txt",
+      "bytes": 4394,
+      "sha256": "fdfad38143ec470553cae82a1e45320bdd1b9ec70415d37bd0171051d8a4ded8"
+    },
+    {
+      "file": "OpenSans-OFL.txt",
+      "license": "SIL Open Font License 1.1",
+      "copyright": "Copyright 2020 The Open Sans Project Authors (https://github.com/googlefonts/opensans)",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/opensans/OFL.txt",
+      "bytes": 4389,
+      "sha256": "fbbbcfef55318de350562559b671360de6d597112ecc5c73881b05092db89602"
+    }
+  ]
+}
