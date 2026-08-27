@@ -79,48 +79,74 @@
     ]
   },
   "site": {
+    "fonts": [
+      {
+        "family": "Newsreader",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/fonts/newsreader-latin-400-normal.woff2",
+        "weight": "400",
+        "style": "normal"
+      },
+      {
+        "family": "Newsreader",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/fonts/newsreader-latin-500-normal.woff2",
+        "weight": "500",
+        "style": "normal"
+      },
+      {
+        "family": "Open Sans",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/fonts/open-sans-latin-400-normal.woff2",
+        "weight": "400",
+        "style": "normal"
+      },
+      {
+        "family": "Open Sans",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/fonts/open-sans-latin-600-normal.woff2",
+        "weight": "600",
+        "style": "normal"
+      }
+    ],
     "theme": {
       "defaultMode": "light",
       "palettes": {
         "light": {
-          "bgColor": "#FFFFFF",
-          "textColor": "#000000",
-          "titleColor": "#000000",
-          "linkColor": "#000000",
-          "accentColor": "#B8B4AE",
-          "secondaryBgColor": "#E9E7E4",
-          "secondaryTextColor": "#000000",
-          "secondaryTitleColor": "#000000",
-          "secondaryLinkColor": "#000000",
-          "secondaryAccentColor": "#B8B4AE",
-          "successColor": "#000000",
-          "onSuccessColor": "#FFFFFF",
-          "errorColor": "#000000",
-          "onErrorColor": "#FFFFFF",
-          "warningColor": "#B8B4AE",
-          "onWarningColor": "#000000",
-          "infoColor": "#B8B4AE",
-          "onInfoColor": "#000000"
+          "bgColor": "#f3f2ec",
+          "textColor": "#2f2f2f",
+          "titleColor": "#2f2f2f",
+          "linkColor": "#74642f",
+          "accentColor": "#74642f",
+          "secondaryBgColor": "#edebe4",
+          "secondaryTextColor": "#66615d",
+          "secondaryTitleColor": "#2f2f2f",
+          "secondaryLinkColor": "#74642f",
+          "secondaryAccentColor": "#c5a992",
+          "successColor": "#2f2f2f",
+          "onSuccessColor": "#ffffff",
+          "errorColor": "#2f2f2f",
+          "onErrorColor": "#ffffff",
+          "warningColor": "#74642f",
+          "onWarningColor": "#ffffff",
+          "infoColor": "#74642f",
+          "onInfoColor": "#ffffff"
         },
         "dark": {
-          "bgColor": "#000000",
-          "textColor": "#FFFFFF",
-          "titleColor": "#FFFFFF",
-          "linkColor": "#FFFFFF",
-          "accentColor": "#B8B4AE",
-          "secondaryBgColor": "#B8B4AE",
-          "secondaryTextColor": "#000000",
-          "secondaryTitleColor": "#000000",
-          "secondaryLinkColor": "#000000",
-          "secondaryAccentColor": "#B8B4AE",
-          "successColor": "#FFFFFF",
-          "onSuccessColor": "#000000",
-          "errorColor": "#FFFFFF",
-          "onErrorColor": "#000000",
-          "warningColor": "#B8B4AE",
-          "onWarningColor": "#000000",
-          "infoColor": "#B8B4AE",
-          "onInfoColor": "#000000"
+          "bgColor": "#f3f2ec",
+          "textColor": "#2f2f2f",
+          "titleColor": "#2f2f2f",
+          "linkColor": "#74642f",
+          "accentColor": "#74642f",
+          "secondaryBgColor": "#edebe4",
+          "secondaryTextColor": "#66615d",
+          "secondaryTitleColor": "#2f2f2f",
+          "secondaryLinkColor": "#74642f",
+          "secondaryAccentColor": "#c5a992",
+          "successColor": "#2f2f2f",
+          "onSuccessColor": "#ffffff",
+          "errorColor": "#2f2f2f",
+          "onErrorColor": "#ffffff",
+          "warningColor": "#74642f",
+          "onWarningColor": "#ffffff",
+          "infoColor": "#74642f",
+          "onInfoColor": "#ffffff"
         }
       }
     },
@@ -182,9 +208,9 @@
         "subtitle": "Observe. Understand. Create.",
         "exitDurationMs": 220,
         "minVisibleMs": 0,
-        "background": "#FFFFFF",
-        "foreground": "#000000",
-        "accent": "#B8B4AE"
+        "background": "#f3f2ec",
+        "foreground": "#2f2f2f",
+        "accent": "#c5a992"
       }
     }
   },

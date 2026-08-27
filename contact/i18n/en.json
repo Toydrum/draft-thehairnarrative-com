@@ -9,7 +9,7 @@
         "hero": {
           "eyebrow": "CONTACT",
           "title": "Every story begins with a conversation.",
-          "body": "Choose the path that best describes why you are writing. Each link opens a prepared message in your email application."
+          "body": "Choose the path that best describes why you are writing. Each inquiry link opens a prepared message in your email application."
         },
         "paths": {
           "eyebrow": "WRITE DIRECTLY",
@@ -19,52 +19,52 @@
               "title": "The Bridal Narrative",
               "body": "For destination wedding inquiries in Mexico. Bridal communication and the prepared message are always in English.",
               "ctaLabel": "BEGIN A BRIDAL INQUIRY",
-              "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A",
-              "icon": 36,
+              "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0AWhat%20I%20hope%20to%20feel%20on%20the%20day%20is%3A%0D%0A%0D%0A",
               "cta": {
                 "label": "BEGIN A BRIDAL INQUIRY",
-                "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0A%0D%0A"
-              }
+                "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0AWhat%20I%20hope%20to%20feel%20on%20the%20day%20is%3A%0D%0A%0D%0A"
+              },
+              "meta": "01 · bridal"
             },
             {
               "title": "The Practice",
               "body": "For future courses, mentoring or workbooks. These formats are still in preparation.",
               "ctaLabel": "ASK ABOUT THE PRACTICE",
-              "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry",
-              "icon": 24,
+              "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AI%20am%20writing%20about%20The%20Practice.%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20current%20experience%20with%20hairstyling%20is%3A%0D%0AWhat%20I%20would%20like%20to%20learn%20or%20explore%20is%3A%0D%0A%0D%0AThank%20you.",
               "cta": {
                 "label": "ASK ABOUT THE PRACTICE",
-                "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry"
-              }
+                "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AI%20am%20writing%20about%20The%20Practice.%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20current%20experience%20with%20hairstyling%20is%3A%0D%0AWhat%20I%20would%20like%20to%20learn%20or%20explore%20is%3A%0D%0A%0D%0AThank%20you."
+              },
+              "meta": "02 · learning"
             },
             {
               "title": "The Letter",
               "body": "To express interest in the future correspondence. This does not create an automated subscription.",
               "ctaLabel": "ASK ABOUT THE LETTER",
-              "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Letter",
-              "icon": 12,
+              "ctaHref": "mailto:hello@thehairnarrative.com?subject=The%20Letter&body=Hello%20Nina%2C%0D%0A%0D%0AI%20would%20like%20to%20express%20my%20interest%20in%20The%20Letter.%0D%0A%0D%0AMy%20name%20is%3A%0D%0ATopics%20I%20am%20most%20interested%20in%3A%0D%0A%0D%0AThank%20you.",
               "cta": {
                 "label": "ASK ABOUT THE LETTER",
-                "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter"
-              }
+                "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter&body=Hello%20Nina%2C%0D%0A%0D%0AI%20would%20like%20to%20express%20my%20interest%20in%20The%20Letter.%0D%0A%0D%0AMy%20name%20is%3A%0D%0ATopics%20I%20am%20most%20interested%20in%3A%0D%0A%0D%0AThank%20you."
+              },
+              "meta": "03 · correspondence"
             },
             {
               "title": "A general conversation",
               "body": "For a thoughtful hello, a collaboration idea or anything that does not fit the paths above.",
               "ctaLabel": "SAY HELLO",
-              "ctaHref": "mailto:hello@thehairnarrative.com?subject=Hello%20The%20Hair%20Narrative",
-              "icon": 7,
+              "ctaHref": "mailto:hello@thehairnarrative.com?subject=Hello%20The%20Hair%20Narrative&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AI%20am%20writing%20about%3A%0D%0A%0D%0AWhat%20I%20would%20like%20to%20share%20or%20ask%20is%3A%0D%0A%0D%0AThank%20you.",
               "cta": {
                 "label": "SAY HELLO",
-                "href": "mailto:hello@thehairnarrative.com?subject=Hello%20The%20Hair%20Narrative"
-              }
+                "href": "mailto:hello@thehairnarrative.com?subject=Hello%20The%20Hair%20Narrative&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AI%20am%20writing%20about%3A%0D%0A%0D%0AWhat%20I%20would%20like%20to%20share%20or%20ask%20is%3A%0D%0A%0D%0AThank%20you."
+              },
+              "meta": "04 · conversation"
             }
           ]
         },
         "direct": {
-          "eyebrow": "DIRECT EMAIL",
-          "title": "hello@<wbr>thehair<wbr>narrative.com",
-          "body": "There are no website forms, accounts, reservations or payments in this draft. Your message is sent from your own email service.",
+          "eyebrow": "DIRECT CONTACT",
+          "title": "hello@thehairnarrative.com",
+          "body": "There are no website forms, accounts, reservations or payments in this draft. Email inquiries are sent from your own email service; WhatsApp and YouTube open externally.",
           "ctaLabel": "OPEN A BLANK EMAIL",
           "ctaHref": "mailto:hello@thehairnarrative.com",
           "cta": {

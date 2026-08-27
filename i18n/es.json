@@ -14,25 +14,30 @@
     },
     "nav": {
       "home": "Inicio",
-      "narrative": "Narrative",
-      "practice": "Practice",
-      "bridal": "Bridal",
-      "journal": "Journal",
-      "contact": "Contacto"
+      "narrative": "narrativa",
+      "practice": "practice",
+      "bridal": "bridal narrative",
+      "journal": "journal",
+      "contact": "Contacto",
+      "letter": "letter"
     },
     "footer": {
       "statement": "Observa. Comprende. Crea.",
-      "note": "Un espacio editorial y educativo dedicado al arte del peinado.",
+      "note": "Un espacio editorial y educativo dedicado al arte del peinado, la observación y la creación con intención.",
       "contact": "ESCRIBE A NINA",
       "copyright": "© 2026 The Hair Narrative",
-      "privacy": "Privacidad",
-      "terms": "Términos",
-      "cookies": "Cookies",
-      "disclaimers": "Avisos",
+      "privacy": "aviso de privacidad",
+      "terms": "términos y condiciones",
+      "cookies": "política de cookies",
+      "disclaimers": "avisos legales",
       "contactCta": {
         "label": "ESCRIBE A NINA",
         "href": "mailto:hello@thehairnarrative.com?subject=Hola%20The%20Hair%20Narrative"
-      }
+      },
+      "signoff": "© 2026 the hair narrative · una filosofía de simplicidad."
+    },
+    "brand": {
+      "name": "the hair narrative"
     }
   }
 }

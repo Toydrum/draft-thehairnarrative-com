@@ -55,7 +55,8 @@
               "title": "Cómo pienso",
               "body": "Diseñar un peinado es resolver pequeñas decisiones con sensibilidad. La creatividad aparece cuando la curiosidad, la observación y la experiencia trabajan juntas."
             }
-          ]
+          ],
+          "intro": "Cuatro notas sobre las decisiones que dan forma al trabajo."
         },
         "values": {
           "eyebrow": "LOS VALORES",
@@ -94,6 +95,11 @@
             "href": "/contact"
           }
         }
+      },
+      "media": {
+        "heroAlt": "Una estilista dando forma a un chongo bajo con textura",
+        "storyAlt": "Nina en su estudio",
+        "signatureAlt": "Firma de Nina"
       }
     }
   }

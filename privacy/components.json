@@ -8,7 +8,8 @@
       "type": "container",
       "config": {
         "tag": "main",
-        "classes": "thnBodyFont ank-width-100per ank-overflow-hidden ank-bg-bgColor ank-color-textColor",
+        "tabindex": -1,
+        "classes": "thnBooksawBodyFont ank-width-100per ank-minWidth-0 ank-bg-bgColor ank-color-textColor",
         "components": [
           "legalHeroSection",
           "legalBodySection"
@@ -21,7 +22,7 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-accentColor ank-color-HASH000000 ank-paddingBlock-xl-92px",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-64px ank-paddingBlock-lg-88px ank-boxSizing-borderMINbox ank-color-textColor ank-bg-bgColor",
         "components": [
           "legalHeroFrame"
         ]
@@ -34,7 +35,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnEyebrow"
+        "classes": "thnBooksawEyebrow ank-color-linkColor"
       }
     },
     {
@@ -44,7 +45,7 @@
       "config": {
         "tag": "h1",
         "text": "",
-        "classes": "thnHeroTitle ank-fontSize-xl-5_2rem"
+        "classes": "thnBooksawHeroTitleCompact"
       }
     },
     {
@@ -54,7 +55,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
       }
     },
     {
@@ -64,7 +65,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnSmallCopy ank-textTransform-uppercase ank-letterSpacing-0_08em"
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor ank-letterSpacing-0_08em ank-textTransform-uppercase"
       }
     },
     {
@@ -72,7 +73,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1200px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-22px ank-maxWidth-900px",
+        "classes": "ank-width-100per ank-maxWidth-760px ank-marginInline-auto ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-20px",
         "components": [
           "legalEyebrow",
           "legalTitle",
@@ -88,7 +89,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnLegalHeading"
+        "classes": "thnBooksawLegalHeading"
       }
     },
     {
@@ -98,7 +99,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -108,7 +109,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -118,7 +119,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -126,12 +127,10 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
           "legalItem1Title",
-          "legalItem1Paragraph1",
-          "legalItem1Paragraph2",
-          "legalItem1Paragraph3"
+          "legalItem1Prose"
         ]
       }
     },
@@ -142,7 +141,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnLegalHeading"
+        "classes": "thnBooksawLegalHeading"
       }
     },
     {
@@ -152,7 +151,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -162,7 +161,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -170,11 +169,10 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
           "legalItem2Title",
-          "legalItem2Paragraph1",
-          "legalItem2Paragraph2"
+          "legalItem2Prose"
         ]
       }
     },
@@ -185,7 +183,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnLegalHeading"
+        "classes": "thnBooksawLegalHeading"
       }
     },
     {
@@ -195,7 +193,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -205,47 +203,51 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
       "id": "legalItem3Bullet1",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.legal.sections.2.bullets.0",
+      "type": "container",
       "config": {
         "tag": "li",
-        "text": "",
-        "classes": "thnBodyCopy ank-paddingBlock-4px"
+        "classes": "ank-display-listMINitem ank-minWidth-0 ank-paddingBlock-3px",
+        "components": [
+          "legalItem3Bullet1Text"
+        ]
       }
     },
     {
       "id": "legalItem3Bullet2",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.legal.sections.2.bullets.1",
+      "type": "container",
       "config": {
         "tag": "li",
-        "text": "",
-        "classes": "thnBodyCopy ank-paddingBlock-4px"
+        "classes": "ank-display-listMINitem ank-minWidth-0 ank-paddingBlock-3px",
+        "components": [
+          "legalItem3Bullet2Text"
+        ]
       }
     },
     {
       "id": "legalItem3Bullet3",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.legal.sections.2.bullets.2",
+      "type": "container",
       "config": {
         "tag": "li",
-        "text": "",
-        "classes": "thnBodyCopy ank-paddingBlock-4px"
+        "classes": "ank-display-listMINitem ank-minWidth-0 ank-paddingBlock-3px",
+        "components": [
+          "legalItem3Bullet3Text"
+        ]
       }
     },
     {
       "id": "legalItem3Bullet4",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.legal.sections.2.bullets.3",
+      "type": "container",
       "config": {
         "tag": "li",
-        "text": "",
-        "classes": "thnBodyCopy ank-paddingBlock-4px"
+        "classes": "ank-display-listMINitem ank-minWidth-0 ank-paddingBlock-3px",
+        "components": [
+          "legalItem3Bullet4Text"
+        ]
       }
     },
     {
@@ -253,7 +255,7 @@
       "type": "container",
       "config": {
         "tag": "ul",
-        "classes": "ank-m-0 ank-paddingInlineStart-22px ank-display-flex ank-flexDirection-column ank-gap-2px",
+        "classes": "ank-m-0 ank-paddingInlineStart-24px ank-listStyleType-disc",
         "components": [
           "legalItem3Bullet1",
           "legalItem3Bullet2",
@@ -267,11 +269,10 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
           "legalItem3Title",
-          "legalItem3Paragraph1",
-          "legalItem3Paragraph2",
+          "legalItem3Prose",
           "legalItem3List"
         ]
       }
@@ -283,7 +284,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnLegalHeading"
+        "classes": "thnBooksawLegalHeading"
       }
     },
     {
@@ -293,7 +294,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -303,7 +304,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -311,11 +312,10 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
           "legalItem4Title",
-          "legalItem4Paragraph1",
-          "legalItem4Paragraph2"
+          "legalItem4Prose"
         ]
       }
     },
@@ -326,7 +326,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnLegalHeading"
+        "classes": "thnBooksawLegalHeading"
       }
     },
     {
@@ -336,7 +336,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -346,57 +346,62 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
       "id": "legalItem5Bullet1",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.bullets.0",
+      "type": "container",
       "config": {
         "tag": "li",
-        "text": "",
-        "classes": "thnBodyCopy ank-paddingBlock-4px"
+        "classes": "ank-display-listMINitem ank-minWidth-0 ank-paddingBlock-3px",
+        "components": [
+          "legalItem5Bullet1Text"
+        ]
       }
     },
     {
       "id": "legalItem5Bullet2",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.bullets.1",
+      "type": "container",
       "config": {
         "tag": "li",
-        "text": "",
-        "classes": "thnBodyCopy ank-paddingBlock-4px"
+        "classes": "ank-display-listMINitem ank-minWidth-0 ank-paddingBlock-3px",
+        "components": [
+          "legalItem5Bullet2Text"
+        ]
       }
     },
     {
       "id": "legalItem5Bullet3",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.bullets.2",
+      "type": "container",
       "config": {
         "tag": "li",
-        "text": "",
-        "classes": "thnBodyCopy ank-paddingBlock-4px"
+        "classes": "ank-display-listMINitem ank-minWidth-0 ank-paddingBlock-3px",
+        "components": [
+          "legalItem5Bullet3Text"
+        ]
       }
     },
     {
       "id": "legalItem5Bullet4",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.bullets.3",
+      "type": "container",
       "config": {
         "tag": "li",
-        "text": "",
-        "classes": "thnBodyCopy ank-paddingBlock-4px"
+        "classes": "ank-display-listMINitem ank-minWidth-0 ank-paddingBlock-3px",
+        "components": [
+          "legalItem5Bullet4Text"
+        ]
       }
     },
     {
       "id": "legalItem5Bullet5",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.bullets.4",
+      "type": "container",
       "config": {
         "tag": "li",
-        "text": "",
-        "classes": "thnBodyCopy ank-paddingBlock-4px"
+        "classes": "ank-display-listMINitem ank-minWidth-0 ank-paddingBlock-3px",
+        "components": [
+          "legalItem5Bullet5Text"
+        ]
       }
     },
     {
@@ -404,7 +409,7 @@
       "type": "container",
       "config": {
         "tag": "ul",
-        "classes": "ank-m-0 ank-paddingInlineStart-22px ank-display-flex ank-flexDirection-column ank-gap-2px",
+        "classes": "ank-m-0 ank-paddingInlineStart-24px ank-listStyleType-disc",
         "components": [
           "legalItem5Bullet1",
           "legalItem5Bullet2",
@@ -419,11 +424,10 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
           "legalItem5Title",
-          "legalItem5Paragraph1",
-          "legalItem5Paragraph2",
+          "legalItem5Prose",
           "legalItem5List"
         ]
       }
@@ -435,7 +439,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnLegalHeading"
+        "classes": "thnBooksawLegalHeading"
       }
     },
     {
@@ -445,7 +449,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -455,7 +459,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -463,11 +467,10 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
           "legalItem6Title",
-          "legalItem6Paragraph1",
-          "legalItem6Paragraph2"
+          "legalItem6Prose"
         ]
       }
     },
@@ -478,7 +481,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnLegalHeading"
+        "classes": "thnBooksawLegalHeading"
       }
     },
     {
@@ -488,7 +491,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -498,7 +501,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -506,11 +509,10 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
           "legalItem7Title",
-          "legalItem7Paragraph1",
-          "legalItem7Paragraph2"
+          "legalItem7Prose"
         ]
       }
     },
@@ -521,7 +523,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnLegalHeading"
+        "classes": "thnBooksawLegalHeading"
       }
     },
     {
@@ -531,7 +533,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -541,7 +543,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -549,11 +551,10 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
           "legalItem8Title",
-          "legalItem8Paragraph1",
-          "legalItem8Paragraph2"
+          "legalItem8Prose"
         ]
       }
     },
@@ -564,7 +565,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnLegalHeading"
+        "classes": "thnBooksawLegalHeading"
       }
     },
     {
@@ -574,7 +575,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -582,10 +583,10 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
           "legalItem9Title",
-          "legalItem9Paragraph1"
+          "legalItem9Prose"
         ]
       }
     },
@@ -596,7 +597,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnLegalHeading"
+        "classes": "thnBooksawLegalHeading"
       }
     },
     {
@@ -606,7 +607,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
@@ -614,10 +615,10 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
           "legalItem10Title",
-          "legalItem10Paragraph1"
+          "legalItem10Prose"
         ]
       }
     },
@@ -628,7 +629,7 @@
       "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnLegalHeading"
+        "classes": "thnBooksawLegalHeading"
       }
     },
     {
@@ -638,16 +639,16 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBodyCopy"
+        "classes": "thnBooksawProse ank-color-secondaryTextColor"
       }
     },
     {
       "id": "legalContactCtaRule",
-      "type": "container",
+      "type": "icon",
       "config": {
-        "tag": "span",
-        "classes": "thnCtaRule ank-bg-textColor",
-        "components": []
+        "iconName": "→",
+        "ariaHidden": true,
+        "classes": "thnBooksawBodyFont ank-fontSize-24px ank-lineHeight-1 ank-flexShrink-0"
       }
     },
     {
@@ -662,7 +663,7 @@
         "components": [
           "legalContactCtaRule"
         ],
-        "classes": "thnCtaLink"
+        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-flexMINstart ank-marginTop-8px"
       }
     },
     {
@@ -670,10 +671,10 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-display-flex ank-flexDirection-column ank-gap-18px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px",
         "components": [
           "legalItem11Title",
-          "legalItem11Paragraph1",
+          "legalItem11Prose",
           "legalContactCta"
         ]
       }
@@ -685,7 +686,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnSmallCopy ank-paddingTop-20px"
+        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
       }
     },
     {
@@ -693,13 +694,14 @@
       "type": "container",
       "config": {
         "tag": "nav",
-        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-18px ank-paddingTop-8px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-flexDirection-sm-row ank-flexWrap-wrap ank-alignItems-flexMINstart ank-justifyContent-flexMINstart ank-columnGap-24px ank-rowGap-0 ank-textAlign-left ank-paddingTop-8px",
         "components": [
           "legalPrivacy",
           "legalTerms",
           "legalCookies",
           "legalDisclaimers"
-        ]
+        ],
+        "ariaLabel": "Legal"
       }
     },
     {
@@ -711,7 +713,8 @@
         "href": "/privacy",
         "text": "",
         "rel": "noopener",
-        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_7rem ank-letterSpacing-0_1em ank-textDecoration-none ank-textTransform-uppercase"
+        "classes": "thnBooksawPlainLink ank-fontSize-11px ank-letterSpacing-0_06em ank-textTransform-lowercase ank-textAlign-left ank-minWidth-44px",
+        "ariaCurrent": "page"
       }
     },
     {
@@ -723,7 +726,7 @@
         "href": "/terms",
         "text": "",
         "rel": "noopener",
-        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_7rem ank-letterSpacing-0_1em ank-textDecoration-none ank-textTransform-uppercase"
+        "classes": "thnBooksawPlainLink ank-fontSize-11px ank-letterSpacing-0_06em ank-textTransform-lowercase ank-textAlign-left ank-minWidth-44px"
       }
     },
     {
@@ -735,7 +738,7 @@
         "href": "/cookie-policy",
         "text": "",
         "rel": "noopener",
-        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_7rem ank-letterSpacing-0_1em ank-textDecoration-none ank-textTransform-uppercase"
+        "classes": "thnBooksawPlainLink ank-fontSize-11px ank-letterSpacing-0_06em ank-textTransform-lowercase ank-textAlign-left ank-minWidth-44px"
       }
     },
     {
@@ -747,7 +750,7 @@
         "href": "/disclaimers",
         "text": "",
         "rel": "noopener",
-        "classes": "ank-display-flex ank-alignItems-center ank-minHeight-44px ank-color-inherit ank-fontSize-0_7rem ank-letterSpacing-0_1em ank-textDecoration-none ank-textTransform-uppercase"
+        "classes": "thnBooksawPlainLink ank-fontSize-11px ank-letterSpacing-0_06em ank-textTransform-lowercase ank-textAlign-left ank-minWidth-44px"
       }
     },
     {
@@ -755,7 +758,7 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-md-88px ank-paddingBlock-xl-108px ank-boxSizing-borderMINbox ank-bg-bgColor ank-color-textColor",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-64px ank-paddingBlock-lg-88px ank-boxSizing-borderMINbox ank-color-textColor ank-bg-HASHffffff",
         "components": [
           "legalBodyFrame"
         ]
@@ -766,7 +769,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-720px ank-display-flex ank-flexDirection-column ank-gap-52px ank-gap-md-62px",
+        "classes": "ank-width-100per ank-maxWidth-760px ank-marginInline-auto ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-40px ank-gap-lg-48px",
         "components": [
           "legalItem1",
           "legalItem2",
@@ -781,6 +784,226 @@
           "legalItem11",
           "legalReview",
           "legalNav"
+        ]
+      }
+    },
+    {
+      "id": "legalItem1Prose",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-0",
+        "components": [
+          "legalItem1Paragraph1",
+          "legalItem1Paragraph2",
+          "legalItem1Paragraph3"
+        ]
+      }
+    },
+    {
+      "id": "legalItem2Prose",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-0",
+        "components": [
+          "legalItem2Paragraph1",
+          "legalItem2Paragraph2"
+        ]
+      }
+    },
+    {
+      "id": "legalItem3Bullet1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.2.bullets.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "legalItem3Bullet2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.2.bullets.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "legalItem3Bullet3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.2.bullets.2",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "legalItem3Bullet4Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.2.bullets.3",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "legalItem3Prose",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-0",
+        "components": [
+          "legalItem3Paragraph1",
+          "legalItem3Paragraph2"
+        ]
+      }
+    },
+    {
+      "id": "legalItem4Prose",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-0",
+        "components": [
+          "legalItem4Paragraph1",
+          "legalItem4Paragraph2"
+        ]
+      }
+    },
+    {
+      "id": "legalItem5Bullet1Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.bullets.0",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "legalItem5Bullet2Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.bullets.1",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "legalItem5Bullet3Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.bullets.2",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "legalItem5Bullet4Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.bullets.3",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "legalItem5Bullet5Text",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,page.legal.sections.4.bullets.4",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "legalItem5Prose",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-0",
+        "components": [
+          "legalItem5Paragraph1",
+          "legalItem5Paragraph2"
+        ]
+      }
+    },
+    {
+      "id": "legalItem6Prose",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-0",
+        "components": [
+          "legalItem6Paragraph1",
+          "legalItem6Paragraph2"
+        ]
+      }
+    },
+    {
+      "id": "legalItem7Prose",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-0",
+        "components": [
+          "legalItem7Paragraph1",
+          "legalItem7Paragraph2"
+        ]
+      }
+    },
+    {
+      "id": "legalItem8Prose",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-0",
+        "components": [
+          "legalItem8Paragraph1",
+          "legalItem8Paragraph2"
+        ]
+      }
+    },
+    {
+      "id": "legalItem9Prose",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-0",
+        "components": [
+          "legalItem9Paragraph1"
+        ]
+      }
+    },
+    {
+      "id": "legalItem10Prose",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-0",
+        "components": [
+          "legalItem10Paragraph1"
+        ]
+      }
+    },
+    {
+      "id": "legalItem11Prose",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-0",
+        "components": [
+          "legalItem11Paragraph1"
         ]
       }
     }

@@ -55,7 +55,8 @@
               "title": "How I think",
               "body": "Designing a hairstyle means resolving small decisions with sensitivity. Creativity appears when curiosity, observation and experience work together."
             }
-          ]
+          ],
+          "intro": "Four notes on the choices that shape the work."
         },
         "values": {
           "eyebrow": "THE VALUES",
@@ -94,6 +95,11 @@
             "href": "/contact"
           }
         }
+      },
+      "media": {
+        "heroAlt": "A hairstylist shaping a textured low bun",
+        "storyAlt": "Nina in her studio",
+        "signatureAlt": "Nina's signature"
       }
     }
   }
