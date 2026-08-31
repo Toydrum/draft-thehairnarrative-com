@@ -41,23 +41,22 @@
             }
           ],
           "cta": {
-            "label": "explora the journal",
+            "label": "descubre the journal",
             "href": "/the-journal"
           }
         },
         "letter": {
           "eyebrow": "the letter",
           "title": "una manera más pausada de seguir conversando.",
-          "body": "Una carta sobre el oficio, el trabajo y las preguntas que siguen dando forma a la práctica.",
+          "body": "Una carta sobre el oficio, observaciones y las preguntas que siguen dando forma a la práctica.",
           "cta": {
-            "label": "recibe the letter",
+            "label": "léeme",
             "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter%20%E2%80%94%20inter%C3%A9s%20en%20suscribirme&body=Hola%20Nina%2C%0D%0A%0D%0AMe%20gustar%C3%ADa%20saber%20cu%C3%A1ndo%20est%C3%A9%20lista%20The%20Letter.%0D%0AMi%20nombre%20es%3A%0D%0A"
-          },
-          "status": "Por ahora, escribe para expresar tu interés. Esto no crea una suscripción automatizada."
+          }
         },
         "practice": {
           "title": "the practice",
-          "intro": "Tres fundamentos para aprender a observar, comprender y crear con intención.",
+          "intro": "Conoce los fundamentos para aprender a observar, comprender y crear con intención.",
           "cards": [
             {
               "title": "Atención antes de ejecutar.",
@@ -71,12 +70,7 @@
               "title": "Una mirada propia.",
               "meta": "crear · práctica"
             }
-          ],
-          "close": "Te enseño a observar, comprender y diseñar con intención para que dejes de copiar y comiences a crear desde tu propia mirada.",
-          "cta": {
-            "label": "explora the practice",
-            "href": "/the-practice"
-          }
+          ]
         },
         "testimonials": {
           "title": "palabras de alumnas anteriores",
@@ -98,9 +92,9 @@
         "bridal": {
           "eyebrow": "the bridal narrative",
           "title": "presencia antes que perfección.",
-          "body": "Una experiencia nupcial serena e intencional en México, construida alrededor de la persona, el lugar y la historia.",
+          "body": "Una experiencia nupcial serena e intencional en México, construida alrededor de la persona, el lugar y su historia.",
           "cta": {
-            "label": "descubre bridal",
+            "label": "descubre the bridal narrative",
             "href": "/the-bridal-narrative"
           }
         }

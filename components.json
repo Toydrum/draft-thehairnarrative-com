@@ -384,13 +384,47 @@
       }
     },
     {
+      "id": "footerEmailIcon",
+      "type": "icon",
+      "config": {
+        "id": "footerEmailIcon",
+        "iconName": "mail",
+        "ariaHidden": true,
+        "classes": "ank-width-18px ank-height-18px ank-flexShrink-0 ank-color-linkColor"
+      }
+    },
+    {
       "id": "footerEmail",
       "type": "link",
       "config": {
         "id": "footer-email",
-        "text": "hello@thehairnarrative.com",
+        "text": "",
         "href": "mailto:hello@thehairnarrative.com",
-        "classes": "thnBooksawPlainLink ank-overflowWrap-anywhere"
+        "classes": "thnBooksawPlainLink ank-gap-8px ank-overflowWrap-anywhere",
+        "components": [
+          "footerEmailIcon",
+          "footerEmailLabel"
+        ]
+      }
+    },
+    {
+      "id": "footerWhatsappIcon",
+      "type": "icon",
+      "config": {
+        "id": "footerWhatsappIcon",
+        "iconName": "phone_android",
+        "ariaHidden": true,
+        "classes": "ank-width-18px ank-height-18px ank-flexShrink-0 ank-color-linkColor"
+      }
+    },
+    {
+      "id": "footerWhatsappLabel",
+      "type": "text",
+      "config": {
+        "id": "footerWhatsappLabel",
+        "tag": "span",
+        "text": "WhatsApp +52 56 3529 0782",
+        "classes": ""
       }
     },
     {
@@ -398,11 +432,35 @@
       "type": "link",
       "config": {
         "id": "footer-whatsapp",
-        "text": "WhatsApp +52 56 3529 0782",
+        "text": "",
         "href": "https://wa.me/525635290782",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "thnBooksawPlainLink"
+        "classes": "thnBooksawPlainLink ank-gap-8px",
+        "components": [
+          "footerWhatsappIcon",
+          "footerWhatsappLabel"
+        ]
+      }
+    },
+    {
+      "id": "footerYoutubeIcon",
+      "type": "icon",
+      "config": {
+        "id": "footerYoutubeIcon",
+        "iconName": "preview",
+        "ariaHidden": true,
+        "classes": "ank-width-18px ank-height-18px ank-flexShrink-0 ank-color-linkColor"
+      }
+    },
+    {
+      "id": "footerYoutubeLabel",
+      "type": "text",
+      "config": {
+        "id": "footerYoutubeLabel",
+        "tag": "span",
+        "text": "YouTube",
+        "classes": ""
       }
     },
     {
@@ -410,11 +468,15 @@
       "type": "link",
       "config": {
         "id": "footer-youtube",
-        "text": "YouTube",
+        "text": "",
         "href": "https://www.youtube.com/@thehairnarrative",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "thnBooksawPlainLink"
+        "classes": "thnBooksawPlainLink ank-gap-8px",
+        "components": [
+          "footerYoutubeIcon",
+          "footerYoutubeLabel"
+        ]
       }
     },
     {
@@ -423,7 +485,7 @@
       "config": {
         "id": "footerContacts",
         "tag": "nav",
-        "classes": "ank-display-flex ank-flexWrap-wrap ank-columnGap-24px ank-rowGap-0",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-columnGap-24px ank-rowGap-0 ank-justifyContent-center ank-justifyContent-lg-flexMINstart",
         "components": [
           "footerEmail",
           "footerWhatsapp",
@@ -438,7 +500,7 @@
       "config": {
         "id": "footerIntro",
         "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-18px ank-paddingBottom-42px ank-paddingBottom-md-50px",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-alignItems-lg-flexMINstart ank-textAlign-center ank-textAlign-lg-left ank-gap-18px ank-paddingBottom-42px ank-paddingBottom-md-50px",
         "components": [
           "footerBrand",
           "footerNote",
@@ -449,12 +511,36 @@
     {
       "id": "footerCopyright",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,footer.signoff",
+      "valueInstructions": "set:config.text,i18n,footer.copyright",
       "config": {
         "id": "footerCopyright",
         "tag": "small",
         "text": "",
         "classes": "thnBooksawSmallCopy ank-fontSize-11px ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "footerTagline",
+      "type": "text",
+      "valueInstructions": "set:config.text,i18n,footer.tagline",
+      "config": {
+        "id": "footerTagline",
+        "tag": "small",
+        "text": "",
+        "classes": "thnBooksawSmallCopy ank-fontSize-11px ank-color-secondaryTextColor"
+      }
+    },
+    {
+      "id": "footerSignoff",
+      "type": "container",
+      "config": {
+        "id": "footerSignoff",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-alignItems-center ank-alignItems-lg-flexMINstart ank-textAlign-center ank-textAlign-lg-left ank-gap-2px",
+        "components": [
+          "footerCopyright",
+          "footerTagline"
+        ]
       }
     },
     {
@@ -465,7 +551,7 @@
         "id": "footerPrivacy",
         "href": "/privacy",
         "text": "",
-        "classes": "thnBooksawPlainLink ank-fontSize-11px ank-justifyContent-flexMINstart ank-textAlign-left"
+        "classes": "thnBooksawPlainLink ank-fontSize-11px ank-justifyContent-center ank-textAlign-center"
       }
     },
     {
@@ -476,7 +562,7 @@
         "id": "footerTerms",
         "href": "/terms",
         "text": "",
-        "classes": "thnBooksawPlainLink ank-fontSize-11px ank-justifyContent-flexMINstart ank-textAlign-left"
+        "classes": "thnBooksawPlainLink ank-fontSize-11px ank-justifyContent-center ank-textAlign-center"
       }
     },
     {
@@ -487,7 +573,7 @@
         "id": "footerCookies",
         "href": "/cookie-policy",
         "text": "",
-        "classes": "thnBooksawPlainLink ank-fontSize-11px ank-justifyContent-flexMINstart ank-textAlign-left"
+        "classes": "thnBooksawPlainLink ank-fontSize-11px ank-justifyContent-center ank-textAlign-center"
       }
     },
     {
@@ -498,7 +584,7 @@
         "id": "footerDisclaimers",
         "href": "/disclaimers",
         "text": "",
-        "classes": "thnBooksawPlainLink ank-fontSize-11px ank-justifyContent-flexMINstart ank-textAlign-left"
+        "classes": "thnBooksawPlainLink ank-fontSize-11px ank-justifyContent-center ank-textAlign-center"
       }
     },
     {
@@ -507,7 +593,7 @@
       "config": {
         "id": "footerLinks",
         "tag": "nav",
-        "classes": "ank-display-grid ank-gridTemplateColumns-repeatSD2COMminmaxSD0COM1frEDED ank-columnGap-24px ank-rowGap-0 ank-justifyContent-start ank-justifyItems-start ank-textAlign-left ank-display-lg-flex ank-flexWrap-wrap ank-justifyContent-lg-flexMINend",
+        "classes": "ank-display-grid ank-gridTemplateColumns-repeatSD2COMminmaxSD0COM1frEDED ank-columnGap-24px ank-rowGap-0 ank-justifyContent-center ank-justifyItems-center ank-textAlign-center ank-display-lg-flex ank-flexWrap-wrap ank-justifyContent-lg-flexMINend",
         "components": [
           "footerPrivacy",
           "footerTerms",
@@ -523,9 +609,9 @@
       "config": {
         "id": "footerBottom",
         "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-flexDirection-lg-row ank-alignItems-flexMINstart ank-alignItems-lg-center ank-justifyContent-spaceMINbetween ank-gap-16px ank-paddingTop-20px ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-HASHd4d0c7",
+        "classes": "ank-display-flex ank-flexDirection-column ank-flexDirection-lg-row ank-alignItems-center ank-justifyContent-spaceMINbetween ank-gap-16px ank-paddingTop-20px ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-HASHd4d0c7",
         "components": [
-          "footerCopyright",
+          "footerSignoff",
           "footerLinks"
         ]
       }

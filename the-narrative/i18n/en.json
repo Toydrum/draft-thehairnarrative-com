@@ -7,14 +7,8 @@
     "page": {
       "sections": {
         "hero": {
-          "eyebrow": "THE NARRATIVE",
           "title": "The beauty appears when we understand what is essential.",
           "body": "This is the philosophy, story and way of looking that gives the work its form."
-        },
-        "essence": {
-          "eyebrow": "THE ESSENCE",
-          "title": "It is not only about hairstyling.",
-          "body": "The Hair Narrative is about the way we learn, observe and create. Every decision begins with the same conviction: beauty appears when we understand what is essential."
         },
         "philosophy": {
           "eyebrow": "A PHILOSOPHY OF SIMPLICITY",
@@ -37,7 +31,6 @@
         },
         "studio": {
           "eyebrow": "THE STUDIO",
-          "title": "A way of working and thinking.",
           "items": [
             {
               "title": "How I work",
@@ -63,24 +56,19 @@
           "title": "Five ways of paying attention.",
           "items": [
             {
-              "title": "Curiosity",
-              "body": "I ask questions."
+              "title": "Curiosity"
             },
             {
-              "title": "Observation",
-              "body": "I learn to look."
+              "title": "Observation"
             },
             {
-              "title": "Presence",
-              "body": "I enter the process completely."
+              "title": "Presence"
             },
             {
-              "title": "Intention",
-              "body": "I make conscious decisions."
+              "title": "Intention"
             },
             {
-              "title": "Simplicity",
-              "body": "The result reflects only what is essential."
+              "title": "Simplicity"
             }
           ]
         },
@@ -88,10 +76,10 @@
           "eyebrow": "CONTINUE",
           "title": "Every story begins with a conversation.",
           "body": "If this way of observing resonates with you, I would love to hear from you.",
-          "ctaLabel": "WRITE TO NINA",
+          "ctaLabel": "WRITE TO ME",
           "ctaHref": "/contact",
           "cta": {
-            "label": "WRITE TO NINA",
+            "label": "WRITE TO ME",
             "href": "/contact"
           }
         }
