@@ -7,7 +7,7 @@
     "page": {
       "sections": {
         "hero": {
-          "eyebrow": "CONTACT",
+          "eyebrow": "contact",
           "title": "Every story begins with a conversation.",
           "body": "Choose the path that best describes why you are writing. Each inquiry link opens a prepared message in your email application."
         },

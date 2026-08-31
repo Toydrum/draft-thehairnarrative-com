@@ -41,23 +41,22 @@
             }
           ],
           "cta": {
-            "label": "explore the journal",
+            "label": "discover the journal",
             "href": "/the-journal"
           }
         },
         "letter": {
           "eyebrow": "the letter",
           "title": "a quieter way to stay in conversation.",
-          "body": "A note on craft, work and the questions that continue shaping the practice.",
+          "body": "A note on craft, observation and the questions that continue shaping the practice.",
           "cta": {
-            "label": "join the letter",
+            "label": "read me",
             "href": "mailto:hello@thehairnarrative.com?subject=The%20Letter%20%E2%80%94%20subscription%20interest&body=Hello%20Nina%2C%0D%0A%0D%0AI%20would%20like%20to%20hear%20when%20The%20Letter%20is%20ready.%0D%0AMy%20name%20is%3A%0D%0A"
-          },
-          "status": "For now, write to express your interest. This does not create an automated subscription."
+          }
         },
         "practice": {
           "title": "the practice",
-          "intro": "Three foundations for learning to observe, understand and create with intention.",
+          "intro": "Learn the foundations for observing, understanding and creating with intention.",
           "cards": [
             {
               "title": "Attention before execution.",
@@ -71,12 +70,7 @@
               "title": "A point of view of your own.",
               "meta": "create · practice"
             }
-          ],
-          "close": "I teach you to observe, understand and design with intention, so you can stop copying and begin creating from your own point of view.",
-          "cta": {
-            "label": "explore the practice",
-            "href": "/the-practice"
-          }
+          ]
         },
         "testimonials": {
           "title": "kind words from past students",
@@ -98,9 +92,9 @@
         "bridal": {
           "eyebrow": "the bridal narrative",
           "title": "presence before perfection.",
-          "body": "A calm and intentional bridal experience in Mexico, built around the person, the place and the story.",
+          "body": "A calm and intentional bridal experience in Mexico, built around the person, the place and their story.",
           "cta": {
-            "label": "discover bridal",
+            "label": "discover the bridal narrative",
             "href": "/the-bridal-narrative"
           }
         }
