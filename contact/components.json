@@ -9,9 +9,9 @@
       "valueInstructions": "set:config.text,i18n,page.sections.hero.eyebrow",
       "config": {
         "id": "heroEyebrow",
-        "tag": "p",
+        "tag": "h1",
         "text": "",
-        "classes": "thnBooksawEyebrow ank-color-linkColor"
+        "classes": "thnBooksawSectionTitle ank-width-100per ank-textAlign-center"
       }
     },
     {
@@ -20,7 +20,7 @@
       "valueInstructions": "set:config.text,i18n,page.sections.hero.title",
       "config": {
         "id": "heroTitle",
-        "tag": "h1",
+        "tag": "h2",
         "text": "",
         "classes": "thnBooksawHeroTitle"
       }

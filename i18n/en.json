@@ -25,7 +25,8 @@
       "statement": "Observe. Understand. Create.",
       "note": "An editorial and educational space devoted to the art of hairstyling, observation and intentional creation.",
       "contact": "WRITE TO NINA",
-      "copyright": "© 2026 The Hair Narrative",
+      "copyright": "© 2026 the hair narrative",
+      "tagline": "a philosophy of simplicity.",
       "privacy": "privacy notice",
       "terms": "terms & conditions",
       "cookies": "cookie policy",
@@ -33,8 +34,7 @@
       "contactCta": {
         "label": "WRITE TO NINA",
         "href": "mailto:hello@thehairnarrative.com?subject=Hello%20The%20Hair%20Narrative"
-      },
-      "signoff": "© 2026 the hair narrative · a philosophy of simplicity."
+      }
     },
     "brand": {
       "name": "the hair narrative"

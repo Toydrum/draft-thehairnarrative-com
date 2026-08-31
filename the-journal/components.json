@@ -8,9 +8,9 @@
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.hero.eyebrow",
       "config": {
-        "tag": "p",
+        "tag": "h1",
         "text": "",
-        "classes": "thnBooksawEyebrow ank-color-accentColor ank-fontWeight-600"
+        "classes": "thnBooksawSectionTitle ank-width-100per ank-textAlign-center"
       }
     },
     {
@@ -18,7 +18,7 @@
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.hero.title",
       "config": {
-        "tag": "h1",
+        "tag": "h2",
         "text": "",
         "classes": "thnBooksawHeroTitle ank-maxWidth-790px"
       }
@@ -38,7 +38,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-flexMINstart ank-gap-24px",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-stretch ank-gap-24px",
         "components": [
           "heroEyebrow",
           "heroTitle",

@@ -7,14 +7,8 @@
     "page": {
       "sections": {
         "hero": {
-          "eyebrow": "THE NARRATIVE",
           "title": "La belleza aparece cuando comprendemos lo esencial.",
           "body": "Esta es la filosofía, la historia y la forma de mirar que le da sentido al trabajo."
-        },
-        "essence": {
-          "eyebrow": "LA ESENCIA",
-          "title": "No gira únicamente alrededor del peinado.",
-          "body": "The Hair Narrative gira alrededor de la manera en que aprendemos, observamos y creamos. Cada decisión nace de la misma convicción: la belleza aparece cuando comprendemos lo esencial."
         },
         "philosophy": {
           "eyebrow": "UNA FILOSOFÍA DE SIMPLICIDAD",
@@ -37,7 +31,6 @@
         },
         "studio": {
           "eyebrow": "EL ESTUDIO",
-          "title": "Una forma de trabajar y pensar.",
           "items": [
             {
               "title": "Cómo trabajo",
@@ -63,24 +56,19 @@
           "title": "Cinco formas de prestar atención.",
           "items": [
             {
-              "title": "Curiosidad",
-              "body": "Me hago preguntas."
+              "title": "Curiosidad"
             },
             {
-              "title": "Observación",
-              "body": "Aprendo a mirar."
+              "title": "Observación"
             },
             {
-              "title": "Presencia",
-              "body": "Me sumerjo por completo en el proceso."
+              "title": "Presencia"
             },
             {
-              "title": "Intención",
-              "body": "Tomo decisiones conscientes."
+              "title": "Intención"
             },
             {
-              "title": "Simplicidad",
-              "body": "El resultado refleja solo lo esencial."
+              "title": "Simplicidad"
             }
           ]
         },
@@ -88,10 +76,10 @@
           "eyebrow": "CONTINÚA",
           "title": "Toda historia comienza con una conversación.",
           "body": "Si esta forma de observar resuena contigo, me encantará leerte.",
-          "ctaLabel": "ESCRIBE A NINA",
+          "ctaLabel": "ESCRÍBEME",
           "ctaHref": "/contact",
           "cta": {
-            "label": "ESCRIBE A NINA",
+            "label": "ESCRÍBEME",
             "href": "/contact"
           }
         }
