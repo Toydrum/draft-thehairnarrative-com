@@ -11,7 +11,7 @@
         "id": "homeHeroEyebrow",
         "tag": "p",
         "text": "",
-        "classes": "thnBooksawEyebrow ank-color-linkColor"
+        "classes": "thnBooksawSectionTitle ank-width-100per ank-textAlign-center"
       }
     },
     {
@@ -68,7 +68,6 @@
         "tag": "div",
         "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-24px ank-alignItems-center ank-textAlign-center ank-paddingInline-24px ank-paddingTop-44px ank-paddingBottom-64px ank-padding-lg-0 ank-alignItems-lg-flexMINstart ank-textAlign-lg-left",
         "components": [
-          "homeHeroEyebrow",
           "homeHeroTitle",
           "homeHeroBody",
           "homeHeroCta"
@@ -97,10 +96,10 @@
       "config": {
         "id": "homeHeroFrame",
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-minmaxSD0COM1frED ank-gridTemplateColumns-lg-minmaxSD0COM0_78frED__minmaxSD0COM1_22frED ank-gap-lg-70px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-40px",
         "components": [
-          "homeHeroCopy",
-          "homeHeroPhotoLayout"
+          "homeHeroEyebrow",
+          "homeHeroLayout"
         ]
       }
     },
@@ -110,7 +109,7 @@
       "config": {
         "id": "narrative",
         "tag": "section",
-        "classes": "ank-bg-bgColor ank-paddingInline-lg-24px ank-paddingBlock-lg-72px",
+        "classes": "ank-bg-bgColor ank-paddingTop-44px ank-paddingInline-lg-24px ank-paddingBlock-lg-72px",
         "components": [
           "homeHeroFrame"
         ]
@@ -644,9 +643,9 @@
       "valueInstructions": "set:config.text,i18n,page.home.letter.eyebrow",
       "config": {
         "id": "homeLetterEyebrow",
-        "tag": "p",
+        "tag": "h2",
         "text": "",
-        "classes": "thnBooksawEyebrow ank-color-linkColor"
+        "classes": "thnBooksawSectionTitle ank-width-100per ank-textAlign-center"
       }
     },
     {
@@ -655,7 +654,7 @@
       "valueInstructions": "set:config.text,i18n,page.home.letter.title",
       "config": {
         "id": "homeLetterTitle",
-        "tag": "h2",
+        "tag": "h3",
         "text": "",
         "classes": "thnBooksawSectionTitle"
       }
@@ -706,17 +705,6 @@
       }
     },
     {
-      "id": "homeLetterStatus",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.home.letter.status",
-      "config": {
-        "id": "homeLetterStatus",
-        "tag": "p",
-        "text": "",
-        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
-      }
-    },
-    {
       "id": "homeLetterSectionFrame",
       "type": "container",
       "config": {
@@ -728,8 +716,7 @@
           "homeLetterTitle",
           "homeLetterRule",
           "homeLetterBody",
-          "homeLetterCta",
-          "homeLetterStatus"
+          "homeLetterCta"
         ]
       }
     },
@@ -739,7 +726,7 @@
       "config": {
         "id": "the-letter",
         "tag": "section",
-        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-lg-104px ank-boxSizing-borderMINbox ank-bg-secondaryBgColor ank-scrollMarginTop-88px",
+        "classes": "ank-width-100per ank-paddingInline-24px ank-paddingTop-44px ank-paddingBottom-76px ank-paddingTop-lg-72px ank-paddingBottom-lg-104px ank-boxSizing-borderMINbox ank-bg-secondaryBgColor ank-scrollMarginTop-88px",
         "components": [
           "homeLetterSectionFrame"
         ]
@@ -1056,53 +1043,6 @@
       }
     },
     {
-      "id": "homePracticeClose",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.home.practice.close",
-      "config": {
-        "id": "homePracticeClose",
-        "tag": "p",
-        "text": "",
-        "classes": "thnBooksawDisplayFont ank-m-0 ank-fontSize-27px ank-fontSize-lg-35px ank-lineHeight-1_35 ank-textAlign-center ank-maxWidth-780px ank-marginInline-auto ank-marginTop-54px"
-      }
-    },
-    {
-      "id": "homePracticeCtaArrow",
-      "type": "icon",
-      "config": {
-        "id": "homePracticeCta-arrow",
-        "iconName": "→",
-        "ariaHidden": true,
-        "classes": "thnBooksawBodyFont ank-fontSize-24px ank-lineHeight-1 ank-flexShrink-0"
-      }
-    },
-    {
-      "id": "homePracticeCta",
-      "type": "link",
-      "valueInstructions": "set:config.text,i18n,page.home.practice.cta.label;set:config.href,i18n,page.home.practice.cta.href",
-      "config": {
-        "id": "homePracticeCta",
-        "href": "/",
-        "text": "",
-        "classes": "thnBooksawCtaLink ank-color-linkColor",
-        "components": [
-          "homePracticeCtaArrow"
-        ]
-      }
-    },
-    {
-      "id": "homePracticeAction",
-      "type": "container",
-      "config": {
-        "id": "homePracticeAction",
-        "tag": "div",
-        "classes": "ank-display-flex ank-justifyContent-center ank-marginTop-36px",
-        "components": [
-          "homePracticeCta"
-        ]
-      }
-    },
-    {
       "id": "homePracticeSectionFrame",
       "type": "container",
       "config": {
@@ -1111,9 +1051,7 @@
         "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ",
         "components": [
           "homePracticeHeading",
-          "homePracticeGrid",
-          "homePracticeClose",
-          "homePracticeAction"
+          "homePracticeGrid"
         ]
       }
     },
@@ -1305,9 +1243,21 @@
       "valueInstructions": "set:config.text,i18n,page.home.bridal.eyebrow",
       "config": {
         "id": "homeBridalEyebrow",
-        "tag": "p",
+        "tag": "h2",
         "text": "",
-        "classes": "thnBooksawEyebrow ank-color-linkColor"
+        "classes": "thnBooksawSectionTitle ank-width-100per ank-textAlign-center"
+      }
+    },
+    {
+      "id": "homeBridalMedia",
+      "type": "container",
+      "config": {
+        "id": "homeBridalMedia",
+        "tag": "div",
+        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0",
+        "components": [
+          "homeBridalPhoto"
+        ]
       }
     },
     {
@@ -1316,7 +1266,7 @@
       "valueInstructions": "set:config.text,i18n,page.home.bridal.title",
       "config": {
         "id": "homeBridalTitle",
-        "tag": "h2",
+        "tag": "h3",
         "text": "",
         "classes": "thnBooksawSectionTitle"
       }
@@ -1364,7 +1314,6 @@
         "tag": "div",
         "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-24px ank-alignItems-flexMINstart",
         "components": [
-          "homeBridalEyebrow",
           "homeBridalTitle",
           "homeBridalBody",
           "homeBridalCta"
@@ -1377,10 +1326,10 @@
       "config": {
         "id": "homeBridalSectionFrame",
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-minmaxSD0COM1frED ank-gridTemplateColumns-lg-repeatSD2COMminmaxSD0COM1frEDED ank-gap-36px ank-gap-lg-72px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-46px",
         "components": [
-          "homeBridalPhoto",
-          "homeBridalCopy"
+          "homeBridalEyebrow",
+          "homeBridalLayout"
         ]
       }
     },
@@ -1425,6 +1374,32 @@
         "classes": "ank-minWidth-0 ank-order-MIN1 ank-order-lg-2 ank-width-100per",
         "components": [
           "homeHeroPhoto"
+        ]
+      }
+    },
+    {
+      "id": "homeHeroLayout",
+      "type": "container",
+      "config": {
+        "id": "homeHeroLayout",
+        "tag": "div",
+        "classes": "ank-width-100per ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-minmaxSD0COM1frED ank-gridTemplateColumns-lg-minmaxSD0COM0_78frED__minmaxSD0COM1_22frED ank-gap-lg-70px ank-alignItems-center",
+        "components": [
+          "homeHeroCopy",
+          "homeHeroPhotoLayout"
+        ]
+      }
+    },
+    {
+      "id": "homeBridalLayout",
+      "type": "container",
+      "config": {
+        "id": "homeBridalLayout",
+        "tag": "div",
+        "classes": "ank-width-100per ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-minmaxSD0COM1frED ank-gridTemplateColumns-lg-repeatSD2COMminmaxSD0COM1frEDED ank-gap-36px ank-gap-lg-72px ank-alignItems-center",
+        "components": [
+          "homeBridalMedia",
+          "homeBridalCopy"
         ]
       }
     },

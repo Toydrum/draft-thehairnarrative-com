@@ -34,7 +34,7 @@
       "ank-fontFamily-CDBOpen__SansCDBCOM__ArialCOM__sansMINserif ank-fontWeight-400 ank-m-0 ank-fontSize-14px ank-fontSize-md-15px ank-lineHeight-1_85 ank-textIndent-1_65em ank-textIndent-md-2_2em"
     ],
     "thnBooksawCtaLink": [
-      "ank-fontFamily-CDBOpen__SansCDBCOM__ArialCOM__sansMINserif ank-fontWeight-600 ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-flexWrap-nowrap ank-gap-16px ank-minHeight-46px ank-width-fitMINcontent ank-maxWidth-100per ank-paddingInline-20px ank-paddingBlock-12px ank-borderWidth-1px ank-borderStyle-solid ank-borderColor-secondaryAccentColor ank-bg-transparent ank-color-linkColor ank-colorHover-HASHffffff ank-bgHover-textColor ank-fontSize-11px ank-lineHeight-1_5 ank-letterSpacing-0_12em ank-textTransform-uppercase ank-textDecoration-none ank-textAlign-center ank-cursor-pointer ank-boxSizing-borderMINbox"
+      "ank-fontFamily-CDBOpen__SansCDBCOM__ArialCOM__sansMINserif ank-fontWeight-600 ank-display-inlineMINflex ank-alignItems-center ank-justifyContent-center ank-flexWrap-nowrap ank-gap-16px ank-minHeight-46px ank-width-fitMINcontent ank-maxWidth-100per ank-paddingInline-20px ank-paddingBlock-12px ank-borderWidth-1px ank-borderStyle-solid ank-borderColor-secondaryAccentColor ank-borderColorHover-linkColor ank-bg-transparent ank-bgHover-secondaryBgColor ank-color-linkColor ank-colorHover-linkColor ank-fontSize-11px ank-lineHeight-1_5 ank-letterSpacing-0_12em ank-textTransform-uppercase ank-textDecoration-none ank-textAlign-center ank-cursor-pointer ank-boxSizing-borderMINbox"
     ],
     "thnBooksawCtaRule": [
       "ank-display-none"

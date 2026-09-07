@@ -20,7 +20,7 @@
         "id": "heroCta-link",
         "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0AWhat%20I%20hope%20to%20feel%20on%20the%20day%20is%3A%0D%0A%0D%0A",
         "text": "",
-        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-flexMINstart",
+        "classes": "thnBooksawCtaLink ank-alignSelf-flexMINstart ank-color-linkColor",
         "components": [
           "heroCtaArrow"
         ]
@@ -53,9 +53,9 @@
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.hero.eyebrow",
       "config": {
-        "tag": "p",
+        "tag": "h1",
         "text": "",
-        "classes": "thnBooksawEyebrow"
+        "classes": "thnBooksawSectionTitle ank-width-100per ank-textAlign-center"
       }
     },
     {
@@ -63,7 +63,7 @@
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.hero.title",
       "config": {
-        "tag": "h1",
+        "tag": "h2",
         "text": "",
         "classes": "thnBooksawHeroTitle"
       }
@@ -85,7 +85,6 @@
         "tag": "div",
         "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-24px",
         "components": [
-          "heroEyebrow",
           "heroTitle",
           "heroBody",
           "heroAction"
@@ -109,14 +108,26 @@
       }
     },
     {
+      "id": "heroLayout",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-minmaxSD0COM0_82frED__minmaxSD0COM1_18frED ank-gap-40px ank-gap-xl-70px ank-alignItems-center",
+        "components": [
+          "heroContent",
+          "heroVisual"
+        ]
+      }
+    },
+    {
       "id": "heroFrame",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-minmaxSD0COM0_82frED__minmaxSD0COM1_18frED ank-gap-40px ank-gap-xl-70px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-46px",
         "components": [
-          "heroContent",
-          "heroVisual"
+          "heroEyebrow",
+          "heroLayout"
         ]
       }
     },
@@ -737,7 +748,7 @@
         "id": "firstNoteCta-link",
         "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0AWhat%20I%20hope%20to%20feel%20on%20the%20day%20is%3A%0D%0A%0D%0A",
         "text": "",
-        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-flexMINstart",
+        "classes": "thnBooksawCtaLink ank-alignSelf-flexMINstart ank-color-linkColor",
         "components": [
           "firstNoteCtaArrow"
         ]

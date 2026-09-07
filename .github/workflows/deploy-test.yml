@@ -57,6 +57,9 @@ jobs:
           draft_domain="$(node -e "process.stdout.write(JSON.parse(require('node:fs').readFileSync('draft-repo.config.json', 'utf8')).domain)")"
           printf 'domain=%s\n' "$draft_domain" >> "$GITHUB_OUTPUT"
 
+      - name: Validate isolated Journal delivery and rollback contracts
+        run: node --test tools/tests/journal-delivery.spec.mjs
+
       - name: Prepare deterministic deployment plan
         if: steps.provenance.outputs.deploy_required == 'true'
         id: prepare_plan
@@ -100,7 +103,7 @@ jobs:
           name: ${{ steps.prepare_plan.outputs.artifact_name }}
           path: ${{ github.workspace }}/.draft-deploy
           if-no-files-found: error
-          retention-days: 1
+          retention-days: 90
           compression-level: 0
           # The explicit artifact root is hidden; it was recreated above and contains only
           # the closed plan plus its manifest. The deploy job rechecks the exact two-file set.
@@ -235,6 +238,7 @@ jobs:
                     elif $parts[2] == "commerce.json" then "server-commerce"
                     elif $parts[2] == "integration-bindings.json" then "server-integration-bindings"
                     elif $parts[2] == "notification-policies.json" then "server-notification-policies"
+                    elif $parts[2] == "protected-feature-bindings-v2.json" then "server-protected-feature-bindings-v2"
                     else null end
                   elif ($parts | length) == 3 and $parts[0] == $domain and ($parts[1] | ascii_downcase) != "server" and ($parts[1] | local_only_page | not) then
                     if $parts[2] == "page-config.json" then "page-config"
@@ -378,3 +382,20 @@ jobs:
           }
           post_action "$upsert_file"
           post_action "$publish_file"
+          jq -e --arg domain "$EXPECTED_DOMAIN" --arg version "$EXPECTED_VERSION_ID" '
+            .ok == true and .domain == $domain and .environment == "test" and .published.versionId == $version
+          ' "$response_file" >/dev/null 2>&1 || { echo "Published version verification failed."; exit 1; }
+
+      - name: Record immutable rollback coordinates
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            echo '### Verified TEST draft version'
+            printf 'Version: `%s`\n\n' "$EXPECTED_VERSION_ID"
+            printf 'Source: `%s`\n\n' "$GITHUB_SHA"
+            printf 'Artifact: `%s` (`%s`)\n\n' "$EXPECTED_ARTIFACT_ID" "$EXPECTED_ARTIFACT_NAME"
+            printf 'Manifest SHA-256: `%s`\n\n' "$EXPECTED_MANIFEST_SHA256"
+            echo 'Rollback uses this stored immutable version via publishDraft, never a rebuild or upsert.'
+            echo 'Download retained evidence by the exact artifact ID and verify it with tools/prepare-journal-rollback.mjs before a separately authorized rollback.'
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -4,23 +4,12 @@
   "pageId": "the-narrative",
   "components": [
     {
-      "id": "heroEyebrow",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.hero.eyebrow",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBooksawEyebrow ank-color-accentColor"
-      }
-    },
-    {
       "id": "heroTitle",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.hero.title",
       "config": {
         "tag": "h1",
-        "text": "",
-        "classes": "thnBooksawHeroTitle ank-maxWidth-520px"
+        "text": "the narrative",
+        "classes": "thnBooksawSectionTitle ank-width-100per ank-textAlign-center"
       }
     },
     {
@@ -38,11 +27,9 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-alignItems-md-flexMINstart ank-textAlign-center ank-textAlign-md-left ank-order-2 ank-order-md-1 ank-paddingInline-24px ank-paddingBlock-54px ank-padding-md-0 ank-gap-20px",
+        "classes": "ank-width-100per ank-minWidth-0 ank-textAlign-center",
         "components": [
-          "heroEyebrow",
-          "heroTitle",
-          "heroBody"
+          "heroTitle"
         ]
       }
     },
@@ -68,7 +55,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM0_92frED__minmaxSD0COM1_08frED ank-gridTemplateColumns-xl-minmaxSD0COM0_82frED__minmaxSD0COM1_18frED ank-gap-0 ank-gap-md-34px ank-gap-xl-70px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-36px",
         "components": [
           "heroContent",
           "heroVisualLayout"
@@ -80,77 +67,11 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-bg-bgColor ank-display-flex ank-justifyContent-center ank-paddingInline-md-24px ank-paddingBlock-md-76px ank-paddingBlock-xl-104px",
+        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-bg-bgColor ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-64px ank-paddingBlock-xl-80px",
         "components": [
           "heroFrame"
         ],
         "id": "hero-section"
-      }
-    },
-    {
-      "id": "essenceEyebrow",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.essence.eyebrow",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBooksawEyebrow ank-color-accentColor"
-      }
-    },
-    {
-      "id": "essenceTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.essence.title",
-      "config": {
-        "tag": "h2",
-        "text": "",
-        "classes": "thnBooksawSectionTitle"
-      }
-    },
-    {
-      "id": "essenceHeading",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-16px ank-alignItems-center",
-        "components": [
-          "essenceEyebrow",
-          "essenceTitle"
-        ]
-      }
-    },
-    {
-      "id": "essenceBody",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.essence.body",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBooksawBodyCopy ank-maxWidth-690px ank-color-secondaryTextColor"
-      }
-    },
-    {
-      "id": "essenceFrame",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-alignItems-center ank-gap-28px ank-textAlign-center",
-        "components": [
-          "essenceHeading",
-          "essenceBody"
-        ]
-      }
-    },
-    {
-      "id": "essenceSection",
-      "type": "container",
-      "config": {
-        "tag": "section",
-        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-display-flex ank-justifyContent-center ank-bg-secondaryBgColor",
-        "components": [
-          "essenceFrame"
-        ],
-        "id": "essence-section"
       }
     },
     {
@@ -160,7 +81,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBooksawEyebrow ank-color-secondaryAccentColor"
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
       }
     },
     {
@@ -180,7 +101,7 @@
       "config": {
         "tag": "p",
         "text": "",
-        "classes": "thnBooksawBodyCopy ank-maxWidth-650px ank-color-secondaryBgColor"
+        "classes": "thnBooksawBodyCopy ank-maxWidth-650px ank-color-secondaryTextColor"
       }
     },
     {
@@ -201,7 +122,7 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-display-flex ank-justifyContent-center ank-bg-textColor ank-color-bgColor",
+        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-paddingInline-24px ank-paddingBlock-76px ank-paddingBlock-xl-104px ank-display-flex ank-justifyContent-center ank-bg-secondaryBgColor ank-color-textColor",
         "components": [
           "philosophyFrame"
         ],
@@ -444,19 +365,9 @@
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.studio.eyebrow",
       "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBooksawEyebrow ank-color-accentColor"
-      }
-    },
-    {
-      "id": "studioTitle",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.studio.title",
-      "config": {
         "tag": "h2",
         "text": "",
-        "classes": "thnBooksawSectionTitle"
+        "classes": "thnBooksawEyebrow ank-color-accentColor"
       }
     },
     {
@@ -466,8 +377,7 @@
         "tag": "div",
         "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-16px ank-alignItems-center ank-textAlign-center",
         "components": [
-          "studioEyebrow",
-          "studioTitle"
+          "studioEyebrow"
         ]
       }
     },
@@ -795,24 +705,13 @@
       }
     },
     {
-      "id": "valueItem1Body",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.values.items.0.body",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
-      }
-    },
-    {
       "id": "valueItem1Copy",
       "type": "container",
       "config": {
         "tag": "div",
         "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-14px",
         "components": [
-          "valueItem1Title",
-          "valueItem1Body"
+          "valueItem1Title"
         ]
       }
     },
@@ -848,24 +747,13 @@
       }
     },
     {
-      "id": "valueItem2Body",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.values.items.1.body",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
-      }
-    },
-    {
       "id": "valueItem2Copy",
       "type": "container",
       "config": {
         "tag": "div",
         "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-14px",
         "components": [
-          "valueItem2Title",
-          "valueItem2Body"
+          "valueItem2Title"
         ]
       }
     },
@@ -901,24 +789,13 @@
       }
     },
     {
-      "id": "valueItem3Body",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.values.items.2.body",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
-      }
-    },
-    {
       "id": "valueItem3Copy",
       "type": "container",
       "config": {
         "tag": "div",
         "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-14px",
         "components": [
-          "valueItem3Title",
-          "valueItem3Body"
+          "valueItem3Title"
         ]
       }
     },
@@ -954,24 +831,13 @@
       }
     },
     {
-      "id": "valueItem4Body",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.values.items.3.body",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
-      }
-    },
-    {
       "id": "valueItem4Copy",
       "type": "container",
       "config": {
         "tag": "div",
         "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-14px",
         "components": [
-          "valueItem4Title",
-          "valueItem4Body"
+          "valueItem4Title"
         ]
       }
     },
@@ -1007,24 +873,13 @@
       }
     },
     {
-      "id": "valueItem5Body",
-      "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.values.items.4.body",
-      "config": {
-        "tag": "p",
-        "text": "",
-        "classes": "thnBooksawSmallCopy ank-color-secondaryTextColor"
-      }
-    },
-    {
       "id": "valueItem5Copy",
       "type": "container",
       "config": {
         "tag": "div",
         "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-14px",
         "components": [
-          "valueItem5Title",
-          "valueItem5Body"
+          "valueItem5Title"
         ]
       }
     },
@@ -1187,7 +1042,6 @@
         "classes": "thnBooksawBodyFont ank-width-100per ank-minWidth-0 ank-bg-bgColor ank-color-textColor",
         "components": [
           "heroSection",
-          "essenceSection",
           "philosophySection",
           "purposeSection",
           "storySection",

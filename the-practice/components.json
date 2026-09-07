@@ -8,9 +8,9 @@
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.hero.eyebrow",
       "config": {
-        "tag": "p",
+        "tag": "h1",
         "text": "",
-        "classes": "thnBooksawEyebrow"
+        "classes": "thnBooksawSectionTitle ank-width-100per ank-textAlign-center"
       }
     },
     {
@@ -18,7 +18,7 @@
       "type": "text",
       "valueInstructions": "set:config.text,i18n,page.sections.hero.title",
       "config": {
-        "tag": "h1",
+        "tag": "h2",
         "text": "",
         "classes": "thnBooksawHeroTitle"
       }
@@ -60,7 +60,7 @@
         "id": "heroCta-link",
         "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20hairstyling%20experience%20is%3A%0D%0AWhat%20I%20would%20like%20to%20learn%20is%3A%0D%0A",
         "text": "",
-        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-flexMINstart ank-marginTop-8px",
+        "classes": "thnBooksawCtaLink ank-alignSelf-flexMINstart ank-marginTop-8px ank-color-linkColor",
         "components": [
           "heroCtaArrow"
         ]
@@ -73,7 +73,6 @@
         "tag": "div",
         "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-gap-20px",
         "components": [
-          "heroEyebrow",
           "heroTitle",
           "heroBody",
           "heroStatus",
@@ -98,14 +97,26 @@
       }
     },
     {
+      "id": "heroLayout",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "classes": "ank-width-100per ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-minmaxSD0COM1frED__minmaxSD0COM1_05frED ank-gap-38px ank-gap-xl-64px ank-alignItems-center",
+        "components": [
+          "heroContent",
+          "heroVisual"
+        ]
+      }
+    },
+    {
       "id": "heroFrame",
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-lg-minmaxSD0COM1frED__minmaxSD0COM1_05frED ank-gap-38px ank-gap-xl-64px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-46px",
         "components": [
-          "heroContent",
-          "heroVisual"
+          "heroEyebrow",
+          "heroLayout"
         ]
       }
     },
@@ -1087,7 +1098,7 @@
         "id": "closingCta-link",
         "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20hairstyling%20experience%20is%3A%0D%0AWhat%20I%20would%20like%20to%20learn%20is%3A%0D%0A",
         "text": "",
-        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-flexMINstart",
+        "classes": "thnBooksawCtaLink ank-alignSelf-flexMINstart ank-color-linkColor",
         "components": [
           "closingCtaArrow"
         ]
