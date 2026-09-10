@@ -6,11 +6,10 @@
     {
       "id": "heroTitle",
       "type": "text",
-      "valueInstructions": "set:config.text,i18n,page.sections.hero.title",
       "config": {
         "tag": "h1",
-        "text": "",
-        "classes": "thnBooksawHeroTitle ank-maxWidth-520px"
+        "text": "the narrative",
+        "classes": "thnBooksawSectionTitle ank-width-100per ank-textAlign-center"
       }
     },
     {
@@ -28,10 +27,9 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-display-flex ank-flexDirection-column ank-minWidth-0 ank-alignItems-center ank-alignItems-md-flexMINstart ank-textAlign-center ank-textAlign-md-left ank-order-2 ank-order-md-1 ank-paddingInline-24px ank-paddingBlock-54px ank-padding-md-0 ank-gap-20px",
+        "classes": "ank-width-100per ank-minWidth-0 ank-textAlign-center",
         "components": [
-          "heroTitle",
-          "heroBody"
+          "heroTitle"
         ]
       }
     },
@@ -57,7 +55,7 @@
       "type": "container",
       "config": {
         "tag": "div",
-        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-grid ank-gridTemplateColumns-1fr ank-gridTemplateColumns-md-minmaxSD0COM0_92frED__minmaxSD0COM1_08frED ank-gridTemplateColumns-xl-minmaxSD0COM0_82frED__minmaxSD0COM1_18frED ank-gap-0 ank-gap-md-34px ank-gap-xl-70px ank-alignItems-center",
+        "classes": "ank-width-100per ank-maxWidth-1120px ank-minWidth-0 ank-display-flex ank-flexDirection-column ank-gap-36px",
         "components": [
           "heroContent",
           "heroVisualLayout"
@@ -69,7 +67,7 @@
       "type": "container",
       "config": {
         "tag": "section",
-        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-bg-bgColor ank-display-flex ank-justifyContent-center ank-paddingInline-md-24px ank-paddingBlock-md-76px ank-paddingBlock-xl-104px",
+        "classes": "ank-width-100per ank-boxSizing-borderMINbox ank-bg-bgColor ank-display-flex ank-justifyContent-center ank-paddingInline-24px ank-paddingBlock-64px ank-paddingBlock-xl-80px",
         "components": [
           "heroFrame"
         ],

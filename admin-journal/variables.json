@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "admin-journal",
+  "variables": {
+    "journalDeskConfig": {
+      "template": "fixed-article-v2",
+      "hubId": "thehairnarrative-com-journal"
+    },
+    "journalAuth": {
+      "challenge": "signin"
+    },
+    "journalDeskLabels": {
+      "idle": "Ready",
+      "dirty": "Unsaved changes",
+      "saving": "Saving…",
+      "saved": "Saved",
+      "retrying": "Retrying…",
+      "auth-required": "Sign in to save",
+      "conflict": "Newer version detected",
+      "error": "Not saved"
+    },
+    "ui": {
+      "modals": {
+        "journalReauth": {
+          "closeOnBackdrop": false,
+          "closeOnEscape": false,
+          "showCloseButton": false,
+          "size": "md",
+          "ariaLabelKey": "desk.reauth",
+          "panelClasses": "ank-bg-bgColor ank-color-textColor ank-padding-24px ank-width-100per ank-maxWidth-520px ank-maxHeight-90vh ank-overflowY-auto"
+        }
+      }
+    }
+  }
+}

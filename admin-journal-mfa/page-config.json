@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "admin-journal-mfa",
+  "rootIds": [
+    "deskShell"
+  ],
+  "modalRootIds": [],
+  "seo": {
+    "description": {
+      "en": "Private editorial workspace for The Hair Narrative.",
+      "es": "Espacio editorial privado de The Hair Narrative."
+    },
+    "canonical": "https://admin-test.thehairnarrative.com/admin/journal/mfa",
+    "title": {
+      "en": "Private Journal | The Hair Narrative",
+      "es": "Journal privado | The Hair Narrative"
+    },
+    "robots": "noindex, nofollow"
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}
