@@ -573,7 +573,8 @@
           "homeJournalCard1",
           "homeJournalCard2"
         ]
-      }
+      },
+      "condition": "all:varEq,journalDelivery.empty,true"
     },
     {
       "id": "homeJournalCtaArrow",
@@ -621,6 +622,7 @@
         "components": [
           "homeJournalHeading",
           "homeJournalGrid",
+          "journalLiveCards",
           "homeJournalAction"
         ]
       }
@@ -1413,6 +1415,83 @@
         "components": [
           "homeStudioPortrait"
         ]
+      }
+    },
+    {
+      "id": "journalLiveCards",
+      "type": "container",
+      "config": {
+        "id": "journalLiveCards",
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-minmaxSD0COM1frED ank-gridTemplateColumns-md-repeatSD2COMminmaxSD0COM1frEDED ank-gridTemplateColumns-xl-repeatSD3COMminmaxSD0COM1frEDED ank-gap-42px",
+        "components": []
+      },
+      "condition": "all:varEq,journalDelivery.hasArticles,true",
+      "loopConfig": {
+        "source": "var",
+        "path": "journalDelivery.cards",
+        "templateId": "journalLiveCardTemplate",
+        "idPrefix": "journalLiveCard",
+        "bindings": [
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "metaLabel"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "href"
+            ]
+          },
+          {
+            "to": "config.imageSrc",
+            "sources": [
+              "imageSrc"
+            ]
+          },
+          {
+            "to": "config.imageAlt",
+            "sources": [
+              "imageAlt"
+            ]
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              "readLabel"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "journalLiveCardTemplate",
+      "type": "generic-card",
+      "config": {
+        "variant": "feature",
+        "title": "",
+        "description": "",
+        "imageSrc": "",
+        "imageAlt": "",
+        "href": "",
+        "linkLabel": "",
+        "classes": "thnJournalCard",
+        "imageContainerClasses": "thnJournalCardImage",
+        "imageClasses": "ank-width-100per ank-height-100per ank-objectFit-cover",
+        "featureTitleClasses": "thnBooksawCardTitle",
+        "featureDescriptionClasses": "thnBooksawSmallCopy ank-color-secondaryTextColor",
+        "linkClasses": "thnBooksawCtaLink ank-color-linkColor ank-marginTop-auto",
+        "linkStyles": {
+          "background": "transparent"
+        }
       }
     }
   ]

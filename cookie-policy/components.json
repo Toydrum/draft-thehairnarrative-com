@@ -453,7 +453,7 @@
         "components": [
           "legalContactCtaRule"
         ],
-        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-flexMINstart ank-marginTop-8px"
+        "classes": "thnBooksawCtaLink ank-alignSelf-flexMINstart ank-marginTop-8px ank-color-linkColor"
       }
     },
     {

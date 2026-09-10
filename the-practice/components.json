@@ -60,7 +60,7 @@
         "id": "heroCta-link",
         "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20hairstyling%20experience%20is%3A%0D%0AWhat%20I%20would%20like%20to%20learn%20is%3A%0D%0A",
         "text": "",
-        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-flexMINstart ank-marginTop-8px",
+        "classes": "thnBooksawCtaLink ank-alignSelf-flexMINstart ank-marginTop-8px ank-color-linkColor",
         "components": [
           "heroCtaArrow"
         ]
@@ -1098,7 +1098,7 @@
         "id": "closingCta-link",
         "href": "mailto:hello@thehairnarrative.com?subject=The%20Practice%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20hairstyling%20experience%20is%3A%0D%0AWhat%20I%20would%20like%20to%20learn%20is%3A%0D%0A",
         "text": "",
-        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-flexMINstart",
+        "classes": "thnBooksawCtaLink ank-alignSelf-flexMINstart ank-color-linkColor",
         "components": [
           "closingCtaArrow"
         ]
