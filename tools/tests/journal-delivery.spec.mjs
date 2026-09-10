@@ -1,8 +1,10 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
-import { readFile } from 'node:fs/promises';
+import { mkdtemp, readFile, rmdir, unlink } from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import test from 'node:test';
 import { collectJsonFiles, validateDraftFeatureReadiness } from '../draft-feature-readiness.mjs';
 import { fileURLToPath } from 'node:url';
@@ -133,6 +135,43 @@ test('Journal contracts run in pull requests without deployment credentials', as
   assert.match(workflow, /pull_request:/);
   assert.match(workflow, /node --test tools\/tests\/\*\.spec.mjs/);
   assert.doesNotMatch(workflow, /id-token: write|environment: test|configure-aws-credentials/);
+});
+
+test('the actual rollback summary prints exact coordinates as plain text without shell evaluation', async () => {
+  const workflow = (await readFile(new URL('../../.github/workflows/deploy-test.yml', import.meta.url), 'utf8')).replace(/\r\n/g, '\n');
+  const marker = '      - name: Record immutable rollback coordinates\n        shell: bash\n        run: |\n';
+  assert.ok(workflow.includes(marker));
+  const script = workflow.split(marker)[1].replace(/^          /gm, '');
+  const coordinates = {
+    EXPECTED_VERSION_ID: 'test-fixture-version',
+    GITHUB_SHA: sha,
+    EXPECTED_ARTIFACT_ID: '123',
+    EXPECTED_ARTIFACT_NAME: 'fixture $(printf unexpected) `printf unexpected`',
+    EXPECTED_MANIFEST_SHA256: 'b'.repeat(64),
+  };
+  const bash = process.env.BASH_PATH || (process.platform === 'win32' ? `${process.env.ProgramFiles}/Git/bin/bash.exe` : 'bash');
+  const directory = await mkdtemp(join(tmpdir(), 'thn-summary-test-'));
+  const summaryPath = join(directory, 'summary.md');
+  try {
+    const result = spawnSync(bash, ['--noprofile', '--norc', '-s'], {
+      input: script, encoding: 'utf8', windowsHide: true,
+      env: { ...process.env, ...coordinates, GITHUB_STEP_SUMMARY: summaryPath.replaceAll('\\', '/') },
+    });
+    assert.equal(result.status, 0, result.error?.message || result.stderr);
+    assert.equal(await readFile(summaryPath, 'utf8'), [
+    '### Verified TEST draft version',
+    `Version: ${coordinates.EXPECTED_VERSION_ID}\n`,
+    `Source: ${coordinates.GITHUB_SHA}\n`,
+    `Artifact: ${coordinates.EXPECTED_ARTIFACT_ID} (${coordinates.EXPECTED_ARTIFACT_NAME})\n`,
+    `Manifest SHA-256: ${coordinates.EXPECTED_MANIFEST_SHA256}\n`,
+    'Rollback uses this stored immutable version via publishDraft, never a rebuild or upsert.',
+    'Download retained evidence by the exact artifact ID and verify it with tools/prepare-journal-rollback.mjs before a separately authorized rollback.',
+    '',
+    ].join('\n'));
+  } finally {
+    if (existsSync(summaryPath)) await unlink(summaryPath);
+    await rmdir(directory);
+  }
 });
 
 test('the actual privileged jq filter accepts the exact v2 kind and rejects structural drift', async () => {

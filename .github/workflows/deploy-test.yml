@@ -392,10 +392,10 @@ jobs:
           set -euo pipefail
           {
             echo '### Verified TEST draft version'
-            printf 'Version: `%s`\n\n' "$EXPECTED_VERSION_ID"
-            printf 'Source: `%s`\n\n' "$GITHUB_SHA"
-            printf 'Artifact: `%s` (`%s`)\n\n' "$EXPECTED_ARTIFACT_ID" "$EXPECTED_ARTIFACT_NAME"
-            printf 'Manifest SHA-256: `%s`\n\n' "$EXPECTED_MANIFEST_SHA256"
+            printf 'Version: %s\n\n' "$EXPECTED_VERSION_ID"
+            printf 'Source: %s\n\n' "$GITHUB_SHA"
+            printf 'Artifact: %s (%s)\n\n' "$EXPECTED_ARTIFACT_ID" "$EXPECTED_ARTIFACT_NAME"
+            printf 'Manifest SHA-256: %s\n\n' "$EXPECTED_MANIFEST_SHA256"
             echo 'Rollback uses this stored immutable version via publishDraft, never a rebuild or upsert.'
             echo 'Download retained evidence by the exact artifact ID and verify it with tools/prepare-journal-rollback.mjs before a separately authorized rollback.'
           } >> "$GITHUB_STEP_SUMMARY"
