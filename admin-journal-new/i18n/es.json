@@ -11,7 +11,7 @@
       "access": "Bienvenida de nuevo",
       "accessNote": "Entra con tu cuenta de propietaria. Tus artículos permanecen privados hasta que los publiques.",
       "email": "Correo electrónico",
-      "password": "Contraseña",
+      "passwordLabel": "Contraseña",
       "signin": "Entrar",
       "mfa": "Verifica tu acceso",
       "mfaNote": "Escribe el código de seis dígitos de tu aplicación de autenticación.",

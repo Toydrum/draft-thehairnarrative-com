@@ -4,7 +4,8 @@ import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { spawnSync } from 'node:child_process';
 import test from 'node:test';
-import { validateDraftFeatureReadiness } from '../draft-feature-readiness.mjs';
+import { collectJsonFiles, validateDraftFeatureReadiness } from '../draft-feature-readiness.mjs';
+import { fileURLToPath } from 'node:url';
 import { inferServerDescriptorKind } from '../lib/server-descriptor-kinds.mjs';
 
 const domain = 'thehairnarrative.com';
@@ -17,6 +18,33 @@ const files = () => [
   { path: `${domain}/site-config.json`, kind: 'site-config', content: structuredClone(site) },
   { path: `${domain}/server/protected-feature-bindings-v2.json`, kind: 'server-protected-feature-bindings-v2', content: structuredClone(binding) },
 ];
+
+test('the complete Journal package passes the unchanged TEST readiness gate', async () => {
+  const actual = await collectJsonFiles(fileURLToPath(new URL('../../', import.meta.url)), domain);
+  const report = await validateDraftFeatureReadiness({ domain, environment: 'test', mode: 'test', files: actual });
+  assert.deepEqual(report.findings, []);
+  assert.equal(report.ok, true);
+});
+
+test('the real package includes the closed server-only binding without deployment resource identifiers', async () => {
+  const actual = await collectJsonFiles(fileURLToPath(new URL('../../', import.meta.url)), domain);
+  const descriptor = actual.find(file => file.path === `${domain}/server/protected-feature-bindings-v2.json`);
+  assert.ok(descriptor, 'The connected private desk requires its server-only binding');
+  assert.deepEqual(descriptor.content, binding);
+  assert.equal(inferServerDescriptorKind(domain, descriptor.path), 'server-protected-feature-bindings-v2');
+});
+
+test('all private login labels resolve without using a reserved credential field name', async () => {
+  for (const pageId of ['admin-journal-access', 'admin-journal-mfa', 'admin-journal', 'admin-journal-new', 'admin-journal-edit', 'admin-journal-preview']) {
+    const components = JSON.parse(await readFile(new URL(`../../${pageId}/components.json`, import.meta.url), 'utf8')).components;
+    assert.ok(components.some(component => component.valueInstructions === 'set:config.label,i18n,desk.passwordLabel'));
+    for (const lang of ['en', 'es']) {
+      const dictionary = JSON.parse(await readFile(new URL(`../../${pageId}/i18n/${lang}.json`, import.meta.url), 'utf8')).dictionary.desk;
+      assert.equal(dictionary.passwordLabel, lang === 'en' ? 'Password' : 'Contraseña');
+      assert.equal(Object.hasOwn(dictionary, 'password'), false);
+    }
+  }
+});
 
 test('THN tooling accepts only the closed server binding at the isolated TEST origin', async () => {
   assert.equal(inferServerDescriptorKind(domain, `${domain}/server/protected-feature-bindings-v2.json`), 'server-protected-feature-bindings-v2');

@@ -108,7 +108,7 @@
         "inputType": "password",
         "required": true
       },
-      "valueInstructions": "set:config.label,i18n,desk.password"
+      "valueInstructions": "set:config.label,i18n,desk.passwordLabel"
     },
     {
       "id": "authLogin",

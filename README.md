@@ -34,7 +34,7 @@ Newsletter automation, article publication, reservations, payments, production, 
 
 ## Isolated Journal Delivery Preparation
 
-The TEST workflow validates the optional, closed `server/protected-feature-bindings-v2.json` contract and requires the exact dedicated admin origin when that descriptor is present. Its kind remains server-only; it must never enter the public browser projection. This tooling update does not add that descriptor to the site, provision an owner, activate a service binding, or change the current public design. Existing payloads without the binding remain valid. Zoosite and other draft repositories are not changed.
+The connected Journal package includes the closed `server/protected-feature-bindings-v2.json` descriptor. The TEST workflow validates it and requires the exact dedicated admin origin. Its kind remains server-only; it must never enter the public browser projection. The descriptor contains logical routing coordinates only, not deployment resource identifiers or credentials. Publishing this descriptor does not provision an owner or enable the separate registry, authentication and writer controls. Existing payloads without the binding remain valid. Zoosite and other draft repositories are not changed.
 
 Promotion remains exact `dev -> test`. The credential-bearing job consumes the previously validated plan, never checks out or executes draft code, and verifies the backend's published domain/environment/version before recording rollback coordinates. The plan artifact retention request is 90 days, subject to repository limits. Preserve the successful run summary's exact artifact ID, full source SHA, validation attempt, version ID, and external manifest SHA-256 for the rollback window.
 
