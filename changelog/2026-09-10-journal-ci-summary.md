@@ -11,3 +11,10 @@ A regression executes the actual summary step with Bash and verifies all four
 coordinates, including shell-like fixture text that must remain literal.
 The regression failed on the prior formatting and passed after this change.
 This corrects source validation only; it does not deploy or activate TEST.
+
+The next safety stage reproduced an existing auditor false positive on the
+complete negative workflow-permission assertion. Adopt immutable reusable
+workflow `b419ddf68645be95b08c2adb78f3fbe8bf05727f`, reviewed in platform PR #380,
+which selects the already tested narrow policy correction. No other draft
+caller changes. Full-history Gitleaks, canonical auditing and read-only workflow
+permissions remain required; altered assertion values still fail the auditor.

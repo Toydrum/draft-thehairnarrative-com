@@ -137,6 +137,14 @@ test('Journal contracts run in pull requests without deployment credentials', as
   assert.doesNotMatch(workflow, /id-token: write|environment: test|configure-aws-credentials/);
 });
 
+test('Journal PR safety uses the reviewed immutable workflow and keeps read-only permissions', async () => {
+  const workflow = await readFile(new URL('../../.github/workflows/pr-safety.yml', import.meta.url), 'utf8');
+  assert.match(workflow, /uses: LynxPardelle\/zoolandingpage\/\.github\/workflows\/reusable-pr-safety\.yml@b419ddf68645be95b08c2adb78f3fbe8bf05727f/);
+  assert.match(workflow, /permissions:\s*\n\s+contents: read/);
+  assert.doesNotMatch(workflow, /continue-on-error|secrets: inherit/);
+  assert.doesNotMatch(workflow, /id-token/);
+});
+
 test('the actual rollback summary prints exact coordinates as plain text without shell evaluation', async () => {
   const workflow = (await readFile(new URL('../../.github/workflows/deploy-test.yml', import.meta.url), 'utf8')).replace(/\r\n/g, '\n');
   const marker = '      - name: Record immutable rollback coordinates\n        shell: bash\n        run: |\n';
