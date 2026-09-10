@@ -1,0 +1,411 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "admin-journal-access",
+  "components": [
+    {
+      "id": "deskBrand",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "",
+        "classes": "thnBooksawSectionTitle"
+      },
+      "valueInstructions": "set:config.text,i18n,desk.title"
+    },
+    {
+      "id": "deskUiLanguage",
+      "type": "tab-group",
+      "config": {
+        "tabs": [
+          {
+            "id": "en",
+            "label": "EN"
+          },
+          {
+            "id": "es",
+            "label": "ES"
+          }
+        ],
+        "tabListClasses": "deskRow",
+        "tabButtonClasses": "deskTab",
+        "activeTabButtonClasses": "deskActiveTab",
+        "panelsClasses": "ank-display-none"
+      },
+      "valueInstructions": "set:config.activeId,varOr,journalDesk.uiLang,en",
+      "eventInstructions": "fixedArticleAction:uiLanguage"
+    },
+    {
+      "id": "deskNav",
+      "type": "container",
+      "config": {
+        "id": "deskNav",
+        "tag": "div",
+        "classes": "deskRow",
+        "components": [
+          "deskUiLanguage"
+        ]
+      }
+    },
+    {
+      "id": "deskHeader",
+      "type": "container",
+      "config": {
+        "id": "deskHeader",
+        "tag": "div",
+        "classes": "deskRow ank-justifyContent-spaceMINbetween ank-paddingBlock-22px ank-borderBottomWidth-1px ank-borderBottomStyle-solid ank-borderColor-HASHd4d0c7",
+        "components": [
+          "deskBrand",
+          "deskNav"
+        ]
+      }
+    },
+    {
+      "id": "authTitle",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "",
+        "classes": "thnBooksawSectionTitle"
+      },
+      "valueInstructions": "set:config.text,i18n,desk.access"
+    },
+    {
+      "id": "authNote",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy"
+      },
+      "valueInstructions": "set:config.text,i18n,desk.accessNote"
+    },
+    {
+      "id": "authEmail",
+      "type": "input",
+      "config": {
+        "fieldId": "email",
+        "controlType": "text",
+        "classes": "deskField",
+        "labelClasses": "deskLabel",
+        "inputClasses": "deskInput",
+        "errorClasses": "deskError",
+        "inputType": "email",
+        "required": true
+      },
+      "valueInstructions": "set:config.label,i18n,desk.email"
+    },
+    {
+      "id": "authPassword",
+      "type": "input",
+      "config": {
+        "fieldId": "password",
+        "controlType": "text",
+        "classes": "deskField",
+        "labelClasses": "deskLabel",
+        "inputClasses": "deskInput",
+        "errorClasses": "deskError",
+        "inputType": "password",
+        "required": true
+      },
+      "valueInstructions": "set:config.label,i18n,desk.password"
+    },
+    {
+      "id": "authLogin",
+      "type": "button",
+      "config": {
+        "type": "button",
+        "label": "",
+        "classes": "deskButton",
+        "loadingClasses": "ank-opacity-0_6",
+        "disabledClasses": "ank-opacity-0_45 ank-cursor-notMINallowed",
+        "disabledWhenInvalidScope": true
+      },
+      "valueInstructions": "set:config.label,i18n,desk.signin;set:config.loading,varOr,journalAuth.busy,false",
+      "eventInstructions": "protectedAuthorAuth:signin"
+    },
+    {
+      "id": "authSignin",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "authSignin",
+        "tag": "form",
+        "classes": "deskStack",
+        "components": [
+          "authEmail",
+          "authPassword",
+          "authLogin"
+        ]
+      },
+      "condition": "all:varEq,journalAuth.challenge,signin"
+    },
+    {
+      "id": "authSetupNote",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy"
+      },
+      "valueInstructions": "set:config.text,i18n,desk.setupNote"
+    },
+    {
+      "id": "authSetupBtn",
+      "type": "button",
+      "config": {
+        "type": "button",
+        "label": "",
+        "classes": "deskButton",
+        "loadingClasses": "ank-opacity-0_6",
+        "disabledClasses": "ank-opacity-0_45 ank-cursor-notMINallowed"
+      },
+      "valueInstructions": "set:config.label,i18n,desk.setup;set:config.loading,varOr,journalAuth.busy,false",
+      "eventInstructions": "protectedAuthorAuth:setup"
+    },
+    {
+      "id": "authSetup",
+      "type": "container",
+      "config": {
+        "id": "authSetup",
+        "tag": "div",
+        "classes": "deskStack",
+        "components": [
+          "authSetupNote",
+          "authSetupBtn"
+        ]
+      },
+      "condition": "all:varEq,journalAuth.challenge,MFA_SETUP"
+    },
+    {
+      "id": "authQr",
+      "type": "qr-code",
+      "config": {
+        "id": "authQr",
+        "value": "",
+        "size": 192,
+        "margin": 2
+      },
+      "valueInstructions": "set:config.value,varOr,journalAuth.qr,",
+      "condition": "all:varEq,journalAuth.challenge,VERIFY_SETUP"
+    },
+    {
+      "id": "authManual",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "deskMuted ank-overflowWrap-anywhere"
+      },
+      "valueInstructions": "set:config.text,varOr,journalAuth.manualKey,"
+    },
+    {
+      "id": "authNewPw",
+      "type": "input",
+      "config": {
+        "fieldId": "newPassword",
+        "controlType": "text",
+        "classes": "deskField",
+        "labelClasses": "deskLabel",
+        "inputClasses": "deskInput",
+        "errorClasses": "deskError",
+        "inputType": "password",
+        "required": true
+      },
+      "valueInstructions": "set:config.label,i18n,desk.newPassword"
+    },
+    {
+      "id": "authPwBtn",
+      "type": "button",
+      "config": {
+        "type": "button",
+        "label": "",
+        "classes": "deskButton",
+        "loadingClasses": "ank-opacity-0_6",
+        "disabledClasses": "ank-opacity-0_45 ank-cursor-notMINallowed",
+        "disabledWhenInvalidScope": true
+      },
+      "valueInstructions": "set:config.label,i18n,desk.continue;set:config.loading,varOr,journalAuth.busy,false",
+      "eventInstructions": "protectedAuthorAuth:challenge"
+    },
+    {
+      "id": "authNewPassword",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "authNewPassword",
+        "tag": "form",
+        "classes": "deskStack",
+        "components": [
+          "authNewPw",
+          "authPwBtn"
+        ]
+      },
+      "condition": "all:varEq,journalAuth.challenge,NEW_PASSWORD_REQUIRED"
+    },
+    {
+      "id": "authError",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "deskError"
+      },
+      "valueInstructions": "set:config.text,i18n,desk.authError",
+      "condition": "all:varEq,journalAuth.error,authentication_failed"
+    },
+    {
+      "id": "authChallengeCode",
+      "type": "input",
+      "config": {
+        "fieldId": "code",
+        "controlType": "text",
+        "classes": "deskField",
+        "labelClasses": "deskLabel",
+        "inputClasses": "deskInput",
+        "errorClasses": "deskError",
+        "required": true,
+        "validation": [
+          {
+            "type": "pattern",
+            "value": "^[0-9]{6}$",
+            "message": "6 digits / 6 dígitos"
+          }
+        ]
+      },
+      "valueInstructions": "set:config.label,i18n,desk.code"
+    },
+    {
+      "id": "authChallengeVerify",
+      "type": "button",
+      "config": {
+        "type": "button",
+        "label": "",
+        "classes": "deskButton",
+        "loadingClasses": "ank-opacity-0_6",
+        "disabledClasses": "ank-opacity-0_45 ank-cursor-notMINallowed",
+        "disabledWhenInvalidScope": true
+      },
+      "valueInstructions": "set:config.label,i18n,desk.verify;set:config.loading,varOr,journalAuth.busy,false",
+      "eventInstructions": "protectedAuthorAuth:challenge"
+    },
+    {
+      "id": "authChallenge",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "authChallenge",
+        "tag": "form",
+        "classes": "deskStack",
+        "components": [
+          "authChallengeCode",
+          "authChallengeVerify"
+        ]
+      },
+      "condition": "all:varEq,journalAuth.challenge,SOFTWARE_TOKEN_MFA"
+    },
+    {
+      "id": "authEnrollmentCode",
+      "type": "input",
+      "config": {
+        "fieldId": "code",
+        "controlType": "text",
+        "classes": "deskField",
+        "labelClasses": "deskLabel",
+        "inputClasses": "deskInput",
+        "errorClasses": "deskError",
+        "required": true,
+        "validation": [
+          {
+            "type": "pattern",
+            "value": "^[0-9]{6}$",
+            "message": "6 digits / 6 dígitos"
+          }
+        ]
+      },
+      "valueInstructions": "set:config.label,i18n,desk.code"
+    },
+    {
+      "id": "authEnrollmentVerify",
+      "type": "button",
+      "config": {
+        "type": "button",
+        "label": "",
+        "classes": "deskButton",
+        "loadingClasses": "ank-opacity-0_6",
+        "disabledClasses": "ank-opacity-0_45 ank-cursor-notMINallowed",
+        "disabledWhenInvalidScope": true
+      },
+      "valueInstructions": "set:config.label,i18n,desk.verify;set:config.loading,varOr,journalAuth.busy,false",
+      "eventInstructions": "protectedAuthorAuth:verify"
+    },
+    {
+      "id": "authEnrollment",
+      "type": "interaction-scope",
+      "config": {
+        "scopeId": "authEnrollment",
+        "tag": "form",
+        "classes": "deskStack",
+        "components": [
+          "authEnrollmentCode",
+          "authEnrollmentVerify"
+        ]
+      },
+      "condition": "all:varEq,journalAuth.challenge,VERIFY_SETUP"
+    },
+    {
+      "id": "authPanel",
+      "type": "container",
+      "config": {
+        "id": "authPanel",
+        "tag": "div",
+        "classes": "deskStack deskCard ank-width-100per ank-maxWidth-520px ank-marginInline-auto ank-boxSizing-borderMINbox",
+        "components": [
+          "authTitle",
+          "authNote",
+          "authSignin",
+          "authChallenge",
+          "authSetup",
+          "authQr",
+          "authManual",
+          "authEnrollment",
+          "authNewPassword",
+          "authError"
+        ]
+      }
+    },
+    {
+      "id": "deskMain",
+      "type": "container",
+      "config": {
+        "id": "deskMain",
+        "tag": "main",
+        "classes": "deskStack ank-paddingBlock-38px",
+        "components": [
+          "authPanel"
+        ]
+      }
+    },
+    {
+      "id": "deskFooter",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "deskMuted ank-paddingBlock-24px ank-borderTopWidth-1px ank-borderTopStyle-solid ank-borderColor-HASHd4d0c7"
+      },
+      "valueInstructions": "set:config.text,i18n,desk.footer"
+    },
+    {
+      "id": "deskShell",
+      "type": "container",
+      "config": {
+        "id": "deskShell",
+        "tag": "div",
+        "classes": "thnBooksawBodyFont ank-boxSizing-borderMINbox ank-width-100per ank-maxWidth-1160px ank-paddingInline-20px ank-marginInline-auto ank-color-textColor",
+        "components": [
+          "deskHeader",
+          "deskMain",
+          "deskFooter"
+        ]
+      }
+    }
+  ]
+}

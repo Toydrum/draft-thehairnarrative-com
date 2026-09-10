@@ -46,4 +46,8 @@ node tools/prepare-journal-rollback.mjs
 
 This read-only selector returns `activationAllowed:false` and the already stored immutable `versionId`. A separately authorized operator uses Config Authoring `publishDraft` for that version; do not rebuild or `upsertDraft` to approximate rollback. Missing/expired artifacts, another repository or branch, failed runs, and inconsistent attempts are rejected. Partial job retries that reuse an earlier validation attempt require separate owner verification of the successful publication evidence; the selector does not infer success for a failed attempt.
 
-The client-facing editor, its explicit admin asset bundle, public Journal integration, and live TEST activation remain separate implementation/verification gates. This release preparation alone does not make the blog active.
+The connected private editor and public Journal are now implemented and tested
+locally. Read [Journal authoring](docs/journal-authoring.md) for the owner flow
+and delivery behavior. Live TEST activation, immutable release selection,
+protected-origin configuration and owner enrollment remain separate unsigned
+verification gates. This local candidate does not make the deployed blog active.
