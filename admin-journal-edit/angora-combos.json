@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "admin-journal-edit",
+  "combos": {
+    "deskField": [
+      "ank-display-flex ank-flexDirection-column ank-gap-8px ank-minWidth-0"
+    ],
+    "deskInput": [
+      "thnBooksawBodyFont ank-boxSizing-borderMINbox ank-width-100per ank-minHeight-48px ank-padding-12px ank-borderWidth-1px ank-borderStyle-solid ank-borderColor-HASHd4d0c7 ank-borderRadius-0 ank-bg-white ank-color-textColor ank-fontSize-16px ank-lineHeight-1_5"
+    ],
+    "deskLabel": [
+      "thnBooksawSmallCopy ank-color-textColor ank-fontWeight-600"
+    ],
+    "deskButton": [
+      "thnBooksawBodyFont ank-fontSize-13px ank-minHeight-46px ank-paddingInline-18px ank-paddingBlock-10px ank-border-1px__solid__accentColor ank-bg-transparent ank-color-textColor ank-cursor-pointer ank-borderRadius-0"
+    ],
+    "deskStack": [
+      "ank-display-flex ank-flexDirection-column ank-gap-22px ank-minWidth-0"
+    ],
+    "deskMuted": [
+      "thnBooksawSmallCopy ank-color-secondaryTextColor"
+    ],
+    "deskCard": [
+      "ank-padding-24px ank-bg-white ank-borderWidth-1px ank-borderStyle-solid ank-borderColor-HASHd4d0c7 ank-minWidth-0"
+    ],
+    "deskRow": [
+      "ank-display-flex ank-flexWrap-wrap ank-alignItems-center ank-gap-12px"
+    ],
+    "deskEditorGrid": [
+      "ank-display-grid ank-gridTemplateColumns-1fr ank-gap-28px ank-gridTemplateColumns-lg-2fr__1fr"
+    ],
+    "deskTable": [
+      "ank-width-100per ank-borderCollapse-collapse"
+    ],
+    "deskTableCell": [
+      "ank-textAlign-left ank-padding-16px ank-borderBottomWidth-1px ank-borderBottomStyle-solid ank-borderColor-HASHd4d0c7"
+    ],
+    "deskTab": [
+      "deskButton ank-border-0 ank-borderBottom-2px__solid__transparent"
+    ],
+    "deskActiveTab": [
+      "ank-borderBottomColor-accentColor"
+    ],
+    "deskError": [
+      "thnBooksawSmallCopy ank-color-errorColor ank-p-12px ank-border-1px__solid__errorColor"
+    ]
+  }
+}

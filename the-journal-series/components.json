@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-journal-series",
+  "components": [
+    {
+      "id": "pageMain",
+      "type": "container",
+      "config": {
+        "id": "page-main",
+        "tag": "main",
+        "classes": "thnBooksawBodyFont ank-width-100per ank-bg-HASHffffff ank-color-textColor",
+        "components": [
+          "journalContent"
+        ],
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "journalContent",
+      "type": "container",
+      "config": {
+        "id": "journalContent",
+        "tag": "article",
+        "classes": "thnJournalReading ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-paddingInline-24px ank-paddingBlock-64px ank-paddingBlock-lg-88px ank-bg-HASHffffff",
+        "components": [
+          "journalReadingHeading",
+          "journalSeriesTitle",
+          "journalSeriesNav",
+          "journalLiveCards",
+          "journalEmpty",
+          "journalBack"
+        ]
+      }
+    },
+    {
+      "id": "journalReadingHeading",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "the journal",
+        "classes": "thnBooksawSectionTitle ank-textAlign-center ank-textTransform-lowercase"
+      }
+    },
+    {
+      "id": "journalBack",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,journalDelivery.back;set:config.href,var,journalDelivery.backPath",
+      "config": {
+        "href": "/the-journal",
+        "text": "",
+        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-center ank-marginTop-32px"
+      }
+    },
+    {
+      "id": "journalSeriesTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,varOr,journalDelivery.series.title,",
+      "config": {
+        "id": "journalSeriesTitle",
+        "tag": "h2",
+        "text": "",
+        "classes": "thnBooksawCardTitle ank-textAlign-center"
+      }
+    },
+    {
+      "id": "journalSeriesNav",
+      "type": "container",
+      "config": {
+        "id": "journalSeriesNav",
+        "tag": "nav",
+        "classes": "ank-display-flex ank-flexWrap-wrap ank-gap-18px ank-justifyContent-center ank-marginBottom-42px",
+        "components": []
+      },
+      "loopConfig": {
+        "source": "var",
+        "path": "journalDelivery.seriesLinks",
+        "templateId": "journalSeriesLinkTemplate",
+        "idPrefix": "journalSeriesLink",
+        "bindings": [
+          {
+            "to": "config.text",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "href"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "journalSeriesLinkTemplate",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "/the-journal",
+        "classes": "thnBooksawSmallCopy ank-color-linkColor ank-paddingBlock-12px ank-textUnderlineOffset-5px"
+      }
+    },
+    {
+      "id": "journalLiveCards",
+      "type": "container",
+      "config": {
+        "id": "journalLiveCards",
+        "tag": "div",
+        "classes": "ank-display-grid ank-gridTemplateColumns-minmaxSD0COM1frED ank-gridTemplateColumns-md-repeatSD2COMminmaxSD0COM1frEDED ank-gridTemplateColumns-xl-repeatSD3COMminmaxSD0COM1frEDED ank-gap-42px",
+        "components": []
+      },
+      "condition": "all:varEq,journalDelivery.hasArticles,true",
+      "loopConfig": {
+        "source": "var",
+        "path": "journalDelivery.cards",
+        "templateId": "journalLiveCardTemplate",
+        "idPrefix": "journalLiveCard",
+        "bindings": [
+          {
+            "to": "config.title",
+            "sources": [
+              "title"
+            ]
+          },
+          {
+            "to": "config.description",
+            "sources": [
+              "metaLabel"
+            ]
+          },
+          {
+            "to": "config.href",
+            "sources": [
+              "href"
+            ]
+          },
+          {
+            "to": "config.imageSrc",
+            "sources": [
+              "imageSrc"
+            ]
+          },
+          {
+            "to": "config.imageAlt",
+            "sources": [
+              "imageAlt"
+            ]
+          },
+          {
+            "to": "config.linkLabel",
+            "sources": [
+              "readLabel"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "journalLiveCardTemplate",
+      "type": "generic-card",
+      "config": {
+        "variant": "feature",
+        "title": "",
+        "description": "",
+        "imageSrc": "",
+        "imageAlt": "",
+        "href": "",
+        "linkLabel": "",
+        "classes": "thnJournalCard",
+        "imageContainerClasses": "thnJournalCardImage",
+        "imageClasses": "ank-width-100per ank-height-100per ank-objectFit-cover",
+        "featureTitleClasses": "thnBooksawCardTitle",
+        "featureDescriptionClasses": "thnBooksawSmallCopy ank-color-secondaryTextColor",
+        "linkClasses": "thnBooksawCtaLink ank-color-linkColor ank-marginTop-auto",
+        "linkStyles": {
+          "background": "transparent"
+        }
+      }
+    },
+    {
+      "id": "journalEmpty",
+      "type": "text",
+      "condition": "all:varEq,journalDelivery.empty,true",
+      "valueInstructions": "set:config.text,i18n,journalDelivery.empty",
+      "config": {
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-textAlign-center ank-paddingBlock-32px"
+      }
+    }
+  ]
+}

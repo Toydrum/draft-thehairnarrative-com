@@ -20,7 +20,7 @@
         "id": "heroCta-link",
         "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0AWhat%20I%20hope%20to%20feel%20on%20the%20day%20is%3A%0D%0A%0D%0A",
         "text": "",
-        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-flexMINstart",
+        "classes": "thnBooksawCtaLink ank-alignSelf-flexMINstart ank-color-linkColor",
         "components": [
           "heroCtaArrow"
         ]
@@ -748,7 +748,7 @@
         "id": "firstNoteCta-link",
         "href": "mailto:hello@thehairnarrative.com?subject=The%20Bridal%20Narrative%20inquiry&body=Hello%20Nina%2C%0D%0A%0D%0AMy%20name%20is%3A%0D%0AMy%20country%20of%20origin%20is%3A%0D%0AMy%20event%20date%20is%3A%0D%0AMy%20event%20location%20is%3A%0D%0AWhat%20I%20hope%20to%20feel%20on%20the%20day%20is%3A%0D%0A%0D%0A",
         "text": "",
-        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-flexMINstart",
+        "classes": "thnBooksawCtaLink ank-alignSelf-flexMINstart ank-color-linkColor",
         "components": [
           "firstNoteCtaArrow"
         ]

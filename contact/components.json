@@ -488,7 +488,7 @@
         "id": "directCta",
         "href": "/",
         "text": "",
-        "classes": "thnBooksawCtaLink ank-color-linkColor ank-width-100per ank-width-md-fitMINcontent",
+        "classes": "thnBooksawCtaLink ank-width-100per ank-width-md-fitMINcontent ank-color-linkColor",
         "components": [
           "directCtaArrow"
         ]
@@ -513,7 +513,7 @@
         "text": "WhatsApp",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "thnBooksawCtaLink ank-color-linkColor ank-width-100per ank-width-md-fitMINcontent",
+        "classes": "thnBooksawCtaLink ank-width-100per ank-width-md-fitMINcontent ank-color-linkColor",
         "components": [
           "directWhatsAppArrow"
         ]
@@ -538,7 +538,7 @@
         "text": "YouTube",
         "target": "_blank",
         "rel": "noopener noreferrer",
-        "classes": "thnBooksawCtaLink ank-color-linkColor ank-width-100per ank-width-md-fitMINcontent",
+        "classes": "thnBooksawCtaLink ank-width-100per ank-width-md-fitMINcontent ank-color-linkColor",
         "components": [
           "directYouTubeArrow"
         ]

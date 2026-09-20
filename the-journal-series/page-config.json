@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-journal-series",
+  "rootIds": [
+    "skipToMainLink",
+    "siteHeader",
+    "pageMain",
+    "siteFooter"
+  ],
+  "modalRootIds": [],
+  "seo": {
+    "title": {
+      "en": "The Journal | The Hair Narrative",
+      "es": "The Journal | The Hair Narrative"
+    },
+    "description": {
+      "en": "An editorial space for notes on form, movement, observation and the practice of hairstyling.",
+      "es": "Un espacio editorial para notas sobre forma, movimiento, observación y la práctica del peinado."
+    }
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

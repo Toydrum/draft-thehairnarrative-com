@@ -1,0 +1,22 @@
+name: Validate isolated Journal delivery
+
+on:
+  pull_request:
+    branches: [dev, test]
+  push:
+    branches: [dev]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: '22'
+      - run: node --test tools/tests/*.spec.mjs
+      - name: Validate draft without AWS writes
+        run: node tools/deploy-draft.mjs --domain=thehairnarrative.com --draft-root=. --environment=test --validate-only=true

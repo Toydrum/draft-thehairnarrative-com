@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-journal-article",
+  "components": [
+    {
+      "id": "pageMain",
+      "type": "container",
+      "config": {
+        "id": "page-main",
+        "tag": "main",
+        "classes": "thnBooksawBodyFont ank-width-100per ank-bg-HASHffffff ank-color-textColor",
+        "components": [
+          "journalContent"
+        ],
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "journalContent",
+      "type": "container",
+      "config": {
+        "id": "journalContent",
+        "tag": "article",
+        "classes": "thnJournalReading ank-width-100per ank-maxWidth-1120px ank-marginInline-auto ank-minWidth-0 ank-paddingInline-24px ank-paddingBlock-64px ank-paddingBlock-lg-88px ank-bg-HASHffffff",
+        "components": [
+          "journalReadingHeading",
+          "journalArticleMeta",
+          "journalArticleTitle",
+          "journalArticleSummary",
+          "journalCover",
+          "journalBody",
+          "journalBack"
+        ]
+      }
+    },
+    {
+      "id": "journalReadingHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "the journal",
+        "classes": "thnBooksawSectionTitle ank-textAlign-center ank-textTransform-lowercase"
+      }
+    },
+    {
+      "id": "journalBack",
+      "type": "link",
+      "valueInstructions": "set:config.text,i18n,journalDelivery.back;set:config.href,var,journalDelivery.backPath",
+      "config": {
+        "href": "/the-journal",
+        "text": "",
+        "classes": "thnBooksawCtaLink ank-color-linkColor ank-alignSelf-center ank-marginTop-32px"
+      }
+    },
+    {
+      "id": "journalArticleMeta",
+      "type": "text",
+      "valueInstructions": "set:config.text,varOr,journalDelivery.currentMeta,",
+      "config": {
+        "id": "journalArticleMeta",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawEyebrow ank-color-linkColor ank-textAlign-center"
+      }
+    },
+    {
+      "id": "journalArticleTitle",
+      "type": "text",
+      "valueInstructions": "set:config.text,varOr,journalDelivery.current.title,",
+      "config": {
+        "id": "journalArticleTitle",
+        "tag": "h1",
+        "text": "",
+        "classes": "thnBooksawDisplayFont thnJournalReadingTitle"
+      }
+    },
+    {
+      "id": "journalArticleSummary",
+      "type": "text",
+      "valueInstructions": "set:config.text,varOr,journalDelivery.current.summary,",
+      "config": {
+        "id": "journalArticleSummary",
+        "tag": "p",
+        "text": "",
+        "classes": "thnBooksawBodyCopy ank-color-secondaryTextColor ank-textAlign-center ank-maxWidth-740px ank-marginInline-auto"
+      }
+    },
+    {
+      "id": "journalCover",
+      "type": "media",
+      "valueInstructions": "set:config.src,var,journalDelivery.current.imageSrc;set:config.alt,var,journalDelivery.current.imageAlt;set:config.styles,var,journalDelivery.coverStyle",
+      "config": {
+        "tag": "image",
+        "src": "",
+        "alt": "",
+        "width": 1200,
+        "height": 900,
+        "loading": "eager",
+        "fetchPriority": "high",
+        "classes": "thnJournalCover"
+      }
+    },
+    {
+      "id": "journalBody",
+      "type": "text",
+      "valueInstructions": "set:config.html,varOr,journalDelivery.bodyHtml,",
+      "config": {
+        "tag": "div",
+        "html": "",
+        "classes": "thnJournalArticleBody"
+      }
+    }
+  ]
+}
