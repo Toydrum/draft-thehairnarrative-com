@@ -53,7 +53,7 @@
       "observation": "Observation & process",
       "bridal": "Bridal forms",
       "publish": "Publish",
-      "publicationNote": "Local preparation: publication is not activated. Nothing on this panel is being published to the live site.",
+      "publicationNote": "An article is published only when you choose Publish. Review its preview first.",
       "reauth": "Your session expired",
       "reauthNote": "Your unsaved text is still here. Sign in again to continue saving.",
       "authError": "We could not verify your access. Check your details and try again.",
