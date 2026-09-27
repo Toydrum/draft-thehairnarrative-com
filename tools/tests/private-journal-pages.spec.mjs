@@ -17,3 +17,10 @@ test('six opt-in private pages use shared primitives, two languages and no URL a
   assert.ok(site.sitemap.excludePaths.includes(site.routes.find(r=>r.pageId===id).path));
  }
 });
+
+test('the article list accurately describes publication',()=>{
+ assert.equal(read('admin-journal/i18n/en.json').dictionary.desk.publicationNote,
+  'An article is published only when you choose Publish. Review its preview first.');
+ assert.equal(read('admin-journal/i18n/es.json').dictionary.desk.publicationNote,
+  'Un artículo se publica solo cuando eliges Publicar. Revisa primero la vista previa.');
+});

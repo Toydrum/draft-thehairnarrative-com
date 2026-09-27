@@ -57,7 +57,7 @@
       "reauth": "Your session expired",
       "reauthNote": "Your unsaved text is still here. Sign in again to continue saving.",
       "authError": "We could not verify your access. Check your details and try again.",
-      "error": "The last action could not be completed. Your text is still here; retry saving before leaving.",
+      "error": "We could not create an article. Return to All articles and try again.",
       "notStarted": "Not started",
       "cancelUpload": "Cancel upload",
       "status": "Save status",

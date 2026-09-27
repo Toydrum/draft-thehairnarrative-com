@@ -48,6 +48,22 @@ test('all private login labels resolve without using a reserved credential field
   }
 });
 
+test('a failed article creation keeps the writing controls unavailable and explains recovery', async () => {
+  const components = JSON.parse(await readFile(new URL('../../admin-journal-new/components.json', import.meta.url), 'utf8')).components;
+  const byId = new Map(components.map(component => [component.id, component]));
+  for (const id of ['editorToolbar', 'editorGrid']) {
+    assert.equal(byId.get(id)?.condition, 'all:var,journalDesk.editor.articleId', `${id} must wait for a persisted article`);
+  }
+  assert.ok(byId.get('deskMain')?.config.components.includes('deskError'));
+  for (const [lang, expected] of [
+    ['en', 'We could not create an article. Return to All articles and try again.'],
+    ['es', 'No pudimos crear el artículo. Vuelve a Todos los artículos e inténtalo de nuevo.'],
+  ]) {
+    const dictionary = JSON.parse(await readFile(new URL(`../../admin-journal-new/i18n/${lang}.json`, import.meta.url), 'utf8')).dictionary.desk;
+    assert.equal(dictionary.error, expected);
+  }
+});
+
 test('THN tooling accepts only the closed server binding at the isolated TEST origin', async () => {
   assert.equal(inferServerDescriptorKind(domain, `${domain}/server/protected-feature-bindings-v2.json`), 'server-protected-feature-bindings-v2');
   const check = items => validateDraftFeatureReadiness({ domain, environment: 'test', mode: 'test', files: items });
