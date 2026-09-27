@@ -770,6 +770,7 @@
     {
       "id": "editorToolbar",
       "type": "container",
+      "condition": "all:var,journalDesk.editor.articleId",
       "config": {
         "id": "editorToolbar",
         "tag": "div",
@@ -789,6 +790,7 @@
     {
       "id": "editorGrid",
       "type": "container",
+      "condition": "all:var,journalDesk.editor.articleId",
       "config": {
         "id": "editorGrid",
         "tag": "div",

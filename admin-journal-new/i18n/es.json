@@ -57,7 +57,7 @@
       "reauth": "Tu sesión expiró",
       "reauthNote": "Tu texto sin guardar sigue aquí. Vuelve a entrar para continuar guardando.",
       "authError": "No pudimos verificar tu acceso. Revisa tus datos e inténtalo de nuevo.",
-      "error": "No se pudo completar la última acción. Tu texto sigue aquí; reintenta el guardado antes de salir.",
+      "error": "No pudimos crear el artículo. Vuelve a Todos los artículos e inténtalo de nuevo.",
       "notStarted": "Sin comenzar",
       "cancelUpload": "Cancelar carga",
       "status": "Estado de guardado",
