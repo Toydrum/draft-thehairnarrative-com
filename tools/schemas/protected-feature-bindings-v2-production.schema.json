@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://zoolandingpage.com.mx/schemas/protected-feature-bindings-v2-production.schema.json",
+  "title": "The Hair Narrative production protected feature binding v2",
+  "description": "Closed production-only server descriptor for the dedicated The Hair Narrative Journal binding.",
+  "type": "object",
+  "required": [
+    "bindingId",
+    "domain",
+    "environment",
+    "authProfileId",
+    "featureId",
+    "hubId",
+    "serviceBindingId",
+    "authBasePath",
+    "contentHubBasePath",
+    "status"
+  ],
+  "minProperties": 10,
+  "maxProperties": 10,
+  "properties": {
+    "bindingId": {
+      "const": "journal-v2"
+    },
+    "domain": {
+      "const": "thehairnarrative.com"
+    },
+    "environment": {
+      "const": "production"
+    },
+    "authProfileId": {
+      "const": "journal-owner"
+    },
+    "featureId": {
+      "const": "journal"
+    },
+    "hubId": {
+      "const": "thehairnarrative-com-journal"
+    },
+    "serviceBindingId": {
+      "const": "thn-journal-production-v2"
+    },
+    "authBasePath": {
+      "const": "/auth-v2"
+    },
+    "contentHubBasePath": {
+      "const": "/features/content-hub-v2"
+    },
+    "status": {
+      "const": "active"
+    }
+  },
+  "additionalProperties": false
+}
