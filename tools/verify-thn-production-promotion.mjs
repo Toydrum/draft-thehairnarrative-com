@@ -35,7 +35,9 @@ export function validateSourceOnlyPromotion(selection, c) {
     || Object.keys(selection).sort().join(',') !== 'mergeTree,mode,schemaVersion,sourceSha,sourceTree,targetBaseSha'
     || selection.schemaVersion !== 1 || selection.mode !== 'thn-source-only') fail('selection_invalid');
   for (const key of ['sourceSha','sourceTree','targetBaseSha','mergeTree']) if (!shaPattern.test(selection[key] ?? '')) fail('selection_invalid');
-  if (c.eventName !== 'push' || c.ref !== 'refs/heads/main' || !shaPattern.test(c.sha ?? '')
+  const targetBranch = c.targetBranch ?? 'main';
+  if (!['test','main'].includes(targetBranch)) fail('context_invalid');
+  if (c.eventName !== 'push' || c.ref !== `refs/heads/${targetBranch}` || !shaPattern.test(c.sha ?? '')
     || !Array.isArray(c.parents) || c.parents.length !== 2 || c.parents[0] !== selection.targetBaseSha
     || c.parents[1] !== selection.sourceSha || c.sourceSha !== selection.sourceSha || c.sourceTree !== selection.sourceTree
     || c.mergeTree !== selection.mergeTree || c.event?.before !== selection.targetBaseSha || c.event?.after !== c.sha
@@ -50,14 +52,17 @@ function git(args) {
 async function main() {
   if (process.argv.length !== 2) fail('arguments_invalid');
   const eventName = process.env.GITHUB_EVENT_NAME;
-  if (eventName === 'workflow_dispatch' || process.env.GITHUB_REF === 'refs/heads/test') {
+  const targetBranch = process.env.GITHUB_REF === 'refs/heads/test' ? 'test' : process.env.GITHUB_REF === 'refs/heads/main' ? 'main' : null;
+  if (!targetBranch) fail('context_invalid');
+  const sourceBranch = targetBranch === 'test' ? 'dev' : 'test';
+  if (eventName === 'workflow_dispatch') {
     if (process.env.GITHUB_OUTPUT) await appendFile(process.env.GITHUB_OUTPUT, 'source_only=false\n');
     return;
   }
   const repository = process.env.GITHUB_REPOSITORY;
   if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repository ?? '') || !process.env.GITHUB_TOKEN) fail('context_invalid');
-  const selector = parseSourceOnlyPromotionSelection(process.env.PRODUCTION_PROMOTION_SELECTION_JSON);
-  const response = await fetch(`https://api.github.com/repos/${repository}/git/ref/heads/test`, {
+  const selector = parseSourceOnlyPromotionSelection(targetBranch === 'test' ? process.env.TEST_PROMOTION_SELECTION_JSON : process.env.PRODUCTION_PROMOTION_SELECTION_JSON);
+  const response = await fetch(`https://api.github.com/repos/${repository}/git/ref/heads/${sourceBranch}`, {
     headers: { Authorization: `Bearer ${process.env.GITHUB_TOKEN}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' },
     signal: AbortSignal.timeout(15000),
   });
@@ -71,7 +76,7 @@ async function main() {
   const mergeTree = git(['rev-parse',`${sha}^{tree}`]);
   if (parents.length !== 2 || git(['merge-tree','--write-tree',parents[0],sourceSha]) !== mergeTree) fail('native_merge_mismatch');
   const event = JSON.parse(await readFile(process.env.GITHUB_EVENT_PATH, 'utf8'));
-  validateSourceOnlyPromotion(selector, { eventName, ref: process.env.GITHUB_REF, sha, parents, sourceSha, sourceTree, mergeTree, event });
+  validateSourceOnlyPromotion(selector, { targetBranch, eventName, ref: process.env.GITHUB_REF, sha, parents, sourceSha, sourceTree, mergeTree, event });
   if (process.env.GITHUB_OUTPUT) await appendFile(process.env.GITHUB_OUTPUT, 'source_only=true\n');
   console.log('production_source_only_verified');
 }

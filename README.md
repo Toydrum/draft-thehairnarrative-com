@@ -18,7 +18,7 @@ Read only the task-specific route in `AGENTS.md`; do not duplicate shared hub pr
 - Promotion path: `dev -> test -> main`, with separate reviewed pull requests.
 - Shared test preview after the `dev -> test` promotion: https://test.zoolandingpage.com.mx/?draftDomain=thehairnarrative.com
 
-The shared test host remains the review surface. A production push requires the exact `DRAFT_PRODUCTION_PROMOTION_SELECTION_JSON` source-only selector and performs no credential-bearing publication. The separately authorized manual production workflow retains exact merge provenance, complete plan/digest verification and the protected production Environment.
+The shared test host remains the review surface. A TEST push requires the exact `DRAFT_TEST_PROMOTION_SELECTION_JSON` six-field source-only selector for the current DEV tip and native merge tree; it prepares no plan and obtains no AWS credentials. Manual TEST publication retains the existing protected Environment and exact merge provenance. A production push requires the exact `DRAFT_PRODUCTION_PROMOTION_SELECTION_JSON` source-only selector and performs no credential-bearing publication. The separately authorized manual production workflow retains exact merge provenance, complete plan/digest verification and the protected production Environment.
 
 ## Booksaw Design Migration
 
