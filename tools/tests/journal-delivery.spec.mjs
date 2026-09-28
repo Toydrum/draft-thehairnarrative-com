@@ -28,6 +28,20 @@ test('the complete Journal package passes the unchanged TEST readiness gate', as
   assert.equal(report.ok, true);
 });
 
+test('production projection preserves the full source and isolates the server binding and required origin', async () => {
+  const actual = await collectJsonFiles(fileURLToPath(new URL('../../', import.meta.url)), domain);
+  const production = structuredClone(actual);
+  production.find(file => file.path === `${domain}/site-config.json`).content.runtime.authRemote.requiredOrigin = 'https://admin.thehairnarrative.com';
+  const descriptor = production.find(file => file.path === `${domain}/server/protected-feature-bindings-v2.json`).content;
+  descriptor.environment = 'production';
+  descriptor.serviceBindingId = 'thn-journal-production-v2';
+  const report = await validateDraftFeatureReadiness({ domain, environment: 'production', mode: 'production', files: production });
+  assert.equal(report.ok, true, JSON.stringify(report.findings));
+  descriptor.serviceBindingId = 'thn-journal-test-v2';
+  assert.equal((await validateDraftFeatureReadiness({ domain, environment: 'production', mode: 'production', files: production })).ok, false);
+  assert.equal((await validateDraftFeatureReadiness({ domain, environment: 'test', mode: 'test', files: production })).ok, false);
+});
+
 test('the real package includes the closed server-only binding without deployment resource identifiers', async () => {
   const actual = await collectJsonFiles(fileURLToPath(new URL('../../', import.meta.url)), domain);
   const descriptor = actual.find(file => file.path === `${domain}/server/protected-feature-bindings-v2.json`);

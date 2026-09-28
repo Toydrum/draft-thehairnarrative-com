@@ -17,7 +17,7 @@ jobs:
     outputs:
       artifact_id: ${{ steps.upload_plan.outputs.artifact-id }}
       artifact_name: ${{ steps.prepare_plan.outputs.artifact_name }}
-      deploy_required: ${{ steps.provenance.outputs.deploy_required }}
+      deploy_required: ${{ steps.provenance.outputs.deploy_required == 'true' && steps.release_mode.outputs.source_only != 'true' }}
       draft_domain: ${{ steps.draft.outputs.domain }}
       manifest_sha256: ${{ steps.prepare_plan.outputs.manifest_sha256 }}
       version_id: ${{ steps.prepare_plan.outputs.version_id }}
@@ -49,6 +49,13 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: node tools/verify-promotion-commit.mjs --source=dev --target=test
 
+      - name: Verify source-only TEST promotion
+        id: release_mode
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          TEST_PROMOTION_SELECTION_JSON: ${{ vars.DRAFT_TEST_PROMOTION_SELECTION_JSON }}
+        run: node tools/verify-thn-production-promotion.mjs
+
       - name: Read draft domain
         id: draft
         shell: bash
@@ -61,7 +68,7 @@ jobs:
         run: node --test tools/tests/journal-delivery.spec.mjs
 
       - name: Prepare deterministic deployment plan
-        if: steps.provenance.outputs.deploy_required == 'true'
+        if: steps.provenance.outputs.deploy_required == 'true' && steps.release_mode.outputs.source_only != 'true'
         id: prepare_plan
         shell: bash
         env:
@@ -96,7 +103,7 @@ jobs:
           } >> "$GITHUB_OUTPUT"
 
       - name: Upload validated deployment plan
-        if: steps.provenance.outputs.deploy_required == 'true'
+        if: steps.provenance.outputs.deploy_required == 'true' && steps.release_mode.outputs.source_only != 'true'
         id: upload_plan
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
