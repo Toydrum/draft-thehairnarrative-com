@@ -102,10 +102,11 @@ function descriptorName(filePath) {
   return match?.[1];
 }
 
-async function loadSchemas(schemaDir = new URL('./schemas/', import.meta.url)) {
+async function loadSchemas(schemaDir = new URL('./schemas/', import.meta.url), environment = 'test') {
   const schemas = new Map();
   for (const [descriptor, schemaFile] of Object.entries(SERVER_DESCRIPTOR_FILES)) {
-    schemas.set(descriptor, JSON.parse(await readFile(new URL(schemaFile, schemaDir), 'utf8')));
+    const selected = descriptor === 'protected-feature-bindings-v2.json' && environment === 'production' ? 'protected-feature-bindings-v2-production.schema.json' : schemaFile;
+    schemas.set(descriptor, JSON.parse(await readFile(new URL(selected, schemaDir), 'utf8')));
   }
   return schemas;
 }
@@ -476,7 +477,7 @@ async function validateDraftFeatureReadiness({
   if (normalizedEnvironment !== expectedEnvironment) throw new Error('mode_environment_mismatch');
   if (!Array.isArray(files)) throw new Error('invalid_files');
 
-  const schemas = await loadSchemas(schemaDir);
+  const schemas = await loadSchemas(schemaDir, normalizedEnvironment);
   const findings = [];
   const descriptors = new Map();
   const legacyDescriptors = new Map();
@@ -579,7 +580,7 @@ async function validateDraftFeatureReadiness({
     addFinding(findings, makeFinding('protected_feature_binding_required', 'protected-feature-bindings-v2.json'));
   }
   if (descriptors.has('protected-feature-bindings-v2.json')
-    && siteConfig?.runtime?.authRemote?.requiredOrigin !== 'https://admin-test.thehairnarrative.com') {
+    && siteConfig?.runtime?.authRemote?.requiredOrigin !== (normalizedEnvironment === 'production' ? 'https://admin.thehairnarrative.com' : 'https://admin-test.thehairnarrative.com')) {
     addFinding(findings, makeFinding('protected_feature_required_origin_mismatch', 'protected-feature-bindings-v2.json'));
   }
   validateDescriptorSemantics(descriptors, legacyDescriptors, findings, normalizedEnvironment);

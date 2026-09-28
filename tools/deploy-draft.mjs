@@ -1,4 +1,5 @@
 import { createHash, createHmac } from 'node:crypto';
+import { projectThnDraftEnvironment } from './lib/thn-draft-environment.mjs';
 import { existsSync } from 'node:fs';
 import { lstat, readFile, readdir, realpath, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -332,7 +333,7 @@ async function main() {
     throw new Error(`Draft root does not exist: ${draftRoot}`);
   }
 
-  const files = await collectJsonFiles(draftRoot, domain);
+  const files = projectThnDraftEnvironment({ domain, environment, files: await collectJsonFiles(draftRoot, domain) });
   if (files.length === 0) {
     throw new Error(`No JSON draft files found under ${draftRoot}`);
   }
