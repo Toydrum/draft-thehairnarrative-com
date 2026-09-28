@@ -6,6 +6,54 @@
   "notFoundPageId": "not-found",
   "routes": [
     {
+      "path": "/admin/journal/access",
+      "pageId": "admin-journal-access",
+      "auth": {
+        "required": true,
+        "redirectTo": "/admin/journal/access"
+      }
+    },
+    {
+      "path": "/admin/journal/mfa",
+      "pageId": "admin-journal-mfa",
+      "auth": {
+        "required": true,
+        "redirectTo": "/admin/journal/access"
+      }
+    },
+    {
+      "path": "/admin/journal",
+      "pageId": "admin-journal",
+      "auth": {
+        "required": true,
+        "redirectTo": "/admin/journal/access"
+      }
+    },
+    {
+      "path": "/admin/journal/new",
+      "pageId": "admin-journal-new",
+      "auth": {
+        "required": true,
+        "redirectTo": "/admin/journal/access"
+      }
+    },
+    {
+      "path": "/admin/journal/:articleId/edit",
+      "pageId": "admin-journal-edit",
+      "auth": {
+        "required": true,
+        "redirectTo": "/admin/journal/access"
+      }
+    },
+    {
+      "path": "/admin/journal/:articleId/preview",
+      "pageId": "admin-journal-preview",
+      "auth": {
+        "required": true,
+        "redirectTo": "/admin/journal/access"
+      }
+    },
+    {
       "path": "/",
       "pageId": "home",
       "label": "Home"
@@ -59,6 +107,14 @@
       "path": "/404",
       "pageId": "not-found",
       "label": "Page not found"
+    },
+    {
+      "path": "/the-journal/:seriesSlug",
+      "pageId": "the-journal-series"
+    },
+    {
+      "path": "/the-journal/:seriesSlug/:articleSlug",
+      "pageId": "the-journal-article"
     }
   ],
   "sitemap": {
@@ -75,52 +131,86 @@
       "/disclaimers"
     ],
     "excludePaths": [
-      "/404"
+      "/admin/journal/access",
+      "/admin/journal/mfa",
+      "/admin/journal",
+      "/admin/journal/new",
+      "/admin/journal/:articleId/edit",
+      "/admin/journal/:articleId/preview",
+      "/404",
+      "/the-journal/:seriesSlug",
+      "/the-journal/:seriesSlug/:articleSlug"
     ]
   },
   "site": {
+    "fonts": [
+      {
+        "family": "Newsreader",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/fonts/newsreader-latin-400-normal.woff2",
+        "weight": "400",
+        "style": "normal"
+      },
+      {
+        "family": "Newsreader",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/fonts/newsreader-latin-500-normal.woff2",
+        "weight": "500",
+        "style": "normal"
+      },
+      {
+        "family": "Open Sans",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/fonts/open-sans-latin-400-normal.woff2",
+        "weight": "400",
+        "style": "normal"
+      },
+      {
+        "family": "Open Sans",
+        "src": "/assets/thehairnarrative.com/booksaw-20260827/fonts/open-sans-latin-600-normal.woff2",
+        "weight": "600",
+        "style": "normal"
+      }
+    ],
     "theme": {
       "defaultMode": "light",
       "palettes": {
         "light": {
-          "bgColor": "#FFFFFF",
-          "textColor": "#000000",
-          "titleColor": "#000000",
-          "linkColor": "#000000",
-          "accentColor": "#B8B4AE",
-          "secondaryBgColor": "#E9E7E4",
-          "secondaryTextColor": "#000000",
-          "secondaryTitleColor": "#000000",
-          "secondaryLinkColor": "#000000",
-          "secondaryAccentColor": "#B8B4AE",
-          "successColor": "#000000",
-          "onSuccessColor": "#FFFFFF",
-          "errorColor": "#000000",
-          "onErrorColor": "#FFFFFF",
-          "warningColor": "#B8B4AE",
-          "onWarningColor": "#000000",
-          "infoColor": "#B8B4AE",
-          "onInfoColor": "#000000"
+          "bgColor": "#f3f2ec",
+          "textColor": "#2f2f2f",
+          "titleColor": "#2f2f2f",
+          "linkColor": "#74642f",
+          "accentColor": "#74642f",
+          "secondaryBgColor": "#edebe4",
+          "secondaryTextColor": "#66615d",
+          "secondaryTitleColor": "#2f2f2f",
+          "secondaryLinkColor": "#74642f",
+          "secondaryAccentColor": "#c5a992",
+          "successColor": "#2f2f2f",
+          "onSuccessColor": "#ffffff",
+          "errorColor": "#2f2f2f",
+          "onErrorColor": "#ffffff",
+          "warningColor": "#74642f",
+          "onWarningColor": "#ffffff",
+          "infoColor": "#74642f",
+          "onInfoColor": "#ffffff"
         },
         "dark": {
-          "bgColor": "#000000",
-          "textColor": "#FFFFFF",
-          "titleColor": "#FFFFFF",
-          "linkColor": "#FFFFFF",
-          "accentColor": "#B8B4AE",
-          "secondaryBgColor": "#B8B4AE",
-          "secondaryTextColor": "#000000",
-          "secondaryTitleColor": "#000000",
-          "secondaryLinkColor": "#000000",
-          "secondaryAccentColor": "#B8B4AE",
-          "successColor": "#FFFFFF",
-          "onSuccessColor": "#000000",
-          "errorColor": "#FFFFFF",
-          "onErrorColor": "#000000",
-          "warningColor": "#B8B4AE",
-          "onWarningColor": "#000000",
-          "infoColor": "#B8B4AE",
-          "onInfoColor": "#000000"
+          "bgColor": "#f3f2ec",
+          "textColor": "#2f2f2f",
+          "titleColor": "#2f2f2f",
+          "linkColor": "#74642f",
+          "accentColor": "#74642f",
+          "secondaryBgColor": "#edebe4",
+          "secondaryTextColor": "#66615d",
+          "secondaryTitleColor": "#2f2f2f",
+          "secondaryLinkColor": "#74642f",
+          "secondaryAccentColor": "#c5a992",
+          "successColor": "#2f2f2f",
+          "onSuccessColor": "#ffffff",
+          "errorColor": "#2f2f2f",
+          "onErrorColor": "#ffffff",
+          "warningColor": "#74642f",
+          "onWarningColor": "#ffffff",
+          "infoColor": "#74642f",
+          "onInfoColor": "#ffffff"
         }
       }
     },
@@ -182,13 +272,19 @@
         "subtitle": "Observe. Understand. Create.",
         "exitDurationMs": 220,
         "minVisibleMs": 0,
-        "background": "#FFFFFF",
-        "foreground": "#000000",
-        "accent": "#B8B4AE"
+        "background": "#f3f2ec",
+        "foreground": "#2f2f2f",
+        "accent": "#c5a992"
       }
     }
   },
   "runtime": {
+    "authRemote": {
+      "enabled": true,
+      "authProfileId": "journal-owner",
+      "endpoint": "/auth-v2/runtime-config",
+      "requiredOrigin": "https://admin-test.thehairnarrative.com"
+    },
     "localStorage": {
       "theme": "thn-theme",
       "language": "thn-language",
@@ -206,7 +302,33 @@
       "enabled": false,
       "consentUI": "none",
       "track": []
-    }
+    },
+    "contentHubs": [
+      {
+        "hubId": "thehairnarrative-com-journal",
+        "ownerDraftDomain": "thehairnarrative.com",
+        "source": "primary",
+        "routeBasePath": "/the-journal",
+        "listPath": "/the-journal",
+        "articlePathPattern": "/the-journal/:seriesSlug/:articleSlug",
+        "defaultLocale": "en",
+        "locales": [
+          "en",
+          "es"
+        ],
+        "localePolicy": "published-only",
+        "canonicalMode": "owner-canonical",
+        "publicArticles": [],
+        "publicTaxonomy": [
+          {"taxonomyId":"form-movement-en","kind":"category","slug":"form-and-movement","label":"Form and movement","locale":"en","visible":true,"path":"/the-journal/form-and-movement"},
+          {"taxonomyId":"observation-process-en","kind":"category","slug":"observation-and-process","label":"Observation and process","locale":"en","visible":true,"path":"/the-journal/observation-and-process"},
+          {"taxonomyId":"bridal-forms-en","kind":"category","slug":"bridal-forms","label":"Bridal forms","locale":"en","visible":true,"path":"/the-journal/bridal-forms"},
+          {"taxonomyId":"form-movement-es","kind":"category","slug":"forma-y-movimiento","label":"Forma y movimiento","locale":"es","visible":true,"path":"/the-journal/forma-y-movimiento"},
+          {"taxonomyId":"observation-process-es","kind":"category","slug":"observacion-y-proceso","label":"Observación y proceso","locale":"es","visible":true,"path":"/the-journal/observacion-y-proceso"},
+          {"taxonomyId":"bridal-forms-es","kind":"category","slug":"formas-nupciales","label":"Formas nupciales","locale":"es","visible":true,"path":"/the-journal/formas-nupciales"}
+        ]
+      }
+    ]
   },
   "environments": {
     "test": {

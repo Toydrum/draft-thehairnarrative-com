@@ -5,6 +5,7 @@ const SERVER_DESCRIPTOR_KINDS = Object.freeze({
   'commerce.json': 'server-commerce',
   'integration-bindings.json': 'server-integration-bindings',
   'notification-policies.json': 'server-notification-policies',
+  'protected-feature-bindings-v2.json': 'server-protected-feature-bindings-v2',
 });
 
 const LOCAL_ONLY_DRAFT_DIRECTORY_NAMES = new Set([

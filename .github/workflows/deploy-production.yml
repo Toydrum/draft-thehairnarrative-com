@@ -17,7 +17,7 @@ jobs:
     outputs:
       artifact_id: ${{ steps.upload_plan.outputs.artifact-id }}
       artifact_name: ${{ steps.prepare_plan.outputs.artifact_name }}
-      deploy_required: ${{ steps.provenance.outputs.deploy_required }}
+      deploy_required: ${{ steps.provenance.outputs.deploy_required == 'true' && steps.release_mode.outputs.source_only != 'true' }}
       draft_domain: ${{ steps.draft.outputs.domain }}
       manifest_sha256: ${{ steps.prepare_plan.outputs.manifest_sha256 }}
       version_id: ${{ steps.prepare_plan.outputs.version_id }}
@@ -28,7 +28,23 @@ jobs:
 
       - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
-          node-version: '22'
+          node-version: '22.23.2'
+
+      - name: Verify production deployment is enabled
+        shell: bash
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const { readFileSync } = require('node:fs');
+          const config = JSON.parse(readFileSync('draft-repo.config.json', 'utf8'));
+          if (
+            config?.branches?.main?.deploys !== true
+            || config?.branches?.main?.environment !== 'production'
+          ) {
+            console.error('Production deployment is disabled for this draft.');
+            process.exit(1);
+          }
+          NODE
 
       - name: Verify protected target branch
         shell: bash
@@ -49,6 +65,13 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: node tools/verify-promotion-commit.mjs --source=test --target=main
 
+      - name: Verify source-only production promotion
+        id: release_mode
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PRODUCTION_PROMOTION_SELECTION_JSON: ${{ vars.DRAFT_PRODUCTION_PROMOTION_SELECTION_JSON }}
+        run: node tools/verify-thn-production-promotion.mjs
+
       - name: Read draft domain
         id: draft
         shell: bash
@@ -58,7 +81,7 @@ jobs:
           printf 'domain=%s\n' "$draft_domain" >> "$GITHUB_OUTPUT"
 
       - name: Prepare deterministic deployment plan
-        if: steps.provenance.outputs.deploy_required == 'true'
+        if: steps.provenance.outputs.deploy_required == 'true' && steps.release_mode.outputs.source_only != 'true'
         id: prepare_plan
         shell: bash
         env:
@@ -93,7 +116,7 @@ jobs:
           } >> "$GITHUB_OUTPUT"
 
       - name: Upload validated deployment plan
-        if: steps.provenance.outputs.deploy_required == 'true'
+        if: steps.provenance.outputs.deploy_required == 'true' && steps.release_mode.outputs.source_only != 'true'
         id: upload_plan
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
@@ -235,6 +258,7 @@ jobs:
                     elif $parts[2] == "commerce.json" then "server-commerce"
                     elif $parts[2] == "integration-bindings.json" then "server-integration-bindings"
                     elif $parts[2] == "notification-policies.json" then "server-notification-policies"
+                    elif $parts[2] == "protected-feature-bindings-v2.json" then "server-protected-feature-bindings-v2"
                     else null end
                   elif ($parts | length) == 3 and $parts[0] == $domain and ($parts[1] | ascii_downcase) != "server" and ($parts[1] | local_only_page | not) then
                     if $parts[2] == "page-config.json" then "page-config"
@@ -288,6 +312,15 @@ jobs:
                     and .kind == (.path | expected_kind($domain))
                     and (.pageId // null) == $page_id
                     and (.lang // null) == $lang
+                    and (if .kind == "server-protected-feature-bindings-v2" then
+                      $domain == "thehairnarrative.com" and $environment == "production"
+                      and .content == {bindingId:"journal-v2",domain:$domain,environment:$environment,
+                        authProfileId:"journal-owner",featureId:"journal",hubId:"thehairnarrative-com-journal",
+                        serviceBindingId:"thn-journal-production-v2",authBasePath:"/auth-v2",
+                        contentHubBasePath:"/features/content-hub-v2",status:"active"}
+                    elif .kind == "site-config" and .content.runtime.authRemote.authProfileId == "journal-owner" then
+                      $domain == "thehairnarrative.com" and .content.runtime.authRemote.requiredOrigin == "https://admin.thehairnarrative.com"
+                    else true end)
                 end)
             ' "$PLAN_PATH" >/dev/null 2>&1
 

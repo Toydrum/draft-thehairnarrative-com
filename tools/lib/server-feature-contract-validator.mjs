@@ -1,5 +1,12 @@
 const DEFAULT_MAX_DEPTH = 32;
 const DEFAULT_MAX_ERRORS = 64;
+const SERVER_FEATURE_DESCRIPTOR_CONTRACTS = Object.freeze({
+  'protected-feature-bindings-v2.json': Object.freeze({
+    packageKind: 'server-protected-feature-bindings-v2',
+    schemaFile: 'protected-feature-bindings-v2.schema.json',
+    publicArtifact: false,
+  }),
+});
 
 const SUPPORTED_SCHEMA_KEYWORDS = new Set([
   '$schema',
@@ -294,6 +301,7 @@ export {
   assertSupportedSchema,
   DEFAULT_MAX_DEPTH,
   DEFAULT_MAX_ERRORS,
+  SERVER_FEATURE_DESCRIPTOR_CONTRACTS,
   SUPPORTED_SCHEMA_KEYWORDS,
   validateSchema,
 };

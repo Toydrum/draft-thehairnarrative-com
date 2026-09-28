@@ -1,0 +1,12 @@
+{
+  "bindingId": "journal-v2",
+  "domain": "thehairnarrative.com",
+  "environment": "test",
+  "authProfileId": "journal-owner",
+  "featureId": "journal",
+  "hubId": "thehairnarrative-com-journal",
+  "serviceBindingId": "thn-journal-test-v2",
+  "authBasePath": "/auth-v2",
+  "contentHubBasePath": "/features/content-hub-v2",
+  "status": "active"
+}

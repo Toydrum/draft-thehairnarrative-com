@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "the-journal-series",
+  "lang": "en",
+  "dictionary": {
+    "journalDelivery": {
+      "back": "back to the journal",
+      "empty": "There are no published notes in this series yet."
+    }
+  }
+}

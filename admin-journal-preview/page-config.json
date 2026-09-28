@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "admin-journal-preview",
+  "rootIds": [
+    "deskShell"
+  ],
+  "modalRootIds": [
+    "reauthPanel"
+  ],
+  "seo": {
+    "description": {
+      "en": "Private editorial workspace for The Hair Narrative.",
+      "es": "Espacio editorial privado de The Hair Narrative."
+    },
+    "canonical": "https://admin-test.thehairnarrative.com/admin/journal/:articleId/preview",
+    "title": {
+      "en": "Private Journal | The Hair Narrative",
+      "es": "Journal privado | The Hair Narrative"
+    },
+    "robots": "noindex, nofollow"
+  },
+  "analytics": {
+    "sectionIds": [],
+    "scrollMilestones": []
+  }
+}

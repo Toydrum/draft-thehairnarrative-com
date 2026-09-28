@@ -2,7 +2,7 @@ import { existsSync } from 'node:fs';
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { validateSchema } from './lib/server-feature-contract-validator.mjs';
+import { SERVER_FEATURE_DESCRIPTOR_CONTRACTS, validateSchema } from './lib/server-feature-contract-validator.mjs';
 import { isLocalOnlyDraftDirectoryName, normalizeDraftPathSegment } from './lib/server-descriptor-kinds.mjs';
 import {
   PII_FIELD_NAME_PATTERN,
@@ -27,6 +27,9 @@ const SERVER_DESCRIPTOR_FILES = Object.freeze({
   'commerce.json': 'commerce.schema.json',
   'integration-bindings.json': 'integration-bindings.schema.json',
   'notification-policies.json': 'notification-policies.schema.json',
+  ...Object.fromEntries(Object.entries(SERVER_FEATURE_DESCRIPTOR_CONTRACTS).map(([name, contract]) => (
+    [name, contract.schemaFile]
+  ))),
 });
 const LEGACY_SERVER_FILES = new Set([
   'auth-profile-registry.json',
@@ -99,10 +102,11 @@ function descriptorName(filePath) {
   return match?.[1];
 }
 
-async function loadSchemas(schemaDir = new URL('./schemas/', import.meta.url)) {
+async function loadSchemas(schemaDir = new URL('./schemas/', import.meta.url), environment = 'test') {
   const schemas = new Map();
   for (const [descriptor, schemaFile] of Object.entries(SERVER_DESCRIPTOR_FILES)) {
-    schemas.set(descriptor, JSON.parse(await readFile(new URL(schemaFile, schemaDir), 'utf8')));
+    const selected = descriptor === 'protected-feature-bindings-v2.json' && environment === 'production' ? 'protected-feature-bindings-v2-production.schema.json' : schemaFile;
+    schemas.set(descriptor, JSON.parse(await readFile(new URL(selected, schemaDir), 'utf8')));
   }
   return schemas;
 }
@@ -473,12 +477,13 @@ async function validateDraftFeatureReadiness({
   if (normalizedEnvironment !== expectedEnvironment) throw new Error('mode_environment_mismatch');
   if (!Array.isArray(files)) throw new Error('invalid_files');
 
-  const schemas = await loadSchemas(schemaDir);
+  const schemas = await loadSchemas(schemaDir, normalizedEnvironment);
   const findings = [];
   const descriptors = new Map();
   const legacyDescriptors = new Map();
   const seenPaths = new Set();
   const scopeReference = {};
+  let siteConfig;
 
   for (const file of files) {
     const normalizedPath = String(file?.path ?? '').replace(/\\/g, '/');
@@ -507,6 +512,7 @@ async function validateDraftFeatureReadiness({
         continue;
       }
     }
+    if (normalizedPath === `${normalizedDomain}/site-config.json`) siteConfig = file.content;
     const name = descriptorName(normalizedPath);
     const allowLegacySecretReference = name === 'auth-profile-registry.json'
       ? isAllowedLegacySocialIdpSecretReference
@@ -543,6 +549,16 @@ async function validateDraftFeatureReadiness({
       else addFinding(findings, makeFinding('unknown_server_descriptor'));
       continue;
     }
+    const featureContract = SERVER_FEATURE_DESCRIPTOR_CONTRACTS[name];
+    if (featureContract && file.kind !== undefined && file.kind !== featureContract.packageKind) {
+      addFinding(findings, makeFinding('server_descriptor_kind_mismatch', name));
+    }
+    if (featureContract && file.content?.domain !== normalizedDomain) {
+      addFinding(findings, makeFinding('domain_mismatch', name, '$/domain'));
+    }
+    if (featureContract && file.content?.environment !== normalizedEnvironment) {
+      addFinding(findings, makeFinding('environment_mismatch', name, '$/environment'));
+    }
     descriptors.set(name, file.content);
     const schemaErrors = validateSchema(schemas.get(name), file.content);
     for (const error of schemaErrors) {
@@ -560,6 +576,13 @@ async function validateDraftFeatureReadiness({
     });
   }
 
+  if (siteConfig?.runtime?.authRemote?.authProfileId === 'journal-owner' && !descriptors.has('protected-feature-bindings-v2.json')) {
+    addFinding(findings, makeFinding('protected_feature_binding_required', 'protected-feature-bindings-v2.json'));
+  }
+  if (descriptors.has('protected-feature-bindings-v2.json')
+    && siteConfig?.runtime?.authRemote?.requiredOrigin !== (normalizedEnvironment === 'production' ? 'https://admin.thehairnarrative.com' : 'https://admin-test.thehairnarrative.com')) {
+    addFinding(findings, makeFinding('protected_feature_required_origin_mismatch', 'protected-feature-bindings-v2.json'));
+  }
   validateDescriptorSemantics(descriptors, legacyDescriptors, findings, normalizedEnvironment);
   if (normalizedMode === 'production') validateProductionSemantics(descriptors, findings);
 

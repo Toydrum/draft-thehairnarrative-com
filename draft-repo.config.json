@@ -16,14 +16,14 @@
     }
   },
   "githubVariables": {
-    "test": [
+    "production": [
       "AWS_ROLE_ARN",
       "AWS_REGION",
       "DRAFT_DOMAIN",
       "DRAFT_ROOT",
       "AUTHORING_ENDPOINT"
     ],
-    "production": [
+    "test": [
       "AWS_ROLE_ARN",
       "AWS_REGION",
       "DRAFT_DOMAIN",

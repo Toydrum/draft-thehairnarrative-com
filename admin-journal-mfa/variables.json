@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "domain": "thehairnarrative.com",
+  "pageId": "admin-journal-mfa",
+  "variables": {
+    "journalDeskConfig": {
+      "template": "fixed-article-v2",
+      "hubId": "thehairnarrative-com-journal"
+    },
+    "journalAuth": {
+      "challenge": "signin"
+    },
+    "journalDeskLabels": {
+      "idle": "Ready",
+      "dirty": "Unsaved changes",
+      "saving": "Saving…",
+      "saved": "Saved",
+      "retrying": "Retrying…",
+      "auth-required": "Sign in to save",
+      "conflict": "Newer version detected",
+      "error": "Not saved"
+    }
+  }
+}
